@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+
+@theme{
+    --color-first: #b6d2ea;
+    --color-second: #2b729e;
+    --color-third: #194c81; 
+}
+
+@layer components{
+    .title{
+        @apply text-[#2b729e] font-bold bg-[#b6d2ea] p-3 text-xl my-3
+    }
+}

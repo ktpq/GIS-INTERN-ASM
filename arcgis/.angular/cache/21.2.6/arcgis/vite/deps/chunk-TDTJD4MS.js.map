@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/linkChart/utils.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.15/LICENSE.txt */\nfunction e(e){return null!=e&&\"object\"==typeof e&&\"2d\"===e.type&&\"linkchart\"===e.view2dType}export{e as isLinkChartView};\n"],
+  "mappings": ";AACA,SAAS,EAAEA,IAAE;AAAC,SAAO,QAAMA,MAAG,YAAU,OAAOA,MAAG,SAAOA,GAAE,QAAM,gBAAcA,GAAE;AAAU;",
+  "names": ["e"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/2d/navigation/duration.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.15/LICENSE.txt */\nimport has from\"../../../core/has.js\";import{Milliseconds as o}from\"../../../core/time.js\";function r(){const r=has(\"mapview-essential-goto-duration\");return null==r?r:o(r)}export{r as getGoToDuration};\n"],
+  "mappings": ";;;;;;;;AAC2F,SAAS,IAAG;AAAC,QAAMA,KAAE,IAAI,iCAAiC;AAAE,SAAO,QAAMA,KAAEA,KAAE,EAAEA,EAAC;AAAC;",
+  "names": ["r"]
+}

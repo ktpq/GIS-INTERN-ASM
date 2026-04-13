@@ -1,0 +1,81 @@
+import {
+  i
+} from "./chunk-72EYVMJZ.js";
+import {
+  a as a2
+} from "./chunk-W3KPPCSW.js";
+import {
+  n as n2
+} from "./chunk-J5XU3PTN.js";
+import {
+  p
+} from "./chunk-ZPD3CEEC.js";
+import {
+  l
+} from "./chunk-DUGX5C7M.js";
+import {
+  q
+} from "./chunk-4UWOVR5Y.js";
+import {
+  n
+} from "./chunk-JADLUMUQ.js";
+import {
+  a3 as a,
+  c,
+  r4 as r
+} from "./chunk-GUGGSMY4.js";
+import {
+  e
+} from "./chunk-6SPQI6I6.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+
+// node_modules/@arcgis/core/layers/support/DisplayFilter.js
+var p2 = { write: { overridePolicy: (t, e2, o) => ({ enabled: !o || "scale" === o.filterMode }) } };
+var l2 = class extends l(n) {
+  constructor(t) {
+    super(t), this.id = n2(), this.maxScale = 0, this.minScale = 0, this.title = "", this.where = null;
+  }
+};
+__decorate([a({ type: String, json: { write: true } })], l2.prototype, "id", void 0), __decorate([a({ type: Number, json: p2 })], l2.prototype, "maxScale", void 0), __decorate([a({ type: Number, json: p2 })], l2.prototype, "minScale", void 0), __decorate([a({ type: String, json: { write: true } })], l2.prototype, "title", void 0), __decorate([a({ type: String, json: { write: true } })], l2.prototype, "where", void 0), l2 = __decorate([c("esri.layers.support.DisplayFilter")], l2);
+
+// node_modules/@arcgis/core/layers/support/DisplayFilterInfo.js
+var c2 = class extends l(n) {
+  constructor(r2) {
+    super(r2), this.activeFilterId = null, this.filters = new (q.ofType(l2))(), this.mode = "manual";
+  }
+  writeFilters(r2, e2, t, o) {
+    const i2 = r2.toArray();
+    "scale" === this.mode && i2.sort((r3, e3) => {
+      const t2 = p(e3.minScale, r3.minScale), o2 = r3.maxScale - e3.maxScale;
+      return 0 === t2 ? o2 : t2;
+    }), e2[t] = i2.map((r3) => r3.toJSON(o));
+  }
+  write(r2, e2) {
+    return super.write(r2, i(this, e2));
+  }
+};
+__decorate([a({ type: String, json: { write: { overridePolicy: (r2, e2, t) => ({ enabled: "manual" === t.filterMode, isRequired: true }) } } })], c2.prototype, "activeFilterId", void 0), __decorate([a({ type: q.ofType(l2), nonNullable: true, json: { write: true } })], c2.prototype, "filters", void 0), __decorate([r("filters")], c2.prototype, "writeFilters", null), __decorate([a({ type: ["manual", "scale"], nonNullable: true, json: { name: "filterMode", write: true } })], c2.prototype, "mode", void 0), c2 = __decorate([c("esri.layers.support.DisplayFilterInfo")], c2);
+
+// node_modules/@arcgis/core/layers/mixins/DisplayFilteredLayer.js
+var l3 = (r2) => {
+  const t = r2;
+  let s = class extends t {
+    constructor() {
+      super(...arguments), this.displayFilterEnabled = true, this.displayFilterInfo = null;
+    }
+  };
+  return __decorate([a(a3)], s.prototype, "displayFilterEnabled", void 0), __decorate([a(n3)], s.prototype, "displayFilterInfo", void 0), s = __decorate([c("esri.layers.mixins.DisplayFilteredLayer")], s), s;
+};
+var a3 = { type: Boolean, json: { name: "layerDefinition.disableDisplayFilter", read: { reader: (e2) => !e2 }, write: { layerContainerTypes: a2, writer(e2, i2, o) {
+  e(o, !e2, i2);
+} }, origins: { "web-scene": { write: false, read: false } } } };
+var n3 = { type: c2, json: { name: "layerDefinition.displayFilterInfo", write: { enabled: true, allowNull: true, layerContainerTypes: a2 }, origins: { "web-scene": { write: false, read: false } } } };
+
+export {
+  l3 as l,
+  a3 as a,
+  n3 as n
+};
+//# sourceMappingURL=chunk-GJYY6675.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/layers/graphics/objectIdUtils.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nconst t=1;function n(t,n){let o=0;for(const e of n){const n=e.attributes?.[t];\"number\"==typeof n&&isFinite(n)&&(o=Math.max(o,n))}return o}export{n as findLastObjectIdFromFeatures,t as initialObjectId};\n"],
+  "mappings": ";AACA,IAAM,IAAE;AAAE,SAAS,EAAEA,IAAEC,IAAE;AAAC,MAAI,IAAE;AAAE,aAAU,KAAKA,IAAE;AAAC,UAAMA,KAAE,EAAE,aAAaD,EAAC;AAAE,gBAAU,OAAOC,MAAG,SAASA,EAAC,MAAI,IAAE,KAAK,IAAI,GAAEA,EAAC;AAAA,EAAE;AAAC,SAAO;AAAC;",
+  "names": ["t", "n"]
+}

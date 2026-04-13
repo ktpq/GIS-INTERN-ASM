@@ -1,0 +1,62 @@
+import {
+  q
+} from "./chunk-KO4S3BRZ.js";
+import {
+  l2 as l,
+  m2 as m
+} from "./chunk-LV7AMIAU.js";
+import {
+  U
+} from "./chunk-55ZAYF5P.js";
+import {
+  i2 as i
+} from "./chunk-MSRN4ADD.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+
+// node_modules/@arcgis/core/core/CollectionFlattener.js
+var n = class extends q {
+  constructor(t) {
+    super(t), this.getCollections = null;
+  }
+  initialize() {
+    this.addHandles(i(() => this._refresh(), U));
+  }
+  destroy() {
+    this.getCollections = null;
+  }
+  _refresh() {
+    const t = this.getCollections?.();
+    if (null == t) return void this.removeAll();
+    let o = 0;
+    for (const e of t) null != e && (o = this._processCollection(o, e));
+    this.splice(o);
+  }
+  _createNewInstance(t) {
+    return new q(t);
+  }
+  _processCollection(t, o) {
+    if (!o) return t;
+    const e = this.itemFilterFunction ?? ((t2) => !!t2);
+    for (const r of o) if (r) {
+      if (e(r)) {
+        const o2 = this.indexOf(r, t);
+        o2 >= 0 ? o2 !== t && this.reorder(r, t) : this.add(r, t), ++t;
+      }
+      if (this.getChildrenFunction) {
+        const o2 = this.getChildrenFunction(r);
+        if (Array.isArray(o2)) for (const e2 of o2) t = this._processCollection(t, e2);
+        else t = this._processCollection(t, o2);
+      }
+    }
+    return t;
+  }
+};
+__decorate([m()], n.prototype, "getCollections", void 0), __decorate([m()], n.prototype, "getChildrenFunction", void 0), __decorate([m()], n.prototype, "itemFilterFunction", void 0), n = __decorate([l("esri.core.CollectionFlattener")], n);
+var l2 = n;
+
+export {
+  l2 as l
+};
+//# sourceMappingURL=chunk-2DTYOH22.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/support/highlightOptionsUtils.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.15/LICENSE.txt */\nimport{defaultHighlightName as t}from\"./HighlightDefaults.js\";function r(r){return r?.name??t}export{r as getHighlightName};\n"],
+  "mappings": ";;;;;AAC8D,SAAS,EAAEA,IAAE;AAAC,SAAOA,IAAG,QAAM;AAAC;",
+  "names": ["r"]
+}

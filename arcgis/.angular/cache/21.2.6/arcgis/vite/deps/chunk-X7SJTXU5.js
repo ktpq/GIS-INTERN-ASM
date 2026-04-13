@@ -1,0 +1,544 @@
+import {
+  s as s3
+} from "./chunk-SEVWV2FY.js";
+import {
+  s,
+  t
+} from "./chunk-V7SQTPST.js";
+import {
+  g as g2,
+  x
+} from "./chunk-NNANCYKT.js";
+import {
+  u as u2
+} from "./chunk-ZEMVKL33.js";
+import {
+  u
+} from "./chunk-SVWIACQP.js";
+import {
+  e,
+  i,
+  l,
+  n,
+  o,
+  s as s2,
+  t as t2
+} from "./chunk-47Z5HJ52.js";
+import {
+  g
+} from "./chunk-ERIUCT52.js";
+import {
+  a
+} from "./chunk-IDI4VM7T.js";
+
+// node_modules/@arcgis/core/geometry/GeometryCursor.js
+var _ = class {
+  static fromOptimized(t4, e2, s4 = 1) {
+    return new u3().initialize(t4, e2, s4);
+  }
+  static fromJSON(t4) {
+    const [e2, h2] = c(t4), r = l(t4), n2 = s2(t4);
+    return new l2().initialize(e2, h2, r, n2, 1);
+  }
+  static fromOptimizedCIM(t4, e2, s4 = 1) {
+    return new g3().initialize(t4, e2, s4);
+  }
+  static fromJSONCIM(t4, e2 = 1) {
+    const [h2, r] = c(t4), n2 = l(t4), o2 = s2(t4);
+    return new f().initialize(h2, r, n2, o2, e2);
+  }
+  static fromFeatureSetReader(t4) {
+    const e2 = t4.readGeometryForDisplay(), s4 = t4.geometryType;
+    return e2 && s4 ? this.fromOptimized(e2, s4) : null;
+  }
+  static fromFeatureSetReaderCIM(t4) {
+    const e2 = t4.readGeometryForDisplay(), s4 = t4.geometryType;
+    return e2 && s4 ? this.fromOptimizedCIM(e2, s4) : null;
+  }
+  static createEmptyOptimized(t4, e2 = false, s4 = false, i2 = 1) {
+    return new g3().initialize(new s3([], [], e2, s4), t4, i2);
+  }
+  static createEmptyJSON(t4, e2 = false, s4 = false) {
+    return new l2().initialize([], t4, e2, s4, 1);
+  }
+  static createEmptyOptimizedCIM(t4, e2 = false, s4 = false, i2 = 1) {
+    return new g3().initialize(new s3([], [], e2, s4), t4, i2);
+  }
+  static createEmptyJSONCIM(t4, e2 = false, s4 = false, i2 = 1) {
+    return new f().initialize([], t4, e2, s4, i2);
+  }
+  asJSON() {
+    const t4 = t(this), { hasZ: s4, hasM: i2 } = this;
+    return "esriGeometryEnvelope" === this.geometryType ? { xmin: t4[0][0][0], ymin: t4[0][0][1], xmax: t4[0][2][0], ymax: t4[0][2][1] } : "esriGeometryMultipoint" === this.geometryType ? { points: t4.flat(), hasZ: s4, hasM: i2 } : "esriGeometryPoint" === this.geometryType ? { x: t4[0][0][0], y: t4[0][0][1], z: s4 ? t4[0][0][2] : void 0, m: i2 ? t4[0][0][s4 ? 3 : 2] : void 0 } : "esriGeometryPolygon" === this.geometryType ? { rings: t4, hasZ: s4, hasM: i2 } : { paths: t4, hasZ: s4, hasM: i2 };
+  }
+  getCurrentRingArea() {
+    if (this.pathSize < 3) return 0;
+    let t4, e2, s4 = 0;
+    if (this.seekPathStart(), !this.nextPoint()) return 0;
+    t4 = this.x, e2 = this.y;
+    const i2 = t4, h2 = e2;
+    for (; this.nextPoint(); ) s4 += (t4 - this.x) * (e2 + this.y), t4 = this.x, e2 = this.y;
+    return s4 += (t4 - i2) * (e2 + h2), -0.5 * s4;
+  }
+  invertY() {
+    this.yFactor *= -1;
+  }
+};
+var u3 = class _u extends _ {
+  constructor() {
+    super(...arguments), this._end = -1;
+  }
+  get hasZ() {
+    return this._geometry?.hasZ;
+  }
+  get hasM() {
+    return this._geometry?.hasM;
+  }
+  initialize(t4, e2, s4) {
+    return this.geometryType = e2, this._stride = t4.stride, this._geometry = t4, this._pathIndex = -1, this._pathOffset = 0, this._pointOffset = -this._stride, this._end = -1, this.yFactor = s4, this;
+  }
+  reset() {
+    this.initialize(this._geometry, this.geometryType, this.yFactor);
+  }
+  seekPath(t4) {
+    if (t4 >= 0 && t4 < this.totalSize) {
+      if (this._pathIndex < t4) for (; this._pathIndex < t4 && this.nextPath(); ) ;
+      else if (this._pathIndex > t4) for (; this._pathIndex > t4 && this.prevPath(); ) ;
+      return true;
+    }
+    return false;
+  }
+  seekPathStart() {
+    this._pointOffset = this._pathOffset - this._stride;
+  }
+  seekPathEnd() {
+    this._pointOffset = this._end;
+  }
+  seekInPath(t4) {
+    const e2 = this._pathOffset + t4 * this._stride;
+    return e2 >= 0 && e2 < this._end && (this._pointOffset = e2, true);
+  }
+  nextPoint() {
+    return (this._pointOffset += this._stride) < this._end;
+  }
+  prevPoint() {
+    return (this._pointOffset -= this._stride) >= this._pathOffset;
+  }
+  nextPath() {
+    return !(this.pathIndex >= this.totalSize - 1) && (this._pathIndex >= 0 && (this._pathOffset += this._stride * this.pathSize), this._pathIndex++, this._pointOffset = this._pathOffset - this._stride, this._end = this._pointOffset + this._stride + this._stride * this.pathSize, true);
+  }
+  prevPath() {
+    return !(this.pathIndex <= 0) && (this._pathIndex--, this._end = this._pathOffset, this._pathOffset -= this._stride * this.pathSize, this._pointOffset = this._pathOffset - this._stride, true);
+  }
+  getCurrentPath() {
+    const t4 = this._end, e2 = this._geometry.coords, s4 = this._pathOffset;
+    return new _u().initialize(new s3([this.pathSize], e2.slice(s4, t4), this.hasZ, this.hasM), this.geometryType, this.yFactor);
+  }
+  pathLength() {
+    const t4 = this._end, e2 = this._stride, s4 = this._geometry.coords;
+    let i2 = 0;
+    for (let h2 = this._pathOffset + e2; h2 < t4; h2 += e2) {
+      const t5 = s4[h2 - e2], r = s4[h2 - e2 + 1], n2 = s4[h2] - t5, o2 = s4[h2 + 1] - r;
+      i2 += Math.sqrt(n2 * n2 + o2 * o2);
+    }
+    return i2;
+  }
+  startPath() {
+    this._geometry.lengths.push(0);
+  }
+  pushPath(t4) {
+    this.startPath(), this.pushPoints(t4);
+  }
+  pushPoint(t4) {
+    for (let e2 = 0; e2 < this._stride; ++e2) this._geometry.coords.push(t4[e2]);
+    this._geometry.lengths[this.totalSize - 1]++;
+  }
+  pushXY(t4, e2) {
+    this._geometry.coords.push(t4, e2), this._geometry.lengths[this.totalSize - 1]++;
+  }
+  pushPoints(t4) {
+    for (const e2 of t4) for (let t5 = 0; t5 < this._stride; ++t5) this._geometry.coords.push(e2[t5]);
+    this._geometry.lengths[this.totalSize - 1] += t4.length;
+  }
+  pushCursor(t4) {
+    const e2 = t4.asOptimized();
+    this._geometry.coords.push(...e2.coords), this._geometry.lengths.push(...e2.lengths);
+  }
+  asOptimized() {
+    const t4 = this._geometry.clone();
+    if (1 !== this.yFactor) for (let e2 = 1; e2 < t4.coords.length; e2 += this._stride) t4.coords[e2] *= this.yFactor;
+    return "esriGeometryPoint" === this.geometryType && (t4.lengths.length = 0), t4;
+  }
+  isClosed() {
+    const t4 = this._geometry.coords, e2 = this._pathOffset, s4 = this._end - this._stride;
+    for (let i2 = 0; i2 < this._stride; i2++) if (t4[e2 + i2] !== t4[s4 + i2]) return false;
+    return true;
+  }
+  clone() {
+    return new _u().initialize(this._geometry.clone(), this.geometryType, this.yFactor);
+  }
+  get totalPoints() {
+    return this._geometry.isPoint ? 1 : this._geometry.lengths.reduce((t4, e2) => t4 + e2);
+  }
+  get pathSize() {
+    const { lengths: t4 } = this._geometry;
+    return this._geometry.isPoint ? 1 : this._pathIndex < 0 || this._pathIndex > t4.length - 1 ? 0 : t4[this._pathIndex];
+  }
+  get totalSize() {
+    return this._geometry.isPoint ? 1 : this._geometry.lengths.length;
+  }
+  get x() {
+    return this._geometry.coords[this._pointOffset];
+  }
+  set x(t4) {
+    this._geometry.coords[this._pointOffset] = t4;
+  }
+  get y() {
+    return this.yFactor * this._geometry.coords[this._pointOffset + 1];
+  }
+  set y(t4) {
+    this._geometry.coords[this._pointOffset + 1] = this.yFactor * t4;
+  }
+  get z() {
+    return this._geometry.coords[this._pointOffset + 2];
+  }
+  set z(t4) {
+    this._geometry.coords[this._pointOffset + 2] = t4;
+  }
+  get m() {
+    const t4 = this.hasZ ? 3 : 2;
+    return this._geometry.coords[this._pointOffset + t4];
+  }
+  set m(t4) {
+    this._geometry.coords[this._pointOffset + 3] = t4;
+  }
+  get pathIndex() {
+    return this._pathIndex;
+  }
+  get _coordIndex() {
+    return this._pointOffset / this._stride;
+  }
+};
+function d(t4) {
+  const e2 = [t4.x, t4.y];
+  return t4.z && e2.push(t4.z), t4.m && e2.push(t4.m), e2;
+}
+function c(t4) {
+  return o(t4) ? [t4.rings, "esriGeometryPolygon"] : e(t4) ? [t4.paths, "esriGeometryPolyline"] : i(t4) ? [[t4.points], "esriGeometryMultipoint"] : n(t4) ? [[[[t4.xmin, t4.ymin], [t4.xmin, t4.ymax], [t4.xmax, t4.ymax], [t4.xmax, t4.ymin], [t4.xmin, t4.ymin]]], "esriGeometryEnvelope"] : t2(t4) ? [[[d(t4)]], "esriGeometryPoint"] : [[], "esriGeometryPolyline"];
+}
+var l2 = class _l extends _ {
+  initialize(t4, e2, s4, i2, h2) {
+    return this._paths = t4, this.geometryType = e2, this.hasZ = s4, this.hasM = i2, this._pathIndex = this._pointIndex = -1, this.yFactor = h2, this._mIndex = this.hasZ ? 3 : 2, this;
+  }
+  reset() {
+    this._pathIndex = this._pointIndex = -1;
+  }
+  seekPath(t4) {
+    return this._pathIndex = t4, this._pointIndex = -1, t4 >= 0 && t4 < this.totalSize && (this._currentPath = this._paths[t4], true);
+  }
+  seekPathStart() {
+    this._pointIndex = -1;
+  }
+  seekPathEnd() {
+    this._pointIndex = this._currentPath.length;
+  }
+  seekInPath(t4) {
+    return t4 >= 0 && t4 < this._currentPath.length && (this._pointIndex = t4, this._currentPoint = this._currentPath[this._pointIndex], true);
+  }
+  nextPoint() {
+    return this._currentPoint = this._currentPath[++this._pointIndex], this._pointIndex < this._currentPath.length;
+  }
+  prevPoint() {
+    return this._currentPoint = this._currentPath[--this._pointIndex], this._pointIndex >= 0;
+  }
+  nextPath() {
+    return this._pointIndex = -1, this._currentPath = this._paths[++this._pathIndex], this._pathIndex < this.totalSize;
+  }
+  prevPath() {
+    return this.pathIndex > 0 && (this._pointIndex = -1, this._pathIndex--, this._currentPath = this._paths[this._pathIndex], true);
+  }
+  pathLength() {
+    const t4 = this._currentPath.length, e2 = this._currentPath;
+    let s4 = 0;
+    for (let i2 = 1; i2 < t4; i2++) {
+      const t5 = e2[i2 - 1], h2 = e2[i2], r = t5[0], n2 = t5[1], o2 = h2[0] - r, a2 = h2[1] - n2;
+      s4 += Math.sqrt(o2 * o2 + a2 * a2);
+    }
+    return s4;
+  }
+  startPath() {
+    this._paths.push([]);
+  }
+  getCurrentPath() {
+    return new _l().initialize([this._currentPath], this.geometryType, this.hasZ, this.hasM, this.yFactor);
+  }
+  pushPath(t4) {
+    this._paths.push(t4);
+  }
+  pushPoint(t4) {
+    this._paths[this.totalSize - 1].push(t4);
+  }
+  pushXY(t4, e2) {
+    this._paths[this.totalSize - 1].push([t4, e2]);
+  }
+  pushPoints(t4) {
+    this._paths[this.totalSize - 1].push(...t4);
+  }
+  pushCursor(t4) {
+    const s4 = t(t4);
+    for (const e2 of s4) this.pushPath(e2);
+  }
+  asOptimized() {
+    const { hasZ: t4, hasM: e2 } = this, s4 = new s3([], [], t4, e2), { coords: i2, lengths: h2 } = s4;
+    if ("esriGeometryPoint" === this.geometryType) i2.push(...this._paths[0][0]), h2.length = 0;
+    else for (const r of this._paths) {
+      for (const s5 of r) i2.push(s5[0]), i2.push(s5[1] * this.yFactor), t4 && i2.push(s5[2]), e2 && i2.push(s5[this._mIndex]);
+      h2.push(r.length);
+    }
+    return s4;
+  }
+  isClosed() {
+    const t4 = this._currentPath[0], e2 = this._currentPath[this._currentPath.length - 1];
+    for (let s4 = 0; s4 < t4.length; s4++) if (t4[s4] !== e2[s4]) return false;
+    return true;
+  }
+  clone() {
+    return new _l().initialize(a(this._paths), this.geometryType, this.hasZ, this.hasM, this.yFactor);
+  }
+  get totalPoints() {
+    return this._paths.map((t4) => t4.length).reduce((t4, e2) => t4 + e2);
+  }
+  get pathSize() {
+    return this._pathIndex < 0 || this._pathIndex > this.totalSize - 1 ? -1 : this._paths[this._pathIndex].length;
+  }
+  get totalSize() {
+    return this._paths.length;
+  }
+  get x() {
+    return this._currentPoint[0];
+  }
+  set x(t4) {
+    this._currentPoint[0] = t4;
+  }
+  get y() {
+    return this.yFactor * this._currentPoint[1];
+  }
+  set y(t4) {
+    this._currentPoint[1] = this.yFactor * t4;
+  }
+  get z() {
+    return this._currentPoint[2];
+  }
+  set z(t4) {
+    this._currentPoint[2] = t4;
+  }
+  get m() {
+    return this._currentPoint[this._mIndex];
+  }
+  set m(t4) {
+    this._currentPoint[this._mIndex] = t4;
+  }
+  get pathIndex() {
+    return this._pathIndex;
+  }
+};
+var y = 4;
+var m = 1;
+var g3 = class _g extends u3 {
+  initialize(t4, e2, s4) {
+    return super.initialize(t4, e2, s4), this._controlPoints || (this._controlPoints = this._controlPoints = new Array(this.totalSize).fill(void 0).map((t5) => /* @__PURE__ */ new Set())), this;
+  }
+  startPath() {
+    super.startPath(), this._controlPoints.push(/* @__PURE__ */ new Set());
+  }
+  clone() {
+    const t4 = new _g().initialize(this._geometry.clone(), this.geometryType, this.yFactor);
+    return t4._controlPoints = this._controlPoints, t4;
+  }
+  setControlPoint() {
+    this._controlPoints[this.pathIndex].add(this._coordIndex);
+  }
+  getControlPoint() {
+    return this._controlPoints[this.pathIndex].has(this._coordIndex);
+  }
+  setControlPointAt(t4) {
+    this._controlPoints[this.pathIndex].add(t4);
+  }
+  getControlPointAt(t4) {
+    return this._controlPoints[this.pathIndex].has(t4);
+  }
+};
+var f = class _f extends l2 {
+  initialize(t4, e2, s4, i2, h2) {
+    return super.initialize(t4, e2, s4, i2, h2);
+  }
+  clone() {
+    return new _f().initialize(a(this._paths), this.geometryType, this.hasZ, this.hasM, this.yFactor);
+  }
+  setControlPoint() {
+    this._paths[this.pathIndex][this._pointIndex][y] = m;
+  }
+  getControlPoint() {
+    return this._paths[this.pathIndex][this._pointIndex][y] === m;
+  }
+  setControlPointAt(t4) {
+    this._paths[this.pathIndex][t4][y] = m;
+  }
+  getControlPointAt(t4) {
+    return this._paths[this.pathIndex][t4][y] === m;
+  }
+};
+
+// node_modules/@arcgis/core/geometry/support/labelPoint.js
+var N = 100 * 222045e-21;
+function l4(t4) {
+  if (0 === t4.totalSize) return null;
+  const a2 = x(t4);
+  if (!a2) return null;
+  const o2 = 4 * (Math.abs(a2[0]) + Math.abs(a2[2]) + Math.abs(a2[1]) + Math.abs(a2[3]) + 1) * N;
+  let s4 = 0, c2 = 0;
+  t4.reset();
+  for (let e2 = 0; t4.nextPath(); e2++) {
+    const n2 = t4.getCurrentRingArea();
+    n2 > c2 && (c2 = n2, s4 = e2);
+  }
+  if (t4.seekPath(s4), 0 === t4.pathSize) return null;
+  t4.seekPathStart();
+  const l5 = g2(t4);
+  if (Math.abs(c2) <= 2 * o2 * o2) return [(l5[0] + l5[2]) / 2, (l5[1] + l5[3]) / 2];
+  t4.seekPathStart();
+  const x3 = s(t4, u());
+  if (null === x3) return null;
+  if (t4.totalPoints < 4) return x3;
+  const m3 = [[NaN, NaN], [NaN, NaN], [NaN, NaN], [NaN, NaN]], d3 = [NaN, NaN, NaN, NaN], P2 = [NaN, NaN, NaN, NaN];
+  let y3 = false, M2 = f2(x3, t4, true);
+  0 === M2.distance && (y3 = true, m3[0][0] = x3[0], m3[0][1] = x3[1], M2 = f2(x3, t4, false)), d3[0] = M2.distance, P2[0] = 0;
+  const b2 = [NaN, NaN];
+  let S = false, k = 0.25, z = -1, g4 = NaN;
+  do {
+    if (g4 = NaN, m3[1] = h(t4, w(l5[0], l5[2], k), o2, a2), isNaN(m3[1][0]) || isNaN(m3[1][1]) || (M2 = f2(m3[1], t4, false), g4 = M2.distance), !isNaN(g4) && g4 > o2 && u4(m3[1], t4)) S = true, d3[1] = g4, P2[1] = p(m3[1], x3);
+    else if (!isNaN(g4) && g4 > z && (z = g4, b2[0] = m3[1][0], b2[1] = m3[1][1]), k -= 0.01, k < 0.1) {
+      if (!(z >= 0)) break;
+      S = true, d3[1] = z, m3[1][0] = b2[0], m3[1][1] = b2[1], P2[1] = p(m3[1], x3);
+    }
+  } while (!S);
+  S = false, k = 0.5, z = -1;
+  let q = 0.01, j = 1;
+  do {
+    if (g4 = NaN, m3[2] = h(t4, w(l5[0], l5[2], k), o2, a2), isNaN(m3[2][0]) || isNaN(m3[2][1]) || (M2 = f2(m3[2], t4, false), g4 = M2.distance), !isNaN(g4) && g4 > o2 && u4(m3[2], t4)) S = true, d3[2] = g4, P2[2] = p(m3[2], x3);
+    else if (!isNaN(g4) && g4 > z) z = g4, b2[0] = m3[2][0], b2[1] = m3[2][1];
+    else if (g4 > z && (z = g4, b2[0] = m3[2][0], b2[1] = m3[2][1]), k = 0.5 + q * j, q += 0.01, j *= -1, k < 0.3 || k > 0.7) {
+      if (!(z >= 0)) break;
+      S = true, d3[2] = z, m3[2][0] = b2[0], m3[2][1] = b2[1], P2[2] = p(m3[2], x3);
+    }
+  } while (!S);
+  S = false, k = 0.75, z = -1;
+  do {
+    if (g4 = NaN, m3[3] = h(t4, w(l5[0], l5[2], k), o2, a2), isNaN(m3[3][0]) || isNaN(m3[3][1]) || (M2 = f2(m3[3], t4, false), g4 = M2.distance), !isNaN(g4) && g4 > o2 && u4(m3[3], t4)) S = true, d3[3] = g4, P2[3] = p(m3[3], x3);
+    else if (g4 > z && (z = g4, b2[0] = m3[3][0], b2[1] = m3[3][1]), k += 0.01, k > 0.9) {
+      if (!(z >= 0)) break;
+      S = true, d3[3] = z, m3[3][0] = b2[0], m3[3][1] = b2[1], P2[3] = p(m3[3], x3);
+    }
+  } while (!S);
+  const T = [0, 1, 2, 3], D = y3 ? 0 : 1;
+  let R;
+  for (let e2 = D; e2 < 4; e2++) for (let t5 = D; t5 < 3; t5++) {
+    const e3 = P2[t5], n2 = P2[t5 + 1];
+    C(e3, n2) > 0 && (R = T[t5], T[t5] = T[t5 + 1], T[t5 + 1] = R, P2[t5] = n2, P2[t5 + 1] = e3);
+  }
+  let B = D, Q = 0, U = 0;
+  for (let e2 = D; e2 < 4; e2++) {
+    switch (e2) {
+      case 0:
+        U = 2 * d3[T[e2]];
+        break;
+      case 1:
+        U = 1.66666666 * d3[T[e2]];
+        break;
+      case 2:
+        U = 1.33333333 * d3[T[e2]];
+        break;
+      case 3:
+        U = d3[T[e2]];
+    }
+    U > Q && (Q = U, B = T[e2]);
+  }
+  return m3[B];
+}
+function u4(t4, e2) {
+  let n2, i2, r, a2, o2 = 0;
+  for (e2.reset(); e2.nextPath() && e2.nextPoint(); ) for (n2 = e2.x, i2 = e2.y; e2.nextPoint(); n2 = r, i2 = a2) {
+    if (r = e2.x, a2 = e2.y, i2 > t4[1] == a2 > t4[1]) continue;
+    (r - n2) * (t4[1] - i2) - (a2 - i2) * (t4[0] - n2) > 0 ? o2++ : o2--;
+  }
+  return 0 !== o2;
+}
+function f2(t4, e2, n2) {
+  if (n2 && u4(t4, e2)) return { coord: t4, distance: 0 };
+  let i2 = 1 / 0, r = 0, a2 = 0, s4 = [0, 0], c2 = [0, 0];
+  const N2 = [0, 0];
+  for (e2.reset(); e2.nextPath() && e2.nextPoint(); ) if (!(e2.pathSize < 2)) for (s4[0] = e2.x, s4[1] = e2.y; e2.nextPoint(); s4 = c2) {
+    c2 = [e2.x, e2.y], u2(N2, t4, s4, c2);
+    const n3 = p(t4, N2);
+    n3 < i2 && (i2 = n3, r = N2[0], a2 = N2[1]);
+  }
+  return { coord: [r, a2], distance: Math.sqrt(i2) };
+}
+function h(t4, n2, i2, r) {
+  const a2 = [n2, 0];
+  let o2 = 1 / 0, s4 = 1 / 0, N2 = false, l5 = false;
+  const u5 = [[n2, r[1] - 1], [n2, r[3] + 1]], f3 = [0, 0], h2 = [0, 0], m3 = [0, 0], d3 = [[0, 0], [0, 0]], P2 = u();
+  for (t4.reset(); t4.nextPath() && t4.nextPoint(); ) if (!(t4.pathSize < 2)) for (d3[0][0] = t4.x, d3[0][1] = t4.y; t4.nextPoint(); d3[0][0] = d3[1][0], d3[0][1] = d3[1][1]) {
+    if (d3[1][0] = t4.x, d3[1][1] = t4.y, null === x2(P2, d3)) continue;
+    if (h2[0] = u5[0][0], h2[1] = u5[0][1], m3[0] = u5[1][0], m3[1] = u5[1][1], 0 === M(P2, h2, m3)) continue;
+    if (!g(u5[0], u5[1], d3[0], d3[1], f3)) continue;
+    const e2 = f3[1];
+    o2 > s4 ? e2 < o2 && (o2 = e2, N2 = true) : e2 < s4 && (s4 = e2, l5 = true);
+  }
+  return N2 && l5 ? a2[1] = (o2 + s4) / 2 : a2[0] = a2[1] = NaN, a2;
+}
+function x2(t4, n2) {
+  if (n2.length < 2) return null;
+  t4 || (t4 = u());
+  const [i2, r] = n2[0], [a2, o2] = n2[1];
+  return t4[0] = Math.min(i2, a2), t4[1] = Math.min(r, o2), t4[2] = Math.max(i2, a2), t4[3] = Math.max(r, o2), t4;
+}
+var m2 = 1;
+var d2 = 4;
+var P = 3;
+var y2 = 12;
+function M(t4, e2, n2) {
+  let i2 = b(e2, t4), r = b(n2, t4);
+  const a2 = t4[0], o2 = t4[1], s4 = t4[2], c2 = t4[3];
+  if (i2 & r) return 0;
+  if (!(i2 | r)) return 4;
+  const N2 = (i2 ? 1 : 0) | (r ? 2 : 0);
+  do {
+    const N3 = n2[0] - e2[0], l5 = n2[1] - e2[1];
+    if (N3 > l5) i2 & P ? (i2 & m2 ? (e2[1] += l5 * (a2 - e2[0]) / N3, e2[0] = a2) : (e2[1] += l5 * (s4 - e2[0]) / N3, e2[0] = s4), i2 = b(e2, t4)) : r & P ? (r & m2 ? (n2[1] += l5 * (a2 - n2[0]) / N3, n2[0] = a2) : (n2[1] += l5 * (s4 - n2[0]) / N3, n2[0] = s4), r = b(n2, t4)) : i2 ? (i2 & d2 ? (e2[0] += N3 * (o2 - e2[1]) / l5, e2[1] = o2) : (e2[0] += N3 * (c2 - e2[1]) / l5, e2[1] = c2), i2 = b(e2, t4)) : (r & d2 ? (n2[0] += N3 * (o2 - n2[1]) / l5, n2[1] = o2) : (n2[0] += N3 * (c2 - n2[1]) / l5, n2[1] = c2), r = b(n2, t4));
+    else if (i2 & y2 ? (i2 & d2 ? (e2[0] += N3 * (o2 - e2[1]) / l5, e2[1] = o2) : (e2[0] += N3 * (c2 - e2[1]) / l5, e2[1] = c2), i2 = b(e2, t4)) : r & y2 ? (r & d2 ? (n2[0] += N3 * (o2 - n2[1]) / l5, n2[1] = o2) : (n2[0] += N3 * (c2 - n2[1]) / l5, n2[1] = c2), r = b(n2, t4)) : i2 ? (i2 & m2 ? (e2[1] += l5 * (a2 - e2[0]) / N3, e2[0] = a2) : (e2[1] += l5 * (s4 - e2[0]) / N3, e2[0] = s4), i2 = b(e2, t4)) : (r & m2 ? (n2[1] += l5 * (a2 - n2[0]) / N3, n2[0] = a2) : (n2[1] += l5 * (s4 - n2[0]) / N3, n2[0] = s4), r = b(n2, t4)), i2 & r) return 0;
+  } while (i2 | r);
+  return N2;
+}
+function b(t4, e2) {
+  return (t4[0] < e2[0] ? 1 : 0) | (t4[0] > e2[2] ? 1 : 0) << 1 | (t4[1] < e2[1] ? 1 : 0) << 2 | (t4[1] > e2[3] ? 1 : 0) << 3;
+}
+function w(t4, e2, n2) {
+  return t4 + (e2 - t4) * n2;
+}
+function p(t4, e2) {
+  return (t4[0] - e2[0]) * (t4[0] - e2[0]) + (t4[1] - e2[1]) * (t4[1] - e2[1]);
+}
+function C(t4, e2) {
+  if (t4 < e2) return -1;
+  if (t4 > e2) return 1;
+  if (t4 === e2) return 0;
+  const n2 = isNaN(t4), i2 = isNaN(e2);
+  return n2 < i2 ? -1 : n2 > i2 ? 1 : 0;
+}
+
+export {
+  _,
+  l4 as l
+};
+//# sourceMappingURL=chunk-X7SJTXU5.js.map

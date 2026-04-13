@@ -1,0 +1,104 @@
+import {
+  e,
+  n,
+  o,
+  t
+} from "./chunk-OLWKRV2W.js";
+import {
+  DateTime
+} from "./chunk-LHNGH3Y4.js";
+import {
+  s,
+  u,
+  v
+} from "./chunk-OTB5O3ZS.js";
+import {
+  i
+} from "./chunk-O4A47ZEM.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/intl/date.js
+var l = { dateStyle: void 0, year: void 0, month: void 0, day: void 0, weekday: void 0 };
+var y = { timeStyle: void 0, hour12: void 0, hourCycle: void 0, hour: void 0, minute: void 0, second: void 0 };
+var d = { timeZone: n };
+var g = { year: "numeric", month: "numeric", day: "numeric" };
+var u3 = { year: "numeric", month: "long", day: "numeric" };
+var c = { year: "numeric", month: "short", day: "numeric" };
+var f = { year: "numeric", month: "long", weekday: "long", day: "numeric" };
+var D = { hour: "numeric", minute: "numeric" };
+var T = __spreadProps(__spreadValues({}, D), { second: "numeric" });
+var S = { hourCycle: "h23" };
+var L = __spreadValues(__spreadValues({}, D), S);
+var v2 = __spreadValues(__spreadValues({}, T), S);
+var M = { "short-date": g, "short-date-short-time": __spreadValues(__spreadValues({}, g), D), "short-date-short-time-24": __spreadValues(__spreadValues({}, g), L), "short-date-long-time": __spreadValues(__spreadValues({}, g), T), "short-date-long-time-24": __spreadValues(__spreadValues({}, g), v2), "short-date-le": g, "short-date-le-short-time": __spreadValues(__spreadValues({}, g), D), "short-date-le-short-time-24": __spreadValues(__spreadValues({}, g), L), "short-date-le-long-time": __spreadValues(__spreadValues({}, g), T), "short-date-le-long-time-24": __spreadValues(__spreadValues({}, g), v2), "long-month-day-year": u3, "long-month-day-year-short-time": __spreadValues(__spreadValues({}, u3), D), "long-month-day-year-short-time-24": __spreadValues(__spreadValues({}, u3), L), "long-month-day-year-long-time": __spreadValues(__spreadValues({}, u3), T), "long-month-day-year-long-time-24": __spreadValues(__spreadValues({}, u3), v2), "day-short-month-year": c, "day-short-month-year-short-time": __spreadValues(__spreadValues({}, c), D), "day-short-month-year-short-time-24": __spreadValues(__spreadValues({}, c), L), "day-short-month-year-long-time": __spreadValues(__spreadValues({}, c), T), "day-short-month-year-long-time-24": __spreadValues(__spreadValues({}, c), v2), "long-date": f, "long-date-short-time": __spreadValues(__spreadValues({}, f), D), "long-date-short-time-24": __spreadValues(__spreadValues({}, f), L), "long-date-long-time": __spreadValues(__spreadValues({}, f), T), "long-date-long-time-24": __spreadValues(__spreadValues({}, f), v2), "long-month-year": { month: "long", year: "numeric" }, "short-month-year": { month: "short", year: "numeric" }, year: { year: "numeric" }, "short-time": D, "long-time": T };
+var w = i()({ shortDate: "short-date", shortDateShortTime: "short-date-short-time", shortDateShortTime24: "short-date-short-time-24", shortDateLongTime: "short-date-long-time", shortDateLongTime24: "short-date-long-time-24", shortDateLE: "short-date-le", shortDateLEShortTime: "short-date-le-short-time", shortDateLEShortTime24: "short-date-le-short-time-24", shortDateLELongTime: "short-date-le-long-time", shortDateLELongTime24: "short-date-le-long-time-24", longMonthDayYear: "long-month-day-year", longMonthDayYearShortTime: "long-month-day-year-short-time", longMonthDayYearShortTime24: "long-month-day-year-short-time-24", longMonthDayYearLongTime: "long-month-day-year-long-time", longMonthDayYearLongTime24: "long-month-day-year-long-time-24", dayShortMonthYear: "day-short-month-year", dayShortMonthYearShortTime: "day-short-month-year-short-time", dayShortMonthYearShortTime24: "day-short-month-year-short-time-24", dayShortMonthYearLongTime: "day-short-month-year-long-time", dayShortMonthYearLongTime24: "day-short-month-year-long-time-24", longDate: "long-date", longDateShortTime: "long-date-short-time", longDateShortTime24: "long-date-short-time-24", longDateLongTime: "long-date-long-time", longDateLongTime24: "long-date-long-time-24", longMonthYear: "long-month-year", shortMonthYear: "short-month-year", year: "year" });
+var Y = { ar: "ar-u-nu-latn-ca-gregory", nn: "no-NN" };
+var Z = new Intl.DateTimeFormat("bs", { month: "long" }).formatToParts(new Date(2025, 2));
+var p = Z.find(({ type: t2 }) => "month" === t2)?.value.toLowerCase();
+function j() {
+  const t2 = u();
+  return (t2 && Y[t2]) ?? s();
+}
+"mart" !== p && (Y.bs = "sr-Latn-CS");
+var E = /* @__PURE__ */ new WeakMap();
+var k = M["short-date-short-time"];
+var C = M["short-date"];
+function I(t2) {
+  let e2 = E.get(t2);
+  if (!e2) {
+    const o2 = j(), n2 = J(t2.timeZone ?? e), r = __spreadProps(__spreadValues({}, t2), { timeZone: n2 });
+    e2 = new Intl.DateTimeFormat(o2, r), E.set(t2, e2);
+  }
+  return e2;
+}
+function N(t2) {
+  return M[t2];
+}
+function F(t2) {
+  const { dateStyle: e2, timeStyle: o2, hour12: n2, year: r, month: a } = t2, m = {};
+  return e2 ? m.dateStyle = e2 : r && (m.year = r, m.month = a || void 0), o2 && !m.year && (m.timeStyle = o2, m.hour12 = "auto" === n2 ? void 0 : "always" === n2), m;
+}
+function b(t2, e2 = k) {
+  return I(e2).format(t2);
+}
+function x(t2, e2 = k) {
+  return b(new Date(t2), __spreadValues(__spreadValues(__spreadValues({}, e2), d), y));
+}
+function P(t2, e2 = k) {
+  return b(/* @__PURE__ */ new Date(`1970-01-01T${t2}Z`), __spreadValues(__spreadValues(__spreadValues({}, e2), d), l));
+}
+function W(t2, e2 = k) {
+  const o2 = DateTime.fromISO(t2, { setZone: true });
+  if (!o2.isValid) return t2;
+  if (e2.timeZone) return b(o2.toJSDate(), e2);
+  const n2 = 0 === o2.offset ? n : e2.timeZone, r = __spreadProps(__spreadValues({}, e2), { timeZone: n2 });
+  return o2.toLocaleString(r, { locale: j() });
+}
+function J(t2) {
+  switch (t2) {
+    case e:
+      return o;
+    case t:
+      return n;
+    default:
+      return t2;
+  }
+}
+v(() => {
+  E = /* @__PURE__ */ new WeakMap();
+});
+
+export {
+  w,
+  N,
+  F,
+  b,
+  x,
+  P,
+  W,
+  J
+};
+//# sourceMappingURL=chunk-46YDVYTJ.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/core/shaderLibrary/shading/Gamma.glsl.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nimport{colorGamma as o}from\"../../../../../../colorUtils.js\";import{glsl as e}from\"../../shaderModules/glsl.js\";function r(r){r.constants.add(\"GAMMA\",\"float\",o).constants.add(\"INV_GAMMA\",\"float\",1/o).code.add(e`vec3 delinearizeGamma(vec3 color) {\nreturn pow(color, vec3(INV_GAMMA));\n}\nvec4 delinearizeGamma(vec4 color) {\nreturn vec4(delinearizeGamma(color.rgb), color.a);\n}\nvec3 linearizeGamma(vec3 color) {\nreturn pow(color, vec3(GAMMA));\n}`)}export{r as Gamma};\n"],
+  "mappings": ";;;;;;;;AACgH,SAAS,EAAEA,IAAE;AAAC,EAAAA,GAAE,UAAU,IAAI,SAAQ,SAAQ,CAAC,EAAE,UAAU,IAAI,aAAY,SAAQ,IAAE,CAAC,EAAE,KAAK,IAAI;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,EAQ/M;AAAC;",
+  "names": ["r"]
+}

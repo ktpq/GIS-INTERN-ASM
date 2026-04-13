@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/3d/webgl-engine/materials/DefaultTechniqueConfiguration.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nimport{__decorate as i}from\"tslib\";import{SliceConfiguration as t}from\"../core/shaderLibrary/Slice.glsl.js\";import{parameter as e}from\"../core/shaderTechnique/ShaderTechniqueConfiguration.js\";class r extends t{constructor(){super(...arguments),this.oitPass=0,this.hasHighlightMixTexture=!1,this.bindType=1,this.instanced=!1,this.writeDepth=!0,this.oitPremultipliedAlpha=!1}}i([e({count:3})],r.prototype,\"oitPass\",void 0),i([e()],r.prototype,\"hasHighlightMixTexture\",void 0);export{r as DefaultTechniqueConfiguration};\n"],
+  "mappings": ";;;;;;;;;AACgM,IAAM,IAAN,cAAgB,EAAC;AAAA,EAAC,cAAa;AAAC,UAAM,GAAG,SAAS,GAAE,KAAK,UAAQ,GAAE,KAAK,yBAAuB,OAAG,KAAK,WAAS,GAAE,KAAK,YAAU,OAAG,KAAK,aAAW,MAAG,KAAK,wBAAsB;AAAA,EAAE;AAAC;AAAC,WAAE,CAAC,EAAE,EAAC,OAAM,EAAC,CAAC,CAAC,GAAE,EAAE,WAAU,WAAU,MAAM,GAAE,WAAE,CAAC,EAAE,CAAC,GAAE,EAAE,WAAU,0BAAyB,MAAM;",
+  "names": []
+}

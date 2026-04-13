@@ -1,0 +1,896 @@
+import {
+  _ as _5
+} from "./chunk-O47MC6AY.js";
+import "./chunk-FRPW5NA3.js";
+import "./chunk-FLIHJ2WP.js";
+import "./chunk-53GCD5BF.js";
+import {
+  v,
+  y as y2
+} from "./chunk-IDOYDUWX.js";
+import {
+  e as e3
+} from "./chunk-UFNIHRKY.js";
+import "./chunk-7FHTOJ47.js";
+import {
+  j
+} from "./chunk-WGDQIUNK.js";
+import "./chunk-QKY52HEH.js";
+import "./chunk-UGNCDVPZ.js";
+import "./chunk-DL5A7PLL.js";
+import {
+  a as a4
+} from "./chunk-MXBCSABZ.js";
+import {
+  Q,
+  _ as _3,
+  c as c3,
+  e as e2,
+  i as i2,
+  o as o4,
+  s as s2
+} from "./chunk-SGNC5H35.js";
+import "./chunk-RP2ZDN4P.js";
+import "./chunk-SQCKII37.js";
+import {
+  s as s4
+} from "./chunk-HWUPLHAX.js";
+import {
+  p,
+  u as u3
+} from "./chunk-VLY7236X.js";
+import {
+  d as d2
+} from "./chunk-XLVOGNM7.js";
+import "./chunk-EPBFLEVA.js";
+import {
+  o as o3,
+  s
+} from "./chunk-LHNPEGMS.js";
+import {
+  s as s3
+} from "./chunk-6LOCYJ7K.js";
+import "./chunk-DPKT4LYX.js";
+import {
+  l as l3
+} from "./chunk-BOS3CHZM.js";
+import {
+  _ as _4
+} from "./chunk-KB2EHMQZ.js";
+import "./chunk-VIFYHMCM.js";
+import "./chunk-MQRKJL3K.js";
+import "./chunk-LBXDB7YQ.js";
+import "./chunk-OR24MDO6.js";
+import "./chunk-Y4WJAV66.js";
+import "./chunk-5TEEMD4W.js";
+import "./chunk-MESRIVTQ.js";
+import {
+  m as m2
+} from "./chunk-YNPTGDAS.js";
+import {
+  _ as _2
+} from "./chunk-WSFVXABO.js";
+import "./chunk-Q3C4JQ3I.js";
+import "./chunk-MCLMCBJF.js";
+import {
+  l as l2
+} from "./chunk-LPNV4GQD.js";
+import {
+  g
+} from "./chunk-O6NQ3G3U.js";
+import {
+  e
+} from "./chunk-T3TXTZDJ.js";
+import {
+  d2 as d,
+  y
+} from "./chunk-J5YAKAE5.js";
+import "./chunk-IJHRPSGC.js";
+import {
+  b
+} from "./chunk-I5YTT2EB.js";
+import "./chunk-22SI6UZM.js";
+import "./chunk-FLG5AFOF.js";
+import "./chunk-OKJ7MV5V.js";
+import {
+  m as m3
+} from "./chunk-23U7MZU6.js";
+import {
+  i
+} from "./chunk-NNUIV2NH.js";
+import "./chunk-JL3Z5SD5.js";
+import "./chunk-IANKUBS7.js";
+import "./chunk-Z3PP4SLW.js";
+import {
+  n as n5,
+  q as q2
+} from "./chunk-75MOJZ4V.js";
+import "./chunk-YDL4QMG6.js";
+import "./chunk-YZDX62BD.js";
+import {
+  n as n3
+} from "./chunk-L3KMIFH7.js";
+import "./chunk-FMIKVU3Q.js";
+import "./chunk-R3PBZCGD.js";
+import "./chunk-Z5I3WFZJ.js";
+import "./chunk-DFCHXQYB.js";
+import "./chunk-ODWYDPQK.js";
+import "./chunk-6U5MFJUS.js";
+import "./chunk-EQVY5WGD.js";
+import "./chunk-5GPMO33J.js";
+import "./chunk-GM5PCDS3.js";
+import "./chunk-URLT4X25.js";
+import "./chunk-YY44XNLW.js";
+import "./chunk-DAHPVVCD.js";
+import "./chunk-WWKLZ2P6.js";
+import {
+  q
+} from "./chunk-HMYFPFVG.js";
+import {
+  n as n4,
+  r as r3,
+  u as u2
+} from "./chunk-KEY3YQEB.js";
+import {
+  l
+} from "./chunk-NLVGGH5B.js";
+import "./chunk-TNGHAIJZ.js";
+import "./chunk-2RBIX73A.js";
+import "./chunk-SH72BZH2.js";
+import {
+  c as c2,
+  u
+} from "./chunk-CHITL6T5.js";
+import "./chunk-HJMMRQXJ.js";
+import "./chunk-M44GXGOJ.js";
+import "./chunk-LQMHYEKG.js";
+import "./chunk-N7OQ4MFT.js";
+import "./chunk-GALDA7CN.js";
+import "./chunk-QRPQOATM.js";
+import "./chunk-UDRKO2UK.js";
+import {
+  z2 as z
+} from "./chunk-OYOKYTYR.js";
+import {
+  _
+} from "./chunk-ONXOVX4W.js";
+import {
+  S
+} from "./chunk-TOB5EAWJ.js";
+import "./chunk-NR66QFNF.js";
+import "./chunk-FZD4GVUW.js";
+import {
+  T
+} from "./chunk-LANOLZOB.js";
+import "./chunk-DTNG3PQB.js";
+import "./chunk-473S3KQM.js";
+import "./chunk-HTVDNBEG.js";
+import "./chunk-6TF3NI7G.js";
+import "./chunk-DF4ABCPV.js";
+import "./chunk-3Z7OKY4G.js";
+import {
+  C,
+  f as f2
+} from "./chunk-LAAWMBRE.js";
+import {
+  g as g2
+} from "./chunk-EKLJIMB3.js";
+import "./chunk-AGHTZMGO.js";
+import {
+  o as o2,
+  r as r2
+} from "./chunk-253Z6EVN.js";
+import {
+  n as n2
+} from "./chunk-FMWSBXS5.js";
+import "./chunk-HXIOMN57.js";
+import {
+  D,
+  a as a2,
+  a3,
+  c,
+  m3 as m,
+  o4 as o
+} from "./chunk-JM4CKTH2.js";
+import "./chunk-SZXJF3IE.js";
+import "./chunk-HDFIZIZL.js";
+import "./chunk-W3O3DL7T.js";
+import "./chunk-SY7OJLZ7.js";
+import "./chunk-IK45K3EN.js";
+import "./chunk-BCADJITZ.js";
+import "./chunk-PFC2RERS.js";
+import "./chunk-RTVKY37F.js";
+import {
+  f2 as f
+} from "./chunk-WARIPJQI.js";
+import {
+  a,
+  n2 as n,
+  r3 as r
+} from "./chunk-6I475YAP.js";
+import "./chunk-GLWFJLHD.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+import "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/graphic/isVoxelGraphicOrigin.js
+var i3 = /* @__PURE__ */ Symbol("isVoxelGraphicOrigin");
+
+// node_modules/@arcgis/core/graphic/VoxelGraphicOrigin.js
+var s5;
+var o5 = class extends s {
+  get [(s5 = i3, n5)]() {
+    return this.layer;
+  }
+  get [o3]() {
+    return this.layer;
+  }
+  constructor(r5) {
+    super(), this[s5] = true, this.type = "voxel", this.layer = r5;
+  }
+  get id() {
+    return this.layer.id;
+  }
+};
+
+// node_modules/@arcgis/core/layers/voxel/voxelPlaneUtils.js
+var f3 = n4();
+var l4 = e3();
+var p2 = e3();
+var u4 = e3();
+var x = r3(0, 0, 1);
+var b2 = r3(0, 1, 0);
+var g3 = r3(1, 0, 0);
+function h(r5) {
+  o4(f3, r5), _3(f3, f3);
+  const a6 = Math.atan2(f3[1], f3[0]), m4 = y2(e3(), x, -a6);
+  Q(f3, f3, m4);
+  const c6 = -1 * Math.atan2(f3[2], f3[0]);
+  return [c2(a6) + 270, c2(c6) + 90];
+}
+function j2(o7, a6) {
+  return y2(p2, x, u(o7 - 270)), y2(u4, b2, u(a6 - 90)), v(l4, p2, u4), o4(f3, g3), Q(f3, f3, l4), _3(f3, f3), [f3[0], f3[1], f3[2]];
+}
+
+// node_modules/@arcgis/core/layers/voxel/VoxelSlice.js
+var p3 = class extends l(n2) {
+  constructor(t2) {
+    super(t2), this.enabled = true, this.label = "", this.normal = null, this.point = null;
+  }
+  get orientation() {
+    if (!Array.isArray(this.normal) || 3 !== this.normal.length) return 0;
+    const [t2, o7] = h(this.normal);
+    return a4.normalize(a2(t2), 0, true);
+  }
+  set orientation(t2) {
+    const o7 = j2(t2, this.tilt);
+    this._set("normal", o7), this._set("orientation", t2);
+  }
+  get tilt() {
+    if (!Array.isArray(this.normal) || 3 !== this.normal.length) return 0;
+    const [t2, o7] = h(this.normal);
+    return a4.normalize(a2(o7), 0, true);
+  }
+  set tilt(t2) {
+    const o7 = j2(this.orientation, t2);
+    this._set("normal", o7), this._set("tilt", t2);
+  }
+};
+__decorate([a3({ type: Boolean, json: { write: true } })], p3.prototype, "enabled", void 0), __decorate([a3({ type: String, json: { write: true } })], p3.prototype, "label", void 0), __decorate([a3({ type: Number, json: { read: false }, clonable: false, range: { min: 0, max: 360 } }), m((t2) => a4.normalize(a2(t2), 0, true))], p3.prototype, "orientation", null), __decorate([a3({ type: Number, json: { read: false }, clonable: false, range: { min: 0, max: 360 } }), m((t2) => a4.normalize(a2(t2), 0, true))], p3.prototype, "tilt", null), __decorate([a3({ type: [Number], json: { write: { isRequired: true } } })], p3.prototype, "normal", void 0), __decorate([a3({ type: [Number], json: { write: { isRequired: true } } })], p3.prototype, "point", void 0), p3 = __decorate([c("esri.layers.voxel.VoxelSlice")], p3);
+
+// node_modules/@arcgis/core/layers/voxel/VoxelSection.js
+var u5 = class extends l(n2) {
+  constructor() {
+    super(...arguments), this.enabled = true, this.href = null, this.id = null, this.label = "", this.normal = null, this.point = null, this.sizeInPixel = null, this.slices = null, this.timeId = 0, this.variableId = null;
+  }
+  get orientation() {
+    if (!Array.isArray(this.normal) || 3 !== this.normal.length) return 0;
+    const [e4, r5] = h(this.normal);
+    return a4.normalize(a2(e4), 0, true);
+  }
+  get tilt() {
+    if (!Array.isArray(this.normal) || 3 !== this.normal.length) return 0;
+    const [e4, r5] = h(this.normal);
+    return a4.normalize(a2(r5), 0, true);
+  }
+};
+__decorate([a3({ type: Boolean, json: { default: true, write: true } })], u5.prototype, "enabled", void 0), __decorate([a3({ type: String, json: { origins: { service: { read: f2 }, "web-scene": { write: { isRequired: true } } }, write: true } }), j({ origins: ["web-scene"], type: "resource", prefix: "sections", compress: true })], u5.prototype, "href", void 0), __decorate([a3({ type: D, json: { write: { enabled: true, isRequired: true } } })], u5.prototype, "id", void 0), __decorate([a3({ type: String, json: { write: true } })], u5.prototype, "label", void 0), __decorate([a3({ type: Number, clonable: false, readOnly: true, range: { min: 0, max: 360 } })], u5.prototype, "orientation", null), __decorate([a3({ type: Number, clonable: false, readOnly: true, range: { min: 0, max: 360 } })], u5.prototype, "tilt", null), __decorate([a3({ type: [Number], json: { write: { enabled: true, isRequired: true } } })], u5.prototype, "normal", void 0), __decorate([a3({ type: [Number], json: { write: { enabled: true, isRequired: true } } })], u5.prototype, "point", void 0), __decorate([a3({ type: [D], json: { write: { enabled: true, isRequired: true } } })], u5.prototype, "sizeInPixel", void 0), __decorate([a3({ type: [p3], json: { write: true } })], u5.prototype, "slices", void 0), __decorate([a3({ type: D, json: { default: 0, write: true } })], u5.prototype, "timeId", void 0), __decorate([a3({ type: D, json: { write: { enabled: true, isRequired: true } } })], u5.prototype, "variableId", void 0), u5 = __decorate([c("esri.layers.voxel.VoxelSection")], u5);
+
+// node_modules/@arcgis/core/layers/voxel/VoxelSimpleShading.js
+var s6 = class extends n2 {
+  constructor() {
+    super(...arguments), this.diffuseFactor = 0.5, this.specularFactor = 0.5;
+  }
+};
+__decorate([a3({ type: Number, range: { min: 0, max: 1 }, json: { default: 0.5, write: true } })], s6.prototype, "diffuseFactor", void 0), __decorate([a3({ type: Number, range: { min: 0, max: 1 }, json: { default: 0.5, write: true } })], s6.prototype, "specularFactor", void 0), s6 = __decorate([c("esri.layers.voxel.VoxelSimpleShading")], s6);
+
+// node_modules/@arcgis/core/layers/voxel/VoxelFormat.js
+var s7 = class extends n2 {
+  constructor(t2) {
+    super(t2), this.continuity = null, this.hasNoData = false, this.noData = 0, this.offset = 0, this.scale = 1, this.type = null;
+  }
+};
+__decorate([a3({ type: ["discrete", "continuous"], json: { write: true } })], s7.prototype, "continuity", void 0), __decorate([a3({ type: Boolean, json: { write: true } })], s7.prototype, "hasNoData", void 0), __decorate([a3({ type: Number, json: { write: true } })], s7.prototype, "noData", void 0), __decorate([a3({ type: Number, json: { write: true } })], s7.prototype, "offset", void 0), __decorate([a3({ type: Number, json: { write: true } })], s7.prototype, "scale", void 0), __decorate([a3({ type: String, json: { write: { enabled: true, isRequired: true } } })], s7.prototype, "type", void 0), s7 = __decorate([c("esri.layers.voxel.VoxelFormat")], s7);
+var i4 = s7;
+
+// node_modules/@arcgis/core/layers/voxel/VoxelVariable.js
+var s8 = class extends n2 {
+  constructor(t2) {
+    super(t2), this.id = null, this.description = "", this.name = null, this.originalFormat = null, this.renderingFormat = null, this.unit = "", this.volumeId = 0, this.type = null;
+  }
+};
+__decorate([a3({ type: Number, json: { write: { enabled: true, isRequired: true } } })], s8.prototype, "id", void 0), __decorate([a3({ type: String, json: { write: true } })], s8.prototype, "description", void 0), __decorate([a3({ type: String, json: { write: { enabled: true, isRequired: true } } })], s8.prototype, "name", void 0), __decorate([a3({ type: i4, json: { write: true } })], s8.prototype, "originalFormat", void 0), __decorate([a3({ type: i4, json: { write: { enabled: true, isRequired: true } } })], s8.prototype, "renderingFormat", void 0), __decorate([a3({ type: String, json: { write: true } })], s8.prototype, "unit", void 0), __decorate([a3({ type: Number, json: { write: true } })], s8.prototype, "volumeId", void 0), __decorate([a3({ type: ["stc-hot-spot-results", "stc-cluster-outlier-results", "stc-estimated-bin", "generic-nearest-interpolated"], json: { write: true } })], s8.prototype, "type", void 0), s8 = __decorate([c("esri.layers.voxel.VoxelVariable")], s8);
+var p4 = s8;
+
+// node_modules/@arcgis/core/layers/voxel/VoxelIsosurface.js
+var l5 = class extends l(n2) {
+  constructor(o7) {
+    super(o7), this.color = g2.fromArray([0, 0, 0, 0]), this.value = 0, this.enabled = true, this.label = "", this.colorLocked = false;
+  }
+};
+__decorate([a3({ type: g2, json: { type: [D], write: { enabled: true, isRequired: true } } })], l5.prototype, "color", void 0), __decorate([a3({ type: Number, json: { write: { enabled: true, isRequired: true } } })], l5.prototype, "value", void 0), __decorate([a3({ type: Boolean, json: { default: true, write: true } })], l5.prototype, "enabled", void 0), __decorate([a3({ type: String, json: { write: true } })], l5.prototype, "label", void 0), __decorate([a3({ type: Boolean, json: { default: false, write: true } })], l5.prototype, "colorLocked", void 0), l5 = __decorate([c("esri.layers.voxel.VoxelIsosurface")], l5);
+
+// node_modules/@arcgis/core/layers/voxel/VoxelColorStop.js
+var l6 = class extends l(n2) {
+  constructor(o7) {
+    super(o7), this.color = null, this.position = 0;
+  }
+};
+__decorate([a3({ type: g2, json: { type: [D], write: { enabled: true, isRequired: true } } })], l6.prototype, "color", void 0), __decorate([a3({ type: Number, json: { write: { enabled: true, isRequired: true } } })], l6.prototype, "position", void 0), l6 = __decorate([c("esri.layers.voxel.VoxelColorStop")], l6);
+var c4 = l6;
+
+// node_modules/@arcgis/core/layers/voxel/VoxelOpacityStop.js
+var i5 = class extends l(n2) {
+  constructor(o7) {
+    super(o7), this.opacity = 1, this.position = 0;
+  }
+};
+__decorate([a3({ type: Number, json: { name: "alpha", write: { enabled: true, isRequired: true } } })], i5.prototype, "opacity", void 0), __decorate([a3({ type: Number, json: { write: { enabled: true, isRequired: true } } })], i5.prototype, "position", void 0), i5 = __decorate([c("esri.layers.voxel.VoxelOpacityStop")], i5);
+var p5 = i5;
+
+// node_modules/@arcgis/core/layers/voxel/VoxelRangeFilter.js
+var l7 = class extends l(n2) {
+  constructor(e4) {
+    super(e4), this.enabled = false, this.range = null;
+  }
+};
+__decorate([a3({ type: Boolean, json: { default: false, write: true } })], l7.prototype, "enabled", void 0), __decorate([a3({ type: [Number], json: { write: { isRequired: true } } })], l7.prototype, "range", void 0), l7 = __decorate([c("esri.layers.voxel.VoxelRangeFilter")], l7);
+var p6 = l7;
+
+// node_modules/@arcgis/core/layers/voxel/VoxelTransferFunctionStyle.js
+var y3 = class extends l(n2) {
+  constructor(o7) {
+    super(o7), this.interpolation = null, this.stretchRange = null, this.rangeFilter = null, this._colorMapSize = 256, this.colorStops = new (q.ofType(c4))(), this.opacityStops = new (q.ofType(p5))();
+  }
+  set colorStops(o7) {
+    this._set("colorStops", n3(o7, this._get("colorStops"), q.ofType(c4)));
+  }
+  set opacityStops(o7) {
+    this._set("opacityStops", n3(o7, this._get("opacityStops"), q.ofType(p5)));
+  }
+  getPreviousNext(o7, t2, r5) {
+    let e4 = o7;
+    for (; --e4 > 0 && t2[e4].type !== r5 && 3 !== t2[e4].type; ) ;
+    let s11 = o7;
+    const i6 = t2.length;
+    for (; ++s11 < i6 && t2[s11].type !== r5 && 3 !== t2[s11].type; ) ;
+    return [e4, s11];
+  }
+  get rasterizedTransferFunction() {
+    const o7 = [];
+    if (this.colorStops.length < 2) return o7;
+    const r5 = [], e4 = [], s11 = 1e-5;
+    for (const t2 of this.colorStops) {
+      if (!t2.color) return o7;
+      e4.push({ color: { r: t2.color.r, g: t2.color.g, b: t2.color.b, a: Math.round(255 * (1 - t2.color.a)) }, position: t2.position, type: 1 });
+    }
+    if (0 === this.opacityStops.length) for (const t2 of e4) r5.push({ color: t2.color, position: t2.position });
+    else {
+      for (const t2 of this.opacityStops) {
+        const o9 = r2(t2.position, 0, 1), r6 = Math.round(255 * r2(1 - t2.opacity, 0, 1));
+        let i7 = false;
+        for (const t3 of e4) if (1 === t3.type && Math.abs(t3.position - o9) < s11) {
+          t3.color.a = r6, t3.type = 3, i7 = true;
+          break;
+        }
+        i7 || e4.push({ color: { r: 0, g: 0, b: 0, a: r6 }, position: t2.position, type: 2 });
+      }
+      e4.sort((o9, t2) => o9.position < t2.position ? -1 : 1);
+      const o8 = e4.length;
+      for (let t2 = 0; t2 < o8; ++t2) {
+        const r6 = e4[t2];
+        if (3 !== r6.type) if (1 === r6.type) {
+          const [s12, i7] = this.getPreviousNext(t2, e4, 2);
+          if (-1 !== s12 && i7 !== o8) {
+            const o9 = (r6.position - e4[s12].position) / (e4[i7].position - e4[s12].position);
+            r6.color.a = Math.round(o2(e4[s12].color.a, e4[i7].color.a, o9));
+          } else r6.color.a = -1 !== s12 ? e4[s12].color.a : e4[i7].color.a;
+        } else {
+          const [s12, i7] = this.getPreviousNext(t2, e4, 1);
+          if (-1 !== s12 && i7 !== o8) {
+            const o9 = (r6.position - e4[s12].position) / (e4[i7].position - e4[s12].position), t3 = e4[s12].color, n6 = e4[i7].color;
+            g4.forEach((e5) => {
+              r6.color[e5] = Math.round(o2(t3[e5], n6[e5], o9));
+            });
+          } else -1 !== s12 ? g4.forEach((o9) => {
+            r6.color[o9] = e4[s12].color[o9];
+          }) : g4.forEach((o9) => {
+            r6.color[o9] = e4[i7].color[o9];
+          });
+        }
+      }
+      for (const t2 of e4) r5.push({ color: t2.color, position: t2.position });
+    }
+    r5[0].position = 0, r5[r5.length - 1].position = 1;
+    let i6 = 0, l9 = 1;
+    for (let c6 = 0; c6 < this._colorMapSize; ++c6) {
+      const e5 = c6 / this._colorMapSize;
+      for (; e5 > r5[l9].position; ) i6 = l9++;
+      const s12 = (e5 - r5[i6].position) / (r5[l9].position - r5[i6].position), a6 = r5[i6].color, h2 = r5[l9].color, f5 = new g2();
+      g4.forEach((o8) => {
+        f5[o8] = Math.round(o2(a6[o8], h2[o8], s12));
+      }), f5.a = r2(1 - o2(a6.a, h2.a, s12) / 255, 0, 1), o7.push(f5);
+    }
+    return o7;
+  }
+  getColorForContinuousDataValue(o7, t2) {
+    const r5 = this.rasterizedTransferFunction;
+    if (this.colorStops.length < 2 || !Array.isArray(this.stretchRange) || this.stretchRange.length < 2 || r5.length < 256) return null;
+    let e4 = this.stretchRange[0], s11 = this.stretchRange[1];
+    if (e4 > s11) {
+      const o8 = e4;
+      e4 = s11, s11 = o8;
+    }
+    o7 = r2(o7, e4, s11);
+    const i6 = r5[Math.round((o7 - e4) / (s11 - e4) * (this._colorMapSize - 1))].clone();
+    return t2 || (i6.a = 1), i6;
+  }
+};
+__decorate([a3({ type: ["linear", "nearest"], json: { write: true } })], y3.prototype, "interpolation", void 0), __decorate([a3({ type: [Number], json: { write: { enabled: true, isRequired: true } } })], y3.prototype, "stretchRange", void 0), __decorate([a3({ type: q.ofType(c4), json: { write: { enabled: true, overridePolicy() {
+  return { enabled: !!this.colorStops && this.colorStops.length > 0 };
+} } } })], y3.prototype, "colorStops", null), __decorate([a3({ type: q.ofType(p5), json: { read: { source: "alphaStops" }, write: { enabled: true, target: "alphaStops", overridePolicy() {
+  return { enabled: !!this.opacityStops && this.opacityStops.length > 0 };
+} } } })], y3.prototype, "opacityStops", null), __decorate([a3({ type: p6, json: { write: true } })], y3.prototype, "rangeFilter", void 0), __decorate([a3({ type: [g2], clonable: false, json: { read: false } })], y3.prototype, "rasterizedTransferFunction", null), y3 = __decorate([c("esri.layers.voxel.VoxelTransferFunctionStyle")], y3);
+var u6 = y3;
+var g4 = ["r", "g", "b"];
+
+// node_modules/@arcgis/core/layers/voxel/VoxelUniqueValue.js
+var l8 = class extends l(n2) {
+  constructor(e4) {
+    super(e4), this.color = g2.fromArray([0, 0, 0, 0]), this.value = 0, this.enabled = true, this.label = "";
+  }
+};
+__decorate([a3({ type: g2, json: { type: [D], write: { enabled: true, isRequired: true } } })], l8.prototype, "color", void 0), __decorate([a3({ type: D, json: { write: { enabled: true, isRequired: true } } })], l8.prototype, "value", void 0), __decorate([a3({ type: Boolean, json: { default: true, write: true } })], l8.prototype, "enabled", void 0), __decorate([a3({ type: String, json: { write: true } })], l8.prototype, "label", void 0), l8 = __decorate([c("esri.layers.voxel.VoxelUniqueValue")], l8);
+
+// node_modules/@arcgis/core/layers/voxel/VoxelVariableStyle.js
+var p7;
+var c5 = p7 = class extends n2 {
+  constructor(e4) {
+    super(e4), this.variableId = 0, this.label = "", this.transferFunction = null, this.uniqueValues = null, this.isosurfaces = null, this.uniqueValues = new (q.ofType(l8))(), this.isosurfaces = new (q.ofType(l5))();
+  }
+  clone() {
+    return new p7({ variableId: this.variableId, label: this.label, transferFunction: a(this.transferFunction), uniqueValues: a(this.uniqueValues), isosurfaces: a(this.isosurfaces) });
+  }
+};
+__decorate([a3({ type: D, json: { write: { enabled: true, isRequired: true } } })], c5.prototype, "variableId", void 0), __decorate([a3({ type: String, json: { write: true } })], c5.prototype, "label", void 0), __decorate([a3({ type: u6, json: { write: { enabled: true, overridePolicy() {
+  return { enabled: !this.uniqueValues || this.uniqueValues.length < 1 };
+} } } })], c5.prototype, "transferFunction", void 0), __decorate([a3({ type: q.ofType(l8), json: { write: { enabled: true, overridePolicy() {
+  return { enabled: !!this.uniqueValues && this.uniqueValues.length > 0 };
+} } } })], c5.prototype, "uniqueValues", void 0), __decorate([a3({ type: q.ofType(l5), json: { write: { enabled: true, overridePolicy() {
+  const e4 = !this.uniqueValues || this.uniqueValues.length < 1, s11 = !!this.isosurfaces && this.isosurfaces.length > 0;
+  return { enabled: e4 && s11 };
+} } } })], c5.prototype, "isosurfaces", void 0), c5 = p7 = __decorate([c("esri.layers.voxel.VoxelVariableStyle")], c5);
+
+// node_modules/@arcgis/core/layers/voxel/NCTimeParser.js
+function r4(r5) {
+  const e4 = /^(days?|hours?|minutes?|seconds?|d|h|m|s) since (\d{1,4})-(\d{1,2})-(\d{1,2})[ |T](\d{1,2}):(\d{1,2}):(\d{1,2})(\.[0-9]+)?[\s|Z]?(([+|\-\s?])(\d{1,2}):(\d{1,2}))?$/i.exec(r5);
+  if (null == e4) return { didParse: false };
+  const [, t2, s11, a6, d5, n6, i6, u7, N, o7, c6, f5, p13] = e4;
+  let $ = "seconds";
+  const P = t2.charAt(0).toLowerCase();
+  "d" === P ? $ = "days" : "h" === P ? $ = "hours" : "m" === P && ($ = "minutes");
+  const m4 = parseInt(s11, 10);
+  if (Number.isNaN(m4)) return { didParse: false };
+  const b3 = parseInt(a6, 10);
+  if (Number.isNaN(b3) || b3 < 1 || b3 > 12) return { didParse: false };
+  const I = parseInt(d5, 10);
+  if (Number.isNaN(I) || I < 1 || I > 31) return { didParse: false };
+  if (2 === b3) {
+    const r6 = m4 % 4 == 0 && (m4 % 100 != 0 || m4 % 400 == 0);
+    if (r6 && I > 29 || !r6 && I > 28) return { didParse: false };
+  } else if ((4 === b3 || 6 === b3 || 9 === b3 || 11 === b3) && I > 30) return { didParse: false };
+  const S2 = parseInt(n6, 10);
+  if (Number.isNaN(S2) || S2 < 0 || S2 > 23) return { didParse: false };
+  const l9 = parseInt(i6, 10);
+  if (Number.isNaN(l9) || l9 < 0 || l9 > 59) return { didParse: false };
+  const h2 = parseInt(u7, 10);
+  if (Number.isNaN(h2) || h2 < 0 || h2 > 59) return { didParse: false };
+  let w = 1, x2 = 0, y4 = 0;
+  if (c6 && (w = "-" === c6 ? -1 : 1), f5) {
+    if (x2 = parseInt(f5, 10), Number.isNaN(x2) || x2 < 0) return { didParse: false };
+    if (0 !== x2) {
+      const r6 = w * x2;
+      if (r6 < -12 || r6 > 14) return { didParse: false };
+    }
+  }
+  if (p13 && (y4 = parseInt(p13, 10), Number.isNaN(y4) || y4 < 0 || y4 > 59)) return { didParse: false };
+  const T2 = `${m4}`.padStart(4, "0"), Z = `${b3}`.padStart(2, "0"), A = `${I}`.padStart(2, "0"), C2 = `${S2}`.padStart(2, "0"), D2 = `${l9}`.padStart(2, "0"), L = `${h2}`.padStart(2, "0");
+  let g5 = "Z";
+  0 === x2 && 0 === y4 || (g5 = w > 0 ? "+" : "-", g5 += `${x2}`.padStart(2, "0"), g5 += ":", g5 += `${y4}`.padStart(2, "0"));
+  return { didParse: true, unit: $, reference: /* @__PURE__ */ new Date(`${T2}-${Z}-${A}T${C2}:${D2}:${L}.000${g5}`) };
+}
+
+// node_modules/@arcgis/core/layers/voxel/VoxelIrregularSpacing.js
+var t = class extends n2 {
+  constructor() {
+    super(...arguments), this.values = null;
+  }
+};
+__decorate([a3({ type: [Number], json: { write: true } })], t.prototype, "values", void 0), t = __decorate([c("esri.layers.voxel.VoxelIrregularSpacing")], t);
+var p8 = t;
+
+// node_modules/@arcgis/core/layers/voxel/VoxelRegularSpacing.js
+var s9 = class extends n2 {
+  constructor() {
+    super(...arguments), this.scale = 1, this.offset = 0;
+  }
+};
+__decorate([a3({ type: Number, json: { write: true } })], s9.prototype, "scale", void 0), __decorate([a3({ type: Number, json: { write: true } })], s9.prototype, "offset", void 0), s9 = __decorate([c("esri.layers.voxel.VoxelRegularSpacing")], s9);
+var p9 = s9;
+
+// node_modules/@arcgis/core/layers/voxel/VoxelDimension.js
+var a5 = class extends n2 {
+  constructor() {
+    super(...arguments), this.irregularSpacing = null, this.isPositiveUp = true, this.isWrappedDateLine = false, this.label = null, this.name = null, this.quantity = null, this.regularSpacing = null, this.size = 0, this.unit = null;
+  }
+  get isRegular() {
+    return (null == this.irregularSpacing || void 0 === this.irregularSpacing) && null !== this.regularSpacing;
+  }
+  getRange() {
+    return this.isRegular ? [this.regularSpacing.offset, this.regularSpacing.offset + this.regularSpacing.scale * (this.size - 1)] : Array.isArray(this.irregularSpacing?.values) && this.irregularSpacing.values.length > 1 ? [this.irregularSpacing.values[0], this.irregularSpacing.values[this.irregularSpacing.values.length - 1]] : [0, 0];
+  }
+};
+__decorate([a3({ type: p8, json: { write: true } })], a5.prototype, "irregularSpacing", void 0), __decorate([a3({ type: Boolean, json: { write: true } })], a5.prototype, "isPositiveUp", void 0), __decorate([a3({ type: Boolean, json: { write: true } })], a5.prototype, "isWrappedDateLine", void 0), __decorate([a3({ type: String, json: { write: true } })], a5.prototype, "label", void 0), __decorate([a3({ type: String, json: { write: true } })], a5.prototype, "name", void 0), __decorate([a3({ type: String, json: { write: true } })], a5.prototype, "quantity", void 0), __decorate([a3({ type: p9, json: { write: true } })], a5.prototype, "regularSpacing", void 0), __decorate([a3({ type: Number, json: { write: true } })], a5.prototype, "size", void 0), __decorate([a3({ type: String, json: { write: true } })], a5.prototype, "unit", void 0), __decorate([a3({ type: Boolean, json: { read: false } })], a5.prototype, "isRegular", null), a5 = __decorate([c("esri.layers.voxel.VoxelDimension")], a5);
+var p10 = a5;
+
+// node_modules/@arcgis/core/layers/voxel/VoxelVolume.js
+var f4 = class extends n2 {
+  constructor(e4) {
+    super(e4), this.id = 0, this.dimensions = null, this.spatialReference = S.WGS84;
+  }
+  get zDimension() {
+    if (!this.dimensions) return -1;
+    if (!Array.isArray(this.dimensions)) return -1;
+    if (4 !== this.dimensions.length) return -1;
+    for (let e4 = 2; e4 < 4; ++e4) if (this.dimensions[e4].size > 0) return e4;
+    return -1;
+  }
+  get isValid() {
+    return !!this.dimensions && (!!Array.isArray(this.dimensions) && (4 === this.dimensions.length && (!(this.dimensions[0].size < 1 || this.dimensions[1].size < 1) && !(-1 === this.zDimension || this.dimensions[this.zDimension].size < 1))));
+  }
+  get originInLayerSpace3D() {
+    if (!this.isValid || "xyt" === this.volumeType) return [0, 0, 0];
+    const e4 = this.dimensions[0].getRange(), i6 = this.dimensions[1].getRange(), s11 = this.dimensions[2], r5 = s11.isRegular ? s11.getRange() : [0, s11.size];
+    return [e4[0], i6[0], r5[0]];
+  }
+  get voxelSizeInLayerSpaceSigned() {
+    if (!this.isValid || "xyt" === this.volumeType) return [0, 0, 0];
+    const e4 = this.dimensions[0].getRange(), i6 = this.dimensions[1].getRange(), s11 = this.dimensions[2], r5 = s11.isRegular ? s11.getRange() : [0, s11.size], t2 = [this.sizeInVoxels[0], this.sizeInVoxels[1], this.sizeInVoxels[2]];
+    for (let n6 = 0; n6 < 3; ++n6) t2[n6] < 2 ? t2[n6] = 1 : t2[n6] -= 1;
+    return s11.isRegular && !s11.isPositiveUp && (t2[2] *= -1), [(e4[1] - e4[0]) / t2[0], (i6[1] - i6[0]) / t2[1], (r5[1] - r5[0]) / t2[2]];
+  }
+  get volumeType() {
+    if (this.isValid) {
+      const e4 = this.dimensions[2].size > 0;
+      let i6 = this.dimensions[3].size > 0;
+      if (i6) {
+        const e5 = this.dimensions[3];
+        if (i6 = "time" === e5.quantity, i6 && null !== e5.unit) {
+          i6 = r4(e5.unit).didParse;
+        }
+      }
+      if (!e4 && i6) return "xyt";
+      if (e4 && i6) return "xyzt";
+    }
+    return "xyz";
+  }
+  get sizeInVoxels() {
+    if (!this.isValid) return [0, 0, 0];
+    const e4 = this.zDimension;
+    return [this.dimensions[0].size, this.dimensions[1].size, this.dimensions[e4].size];
+  }
+  get timeStops() {
+    if ("xyzt" !== this.volumeType) return [];
+    const e4 = this.dimensions[3], i6 = [], s11 = r4(e4.unit);
+    if (s11.didParse) {
+      if (e4.isRegular) {
+        const t2 = e4.regularSpacing?.offset ?? 0, n6 = e4.regularSpacing?.scale || 1;
+        for (let o7 = 0; o7 < e4.size; ++o7) {
+          const e5 = t2 + n6 * o7;
+          i6.push(i(s11.reference, e5, s11.unit));
+        }
+      } else if (Array.isArray(e4.irregularSpacing?.values) && e4.irregularSpacing.values.length > 0) for (let t2 = 0; t2 < e4.irregularSpacing.values.length; ++t2) {
+        const n6 = e4.irregularSpacing.values[t2];
+        i6.push(i(s11.reference, n6, s11.unit));
+      }
+    }
+    return i6;
+  }
+  computeVoxelSpaceLocation(e4) {
+    if (!this.isValid) return [0, 0, 0];
+    if ("xyt" === this.volumeType) return n.getLogger(this).error("computeVoxelSpacePosition cannot be used with XYT volumes."), [0, 0, 0];
+    if (!T(this.spatialReference, e4.spatialReference)) return n.getLogger(this).error("pos argument should have the same spatial reference as the VoxelLayer."), [0, 0, 0];
+    const i6 = r3(e4.x, e4.y, e4.z ?? 0);
+    e2(i6, i6, this.originInLayerSpace3D), i2(i6, i6, this.voxelSizeInLayerSpaceSigned);
+    const r5 = this.dimensions[this.zDimension];
+    if (!r5.isRegular && Array.isArray(r5.irregularSpacing?.values) && r5.irregularSpacing.values.length > 1) {
+      const s11 = e4.z ?? 0, t2 = r5.irregularSpacing.values, n6 = r5.isPositiveUp ? 1 : -1, o7 = t2.reduce((e5, i7) => Math.abs(n6 * i7 - s11) < Math.abs(n6 * e5 - s11) ? i7 : e5);
+      for (let e5 = 0; e5 < t2.length; ++e5) if (t2[e5] === o7) {
+        i6[2] = e5;
+        break;
+      }
+    }
+    return [i6[0], i6[1], i6[2]];
+  }
+  computeLayerSpaceLocation(e4) {
+    if (!this.isValid) return new _({ x: 0, y: 0, spatialReference: this.spatialReference });
+    const i6 = u2(e4);
+    if (s2(i6, i6, this.voxelSizeInLayerSpaceSigned), c3(i6, i6, this.originInLayerSpace3D), "xyt" === this.volumeType) return new _({ x: i6[0], y: i6[1], spatialReference: this.spatialReference });
+    const s11 = this.dimensions[this.zDimension];
+    return s11.isRegular || Array.isArray(s11.irregularSpacing?.values) && (e4[2] < 0 ? i6[2] = s11.irregularSpacing.values[0] : e4[2] < s11.irregularSpacing.values.length ? i6[2] = s11.irregularSpacing.values[e4[2]] : i6[2] = s11.irregularSpacing.values[s11.irregularSpacing.values.length - 1], s11.isPositiveUp || (i6[2] *= -1)), new _({ x: i6[0], y: i6[1], z: i6[2], spatialReference: this.spatialReference });
+  }
+};
+__decorate([a3({ type: Number, json: { write: { enabled: true, isRequired: true } } })], f4.prototype, "id", void 0), __decorate([a3({ type: [p10], json: { write: { enabled: true, isRequired: true } } })], f4.prototype, "dimensions", void 0), __decorate([a3({ type: S, json: { read: { enabled: false } } })], f4.prototype, "spatialReference", void 0), __decorate([a3({ type: Number, json: { read: false } })], f4.prototype, "zDimension", null), __decorate([a3({ type: [Boolean], json: { read: false } })], f4.prototype, "isValid", null), __decorate([a3({ type: [Number], json: { read: false } })], f4.prototype, "originInLayerSpace3D", null), __decorate([a3({ type: [Number], json: { read: false } })], f4.prototype, "voxelSizeInLayerSpaceSigned", null), __decorate([a3({ type: ["xyz", "xyzt", "xyt"], json: { read: { enabled: false } } })], f4.prototype, "volumeType", null), __decorate([a3({ type: [Number], json: { read: false } })], f4.prototype, "sizeInVoxels", null), __decorate([a3({ type: [Date], json: { read: false, write: false } })], f4.prototype, "timeStops", null), f4 = __decorate([c("esri.layers.voxel.VoxelVolume")], f4);
+
+// node_modules/@arcgis/core/layers/voxel/VoxelVolumeIndex.js
+var o6;
+var s10 = o6 = class extends n2 {
+  constructor() {
+    super(...arguments), this.apronWidth = 1, this.brickSize = [32, 32, 32], this.maxLodLevel = 0, this.nodeSize = [4, 4, 4];
+  }
+  isValid() {
+    const e4 = new o6();
+    return e4.apronWidth === this.apronWidth && e4.maxLodLevel === this.maxLodLevel && (!!this.brickSize && (!!this.nodeSize && (!(!Array.isArray(this.brickSize) || !Array.isArray(this.nodeSize)) && (3 === this.brickSize.length && 3 === this.nodeSize.length && (32 === this.brickSize[0] && 32 === this.brickSize[1] && 32 === this.brickSize[2] && (4 === this.nodeSize[0] && 4 === this.nodeSize[1] && 4 === this.nodeSize[2]))))));
+  }
+};
+__decorate([a3({ type: Number, json: { write: { enabled: true, isRequired: true } } })], s10.prototype, "apronWidth", void 0), __decorate([a3({ type: [Number], json: { write: { enabled: true, isRequired: true } } })], s10.prototype, "brickSize", void 0), __decorate([a3({ type: Number, json: { write: { enabled: true, isRequired: true } } })], s10.prototype, "maxLodLevel", void 0), __decorate([a3({ type: [Number], json: { write: { enabled: true, isRequired: true } } })], s10.prototype, "nodeSize", void 0), s10 = o6 = __decorate([c("esri.layers.voxel.VoxelVolumeIndex")], s10);
+var d3 = s10;
+
+// node_modules/@arcgis/core/layers/voxel/VoxelDynamicSection.js
+var p11 = class extends l(n2) {
+  constructor(t2) {
+    super(t2), this.enabled = true, this.label = "", this.normal = null, this.point = null;
+  }
+  get orientation() {
+    if (!Array.isArray(this.normal) || 3 !== this.normal.length) return 0;
+    const [t2, o7] = h(this.normal);
+    return a4.normalize(a2(t2), 0, true);
+  }
+  set orientation(t2) {
+    const o7 = j2(t2, this.tilt);
+    this._set("normal", o7), this._set("orientation", t2);
+  }
+  get tilt() {
+    if (!Array.isArray(this.normal) || 3 !== this.normal.length) return 0;
+    const [t2, o7] = h(this.normal);
+    return a4.normalize(a2(o7), 0, true);
+  }
+  set tilt(t2) {
+    const o7 = j2(this.orientation, t2);
+    this._set("normal", o7), this._set("tilt", t2);
+  }
+};
+__decorate([a3({ type: Boolean, json: { default: true, write: true } })], p11.prototype, "enabled", void 0), __decorate([a3({ type: String, json: { write: true } })], p11.prototype, "label", void 0), __decorate([a3({ type: Number, json: { read: false }, clonable: false, range: { min: 0, max: 360 } }), m((t2) => a4.normalize(a2(t2), 0, true))], p11.prototype, "orientation", null), __decorate([a3({ type: Number, json: { read: false }, clonable: false, range: { min: 0, max: 360 } }), m((t2) => a4.normalize(a2(t2), 0, true))], p11.prototype, "tilt", null), __decorate([a3({ type: [Number], json: { write: { isRequired: true } } })], p11.prototype, "normal", void 0), __decorate([a3({ type: [Number], json: { write: { isRequired: true } } })], p11.prototype, "point", void 0), p11 = __decorate([c("esri.layers.voxel.VoxelDynamicSection")], p11);
+
+// node_modules/@arcgis/core/layers/voxel/VoxelVolumeStyle.js
+var p12;
+var d4 = p12 = class extends n2 {
+  constructor(e4) {
+    super(e4), this.volumeId = 0, this.verticalExaggeration = 1, this.exaggerationMode = "scale-height", this.verticalOffset = 0, this.slices = new (q.ofType(p3))(), this.dynamicSections = new (q.ofType(p11))();
+  }
+  set slices(e4) {
+    this._set("slices", n3(e4, this._get("slices"), q.ofType(p3)));
+  }
+  set dynamicSections(e4) {
+    this._set("dynamicSections", n3(e4, this._get("dynamicSections"), q.ofType(p11)));
+  }
+  clone() {
+    return new p12({ volumeId: this.volumeId, verticalExaggeration: this.verticalExaggeration, exaggerationMode: this.exaggerationMode, verticalOffset: this.verticalOffset, slices: a(this.slices), dynamicSections: a(this.dynamicSections) });
+  }
+};
+__decorate([a3({ type: D, json: { write: { enabled: true, isRequired: true } } })], d4.prototype, "volumeId", void 0), __decorate([a3({ type: Number, json: { default: 1, write: true } })], d4.prototype, "verticalExaggeration", void 0), __decorate([a3({ type: ["scale-position", "scale-height"], json: { default: "scale-height", write: true } })], d4.prototype, "exaggerationMode", void 0), __decorate([a3({ type: Number, json: { default: 0, write: true } })], d4.prototype, "verticalOffset", void 0), __decorate([a3({ type: q.ofType(p3), json: { write: { enabled: true, overridePolicy() {
+  return { enabled: !!this.slices && this.slices.length > 0 };
+} } } })], d4.prototype, "slices", null), __decorate([a3({ type: q.ofType(p11), json: { write: { enabled: true, overridePolicy() {
+  return { enabled: !!this.dynamicSections && this.dynamicSections.length > 0 };
+} } } })], d4.prototype, "dynamicSections", null), d4 = p12 = __decorate([c("esri.layers.voxel.VoxelVolumeStyle")], d4);
+
+// node_modules/@arcgis/core/layers/VoxelLayer.js
+var _6 = class extends _5(l3(g(_4(l2(e(s3(s4(b)))))))) {
+  constructor(e4) {
+    super(e4), this.serviceRoot = "", this.operationalLayerType = "Voxel", this.legendEnabled = true, this.title = null, this.sections = null, this.currentVariableId = 0, this.volumeStyles = null, this.renderMode = "volume", this.variableStyles = null, this.enableSlices = true, this.enableSections = true, this.enableDynamicSections = true, this.enableIsosurfaces = true, this.graphicOrigin = new o5(this), this.shading = new s6(), this.opacity = 1, this.variables = new q(), this.volumes = new q(), this.index = null, this.minScale = 0, this.maxScale = 0, this.type = "voxel", this.version = { major: Number.NaN, minor: Number.NaN, versionString: "" }, this.fullExtent = null, this.popupEnabled = false, this.popupTemplate = null, this.test = null, this.timeExtent = null, this.timeOffset = null, this.useViewTime = true, this.volumeStyles = new (q.ofType(d4))(), this.variableStyles = new (q.ofType(c5))(), this.sections = new (q.ofType(u5))();
+  }
+  normalizeCtorArgs(e4) {
+    return e4?.constantUpscaling && (this.test = { constantUpscaling: true }, delete e4.constantUpscaling), e4;
+  }
+  set url(e4) {
+    this._set("url", C(e4, n.getLogger(this)));
+  }
+  load(e4) {
+    const t2 = null != e4 ? e4.signal : null, i6 = this.loadFromPortal({ supportedTypes: ["Scene Service"] }, e4).catch(f).then(() => this._fetchService(t2)).then(() => this.serviceRoot = this.url);
+    return this.addResolvingPromise(i6), Promise.resolve(this);
+  }
+  read(e4, t2) {
+    super.read(e4, t2), "service" === t2?.origin && this.version.major <= 3 && this.version.minor <= 0 && !this.getAtOrigin("popupTemplate", "service") && this.setAtOrigin("popupTemplate", this.createPopupTemplate(), "service");
+    for (const i6 of this.volumes) i6.spatialReference = this.spatialReference;
+  }
+  readVersion(e4, t2) {
+    return super.parseVersionString(e4);
+  }
+  validateLayer(e4) {
+    if (e4.layerType && e4.layerType !== this.operationalLayerType) throw new r("voxel-layer:layer-type-not-supported", "VoxelLayer does not support this layer type", { layerType: e4.layerType });
+    if (isNaN(this.version.major) || isNaN(this.version.minor) || this.version.major < 3) throw new r("layer:service-version-not-supported", "Service version is not supported.", { serviceVersion: this.version.versionString, supportedVersions: "3.x" });
+    if (this.version.major > 3) throw new r("layer:service-version-too-new", "Service version is too new.", { serviceVersion: this.version.versionString, supportedVersions: "3.x" });
+  }
+  readFullExtent(e4, t2, i6) {
+    if (null != e4 && "object" == typeof e4) {
+      const o7 = z.fromJSON(e4, i6);
+      if (0 === o7.zmin && 0 === o7.zmax && Array.isArray(t2.volumes)) {
+        const e5 = f4.fromJSON(t2.volumes[0]);
+        if (e5.isValid && "xyt" !== e5.volumeType) {
+          const t3 = e5.dimensions[2];
+          if (t3.isRegular) {
+            let e6 = t3.regularSpacing.offset, i7 = t3.regularSpacing.offset + t3.regularSpacing.scale * (t3.size - 1);
+            if (e6 > i7) {
+              const t4 = e6;
+              e6 = i7, i7 = t4;
+            }
+            o7.zmin = e6, o7.zmax = i7;
+          }
+        }
+      }
+      return o7;
+    }
+    return null;
+  }
+  get fields() {
+    const e4 = [new m2({ name: "Voxel.Position", alias: "Voxel Position", domain: null, editable: false, length: 128, type: "string" }), new m2({ name: "Voxel.CurrentVariable", alias: "Current Variable", domain: null, editable: false, length: 128, type: "string" })];
+    for (const i6 of this.variables) {
+      const t3 = new m2({ name: i6.name, alias: i6.description, domain: null, editable: false, length: 128, type: "discrete" === i6.renderingFormat.continuity ? "string" : "double" });
+      e4.push(t3);
+    }
+    const t2 = this.getVolume(null);
+    if (null != t2) {
+      if ("xyzt" === t2.volumeType || "xyt" === t2.volumeType) {
+        const t3 = new m2({ name: "Voxel.LocalTime", alias: "Local Time", domain: null, editable: false, length: 256, type: "date" });
+        e4.push(t3);
+        const i6 = new m2({ name: "Voxel.SourceTime", alias: "Source Time", domain: null, editable: false, length: 256, type: "string" });
+        e4.push(i6);
+      }
+      if ("xyt" !== t2.volumeType) {
+        const t3 = new m2({ name: "Voxel.Depth", alias: "Depth", domain: null, editable: false, length: 128, type: "double" });
+        e4.push(t3);
+      }
+    }
+    return e4;
+  }
+  get fieldsIndex() {
+    return this.loaded ? new _2(this.fields) : null;
+  }
+  getField(e4) {
+    return this.fieldsIndex?.get(e4);
+  }
+  get defaultPopupTemplate() {
+    return this.createPopupTemplate();
+  }
+  createPopupTemplate(e4) {
+    const t2 = this.fields;
+    return d2({ fields: t2, title: "{Voxel.Position}" }, e4);
+  }
+  getConfiguration() {
+    const e4 = { layerType: this.operationalLayerType, version: this.version.versionString, name: this.title, spatialReference: this.spatialReference, fullExtent: this.fullExtent, volumes: this.volumes.toJSON(), variables: this.variables.toJSON(), index: this.index?.toJSON(), sections: this.getSections(), style: { volumeStyles: this.getVolumeStyles(), currentVariableId: this.currentVariableId, renderMode: this.renderMode, variableStyles: this.getVariableStyles(), enableSections: this.enableSections, enableDynamicSections: this.enableDynamicSections, enableIsosurfaces: this.enableIsosurfaces, enableSlices: this.enableSlices, shading: this.shading } };
+    return e4.index && this.index?.isValid() ? JSON.stringify(e4) : "";
+  }
+  getVariableStyle(e4) {
+    let t2 = -1;
+    t2 = null != e4 ? e4 : this.currentVariableId;
+    if (!this.variableStyles || -1 === t2) return null;
+    const i6 = this.variableStyles.findIndex((e5) => e5.variableId === t2);
+    return i6 < 0 ? null : this.variableStyles.at(i6);
+  }
+  getVariable(e4) {
+    let t2 = -1;
+    if (t2 = null != e4 ? e4 : this.currentVariableId, !this.variables || -1 === t2) return null;
+    const i6 = this.variables.findIndex((e5) => e5.id === t2);
+    return i6 < 0 ? null : this.variables.at(i6);
+  }
+  getVolume(e4) {
+    const t2 = this.getVariable(e4);
+    return null != t2 ? this.volumes.find(({ id: e5 }) => e5 === t2.volumeId) : null;
+  }
+  get timeInfo() {
+    const e4 = this.getVolume(null);
+    if ("xyzt" !== e4?.volumeType) return null;
+    const t2 = e4.timeStops;
+    if (!t2?.length) return null;
+    const i6 = new m3({ start: t2[0], end: t2.at(-1) });
+    return new u3({ fullTimeExtent: i6, stops: t2 });
+  }
+  getVolumeStyle(e4) {
+    const t2 = this.getVariable(e4);
+    return null != t2 ? this.volumeStyles.find(({ volumeId: e5 }) => e5 === t2.volumeId) : null;
+  }
+  getColorForContinuousDataValue(e4, t2, i6) {
+    const o7 = this.getVariable(e4);
+    if (null == o7 || "continuous" !== o7.renderingFormat?.continuity) return null;
+    if (!this.variableStyles) return null;
+    const r5 = this.variableStyles.findIndex((t3) => t3.variableId === e4);
+    if (r5 < 0) return null;
+    const n6 = this.variableStyles.at(r5);
+    return n6?.transferFunction ? n6.transferFunction.getColorForContinuousDataValue(t2, i6) : null;
+  }
+  getSections() {
+    const e4 = [];
+    for (const t2 of this.sections) e4.push(new u5({ enabled: t2.enabled, href: t2.href, id: t2.id, label: t2.label, normal: t2.normal, point: t2.point, sizeInPixel: t2.sizeInPixel, slices: t2.slices, timeId: t2.timeId, variableId: t2.variableId }));
+    return e4;
+  }
+  getVariableStyles() {
+    const e4 = [];
+    for (const t2 of this.variableStyles) {
+      const i6 = this._getVariable(t2);
+      if (null != i6) {
+        const o7 = t2.clone();
+        o7.isosurfaces.length > 4 && (o7.isosurfaces = o7.isosurfaces.slice(0, 3), n.getLogger(this).error("A maximum of 4 isosurfaces are supported for Voxel Layers."));
+        for (const e5 of o7.isosurfaces) if (!e5.colorLocked) {
+          const t3 = this.getColorForContinuousDataValue(o7.variableId, e5.value, false);
+          null == t3 || t3.equals(e5.color) || (e5.color = t3);
+        }
+        if ("continuous" === i6.renderingFormat.continuity) (null === o7.transferFunction || o7.transferFunction.colorStops.length < 2) && n.getLogger(this).error(`VoxelVariableStyle for variable ${i6.id} is invalid. At least 2 color stops are required in the transferFunction for continuous Voxel Layer variables.`), null !== o7.transferFunction && (Array.isArray(o7.transferFunction.stretchRange) && 2 === o7.transferFunction.stretchRange.length || (n.getLogger(this).error(`VoxelVariableStyle for variable ${i6.id} is invalid. The stretchRange of the transferFunction for continuous Voxel Layer variables must be of the form [minimumDataValue, maximumDataValue].`), o7.transferFunction.stretchRange = [0, 1], o7.transferFunction.colorStops.removeAll()));
+        else if ("discrete" === i6.renderingFormat.continuity) if (0 === t2.uniqueValues.length) n.getLogger(this).error(`VoxelVariableStyle for variable ${i6.id} is invalid. Unique values are required for discrete Voxel Layer variables.`);
+        else for (const e5 of t2.uniqueValues) null !== e5.label && void 0 !== e5.label || null === e5.value || void 0 === e5.value || (e5.label = e5.value.toString());
+        e4.push(o7);
+      } else n.getLogger(this).error(`VoxelVariable ID=${t2.variableId} doesn't exist, VoxelVariableStyle for this VoxelVariable will be ignored.`);
+    }
+    return e4;
+  }
+  getVolumeStyles() {
+    const e4 = [];
+    for (const t2 of this.volumeStyles) {
+      const i6 = this._getVolumeFromVolumeId(t2.volumeId);
+      if (null != i6) {
+        const o7 = t2.clone();
+        for (const e5 of o7.slices) this._isPlaneValid(e5, [0, 1, i6.zDimension], i6.dimensions) || (e5.enabled = false, e5.label = "invalid");
+        for (const e5 of o7.dynamicSections) this._isPlaneValid(e5, [0, 1, i6.zDimension], i6.dimensions) || (e5.enabled = false, e5.label = "invalid");
+        e4.push(o7);
+      } else n.getLogger(this).error(`VoxelVolume ID=${t2.volumeId} doesn't exist, VoxelVolumeStyle for this VoxelVolume will be ignored.`);
+    }
+    return e4;
+  }
+  _getVariable(e4) {
+    const t2 = e4.variableId;
+    for (const i6 of this.variables) if (i6.id === t2) return i6;
+    return null;
+  }
+  _getVolumeFromVolumeId(e4) {
+    for (const t2 of this.volumes) if (t2.id === e4) return t2;
+    return null;
+  }
+  _isPlaneValid(e4, t2, i6) {
+    if (!e4.point) return false;
+    if (!Array.isArray(e4.point) || 3 !== e4.point.length) return false;
+    if (!e4.normal) return false;
+    if (!Array.isArray(e4.normal) || 3 !== e4.normal.length) return false;
+    const o7 = r3(e4.normal[0], e4.normal[1], e4.normal[2]);
+    _3(o7, o7);
+    const r5 = 1e-6;
+    return !(Math.abs(o7[0]) + Math.abs(o7[1]) + Math.abs(o7[2]) < r5) && (e4.normal[0] = o7[0], e4.normal[1] = o7[1], e4.normal[2] = o7[2], true);
+  }
+};
+__decorate([a3({ type: ["Voxel"] })], _6.prototype, "operationalLayerType", void 0), __decorate([a3(d)], _6.prototype, "legendEnabled", void 0), __decorate([a3({ json: { write: true } })], _6.prototype, "title", void 0), __decorate([a3(y)], _6.prototype, "url", null), __decorate([a3({ type: q.ofType(u5), json: { origins: { "web-scene": { name: "layerDefinition.sections", write: true } } } })], _6.prototype, "sections", void 0), __decorate([a3({ type: D, json: { origins: { "web-scene": { name: "layerDefinition.style.currentVariableId", write: { enabled: true, isRequired: true, ignoreOrigin: true } }, service: { name: "style.currentVariableId" } } } })], _6.prototype, "currentVariableId", void 0), __decorate([a3({ type: q.ofType(d4), json: { origins: { "web-scene": { name: "layerDefinition.style.volumeStyles", write: true }, service: { name: "style.volumeStyles" } } } })], _6.prototype, "volumeStyles", void 0), __decorate([a3({ type: ["volume", "surfaces"], json: { origins: { "web-scene": { name: "layerDefinition.style.renderMode", write: true }, service: { name: "style.renderMode" } } } })], _6.prototype, "renderMode", void 0), __decorate([a3({ type: q.ofType(c5), json: { origins: { "web-scene": { name: "layerDefinition.style.variableStyles", write: true }, service: { name: "style.variableStyles" } } } })], _6.prototype, "variableStyles", void 0), __decorate([a3({ type: Boolean, json: { origins: { "web-scene": { name: "layerDefinition.style.enableSlices", write: true }, service: { name: "style.enableSlices" } } } })], _6.prototype, "enableSlices", void 0), __decorate([a3({ type: Boolean, json: { origins: { "web-scene": { name: "layerDefinition.style.enableSections", write: true }, service: { name: "style.enableSections" } } } })], _6.prototype, "enableSections", void 0), __decorate([a3({ type: Boolean, json: { origins: { "web-scene": { name: "layerDefinition.style.enableDynamicSections", write: true }, service: { name: "style.enableDynamicSections" } } } })], _6.prototype, "enableDynamicSections", void 0), __decorate([a3({ type: Boolean, json: { origins: { "web-scene": { name: "layerDefinition.style.enableIsosurfaces", write: true }, service: { name: "style.enableIsosurfaces" } } } })], _6.prototype, "enableIsosurfaces", void 0), __decorate([a3({ readOnly: true })], _6.prototype, "graphicOrigin", void 0), __decorate([a3({ type: s6, json: { origins: { "web-scene": { name: "layerDefinition.style.shading", write: true }, service: { name: "style.shading" } } } })], _6.prototype, "shading", void 0), __decorate([a3({ type: ["show", "hide"] })], _6.prototype, "listMode", void 0), __decorate([a3({ type: Number, range: { min: 0, max: 1 }, nonNullable: true, json: { read: false, write: false, origins: { "web-scene": { read: false, write: false }, "portal-item": { read: false, write: false } } } })], _6.prototype, "opacity", void 0), __decorate([a3({ type: q.ofType(p4) })], _6.prototype, "variables", void 0), __decorate([a3({ type: q.ofType(f4) })], _6.prototype, "volumes", void 0), __decorate([a3({ type: d3 })], _6.prototype, "index", void 0), __decorate([a3({ type: Number, json: { name: "layerDefinition.minScale", write: true, origins: { service: { read: false, write: false } } } })], _6.prototype, "minScale", void 0), __decorate([a3({ type: Number, json: { name: "layerDefinition.maxScale", write: true, origins: { service: { read: false, write: false } } } })], _6.prototype, "maxScale", void 0), __decorate([a3({ json: { read: false }, readOnly: true })], _6.prototype, "type", void 0), __decorate([a3({ readOnly: true, json: { name: "serviceVersion" } })], _6.prototype, "version", void 0), __decorate([o("service", "version")], _6.prototype, "readVersion", null), __decorate([a3({ type: z })], _6.prototype, "fullExtent", void 0), __decorate([o("service", "fullExtent", ["fullExtent"])], _6.prototype, "readFullExtent", null), __decorate([a3({ readOnly: true, clonable: false, json: { read: false } })], _6.prototype, "fields", null), __decorate([a3({ readOnly: true })], _6.prototype, "fieldsIndex", null), __decorate([a3({ type: Boolean, json: { name: "disablePopup", read: { reader: (e4, t2) => !t2.disablePopup }, write: { enabled: true, ignoreOrigin: true, writer(e4, t2, i6) {
+  t2[i6] = !e4;
+} }, origins: { "portal-item": { default: true }, "web-scene": { default: true } } } })], _6.prototype, "popupEnabled", void 0), __decorate([a3({ type: q2, json: { name: "popupInfo", write: true } })], _6.prototype, "popupTemplate", void 0), __decorate([a3({ readOnly: true, json: { read: false } })], _6.prototype, "defaultPopupTemplate", null), __decorate([a3({ type: u3, readOnly: true, json: { read: false } })], _6.prototype, "timeInfo", null), __decorate([a3({ type: m3, json: { read: false } })], _6.prototype, "timeExtent", void 0), __decorate([a3({ type: p, json: { read: false } })], _6.prototype, "timeOffset", void 0), __decorate([a3({ type: Boolean, nonNullable: true, json: { origins: { "web-scene": { name: "timeAnimation", write: true }, service: { read: false } } } })], _6.prototype, "useViewTime", void 0), _6 = __decorate([c("esri.layers.VoxelLayer")], _6);
+var q3 = _6;
+export {
+  q3 as default
+};
+//# sourceMappingURL=VoxelLayer-RWVGWUGO.js.map

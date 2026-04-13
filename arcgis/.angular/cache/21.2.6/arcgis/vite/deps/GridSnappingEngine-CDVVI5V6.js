@@ -1,0 +1,253 @@
+import {
+  n as n2
+} from "./chunk-YXKJJI3I.js";
+import {
+  i
+} from "./chunk-QBOHQ723.js";
+import "./chunk-EWB3NJAR.js";
+import {
+  g
+} from "./chunk-WLT354DA.js";
+import "./chunk-Q2X7B3G7.js";
+import "./chunk-G6Z7GZKS.js";
+import "./chunk-KSCPKQCW.js";
+import "./chunk-HIVNEJHE.js";
+import {
+  f,
+  l as l2
+} from "./chunk-FQA45FSP.js";
+import {
+  l,
+  t,
+  u as u2
+} from "./chunk-EZMSCFPE.js";
+import "./chunk-6ZXIHJYY.js";
+import "./chunk-2M5GBFWO.js";
+import "./chunk-X6WTKQKW.js";
+import "./chunk-7F556GNA.js";
+import "./chunk-M5IWHRCT.js";
+import "./chunk-2TISYHLG.js";
+import "./chunk-6NPKRFWB.js";
+import "./chunk-FZCTYYND.js";
+import "./chunk-KEB6LZZ5.js";
+import "./chunk-C6P3JIAK.js";
+import "./chunk-A4P3ERHS.js";
+import "./chunk-MXAZZ5UX.js";
+import "./chunk-F4H4QHCY.js";
+import "./chunk-A3TI5LYY.js";
+import "./chunk-J7JBGJAS.js";
+import "./chunk-GRBMK6HO.js";
+import "./chunk-RS3JOHKF.js";
+import "./chunk-ULRT2MRD.js";
+import {
+  Y as Y2
+} from "./chunk-YM62CGUL.js";
+import "./chunk-RCUTEESF.js";
+import "./chunk-AHPCQT3Y.js";
+import "./chunk-5XBFAIUN.js";
+import "./chunk-L3NTTNVH.js";
+import "./chunk-QEI2MEKM.js";
+import "./chunk-PYMCJBOT.js";
+import {
+  H,
+  Y
+} from "./chunk-65PBNPQY.js";
+import "./chunk-7PBMX777.js";
+import "./chunk-DWBAGWXH.js";
+import "./chunk-XWIC4KUB.js";
+import "./chunk-7DXPO6B2.js";
+import "./chunk-JJJRQB6X.js";
+import {
+  u
+} from "./chunk-22H7QJEK.js";
+import "./chunk-SQMAPKVO.js";
+import "./chunk-QEE2QYIE.js";
+import "./chunk-D4W5U2I5.js";
+import "./chunk-IXOUFXRS.js";
+import "./chunk-XA4KTSOB.js";
+import "./chunk-AEEIJGHJ.js";
+import "./chunk-MLBRAI7B.js";
+import "./chunk-NSJQHJ2B.js";
+import "./chunk-BQWO5RXV.js";
+import "./chunk-XSQPGBLC.js";
+import "./chunk-TPJLJ32L.js";
+import "./chunk-4QSSUPBC.js";
+import "./chunk-FHDG7GP6.js";
+import {
+  L
+} from "./chunk-CEHUBL44.js";
+import "./chunk-55DFFBOE.js";
+import "./chunk-LHEB3G3E.js";
+import "./chunk-JC7PAMG4.js";
+import "./chunk-TUNGPGHU.js";
+import "./chunk-RTWZV6QR.js";
+import "./chunk-4YKWF6M6.js";
+import "./chunk-BMYA7NZP.js";
+import "./chunk-V7SQTPST.js";
+import "./chunk-NNANCYKT.js";
+import "./chunk-ZEMVKL33.js";
+import "./chunk-ZHB32LSG.js";
+import "./chunk-4F4IE6P5.js";
+import "./chunk-EF6HOWDG.js";
+import "./chunk-SVWIACQP.js";
+import "./chunk-EFJUSEVJ.js";
+import "./chunk-7RKO4CUB.js";
+import "./chunk-QK7JX7UE.js";
+import "./chunk-47Z5HJ52.js";
+import "./chunk-IPJXMYTM.js";
+import "./chunk-QWNB5I7T.js";
+import {
+  s
+} from "./chunk-ZILR7JK7.js";
+import "./chunk-46YDVYTJ.js";
+import "./chunk-OLWKRV2W.js";
+import "./chunk-LHNGH3Y4.js";
+import "./chunk-OTB5O3ZS.js";
+import "./chunk-ERIUCT52.js";
+import "./chunk-2ZL6ZCDF.js";
+import "./chunk-4HQQF57Z.js";
+import {
+  N
+} from "./chunk-66OU277M.js";
+import "./chunk-EWPZDMTE.js";
+import "./chunk-TIZ3VJFS.js";
+import "./chunk-6CUKMFJV.js";
+import "./chunk-LHBO6K5Y.js";
+import "./chunk-2OF3JE3F.js";
+import "./chunk-5EUDKAG7.js";
+import {
+  b
+} from "./chunk-FJ25BHAS.js";
+import {
+  a3 as a,
+  c
+} from "./chunk-LV7AMIAU.js";
+import "./chunk-O4A47ZEM.js";
+import "./chunk-O3PP4I47.js";
+import "./chunk-6BQZ6NJY.js";
+import "./chunk-55ZAYF5P.js";
+import "./chunk-FMPS52FS.js";
+import "./chunk-MSRN4ADD.js";
+import "./chunk-XUZBRFKA.js";
+import "./chunk-XNNRUT34.js";
+import "./chunk-AEGIA5BY.js";
+import "./chunk-E73BLMZG.js";
+import "./chunk-YR4EWTGD.js";
+import "./chunk-HJCCWVZL.js";
+import "./chunk-TVMQ3GIS.js";
+import "./chunk-POW25PFR.js";
+import {
+  n2 as n
+} from "./chunk-IDI4VM7T.js";
+import "./chunk-KWV5EQET.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+import "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/views/interactive/snapping/GridSnappingEngine.js
+var w = class extends b {
+  constructor(t2) {
+    super(t2), this.options = null;
+  }
+  destroy() {
+    this._set("options", null);
+  }
+  get grid() {
+    return this.view.grid;
+  }
+  get effectiveViewRotation() {
+    return this.grid?.rotateWithMap ? 0 : s(this.view.rotation ?? 0);
+  }
+  get gridRotation() {
+    return s(this.grid?.rotation ?? 0);
+  }
+  get gridCenter() {
+    const { spatialReference: t2, grid: e } = this;
+    if (!e || !t2 || !Y(e.center.spatialReference, t2)) return null;
+    try {
+      const r = H(e.center, t2), i2 = t2.isWrappable && null != this.view?.center ? L(r.x, this.view.center.x, t2) : r.x;
+      return l2(i2, r.y, r.z);
+    } catch (i2) {
+      return n.getLogger(this).errorOnce("Grid Snapping - Failed to project grid center.", i2), null;
+    }
+  }
+  get offsetScaleFactor() {
+    const { pixelsPerStride: t2, grid: e } = this;
+    if (!e || !t2) return 1;
+    const { majorLineInterval: r, dynamicScaling: i2 } = e;
+    return r < 1 ? null : l(r, t2, i2);
+  }
+  get spatialReference() {
+    return this.view.spatialReference;
+  }
+  get gridMetersPerStride() {
+    const { grid: t2 } = this;
+    return t2 ? N(t2.spacing, t2.units, "meters") : null;
+  }
+  get viewMetersPerPixel() {
+    const { viewMetersPerSRUnit: t2 } = this;
+    return null == t2 ? null : t2 * u(this.view.scale, this.view.spatialReference);
+  }
+  get viewMetersPerSRUnit() {
+    const { spatialReference: t2 } = this.view;
+    return this.gridCenter ? u2(this.gridCenter[0], this.gridCenter[1], t2) : null;
+  }
+  get pixelsPerStride() {
+    const { gridMetersPerStride: t2, viewMetersPerPixel: e } = this;
+    return e && t2 ? t2 / e : null;
+  }
+  get updating() {
+    return null != this.grid && null != this.spatialReference && null == this.viewMetersPerSRUnit;
+  }
+  async fetchCandidates(t2, e, r) {
+    const { options: i2, view: n3 } = this;
+    if (!i2?.effectiveGridEnabled || !n3.grid || r.feature?.attributes && g in r.feature.attributes) return [];
+    const o = r.coordinateHelper.arrayToPoint(t2), s2 = i2.distance * ("touch" === r.pointer ? i2.touchSensitivityMultiplier : 1);
+    return this.fetchCandidatesSync(o, s2);
+  }
+  fetchCandidatesSync(t2, e) {
+    const r = [], { grid: i2, effectiveViewRotation: n3, gridRotation: o, gridCenter: s2, viewMetersPerPixel: a2, viewMetersPerSRUnit: c2, offsetScaleFactor: u3, spatialReference: g2, gridMetersPerStride: f2, pixelsPerStride: m } = this;
+    if (!(i2 && a2 && c2 && s2 && g2 && u3 && f2 && m)) return r;
+    if (!i2.dynamicScaling && m < t) return r;
+    if (!Y(t2.spatialReference, g2)) return r;
+    const S = H(t2, g2), w2 = l2(S.x, S.y, S.z), x = P(w2, -o, s2, -n3), C = f2 / c2 * u3, U = M(x, C, s2), { shouldSnapX: b2, shouldSnapY: z } = R(U, x, e, a2, c2);
+    if (!b2 && !z) return [];
+    const E = l2((b2 ? U : x)[0], (z ? U : x)[1]), F = P(E, o, s2, n3), L2 = P(U, o, s2, n3);
+    if (z) {
+      const t3 = j(U, x, C, "y"), e2 = P(t3, o, s2, n3);
+      r.push(new i({ lineStart: L2, lineEnd: e2, targetPoint: F, isDraped: false }));
+    }
+    if (b2) {
+      const t3 = j(U, x, C, "x"), e2 = P(t3, o, s2, n3);
+      r.push(new i({ lineStart: L2, lineEnd: e2, targetPoint: F, isDraped: false }));
+    }
+    return b2 && z && r.push(new n2(F, r[0], r[1], false)), r;
+  }
+};
+__decorate([a({ constructOnly: true })], w.prototype, "view", void 0), __decorate([a()], w.prototype, "options", void 0), __decorate([a()], w.prototype, "grid", null), __decorate([a()], w.prototype, "effectiveViewRotation", null), __decorate([a()], w.prototype, "gridRotation", null), __decorate([a()], w.prototype, "gridCenter", null), __decorate([a()], w.prototype, "offsetScaleFactor", null), __decorate([a()], w.prototype, "spatialReference", null), __decorate([a()], w.prototype, "gridMetersPerStride", null), __decorate([a()], w.prototype, "viewMetersPerPixel", null), __decorate([a()], w.prototype, "viewMetersPerSRUnit", null), __decorate([a()], w.prototype, "pixelsPerStride", null), __decorate([a()], w.prototype, "updating", null), w = __decorate([c("esri.views.interactive.snapping.GridSnappingEngine")], w);
+var P = (t2, e, r, i2) => {
+  const n3 = f(t2[0], t2[1], t2[2]);
+  return Y2(n3, Y2(n3, n3, r, e), r, i2);
+};
+var M = (t2, e, r) => {
+  const i2 = (t2[0] - r[0]) / e, n3 = (t2[1] - r[1]) / e, o = Math.trunc(i2), s2 = Math.trunc(n3), a2 = Math.round(i2 % 1), l3 = Math.round(n3 % 1), p = r[0] + (o + a2) * e, c2 = r[1] + (s2 + l3) * e;
+  return l2(p, c2);
+};
+var R = (t2, e, r, i2, n3) => {
+  if (i2 <= 0) return { shouldSnapX: false, shouldSnapY: false };
+  const o = (t2[0] - e[0]) / i2, s2 = (t2[1] - e[1]) / i2;
+  return { shouldSnapX: Math.abs(o * n3) < r, shouldSnapY: Math.abs(s2 * n3) < r };
+};
+var j = (t2, e, r, i2) => {
+  if ("y" === i2) {
+    const i3 = e[0] > t2[0] ? 1 : -1;
+    return l2(t2[0] + r * i3, t2[1]);
+  }
+  const n3 = e[1] > t2[1] ? 1 : -1;
+  return l2(t2[0], t2[1] + r * n3);
+};
+export {
+  w as GridSnappingEngine
+};
+//# sourceMappingURL=GridSnappingEngine-CDVVI5V6.js.map

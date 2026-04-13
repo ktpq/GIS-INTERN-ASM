@@ -1,0 +1,206 @@
+import {
+  m as m2,
+  p
+} from "./chunk-34OXIVT2.js";
+import {
+  Y
+} from "./chunk-O4VVH3I4.js";
+import "./chunk-KUCCUWSA.js";
+import "./chunk-MXVRMHL3.js";
+import "./chunk-EX3R2E7I.js";
+import "./chunk-Z2AEQM3R.js";
+import {
+  o,
+  t
+} from "./chunk-RBLTO2TJ.js";
+import "./chunk-P5L2BZNQ.js";
+import "./chunk-EDHLQYIY.js";
+import "./chunk-3QLZQBWH.js";
+import "./chunk-Q5I4AZ3O.js";
+import {
+  m
+} from "./chunk-J4CSNEON.js";
+import {
+  g
+} from "./chunk-D477GXTD.js";
+import "./chunk-YKMBF3XB.js";
+import "./chunk-O4MTJEQQ.js";
+import "./chunk-LW5ZVONF.js";
+import "./chunk-G4CWCLTJ.js";
+import "./chunk-52KYWONX.js";
+import "./chunk-C6P3JIAK.js";
+import "./chunk-KEB6LZZ5.js";
+import "./chunk-ALTGJATZ.js";
+import "./chunk-LOSFMTMN.js";
+import "./chunk-UH6VD2JG.js";
+import "./chunk-Q6DYSTEJ.js";
+import "./chunk-LDPJG6VN.js";
+import "./chunk-M3LOK5P4.js";
+import "./chunk-MDYX2LWI.js";
+import "./chunk-DHN4IH5D.js";
+import "./chunk-3EN5CV4O.js";
+import "./chunk-B3N4XLHQ.js";
+import "./chunk-7MRJRWGA.js";
+import "./chunk-3XHSBUJ5.js";
+import "./chunk-LXCOUKOF.js";
+import "./chunk-YM62CGUL.js";
+import "./chunk-ULRT2MRD.js";
+import "./chunk-7WSSXDPD.js";
+import "./chunk-IXOUFXRS.js";
+import "./chunk-XA4KTSOB.js";
+import "./chunk-DOW7IE32.js";
+import "./chunk-XW3QCD2I.js";
+import "./chunk-BGSLLK4A.js";
+import "./chunk-XASC6DGR.js";
+import "./chunk-RTWZV6QR.js";
+import "./chunk-D4W5U2I5.js";
+import {
+  j
+} from "./chunk-TV7JW3IK.js";
+import "./chunk-SPTOZROU.js";
+import "./chunk-PMZYW4N2.js";
+import "./chunk-ZN24EUTK.js";
+import {
+  d,
+  n
+} from "./chunk-R5ZARNWA.js";
+import "./chunk-Q25A4AK6.js";
+import "./chunk-GLXJP2Y5.js";
+import "./chunk-6X3RLJIF.js";
+import "./chunk-GOPT3PO2.js";
+import "./chunk-ZPTC4YZQ.js";
+import "./chunk-LKWKFYCL.js";
+import "./chunk-ULJA4TCB.js";
+import "./chunk-GLXZFAAW.js";
+import "./chunk-DH7E4OJC.js";
+import "./chunk-XSQPGBLC.js";
+import "./chunk-IQ4J5AR2.js";
+import "./chunk-X7ZXABIR.js";
+import "./chunk-XLY2Y27N.js";
+import "./chunk-MLBRAI7B.js";
+import "./chunk-DUGX5C7M.js";
+import "./chunk-WUSMTFBU.js";
+import "./chunk-RJMYNJ36.js";
+import "./chunk-TPJLJ32L.js";
+import "./chunk-IDWN24M7.js";
+import "./chunk-CD6IOUFB.js";
+import "./chunk-B4Y3SDRP.js";
+import "./chunk-OOSRFM7N.js";
+import "./chunk-DOVHXPQB.js";
+import "./chunk-75I3MNCT.js";
+import "./chunk-4L5TCIUQ.js";
+import "./chunk-DHIQ5CF2.js";
+import "./chunk-EKUGKFFS.js";
+import "./chunk-PBNUMATE.js";
+import "./chunk-4F4IE6P5.js";
+import "./chunk-EF6HOWDG.js";
+import "./chunk-EFJUSEVJ.js";
+import "./chunk-47Z5HJ52.js";
+import "./chunk-QK7JX7UE.js";
+import {
+  q
+} from "./chunk-4UWOVR5Y.js";
+import "./chunk-SLHRVNEB.js";
+import "./chunk-7RKO4CUB.js";
+import "./chunk-L3WEJB7W.js";
+import "./chunk-LHMCLOXR.js";
+import "./chunk-TUCZDNFG.js";
+import "./chunk-OLWKRV2W.js";
+import "./chunk-LHNGH3Y4.js";
+import "./chunk-2DT3G6U2.js";
+import "./chunk-K3RYWESQ.js";
+import "./chunk-J27BSZXM.js";
+import "./chunk-VSDCDWT5.js";
+import "./chunk-XKHV7U7B.js";
+import "./chunk-M2KBLK7K.js";
+import "./chunk-TT3WF5RA.js";
+import "./chunk-QWNB5I7T.js";
+import "./chunk-S3BACLSK.js";
+import {
+  M,
+  s
+} from "./chunk-ZILR7JK7.js";
+import "./chunk-X7TQ4MJH.js";
+import "./chunk-YDHIJ7J4.js";
+import "./chunk-DHNLUBWZ.js";
+import "./chunk-EWPZDMTE.js";
+import "./chunk-4X5LQ2UO.js";
+import "./chunk-YBEVNI5U.js";
+import "./chunk-FCTZWJBQ.js";
+import {
+  f2 as f
+} from "./chunk-5AVTDH3Y.js";
+import "./chunk-JADLUMUQ.js";
+import "./chunk-SG23UZYK.js";
+import "./chunk-GUGGSMY4.js";
+import "./chunk-W5GOZNVR.js";
+import "./chunk-IQN5O5FG.js";
+import "./chunk-GVV5RH4O.js";
+import "./chunk-HJCCWVZL.js";
+import "./chunk-E7T52Q27.js";
+import "./chunk-YR4EWTGD.js";
+import "./chunk-TVMQ3GIS.js";
+import "./chunk-O3PP4I47.js";
+import {
+  s as s2
+} from "./chunk-2DNVIDFH.js";
+import {
+  r3 as r
+} from "./chunk-6SPQI6I6.js";
+import "./chunk-KWV5EQET.js";
+import "./chunk-HRD6PGVX.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/widgets/PanoramicViewer/utils.js
+function y({ data: t2, center: r2 = o, size: e = t, horizonPitch: o2 = 0, horizonYaw: n2 = 0, horizonRoll: i = 0 }) {
+  const s3 = r2.clone();
+  s3.z = -e / 2;
+  const l = Y.createSphere(s3, { size: e, densificationFactor: 2, vertexSpace: "georeferenced", material: new m({ colorTexture: new g({ data: t2 }) }) });
+  if (l.components[0].trustSourceNormals = true, l.vertexAttributes.uv) {
+    const t3 = l.vertexAttributes.uv.length ?? 0;
+    for (let r3 = 0; r3 < t3; r3++) l.vertexAttributes.uv[2 * r3 + 0] = 1 - l.vertexAttributes.uv[2 * r3 + 0];
+  }
+  return l.rotate(o2, i, n2, { origin: l.extent.center }), l.centerAt(s3), l;
+}
+function j2(r2) {
+  return new j({ geometry: r2, symbol: new n({ symbolLayers: new q([new d()]) }) });
+}
+function d2(t2, r2) {
+  return 2 * M(Math.atan(Math.tan(s(t2 / 2)) * Math.sqrt((1 / r2) ** 2 + 1)));
+}
+async function g2(t2, r2) {
+  const e = await m2(), o2 = await e.open(__spreadValues({ url: t2, ioConfig: { skipExtensions: ["jgw", "aux.xml"], skipMapInfo: true } }, r2));
+  return s2(r2), x(o2, { url: t2 });
+}
+var x = (t2, r2) => {
+  if (!t2) throw new r("panoramic-viewer:missing-raster", "Raster data could not be loaded", r2);
+  return t2;
+};
+async function b(t2, r2, e) {
+  const o2 = await p();
+  return s2(e), new o2({ raster: t2, horizonPitch: r2.pitch, horizonYaw: r2.yaw, horizonRoll: r2.roll });
+}
+async function v(t2, r2) {
+  return t2?.length ? await Promise.all(t2.map((t3) => t3.loadMesh(r2))) : [];
+}
+async function M2(t2, e) {
+  try {
+    const o2 = await f(t2, __spreadProps(__spreadValues({}, e), { method: "head" }));
+    return s2(e), o2?.getHeader?.("Content-Type");
+  } catch {
+    return null;
+  }
+}
+export {
+  y as createImageSphere,
+  d2 as findDiagonalFOV,
+  M2 as getContentType,
+  v as loadMeshes,
+  b as loadPyramid,
+  g2 as loadRaster,
+  j2 as meshToGraphic
+};
+//# sourceMappingURL=utils-UIEOQDZC.js.map

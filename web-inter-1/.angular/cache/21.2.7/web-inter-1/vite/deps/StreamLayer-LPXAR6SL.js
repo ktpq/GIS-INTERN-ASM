@@ -1,0 +1,418 @@
+import {
+  _
+} from "./chunk-UTMQRFW7.js";
+import {
+  s as s4
+} from "./chunk-W4E45AON.js";
+import {
+  p2 as p3
+} from "./chunk-HIRLENHO.js";
+import "./chunk-3BGRVTJZ.js";
+import "./chunk-SQCKII37.js";
+import {
+  u as u2
+} from "./chunk-Q3ZK7ZC6.js";
+import {
+  l as l7
+} from "./chunk-IDDGVO7D.js";
+import {
+  c as c2
+} from "./chunk-MUOSV3VG.js";
+import "./chunk-EW4SFP5M.js";
+import "./chunk-GM6UGKID.js";
+import {
+  s as s5
+} from "./chunk-UMYTU67D.js";
+import "./chunk-HLZH52F6.js";
+import {
+  A,
+  l as l8
+} from "./chunk-TRRKQHAJ.js";
+import {
+  m as m2,
+  u
+} from "./chunk-UPJMK3QA.js";
+import {
+  re
+} from "./chunk-DQKD2DFV.js";
+import "./chunk-6R3QVCJR.js";
+import "./chunk-A6MHX7UV.js";
+import "./chunk-6JKRZH3D.js";
+import {
+  l as l6
+} from "./chunk-LJ2DQ346.js";
+import "./chunk-VLY7236X.js";
+import {
+  d as d2
+} from "./chunk-XLVOGNM7.js";
+import "./chunk-EPBFLEVA.js";
+import {
+  o as o2,
+  s as s2
+} from "./chunk-LHNPEGMS.js";
+import {
+  s as s3
+} from "./chunk-6LOCYJ7K.js";
+import "./chunk-V6T5F6PH.js";
+import "./chunk-CDJZVLDS.js";
+import "./chunk-6YM5JHUH.js";
+import {
+  t as t3
+} from "./chunk-4MLCFR6A.js";
+import {
+  l as l5
+} from "./chunk-BOS3CHZM.js";
+import {
+  _ as _2
+} from "./chunk-KB2EHMQZ.js";
+import "./chunk-VIFYHMCM.js";
+import "./chunk-FUKCFI3W.js";
+import "./chunk-AS6QCBBU.js";
+import "./chunk-TMP5FKDA.js";
+import "./chunk-MQRKJL3K.js";
+import "./chunk-HTK573KO.js";
+import "./chunk-HWIHCUPK.js";
+import "./chunk-AOLWUCJX.js";
+import "./chunk-GVQSMX6L.js";
+import "./chunk-MJIYOVW3.js";
+import "./chunk-BD6DW6FN.js";
+import "./chunk-L4Z2XYZ5.js";
+import "./chunk-7EZH3JAM.js";
+import "./chunk-IVSI6CXM.js";
+import "./chunk-P3OSPFTR.js";
+import "./chunk-EB3674W2.js";
+import "./chunk-XMV6PJP3.js";
+import {
+  R
+} from "./chunk-VCFT2RFZ.js";
+import "./chunk-4V776ICJ.js";
+import "./chunk-F6XZYXKM.js";
+import "./chunk-ZKGNDXUQ.js";
+import "./chunk-IILQWSIB.js";
+import "./chunk-LBXDB7YQ.js";
+import "./chunk-YYUTDQ2Q.js";
+import "./chunk-SVXUETLX.js";
+import "./chunk-TVLXQ42J.js";
+import "./chunk-OR24MDO6.js";
+import "./chunk-Y4WJAV66.js";
+import "./chunk-5TEEMD4W.js";
+import "./chunk-MESRIVTQ.js";
+import {
+  m
+} from "./chunk-YNPTGDAS.js";
+import "./chunk-WSFVXABO.js";
+import "./chunk-Q3C4JQ3I.js";
+import "./chunk-MCLMCBJF.js";
+import {
+  l as l2
+} from "./chunk-NNMKPFUV.js";
+import {
+  p
+} from "./chunk-SP5EDG5W.js";
+import {
+  l as l3
+} from "./chunk-LPNV4GQD.js";
+import "./chunk-MX77LL4S.js";
+import "./chunk-ZVRAKVBJ.js";
+import {
+  g
+} from "./chunk-O6NQ3G3U.js";
+import {
+  e
+} from "./chunk-T3TXTZDJ.js";
+import {
+  d2 as d,
+  j,
+  l as l4,
+  p as p2,
+  s,
+  v,
+  y
+} from "./chunk-J5YAKAE5.js";
+import "./chunk-IJHRPSGC.js";
+import {
+  b
+} from "./chunk-I5YTT2EB.js";
+import {
+  x
+} from "./chunk-22SI6UZM.js";
+import "./chunk-FLG5AFOF.js";
+import "./chunk-OKJ7MV5V.js";
+import "./chunk-23U7MZU6.js";
+import "./chunk-5O7ZGCWS.js";
+import "./chunk-NNUIV2NH.js";
+import "./chunk-IRS5H2YE.js";
+import "./chunk-JL3Z5SD5.js";
+import "./chunk-IANKUBS7.js";
+import "./chunk-Z3PP4SLW.js";
+import "./chunk-H4RHQ5YI.js";
+import "./chunk-BRTBYVJG.js";
+import "./chunk-HUY5VELL.js";
+import "./chunk-K3KADXMX.js";
+import {
+  n as n3
+} from "./chunk-N7QYCMB5.js";
+import {
+  n as n4,
+  q
+} from "./chunk-75MOJZ4V.js";
+import "./chunk-YDL4QMG6.js";
+import "./chunk-YZDX62BD.js";
+import "./chunk-BS2V2OFQ.js";
+import "./chunk-TX6LXUDP.js";
+import "./chunk-L3KMIFH7.js";
+import "./chunk-YAY7KCP6.js";
+import "./chunk-QNJTKKZK.js";
+import "./chunk-WZW6KMAU.js";
+import "./chunk-PJDZXW5F.js";
+import {
+  y as y2
+} from "./chunk-WRETNREX.js";
+import "./chunk-XMB55ILJ.js";
+import "./chunk-W34UF4X5.js";
+import "./chunk-XJP3RSS7.js";
+import "./chunk-FMIKVU3Q.js";
+import "./chunk-R3PBZCGD.js";
+import "./chunk-Z5I3WFZJ.js";
+import "./chunk-DFCHXQYB.js";
+import "./chunk-PWZ6VVYN.js";
+import "./chunk-OFSNX7BB.js";
+import "./chunk-XNNZ2U24.js";
+import "./chunk-ODWYDPQK.js";
+import "./chunk-6U5MFJUS.js";
+import "./chunk-EQVY5WGD.js";
+import "./chunk-5GPMO33J.js";
+import "./chunk-GM5PCDS3.js";
+import "./chunk-URLT4X25.js";
+import "./chunk-YY44XNLW.js";
+import "./chunk-DAHPVVCD.js";
+import "./chunk-WWKLZ2P6.js";
+import "./chunk-HMYFPFVG.js";
+import "./chunk-KEY3YQEB.js";
+import {
+  l
+} from "./chunk-NLVGGH5B.js";
+import {
+  F,
+  y2 as y3
+} from "./chunk-TNGHAIJZ.js";
+import "./chunk-2RBIX73A.js";
+import "./chunk-SH72BZH2.js";
+import "./chunk-CHITL6T5.js";
+import "./chunk-HJMMRQXJ.js";
+import "./chunk-M44GXGOJ.js";
+import "./chunk-LQMHYEKG.js";
+import "./chunk-N7OQ4MFT.js";
+import "./chunk-GALDA7CN.js";
+import "./chunk-QRPQOATM.js";
+import "./chunk-UDRKO2UK.js";
+import {
+  z2 as z
+} from "./chunk-OYOKYTYR.js";
+import "./chunk-ONXOVX4W.js";
+import {
+  S
+} from "./chunk-TOB5EAWJ.js";
+import "./chunk-NR66QFNF.js";
+import "./chunk-FZD4GVUW.js";
+import "./chunk-LANOLZOB.js";
+import "./chunk-DTNG3PQB.js";
+import "./chunk-473S3KQM.js";
+import "./chunk-HTVDNBEG.js";
+import "./chunk-6TF3NI7G.js";
+import "./chunk-DF4ABCPV.js";
+import "./chunk-3Z7OKY4G.js";
+import {
+  f2
+} from "./chunk-LAAWMBRE.js";
+import "./chunk-PKBHGDEY.js";
+import "./chunk-XPGSGU2C.js";
+import "./chunk-EKLJIMB3.js";
+import "./chunk-UXWT3ISO.js";
+import "./chunk-AGHTZMGO.js";
+import "./chunk-253Z6EVN.js";
+import {
+  n as n2
+} from "./chunk-FMWSBXS5.js";
+import "./chunk-HXIOMN57.js";
+import {
+  D,
+  a3 as a2,
+  c,
+  o4 as o,
+  t3 as t2
+} from "./chunk-JM4CKTH2.js";
+import "./chunk-SZXJF3IE.js";
+import "./chunk-HDFIZIZL.js";
+import "./chunk-W3O3DL7T.js";
+import "./chunk-SY7OJLZ7.js";
+import "./chunk-IK45K3EN.js";
+import "./chunk-BCADJITZ.js";
+import "./chunk-PFC2RERS.js";
+import "./chunk-RTVKY37F.js";
+import {
+  L,
+  f2 as f,
+  t2 as t
+} from "./chunk-WARIPJQI.js";
+import {
+  a,
+  n2 as n,
+  r3 as r
+} from "./chunk-6I475YAP.js";
+import "./chunk-GLWFJLHD.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+import {
+  __spreadValues
+} from "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/graphic/isStreamGraphicOrigin.js
+var i = /* @__PURE__ */ Symbol("isStreamGraphicOrigin");
+
+// node_modules/@arcgis/core/graphic/StreamGraphicOrigin.js
+var o3;
+var a3 = class extends s2 {
+  get [(o3 = i, n4)]() {
+    return this.layer;
+  }
+  get [n3]() {
+    return this.layer;
+  }
+  get [o2]() {
+    return this.layer;
+  }
+  constructor(r3) {
+    super(), this[o3] = true, this.type = "stream", this.layer = r3;
+  }
+  get id() {
+    return this.layer.id;
+  }
+};
+
+// node_modules/@arcgis/core/layers/support/PurgeOptions.js
+var r2;
+var i2 = class extends n2 {
+  static {
+    r2 = this;
+  }
+  constructor(e2) {
+    super(e2), this.age = null, this.ageReceived = null, this.displayCount = null, this.maxObservations = 1;
+  }
+  clone() {
+    return new r2({ age: this.age, ageReceived: this.ageReceived, displayCount: this.displayCount, maxObservations: this.maxObservations });
+  }
+};
+__decorate([a2({ type: Number, json: { write: true } })], i2.prototype, "age", void 0), __decorate([a2({ type: Number, json: { write: true } })], i2.prototype, "ageReceived", void 0), __decorate([a2({ type: Number, json: { write: true } })], i2.prototype, "displayCount", void 0), __decorate([a2({ type: Number, json: { write: true } })], i2.prototype, "maxObservations", void 0), i2 = r2 = __decorate([c("esri.layers.support.PurgeOptions")], i2);
+
+// node_modules/@arcgis/core/layers/StreamLayer.js
+var re2 = s5();
+var ie = class extends l7(p3(c2(p(l6(s4(l3(l2(l5(g(_2(e(s3(l(b)))))))))))))) {
+  constructor(...e2) {
+    super(...e2), this.copyright = null, this.definitionExpression = null, this.displayField = null, this.elevationInfo = null, this.fields = null, this.fieldsIndex = null, this.geometryDefinition = null, this.geometryType = null, this.graphicOrigin = new a3(this), this.labelsVisible = true, this.labelingInfo = null, this.legendEnabled = true, this.maxReconnectionAttempts = 0, this.maxReconnectionInterval = 20, this.maxScale = 0, this.minScale = 0, this.objectIdField = null, this.operationalLayerType = "ArcGISStreamLayer", this.outFields = ["*"], this.popupEnabled = true, this.popupTemplate = null, this.purgeOptions = new i2(), this.refreshInterval = 0, this.screenSizePerspectiveEnabled = true, this.sourceJSON = null, this.spatialReference = S.WGS84, this.type = "stream", this.url = null, this.updateInterval = 300, this.useViewTime = true, this.webSocketUrl = null, this._debouncedSaveOperations = L(async (e3, t4, r3) => {
+      const { save: i3, saveAs: o4 } = await import("./streamLayerUtils-K6JAE3G5.js");
+      switch (e3) {
+        case 0:
+          return i3(this, t4);
+        case 1:
+          return o4(this, r3, t4);
+      }
+    });
+  }
+  normalizeCtorArgs(e2, t4) {
+    return "string" == typeof e2 ? __spreadValues({ url: e2 }, t4) : e2;
+  }
+  load(e2) {
+    if (!("WebSocket" in globalThis)) return this.addResolvingPromise(Promise.reject(new r("stream-layer:websocket-unsupported", "WebSocket is not supported in this browser. StreamLayer will not have real-time connection with the stream service."))), Promise.resolve(this);
+    const t4 = null != e2 ? e2.signal : null;
+    return this.addResolvingPromise(this.loadFromPortal({ supportedTypes: ["Stream Service", "Feed"] }, e2).catch(f).then(() => this._fetchService(t4))), Promise.resolve(this);
+  }
+  get defaultPopupTemplate() {
+    return this.createPopupTemplate();
+  }
+  set featureReduction(e2) {
+    const t4 = this._normalizeFeatureReduction(e2);
+    this._set("featureReduction", t4);
+  }
+  set renderer(e2) {
+    y3(e2, this.fieldsIndex), this._set("renderer", e2);
+  }
+  readRenderer(e2, t4, r3) {
+    t4 = t4.layerDefinition || t4;
+    const i3 = t4.drawingInfo?.renderer;
+    if (i3) {
+      const e3 = u2(i3, t4, r3) || void 0;
+      return e3 || n.getLogger(this).error("Failed to create renderer", { rendererDefinition: t4.drawingInfo.renderer, layer: this, context: r3 }), e3;
+    }
+    return re(t4, r3);
+  }
+  async connect(e2) {
+    const [{ createConnection: t4 }] = await Promise.all([import("./createConnection-YHPZYGDY.js"), this.load()]), r3 = this.geometryType ? y2.toJSON(this.geometryType) : null, { customParameters: i3 = null, definitionExpression: o4 = null, geometryDefinition: n5 = null, maxReconnectionAttempts: a4 = 0, maxReconnectionInterval: p4 = 20, spatialReference: l9 = this.spatialReference } = e2 || this.createConnectionParameters(), m3 = t4(this.parsedUrl, this.spatialReference, l9, r3, o4, n5, a4, p4, i3 ?? void 0), d3 = t([this.on("send-message-to-socket", (e3) => m3.sendMessageToSocket(e3)), this.on("send-message-to-client", (e3) => m3.sendMessageToClient(e3))]);
+    return m3.once("destroy", d3.remove), m3;
+  }
+  createConnectionParameters() {
+    return { spatialReference: this.spatialReference, customParameters: this.customParameters, definitionExpression: this.definitionExpression, geometryDefinition: this.geometryDefinition, maxReconnectionAttempts: this.maxReconnectionAttempts, maxReconnectionInterval: this.maxReconnectionInterval };
+  }
+  createPopupTemplate(e2) {
+    return d2(this, e2);
+  }
+  createQuery() {
+    const e2 = new R();
+    return e2.returnGeometry = true, e2.outFields = ["*"], e2.where = this.definitionExpression || "1=1", e2;
+  }
+  getFieldDomain(e2, t4) {
+    if (!this.fields) return null;
+    let r3 = null;
+    return this.fields.some((t5) => (t5.name === e2 && (r3 = t5.domain), !!r3)), r3;
+  }
+  getField(e2) {
+    return this.fieldsIndex.get(e2);
+  }
+  serviceSupportsSpatialReference(e2) {
+    return true;
+  }
+  sendMessageToSocket(e2) {
+    this.emit("send-message-to-socket", e2);
+  }
+  sendMessageToClient(e2) {
+    this.emit("send-message-to-client", e2);
+  }
+  async save(e2) {
+    return this._debouncedSaveOperations(0, e2);
+  }
+  async saveAs(e2, t4) {
+    return this._debouncedSaveOperations(1, t4, e2);
+  }
+  write(e2, t4) {
+    return this.webSocketUrl ? (t2(t4, this, "a custom websocket connection cannot be written to web scenes and web maps"), null) : this.parsedUrl ? super.write(e2, t4) : (t2(t4, this, "a client-side only connection without a url cannot be written to web scenes and web maps"), null);
+  }
+  async _fetchService(e2) {
+    if (!!!this.webSocketUrl && this.parsedUrl) {
+      if (!this.sourceJSON) {
+        const { data: t4 } = await f2(this.parsedUrl.path, { query: __spreadValues(__spreadValues({ f: "json" }, this.customParameters), this.parsedUrl.query), responseType: "json", signal: e2 });
+        this.sourceJSON = t4;
+      }
+    } else {
+      if (!this.timeInfo?.trackIdField) throw new r("stream-layer:missing-metadata", "The stream layer trackIdField must be specified.");
+      if (!this.objectIdField) {
+        const e3 = this.fields.find((e4) => "oid" === e4.type)?.name;
+        if (!e3) throw new r("stream-layer:missing-metadata", "The stream layer objectIdField must be specified.");
+        this.objectIdField = e3;
+      }
+      if (!this.fields) throw new r("stream-layer:missing-metadata", "The stream layer fields must be specified.");
+      if (this.fields.some((e3) => e3.name === this.objectIdField) || this.fields.push(new m({ name: this.objectIdField, alias: this.objectIdField, type: "oid" })), !this.geometryType) throw new r("stream-layer:missing-metadata", "The stream layer geometryType must be specified.");
+      this.webSocketUrl && (this.url = this.webSocketUrl);
+    }
+    return this.read(this.sourceJSON, { origin: "service", portalItem: this.portalItem, portal: this.portalItem?.portal, url: this.parsedUrl }), y3(this.renderer, this.fieldsIndex), F(this.timeInfo, this.fieldsIndex), this.objectIdField || (this.objectIdField = _), t3(this, { origin: "service" });
+  }
+};
+__decorate([a2({ type: String })], ie.prototype, "copyright", void 0), __decorate([a2({ readOnly: true })], ie.prototype, "defaultPopupTemplate", null), __decorate([a2({ type: String, json: { name: "layerDefinition.definitionExpression", write: { enabled: true, allowNull: true } } })], ie.prototype, "definitionExpression", void 0), __decorate([a2({ type: String })], ie.prototype, "displayField", void 0), __decorate([a2({ type: x })], ie.prototype, "elevationInfo", void 0), __decorate([a2({ json: { origins: { "web-map": { read: false, write: false }, "portal-item": { read: false, write: false }, "web-scene": { read: false, write: false } } } })], ie.prototype, "featureReduction", null), __decorate([a2(re2.fields)], ie.prototype, "fields", void 0), __decorate([a2(re2.fieldsIndex)], ie.prototype, "fieldsIndex", void 0), __decorate([a2({ type: z, json: { name: "layerDefinition.definitionGeometry", write: true } })], ie.prototype, "geometryDefinition", void 0), __decorate([a2({ type: y2.apiValues, json: { read: { reader: y2.read } } })], ie.prototype, "geometryType", void 0), __decorate([a2({ readOnly: true, clonable: false })], ie.prototype, "graphicOrigin", void 0), __decorate([a2(p2)], ie.prototype, "labelsVisible", void 0), __decorate([a2({ type: [A], json: { name: "layerDefinition.drawingInfo.labelingInfo", read: { reader: l8 }, write: true } })], ie.prototype, "labelingInfo", void 0), __decorate([a2(d)], ie.prototype, "legendEnabled", void 0), __decorate([a2({ type: ["show", "hide"], json: { origins: { "portal-item": { read: false, write: false } } } })], ie.prototype, "listMode", void 0), __decorate([a2({ type: D })], ie.prototype, "maxReconnectionAttempts", void 0), __decorate([a2({ type: D })], ie.prototype, "maxReconnectionInterval", void 0), __decorate([a2(v)], ie.prototype, "maxScale", void 0), __decorate([a2(j)], ie.prototype, "minScale", void 0), __decorate([a2({ type: String })], ie.prototype, "objectIdField", void 0), __decorate([a2({ value: "ArcGISStreamLayer", type: ["ArcGISStreamLayer"] })], ie.prototype, "operationalLayerType", void 0), __decorate([a2({ readOnly: true })], ie.prototype, "outFields", void 0), __decorate([a2(l4)], ie.prototype, "popupEnabled", void 0), __decorate([a2({ type: q, json: { name: "popupInfo", write: true } })], ie.prototype, "popupTemplate", void 0), __decorate([a2({ type: i2 })], ie.prototype, "purgeOptions", void 0), __decorate([a2({ json: { read: false, write: false } })], ie.prototype, "refreshInterval", void 0), __decorate([a2({ types: m2, json: { origins: { service: { write: { target: "drawingInfo.renderer", enabled: false } }, "web-scene": { name: "layerDefinition.drawingInfo.renderer", types: u, write: true } }, write: { target: "layerDefinition.drawingInfo.renderer" } } })], ie.prototype, "renderer", null), __decorate([o("service", "renderer", ["drawingInfo.renderer", "defaultSymbol"]), o("renderer", ["layerDefinition.drawingInfo.renderer", "layerDefinition.defaultSymbol"])], ie.prototype, "readRenderer", null), __decorate([a2((() => {
+  const e2 = a(s);
+  return e2.json.origins["portal-item"] = { read: false, write: false }, e2;
+})())], ie.prototype, "screenSizePerspectiveEnabled", void 0), __decorate([a2()], ie.prototype, "sourceJSON", void 0), __decorate([a2({ type: S, json: { origins: { service: { read: { source: "spatialReference" } } } } })], ie.prototype, "spatialReference", void 0), __decorate([a2({ json: { read: false } })], ie.prototype, "type", void 0), __decorate([a2(y)], ie.prototype, "url", void 0), __decorate([a2({ type: Number })], ie.prototype, "updateInterval", void 0), __decorate([a2({ json: { read: false, write: false } })], ie.prototype, "useViewTime", void 0), __decorate([a2({ type: String })], ie.prototype, "webSocketUrl", void 0), ie = __decorate([c("esri.layers.StreamLayer")], ie);
+var oe = ie;
+export {
+  oe as default
+};
+//# sourceMappingURL=StreamLayer-LPXAR6SL.js.map

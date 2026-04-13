@@ -1,0 +1,31 @@
+import {
+  Directive,
+  directive,
+  nothing,
+  setCommittedValue
+} from "./chunk-K65EA25C.js";
+
+// node_modules/lit-html/development/directives/keyed.js
+var Keyed = class extends Directive {
+  constructor() {
+    super(...arguments);
+    this.key = nothing;
+  }
+  render(k, v) {
+    this.key = k;
+    return v;
+  }
+  update(part, [k, v]) {
+    if (k !== this.key) {
+      setCommittedValue(part);
+      this.key = k;
+    }
+    return v;
+  }
+};
+var keyed = directive(Keyed);
+
+export {
+  keyed
+};
+//# sourceMappingURL=chunk-COEJ2BHH.js.map

@@ -1,0 +1,277 @@
+import {
+  N
+} from "./chunk-EYSKOBKC.js";
+import "./chunk-4QH6JDQ4.js";
+import "./chunk-FIYKJ5TU.js";
+import "./chunk-ABBTQUNT.js";
+import "./chunk-VWH64IUY.js";
+import "./chunk-YQ2W27NF.js";
+import "./chunk-WNYGU26X.js";
+import "./chunk-5L43CAGH.js";
+import "./chunk-SNZU5SQF.js";
+import "./chunk-BM7JZATS.js";
+import "./chunk-Y6DLVMLW.js";
+import "./chunk-JC7XDG6V.js";
+import "./chunk-QRX22Z24.js";
+import "./chunk-H3YJST7O.js";
+import "./chunk-3WH7P3OQ.js";
+import "./chunk-HUMLUCIN.js";
+import "./chunk-FCFG75QA.js";
+import "./chunk-5XSBG4BK.js";
+import "./chunk-YHHRJ56I.js";
+import "./chunk-EFQF37JK.js";
+import "./chunk-CDD6BAJR.js";
+import "./chunk-LKFVQQGX.js";
+import "./chunk-UZNSZRSA.js";
+import "./chunk-EB4OAL7S.js";
+import "./chunk-OV6WCPCW.js";
+import "./chunk-FNNCC3OW.js";
+import "./chunk-5LHNO2RQ.js";
+import "./chunk-PFITPXF4.js";
+import "./chunk-OQNSFBL3.js";
+import "./chunk-TK23Z2SS.js";
+import {
+  c as c3
+} from "./chunk-YFEVWOQM.js";
+import {
+  c as c2,
+  i,
+  t
+} from "./chunk-QJHP7M5C.js";
+import "./chunk-4POYBJCS.js";
+import "./chunk-RCUTEESF.js";
+import "./chunk-PI6N2E56.js";
+import "./chunk-K4U5IDWY.js";
+import "./chunk-JY3RTTKU.js";
+import "./chunk-CSMFDF4D.js";
+import "./chunk-5N65B4S5.js";
+import "./chunk-XUGBCQ3P.js";
+import "./chunk-5GILQKZF.js";
+import "./chunk-SVOI4IMW.js";
+import "./chunk-GFZ7ZL5O.js";
+import "./chunk-UHHBJ3FY.js";
+import "./chunk-JK5AEVCZ.js";
+import "./chunk-U3BFUUG5.js";
+import "./chunk-GIWQXMFP.js";
+import "./chunk-VEMJAOMP.js";
+import "./chunk-HJAVG2ER.js";
+import "./chunk-WLE2LS5O.js";
+import "./chunk-SSSMB36D.js";
+import "./chunk-V4FCUJHW.js";
+import "./chunk-6A5V3JU3.js";
+import "./chunk-NY4DWVPM.js";
+import "./chunk-JDZD4EQ7.js";
+import "./chunk-SXJ6VOTR.js";
+import "./chunk-TFKEOGZ6.js";
+import "./chunk-W3KPPCSW.js";
+import "./chunk-MCN6PQSA.js";
+import "./chunk-6I4LGQ74.js";
+import "./chunk-LZY6FPYU.js";
+import "./chunk-IQ4Y4GKS.js";
+import "./chunk-AHPCQT3Y.js";
+import "./chunk-LU2NOY66.js";
+import "./chunk-FR4Y7EWL.js";
+import "./chunk-5XBFAIUN.js";
+import "./chunk-YZFNS24Z.js";
+import "./chunk-H3GWORLU.js";
+import "./chunk-L3NTTNVH.js";
+import "./chunk-QEI2MEKM.js";
+import "./chunk-CMKOCIBQ.js";
+import "./chunk-PYMCJBOT.js";
+import "./chunk-7WSSXDPD.js";
+import "./chunk-PDKX3TBX.js";
+import "./chunk-AMVHY7YB.js";
+import "./chunk-Q4O6WBUP.js";
+import "./chunk-65PBNPQY.js";
+import "./chunk-7PBMX777.js";
+import "./chunk-DWBAGWXH.js";
+import "./chunk-XWIC4KUB.js";
+import "./chunk-7DXPO6B2.js";
+import "./chunk-JJJRQB6X.js";
+import "./chunk-JAXZMTZX.js";
+import "./chunk-3QK2DR4J.js";
+import "./chunk-J5XU3PTN.js";
+import "./chunk-IAMT5ISO.js";
+import "./chunk-FQUUUHLI.js";
+import "./chunk-22H7QJEK.js";
+import "./chunk-ZVVXXQSW.js";
+import "./chunk-4IMLIYUC.js";
+import "./chunk-QIZKSHGT.js";
+import "./chunk-TO4LSEU2.js";
+import "./chunk-32D2WYHT.js";
+import "./chunk-X2D45IFR.js";
+import "./chunk-PWA2BQZL.js";
+import "./chunk-RLRR5X7B.js";
+import "./chunk-BHNYDRJD.js";
+import "./chunk-PUE3QVDM.js";
+import "./chunk-E4YQMIKY.js";
+import "./chunk-UTC65JLB.js";
+import "./chunk-SQMAPKVO.js";
+import "./chunk-IB254ZDB.js";
+import "./chunk-K3VHKD6G.js";
+import "./chunk-246ZBMKM.js";
+import "./chunk-TL46MWTP.js";
+import "./chunk-KIQ3K354.js";
+import "./chunk-PIOE6ZSW.js";
+import "./chunk-FCVEMPGG.js";
+import "./chunk-IZURHDBN.js";
+import "./chunk-QEE2QYIE.js";
+import "./chunk-ACSHIMX6.js";
+import "./chunk-2RVDN6RH.js";
+import "./chunk-S4XOMMCM.js";
+import "./chunk-EDBAVVVG.js";
+import "./chunk-D4W5U2I5.js";
+import "./chunk-IXOUFXRS.js";
+import "./chunk-XA4KTSOB.js";
+import "./chunk-C753LAEV.js";
+import "./chunk-F3XOF26Q.js";
+import "./chunk-DI27LDDB.js";
+import "./chunk-KUQTK7UY.js";
+import "./chunk-N7U7MERC.js";
+import "./chunk-D5MS4RFG.js";
+import "./chunk-UOTNWVQN.js";
+import "./chunk-AEEIJGHJ.js";
+import "./chunk-MK2KB2KA.js";
+import "./chunk-NIXSIW3X.js";
+import "./chunk-DZN3R4UM.js";
+import "./chunk-OD52MENG.js";
+import "./chunk-XK2FSQWW.js";
+import "./chunk-AIECNX6R.js";
+import "./chunk-ZPAQA4G3.js";
+import "./chunk-WLCIR5JN.js";
+import "./chunk-OFIL7BYT.js";
+import "./chunk-M3PLR22U.js";
+import "./chunk-MLBRAI7B.js";
+import "./chunk-NSJQHJ2B.js";
+import "./chunk-LKWKFYCL.js";
+import "./chunk-ULJA4TCB.js";
+import "./chunk-DNCZTJNI.js";
+import "./chunk-BQWO5RXV.js";
+import "./chunk-IBGMUXG6.js";
+import "./chunk-DH7E4OJC.js";
+import "./chunk-XSQPGBLC.js";
+import "./chunk-TPJLJ32L.js";
+import "./chunk-QU4UZ7C2.js";
+import "./chunk-HKOFZI3I.js";
+import "./chunk-V6655I3I.js";
+import "./chunk-S3BACLSK.js";
+import "./chunk-OWMNTHDK.js";
+import "./chunk-T6F4SXOT.js";
+import "./chunk-XFHDI4IR.js";
+import "./chunk-4QSSUPBC.js";
+import "./chunk-FHDG7GP6.js";
+import "./chunk-U3CRXBTW.js";
+import "./chunk-QLC3W7PG.js";
+import "./chunk-KO4S3BRZ.js";
+import "./chunk-PMKUQ7UU.js";
+import "./chunk-RTWZV6QR.js";
+import "./chunk-4YKWF6M6.js";
+import "./chunk-BMYA7NZP.js";
+import "./chunk-V7SQTPST.js";
+import "./chunk-NNANCYKT.js";
+import "./chunk-ZEMVKL33.js";
+import "./chunk-ZHB32LSG.js";
+import "./chunk-4F4IE6P5.js";
+import "./chunk-EF6HOWDG.js";
+import "./chunk-SVWIACQP.js";
+import "./chunk-EFJUSEVJ.js";
+import "./chunk-7RKO4CUB.js";
+import "./chunk-QK7JX7UE.js";
+import "./chunk-47Z5HJ52.js";
+import "./chunk-RMATTWBS.js";
+import "./chunk-IPJXMYTM.js";
+import "./chunk-QWNB5I7T.js";
+import "./chunk-ZILR7JK7.js";
+import "./chunk-DESITEXU.js";
+import "./chunk-D7RUZBWM.js";
+import "./chunk-OFY6GFSK.js";
+import "./chunk-46YDVYTJ.js";
+import "./chunk-Z6H2XBDN.js";
+import "./chunk-5AMLDUSG.js";
+import "./chunk-OLWKRV2W.js";
+import "./chunk-LHNGH3Y4.js";
+import "./chunk-OTB5O3ZS.js";
+import "./chunk-ERIUCT52.js";
+import "./chunk-2ZL6ZCDF.js";
+import "./chunk-4HQQF57Z.js";
+import "./chunk-66OU277M.js";
+import "./chunk-EWPZDMTE.js";
+import "./chunk-TIZ3VJFS.js";
+import "./chunk-6CUKMFJV.js";
+import "./chunk-LHBO6K5Y.js";
+import "./chunk-2OF3JE3F.js";
+import {
+  n
+} from "./chunk-5EUDKAG7.js";
+import "./chunk-FJ25BHAS.js";
+import {
+  a3 as a,
+  c
+} from "./chunk-LV7AMIAU.js";
+import "./chunk-O4A47ZEM.js";
+import "./chunk-O3PP4I47.js";
+import "./chunk-55ZAYF5P.js";
+import "./chunk-FMPS52FS.js";
+import "./chunk-MSRN4ADD.js";
+import "./chunk-XUZBRFKA.js";
+import "./chunk-XNNRUT34.js";
+import "./chunk-AEGIA5BY.js";
+import "./chunk-E73BLMZG.js";
+import "./chunk-YR4EWTGD.js";
+import "./chunk-HJCCWVZL.js";
+import "./chunk-TVMQ3GIS.js";
+import "./chunk-POW25PFR.js";
+import "./chunk-IDI4VM7T.js";
+import "./chunk-KWV5EQET.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+import "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/networks/UnitIdentifierManager.js
+var l = class extends n {
+  constructor(e) {
+    super(e), this.utilityNetwork = null;
+  }
+  get networkServiceUrl() {
+    return this.utilityNetwork?.networkServiceUrl ?? null;
+  }
+  get featureServiceUrl() {
+    return this.utilityNetwork?.featureServiceUrl ?? null;
+  }
+  get gdbVersion() {
+    return this.utilityNetwork?.gdbVersion ?? null;
+  }
+  get historicMoment() {
+    return this.utilityNetwork?.historicMoment ?? null;
+  }
+  async insertGap(e, t2, r) {
+    const [{ insertGap: s }, { default: n2 }] = await Promise.all([import("./insertGap-27UHQC6C.js"), import("./InsertGapParameters-ERSTK3UK.js")]), l2 = new n2({ object: e, firstUnit: t2, numUnits: r });
+    c2(this.featureServiceUrl, this.gdbVersion || null) ? (l2.sessionId = t, await i(this.featureServiceUrl, this.gdbVersion, true)) : l2.sessionId = null, l2.gdbVersion = this.gdbVersion;
+    const u2 = c3(this.featureServiceUrl, null, this.gdbVersion, false), c4 = await s(this.networkServiceUrl, l2);
+    u2.resolve({ edits: null, addedFeatures: [], updatedFeatures: [], deletedFeatures: [], addedAttachments: [], updatedAttachments: [], deletedAttachments: [], exceededTransferLimit: c4.exceededTransferLimit, historicMoment: c4.moment, editedFeatures: c4.serviceEdits || void 0 });
+  }
+  async reset(e) {
+    const [{ reset: t2 }, { default: r }] = await Promise.all([import("./reset-OEZG763W.js"), import("./ResetParameters-S4BJFGW2.js")]), s = new r({ objects: e });
+    c2(this.featureServiceUrl, this.gdbVersion || null) ? (s.sessionId = t, await i(this.featureServiceUrl, this.gdbVersion, true)) : s.sessionId = null, s.gdbVersion = this.gdbVersion;
+    const n2 = c3(this.featureServiceUrl, null, this.gdbVersion, false), l2 = await t2(this.networkServiceUrl, s);
+    n2.resolve({ edits: null, addedFeatures: [], updatedFeatures: [], deletedFeatures: [], addedAttachments: [], updatedAttachments: [], deletedAttachments: [], exceededTransferLimit: l2.exceededTransferLimit, historicMoment: l2.moment, editedFeatures: l2.serviceEdits || void 0 });
+  }
+  async resize(e, t2) {
+    const [{ resize: r }, { default: s }] = await Promise.all([import("./resize-N4GJOCL4.js"), import("./ResizeParameters-NDYGEWGC.js")]), n2 = new s({ object: e, numUnits: t2 });
+    c2(this.featureServiceUrl, this.gdbVersion || null) ? (n2.sessionId = t, await i(this.featureServiceUrl, this.gdbVersion, true)) : n2.sessionId = null, n2.gdbVersion = this.gdbVersion;
+    const l2 = c3(this.featureServiceUrl, null, this.gdbVersion, false), u2 = await r(this.networkServiceUrl, n2);
+    l2.resolve({ edits: null, addedFeatures: [], updatedFeatures: [], deletedFeatures: [], addedAttachments: [], updatedAttachments: [], deletedAttachments: [], exceededTransferLimit: u2.exceededTransferLimit, historicMoment: u2.moment, editedFeatures: u2.serviceEdits || void 0 });
+  }
+  async query(e) {
+    const [{ queryUnitIdentifiers: t2 }, { default: r }] = await Promise.all([import("./queryUnitIdentifiers-GL4YYFOW.js"), import("./QueryUnitIdentifiersParameters-3B36P7LU.js")]), s = new r({ objects: e });
+    c2(this.featureServiceUrl, this.gdbVersion || null) ? s.sessionId = t : s.sessionId = null, s.gdbVersion = this.gdbVersion, s.moment = this.historicMoment;
+    return await t2(this.networkServiceUrl, s);
+  }
+};
+__decorate([a({ type: N, constructOnly: true })], l.prototype, "utilityNetwork", void 0), __decorate([a()], l.prototype, "networkServiceUrl", null), __decorate([a()], l.prototype, "featureServiceUrl", null), __decorate([a()], l.prototype, "gdbVersion", null), __decorate([a()], l.prototype, "historicMoment", null), l = __decorate([c("esri.networks.UnitIdentifierManager")], l);
+var u = l;
+export {
+  u as default
+};
+//# sourceMappingURL=UnitIdentifierManager-WN2WFUTN.js.map

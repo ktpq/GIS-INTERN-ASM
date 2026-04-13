@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/support/geodesicMeasurementUtils.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nimport{isSupported as e}from\"../../geometry/geodesicUtils.js\";import{isWebMercator as o}from\"../../geometry/support/spatialReferenceUtils.js\";function r(r){return e(r)||o(r)}function t(o,r,t,...i){return e(o)?r.apply(void 0,i):o.isWebMercator?t.apply(void 0,i):null}const i=1e5;export{i as geodesicDistanceThreshold,t as geodesicMeasure,r as supportsGeodesicMeasurement};\n"],
+  "mappings": ";;;;;;;;AAC8I,SAAS,EAAEA,IAAE;AAAC,SAAO,EAAEA,EAAC,KAAG,EAAEA,EAAC;AAAC;AAAC,SAAS,EAAE,GAAEA,IAAEC,OAAK,GAAE;AAAC,SAAO,EAAE,CAAC,IAAED,GAAE,MAAM,QAAO,CAAC,IAAE,EAAE,gBAAcC,GAAE,MAAM,QAAO,CAAC,IAAE;AAAI;",
+  "names": ["r", "t"]
+}

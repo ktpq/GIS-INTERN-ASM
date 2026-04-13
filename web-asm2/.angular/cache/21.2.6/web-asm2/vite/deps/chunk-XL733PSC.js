@@ -1,0 +1,78 @@
+import {
+  m as m2
+} from "./chunk-Q7JGI6PX.js";
+import {
+  p,
+  s as s2
+} from "./chunk-HYDNVC4V.js";
+import {
+  m
+} from "./chunk-7YXBCFCF.js";
+import {
+  l
+} from "./chunk-DUGX5C7M.js";
+import {
+  s
+} from "./chunk-OOSRFM7N.js";
+import {
+  u
+} from "./chunk-DOVHXPQB.js";
+import {
+  S
+} from "./chunk-YDHIJ7J4.js";
+import {
+  n
+} from "./chunk-JADLUMUQ.js";
+import {
+  a3 as a,
+  c,
+  r3 as r,
+  r4 as r2,
+  w
+} from "./chunk-GUGGSMY4.js";
+import {
+  o
+} from "./chunk-W5GOZNVR.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+
+// node_modules/@arcgis/core/rest/support/PivotDefinition.js
+var d = new o({ asc: "ascending", desc: "descending" });
+var m3 = class extends l(n) {
+  constructor(t) {
+    super(t), this.fieldName = void 0, this.fieldOrder = void 0, this.outStatistic = void 0, this.type = "pivot";
+  }
+};
+__decorate([a({ type: String, json: { name: "pivotParameters.pivotFieldName", write: true } })], m3.prototype, "fieldName", void 0), __decorate([r(d, { name: "pivotParameters.pivotFieldOrder" })], m3.prototype, "fieldOrder", void 0), __decorate([a({ type: p, json: { name: "pivotParameters.outStatistic", write: true } })], m3.prototype, "outStatistic", void 0), __decorate([r({ Pivot: "pivot" }, { name: "pivotType", readOnly: true })], m3.prototype, "type", void 0), m3 = __decorate([c("esri.rest.support.PivotDefinition")], m3);
+var n2 = m3;
+
+// node_modules/@arcgis/core/rest/support/UnPivotDefinition.js
+var p2 = class extends l(n) {
+  constructor(e) {
+    super(e), this.sourceFields = void 0, this.valueFieldName = void 0, this.targetFieldName = void 0, this.type = "un-pivot";
+  }
+};
+__decorate([a({ type: [String], json: { name: "unPivotParameters.sourceFields", write: true } })], p2.prototype, "sourceFields", void 0), __decorate([a({ type: String, json: { name: "unPivotParameters.valueFieldName", write: true } })], p2.prototype, "valueFieldName", void 0), __decorate([a({ type: String, json: { name: "unPivotParameters.targetFieldName", write: true } })], p2.prototype, "targetFieldName", void 0), __decorate([r({ Unpivot: "un-pivot" }, { name: "pivotType", readOnly: true })], p2.prototype, "type", void 0), p2 = __decorate([c("esri.rest.support.UnPivotDefinition")], p2);
+
+// node_modules/@arcgis/core/rest/support/PivotQuery.js
+var j = { key: "type", base: null, typeMap: { pivot: n2, "un-pivot": p2 } };
+var v = class extends l(n) {
+  constructor(t) {
+    super(t), this.cacheHint = void 0, this.defaultSpatialReferenceEnabled = false, this.geometry = null, this.groupByFieldsForStatistics = null, this.num = void 0, this.orderByFields = null, this.outFields = null, this.outSpatialReference = null, this.outStatistics = null, this.outPivots = null, this.quantizationParameters = null, this.sourceSpatialReference = null, this.spatialRelationship = "intersects", this.start = void 0, this.where = void 0;
+  }
+  writeStart(t, e) {
+    e.resultOffset = this.start, e.resultRecordCount = this.num || 10, e.where = "1=1";
+  }
+};
+__decorate([a({ type: Boolean, json: { write: true } })], v.prototype, "cacheHint", void 0), __decorate([a({ type: Boolean, json: { default: false, write: true } })], v.prototype, "defaultSpatialReferenceEnabled", void 0), __decorate([a({ types: s, json: { read: u, write: true } })], v.prototype, "geometry", void 0), __decorate([a({ type: [String], json: { write: true } })], v.prototype, "groupByFieldsForStatistics", void 0), __decorate([a({ type: Number, json: { read: { source: "resultRecordCount" } } })], v.prototype, "num", void 0), __decorate([a({ type: [String], json: { write: true } })], v.prototype, "orderByFields", void 0), __decorate([a({ type: [String], json: { write: true } })], v.prototype, "outFields", void 0), __decorate([a({ type: S, json: { name: "outSR", write: true } })], v.prototype, "outSpatialReference", void 0), __decorate([a({ type: [p], json: { write: { enabled: true, overridePolicy() {
+  return { enabled: null != this.outStatistics && this.outStatistics.length > 0 };
+} } } })], v.prototype, "outStatistics", void 0), __decorate([a({ types: [j], json: { write: { enabled: true, overridePolicy() {
+  return { enabled: null != this.outPivots && this.outPivots.length > 0 };
+} } } })], v.prototype, "outPivots", void 0), __decorate([a({ type: m2, json: { write: true } })], v.prototype, "quantizationParameters", void 0), __decorate([a({ type: S, json: { write: true } })], v.prototype, "sourceSpatialReference", void 0), __decorate([r(s2, { ignoreUnknown: false, name: "spatialRel" })], v.prototype, "spatialRelationship", void 0), __decorate([a({ type: Number, json: { read: { source: "resultOffset" } } })], v.prototype, "start", void 0), __decorate([r2("start"), r2("num")], v.prototype, "writeStart", null), __decorate([a({ type: m, json: { write: true } })], v.prototype, "timeExtent", void 0), __decorate([a({ type: String, json: { write: true } })], v.prototype, "where", void 0), v = __decorate([c("esri.rest.support.PivotQuery")], v), v.from = w(v);
+
+export {
+  p2 as p,
+  v
+};
+//# sourceMappingURL=chunk-XL733PSC.js.map

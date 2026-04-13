@@ -1,0 +1,44 @@
+import {
+  t
+} from "./chunk-MDTNXJHL.js";
+import {
+  d
+} from "./chunk-4X5LQ2UO.js";
+import {
+  f2 as f
+} from "./chunk-5AVTDH3Y.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/rest/query/operations/queryRelatedRecords.js
+function r(e, o) {
+  const r2 = e.toJSON();
+  return r2.objectIds && (r2.objectIds = r2.objectIds.join(",")), r2.orderByFields && (r2.orderByFields = r2.orderByFields.join(",")), r2.outFields && !o?.returnCountOnly ? r2.outFields.includes("*") ? r2.outFields = "*" : r2.outFields = r2.outFields.join(",") : delete r2.outFields, r2.outSR && (r2.outSR = d(r2.outSR)), r2.dynamicDataSource && (r2.layer = JSON.stringify({ source: r2.dynamicDataSource }), delete r2.dynamicDataSource), r2;
+}
+async function s(e, t2, o) {
+  const r2 = await a(e, t2, o), s2 = r2.data, n2 = s2.geometryType, d2 = s2.spatialReference, c = {};
+  for (const a2 of s2.relatedRecordGroups) {
+    const e2 = { fields: void 0, geometryType: n2, spatialReference: d2, hasZ: !!s2.hasZ, hasM: !!s2.hasM, features: a2.relatedRecords };
+    if (null != a2.objectId) c[a2.objectId] = e2;
+    else for (const t3 of Object.keys(a2)) "relatedRecords" !== t3 && (c[a2[t3]] = e2);
+  }
+  return __spreadProps(__spreadValues({}, r2), { data: c });
+}
+async function n(e, t2, o) {
+  const r2 = await a(e, t2, o, { returnCountOnly: true }), s2 = r2.data, n2 = {};
+  for (const a2 of s2.relatedRecordGroups) null != a2.objectId && (n2[a2.objectId] = a2.count);
+  return __spreadProps(__spreadValues({}, r2), { data: n2 });
+}
+async function a(t2, s2, n2 = {}, a2) {
+  const d2 = t(__spreadValues(__spreadValues(__spreadProps(__spreadValues({}, t2.query), { f: "json" }), a2), r(s2, a2)));
+  return f(t2.path + "/queryRelatedRecords", __spreadProps(__spreadValues({}, n2), { query: __spreadValues(__spreadValues({}, n2.query), d2) }));
+}
+
+export {
+  r,
+  s,
+  n
+};
+//# sourceMappingURL=chunk-P4WZNUL2.js.map

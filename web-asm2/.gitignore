@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Environment variables (ห้ามเอาไฟล์รหัสผ่านขึ้น Git เด็ดขาด)
+.env
+
+# Build outputs (ไฟล์ที่ได้จากการ build)
+dist/
+build/
+
+# OS generated files (ไฟล์ขยะที่ระบบปฏิบัติการสร้างขึ้น)
+.DS_Store
+Thumbs.db

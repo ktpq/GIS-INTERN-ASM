@@ -1,0 +1,28 @@
+<main class="h-screen">
+    <section class="shadow-md w-1/2 p-5 mx-auto mt-10">
+        <h1> Comment Simulation </h1>
+
+        <h2> New Comment: </h2>
+        <form action="">
+            <label for="name">Name: </label>
+            <input type="text" name="name" class="border px-2 border-gray-200 rounded-lg" [(ngModel)] = "inputName"><br>
+            <label for="comment">Comment: </label><br>
+            <textarea name="comment" id="" class="border w-full border-gray-200 rounded-lg" [(ngModel)] = "inputComment"></textarea>
+            <button (click)="addComment($event)" class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-2"> Submit</button>
+        </form>
+        <h2 class="my-2 font-bold text-xl"> Comments </h2>
+        @for (comment of allComments(); track comment.dateString) {
+            <div class="shadow-md p-3 border-gray-200 border">
+                <div class="flex justify-between items- my-2">
+                    <p> {{comment.name}} </p>
+                    <p> {{comment.dateString}}</p>
+                </div>
+                <p class="font-bold"> {{comment.comment}}</p>
+                <div class=" my-2 flex justify-between items-center">
+                    <button class="border font-bold bg-gray-300 px-2" (click)="editComment(comment)"> Edit </button>
+                    <button class="border font-bold bg-gray-300 px-2" (click)="deleteComment(comment.dateString)"> Delete </button>
+                </div>
+            </div>
+        }
+    </section>
+</main>

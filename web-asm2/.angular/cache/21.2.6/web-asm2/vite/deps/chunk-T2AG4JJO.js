@@ -1,0 +1,93 @@
+import {
+  U
+} from "./chunk-7ZFF7W64.js";
+import {
+  al
+} from "./chunk-XQTWTSU3.js";
+import {
+  n
+} from "./chunk-FZMMQS4X.js";
+import {
+  P,
+  b,
+  j
+} from "./chunk-U3KYTZUD.js";
+import {
+  t
+} from "./chunk-GBACRMDK.js";
+import {
+  s
+} from "./chunk-S5K7KX5U.js";
+
+// node_modules/@arcgis/core/geometry/operators/gx/operatorBuffer.js
+var m = class {
+  getOperatorType() {
+    return 10004;
+  }
+  supportsCurves() {
+    return true;
+  }
+  accelerateGeometry(e, t2, r) {
+    return false;
+  }
+  canAccelerateGeometry(e) {
+    return false;
+  }
+  executeMany(e, t2, r, n2, s2) {
+    return this.executeManyEx(e, t2, r, Number.NaN, 96, n2, s2);
+  }
+  execute(t2, s2, i, u) {
+    Number.isFinite(i) || P("Invalid distance for buffer operation");
+    const o = new t([t2]), m2 = [i], c2 = this.executeMany(o, s2, m2, false, u).next();
+    return c2 || b("null buffer output"), c2;
+  }
+  executeManyEx(e, t2, n2, s2, u, o, m2) {
+    if (void 0 !== n2.find((e2) => !Number.isFinite(e2)) && P("Invalid distance for buffer operation"), o) {
+      const r = new c(e, t2, n2, s2, u, false, m2);
+      return new al().executeMany(r, t2, m2, 2);
+    }
+    return new c(e, t2, n2, s2, u, false, m2);
+  }
+};
+var c = class extends s {
+  constructor(e, t2, r, n2, s2, i, m2) {
+    super(), this.m_currentUnionEnvelope2D = new n(), this.m_index = -1, this.m_dindex = -1, this.m_progressTracker = m2, this.m_bufferer = new U(m2), this.m_inputGeoms = e, this.m_spatialReference = t2, this.m_distances = r, this.m_maxDeviation = n2, this.m_maxVerticesInFullCircle = s2;
+  }
+  tock() {
+    return true;
+  }
+  getRank() {
+    return 1;
+  }
+  next() {
+    {
+      let e;
+      for (; e = this.m_inputGeoms.next(); ) return j(e), this.m_index = this.m_inputGeoms.getGeometryID(), this.m_dindex + 1 < this.m_distances.length && this.m_dindex++, this.buffer(e, this.m_distances[this.m_dindex]);
+      return null;
+    }
+  }
+  getGeometryID() {
+    return this.m_index;
+  }
+  buffer(e, t2) {
+    return this.m_bufferer.buffer(e, t2, this.m_spatialReference, 0, 0, 4, this.m_maxDeviation, this.m_maxVerticesInFullCircle);
+  }
+};
+var a = new m();
+function f(e, t2, r) {
+  return a.execute(e, t2, r, null);
+}
+function l(t2, r, n2, s2, i, u) {
+  const o = a.executeManyEx(new t(t2), r, n2, s2, i, u, null);
+  return Array.from(o);
+}
+function p() {
+  return a.supportsCurves();
+}
+
+export {
+  f,
+  l,
+  p
+};
+//# sourceMappingURL=chunk-T2AG4JJO.js.map

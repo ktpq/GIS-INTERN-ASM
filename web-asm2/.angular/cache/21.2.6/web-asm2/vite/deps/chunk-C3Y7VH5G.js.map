@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/draw/support/types.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.15/LICENSE.txt */\nconst e={AboveCoordinates:-1e3,Coordinates:-100,Middle:0,BelowMiddle:100,ShapeMeasurements:1e3};export{e as knownFieldDisplayOrders};\n"],
+  "mappings": ";AACA,IAAM,IAAE,EAAC,kBAAiB,MAAK,aAAY,MAAK,QAAO,GAAE,aAAY,KAAI,mBAAkB,IAAG;",
+  "names": []
+}

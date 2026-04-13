@@ -1,0 +1,326 @@
+import {
+  I,
+  c as c2,
+  f,
+  p,
+  u,
+  z
+} from "./chunk-OORUU6SG.js";
+import {
+  Ye
+} from "./chunk-OXV2TYNY.js";
+import "./chunk-BIOCRHZE.js";
+import "./chunk-WASOJFLJ.js";
+import "./chunk-HPZKYNFN.js";
+import "./chunk-AQDYRMWV.js";
+import "./chunk-EI5PHLJ5.js";
+import "./chunk-J2K7USJX.js";
+import "./chunk-AWIBQL4J.js";
+import "./chunk-7HBQYB7N.js";
+import "./chunk-EBR7N54Z.js";
+import "./chunk-HWUPLHAX.js";
+import "./chunk-PU7MZ7S7.js";
+import "./chunk-EN24K6MM.js";
+import "./chunk-3BGRVTJZ.js";
+import "./chunk-537SI65G.js";
+import "./chunk-SQCKII37.js";
+import "./chunk-TM5RXVPA.js";
+import "./chunk-NVHGFPQV.js";
+import "./chunk-MUOSV3VG.js";
+import "./chunk-EW4SFP5M.js";
+import "./chunk-GM6UGKID.js";
+import "./chunk-W3BDBWSF.js";
+import "./chunk-HLZH52F6.js";
+import "./chunk-XW5I7XVY.js";
+import "./chunk-URA3RGOK.js";
+import "./chunk-6TU5ZO3H.js";
+import "./chunk-2HDWLBLR.js";
+import "./chunk-WY7A2HU3.js";
+import "./chunk-PDODKCOR.js";
+import "./chunk-6R3QVCJR.js";
+import "./chunk-SBDJGTDG.js";
+import "./chunk-6JKRZH3D.js";
+import "./chunk-LDNRXHXA.js";
+import "./chunk-BC6QM5BI.js";
+import "./chunk-ACTGCYFB.js";
+import "./chunk-MZQDDXLI.js";
+import {
+  a as a3
+} from "./chunk-RFRUNJBF.js";
+import "./chunk-VLY7236X.js";
+import "./chunk-VWLMIIE5.js";
+import "./chunk-EPBFLEVA.js";
+import {
+  o,
+  s
+} from "./chunk-LHNPEGMS.js";
+import "./chunk-6LOCYJ7K.js";
+import "./chunk-XHMZ2RJS.js";
+import "./chunk-JS4Z4EZ2.js";
+import "./chunk-I2WNS5BJ.js";
+import "./chunk-KMP54B7A.js";
+import "./chunk-4MLCFR6A.js";
+import "./chunk-DPKT4LYX.js";
+import "./chunk-MK62RM4E.js";
+import "./chunk-Z37KRAUQ.js";
+import "./chunk-YDQ5OQ56.js";
+import "./chunk-LFUQ4Y6G.js";
+import "./chunk-Q5VNKKTD.js";
+import "./chunk-K2MWCIQJ.js";
+import "./chunk-SCB6GXME.js";
+import "./chunk-PRAT45XG.js";
+import "./chunk-HTK573KO.js";
+import "./chunk-HWIHCUPK.js";
+import "./chunk-AOLWUCJX.js";
+import "./chunk-7XNIEULN.js";
+import "./chunk-MJIYOVW3.js";
+import "./chunk-7MTAAUGY.js";
+import "./chunk-TXDNS56H.js";
+import "./chunk-7EZH3JAM.js";
+import "./chunk-C4DTRKPQ.js";
+import "./chunk-P3OSPFTR.js";
+import "./chunk-EB3674W2.js";
+import "./chunk-LAMJQAGF.js";
+import "./chunk-373PU6B4.js";
+import "./chunk-VCFT2RFZ.js";
+import "./chunk-EWPMLAVM.js";
+import "./chunk-4V776ICJ.js";
+import "./chunk-F6XZYXKM.js";
+import "./chunk-ZKGNDXUQ.js";
+import "./chunk-IILQWSIB.js";
+import "./chunk-LBXDB7YQ.js";
+import "./chunk-YYUTDQ2Q.js";
+import "./chunk-SVXUETLX.js";
+import "./chunk-TVLXQ42J.js";
+import "./chunk-OR24MDO6.js";
+import "./chunk-MYLK6AZ6.js";
+import "./chunk-5TEEMD4W.js";
+import "./chunk-MESRIVTQ.js";
+import "./chunk-5T3LXRWY.js";
+import {
+  m
+} from "./chunk-YNPTGDAS.js";
+import "./chunk-GXLPH2D4.js";
+import "./chunk-Q3C4JQ3I.js";
+import "./chunk-N2NNQJRW.js";
+import "./chunk-LBSKIWRS.js";
+import "./chunk-SP5EDG5W.js";
+import "./chunk-LPNV4GQD.js";
+import "./chunk-MX77LL4S.js";
+import "./chunk-ZVRAKVBJ.js";
+import "./chunk-NZYRREXI.js";
+import "./chunk-T3TXTZDJ.js";
+import {
+  d
+} from "./chunk-EKKBLUJP.js";
+import "./chunk-IJHRPSGC.js";
+import "./chunk-BEBG2VYN.js";
+import "./chunk-B3QYCJB5.js";
+import "./chunk-FLG5AFOF.js";
+import "./chunk-OKJ7MV5V.js";
+import {
+  m as m2
+} from "./chunk-23U7MZU6.js";
+import "./chunk-5O7ZGCWS.js";
+import "./chunk-NNUIV2NH.js";
+import "./chunk-IRS5H2YE.js";
+import "./chunk-JL3Z5SD5.js";
+import "./chunk-IANKUBS7.js";
+import "./chunk-I7B74Y7B.js";
+import "./chunk-44DFY7I4.js";
+import "./chunk-VBPD3MAX.js";
+import "./chunk-Z3PP4SLW.js";
+import "./chunk-MVS4RVUO.js";
+import "./chunk-PXICZPXV.js";
+import "./chunk-H4RHQ5YI.js";
+import "./chunk-BRTBYVJG.js";
+import "./chunk-K6KUHFK2.js";
+import "./chunk-5QF2VDYR.js";
+import "./chunk-K3KADXMX.js";
+import {
+  n
+} from "./chunk-PF33M5XM.js";
+import {
+  n as n2
+} from "./chunk-HBLYZMSH.js";
+import "./chunk-MNLCSEA7.js";
+import "./chunk-YZDX62BD.js";
+import "./chunk-MUI2ETB6.js";
+import "./chunk-T5UM3L76.js";
+import "./chunk-737A5DQP.js";
+import "./chunk-MQAP2X3X.js";
+import "./chunk-QNJTKKZK.js";
+import "./chunk-WZW6KMAU.js";
+import "./chunk-WRETNREX.js";
+import "./chunk-XMB55ILJ.js";
+import "./chunk-W34UF4X5.js";
+import "./chunk-XJP3RSS7.js";
+import "./chunk-LF4XI7IU.js";
+import "./chunk-DAHPVVCD.js";
+import "./chunk-WWKLZ2P6.js";
+import "./chunk-BJNDU6LU.js";
+import "./chunk-KEY3YQEB.js";
+import "./chunk-NLVGGH5B.js";
+import "./chunk-WDPGHXN4.js";
+import "./chunk-E4TLNY2F.js";
+import "./chunk-HJMMRQXJ.js";
+import "./chunk-M44GXGOJ.js";
+import "./chunk-LQMHYEKG.js";
+import "./chunk-N7OQ4MFT.js";
+import "./chunk-GALDA7CN.js";
+import "./chunk-QRPQOATM.js";
+import "./chunk-UDRKO2UK.js";
+import "./chunk-473S3KQM.js";
+import "./chunk-HTVDNBEG.js";
+import "./chunk-6TF3NI7G.js";
+import "./chunk-LOVQ4LFC.js";
+import "./chunk-FMIKVU3Q.js";
+import "./chunk-R3PBZCGD.js";
+import "./chunk-Z5I3WFZJ.js";
+import "./chunk-DFCHXQYB.js";
+import "./chunk-PWZ6VVYN.js";
+import "./chunk-OFSNX7BB.js";
+import "./chunk-XNNZ2U24.js";
+import "./chunk-ODWYDPQK.js";
+import "./chunk-6U5MFJUS.js";
+import "./chunk-EQVY5WGD.js";
+import "./chunk-5GPMO33J.js";
+import "./chunk-GM5PCDS3.js";
+import "./chunk-URLT4X25.js";
+import "./chunk-SH72BZH2.js";
+import "./chunk-CHITL6T5.js";
+import "./chunk-OYOKYTYR.js";
+import "./chunk-ONXOVX4W.js";
+import {
+  S
+} from "./chunk-TOB5EAWJ.js";
+import "./chunk-NR66QFNF.js";
+import "./chunk-FZD4GVUW.js";
+import "./chunk-LANOLZOB.js";
+import "./chunk-2OJZRK55.js";
+import "./chunk-WTVOAGXR.js";
+import "./chunk-2F6BRQJJ.js";
+import "./chunk-PKBHGDEY.js";
+import "./chunk-DNJ342E3.js";
+import "./chunk-XPGSGU2C.js";
+import "./chunk-EKLJIMB3.js";
+import "./chunk-UXWT3ISO.js";
+import "./chunk-AGHTZMGO.js";
+import "./chunk-253Z6EVN.js";
+import "./chunk-FMWSBXS5.js";
+import "./chunk-HXIOMN57.js";
+import {
+  a3 as a2,
+  c,
+  r4 as r2
+} from "./chunk-JM4CKTH2.js";
+import "./chunk-SZXJF3IE.js";
+import "./chunk-HDFIZIZL.js";
+import "./chunk-W3O3DL7T.js";
+import "./chunk-SY7OJLZ7.js";
+import "./chunk-IK45K3EN.js";
+import "./chunk-BCADJITZ.js";
+import "./chunk-PFC2RERS.js";
+import "./chunk-RTVKY37F.js";
+import "./chunk-WARIPJQI.js";
+import {
+  a,
+  e,
+  r3 as r
+} from "./chunk-6I475YAP.js";
+import "./chunk-GLWFJLHD.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/graphic/isOrientedImageryGraphicOrigin.js
+var i = /* @__PURE__ */ Symbol("isOrientedImageryGraphicOrigin");
+
+// node_modules/@arcgis/core/graphic/OrientedImageryGraphicOrigin.js
+var o2;
+var a4 = class extends s {
+  get [(o2 = i, n2)]() {
+    return this.layer;
+  }
+  get [n]() {
+    return this.layer;
+  }
+  get [o]() {
+    return this.layer;
+  }
+  constructor(r3) {
+    super(), this[o2] = true, this.type = "oriented-imagery", this.layer = r3;
+  }
+  get id() {
+    return this.layer.id;
+  }
+};
+
+// node_modules/@arcgis/core/layers/OrientedImageryLayer.js
+var j = /* @__PURE__ */ new Set(["demPathPrefix", "demPathSuffix", "depthImagePathPrefix", "depthImagePathSuffix", "elevationSource", "horizontalMeasurementUnit", "imageGeometryField", "imageReferenceField", "referenceIDField", "sequenceOrderField", "verticalMeasurementUnit", "videoPathPrefix", "videoPathSuffix", "timeAnimation", "visibilityTimeExtent"]);
+var P = /* @__PURE__ */ new Set(["elevationSource"]);
+var I2 = (e2, t) => !j.has(t) && e2;
+var w = (e2, t, r3) => {
+  const i2 = `orientedImageryProperties.${e2}`, o3 = { allowNull: P.has(e2), ignoreOrigin: true };
+  return { name: i2, write: t ? __spreadProps(__spreadValues({}, o3), { target: i2, writer: t }) : o3, read: r3 ? { ignoreOrigin: true, source: i2, reader: r3 } : { ignoreOrigin: true } };
+};
+function O(e2) {
+  return e2.json ? (e2.json.origins = e2.json.origins ?? {}, e2.json.origins["web-scene"] = { write: false, read: false }, e2) : e2;
+}
+function x(e2, t, r3, i2) {
+  const { name: o3, write: a5, read: n3 } = w(e2, t, r3), p2 = { name: o3, write: a5, read: n3, origins: { service: { name: `orientedImageryInfo.${o3}`, write: t, read: r3 }, "web-scene": { name: o3, write: I2(a5, e2), read: I2(n3, e2) }, "web-map": { name: o3, write: a5, read: n3 } } };
+  return i2 && p2.origins ? (p2.type = i2, p2.origins["web-map"].type = i2, p2.origins["web-scene"].type = i2, p2) : p2;
+}
+var b = class extends Ye {
+  constructor(e2) {
+    super(e2), this.attributeTableTemplate = null, this.cameraHeading = null, this.cameraHeight = null, this.cameraPitch = null, this.cameraRoll = null, this.coveragePercent = null, this.demPathPrefix = null, this.demPathSuffix = null, this.depthImagePathPrefix = null, this.depthImagePathSuffix = null, this.elevationSource = null, this.farDistance = null, this.geometryType = "point", this.graphicOrigin = new a4(this), this.horizontalFieldOfView = null, this.horizontalMeasurementUnit = null, this.imageGeometryField = "ImageGeometry", this.imagePathPrefix = null, this.imagePathSuffix = null, this.imageReferenceField = "OIObjectID", this.imageRotation = null, this.maximumDistance = null, this.nearDistance = null, this.operationalLayerType = "OrientedImageryLayer", this.orientationAccuracy = null, this.orientedImageryType = null, this.referenceIDField = "OBJECTID", this.sequenceOrderField = "SequenceOrder", this.supportedSourceTypes = /* @__PURE__ */ new Set(["Oriented Imagery Layer"]), this.type = "oriented-imagery", this.timeIntervalUnit = "days", this.useViewTime = true, this.verticalFieldOfView = null, this.verticalMeasurementUnit = null, this.verticalSearchRange = null, this.videoPathPrefix = null, this.videoPathSuffix = null, this.virtualCacheDirectory = null, this.dataStoreID = null, this.visibilityTimeExtent = null;
+  }
+  get effectiveElevationSource() {
+    const { elevationSource: e2, demPathPrefix: t, demPathSuffix: r3 } = this;
+    return c2(e2, t, r3);
+  }
+  get effectiveSequenceOrderField() {
+    const { sequenceOrderField: e2, fields: t } = this;
+    return t.find((t2) => t2.name.toLowerCase() === e2?.toLowerCase())?.name ?? "SequenceOrder";
+  }
+  set fieldConfigurations(e2) {
+  }
+  get fieldConfigurations() {
+  }
+  writePopupTemplate(e2, t, r3, i2) {
+    e2 && (t[r3] = e2.toJSON(i2));
+  }
+  get portalItem() {
+    return super.portalItem;
+  }
+  set portalItem(e2) {
+    super.portalItem = e2;
+  }
+  async save(e2) {
+    return this._debouncedSaveOperations(0, e2);
+  }
+  async saveAs(e2, t) {
+    return this._debouncedSaveOperations(1, t, e2);
+  }
+  findFirstValidLayerId(e2) {
+    return e2.layers?.find(({ type: e3 }) => !!e3 && this.supportedSourceTypes.has(e3))?.id;
+  }
+  _verifySource() {
+    if (super._verifySource(), "point" !== this.geometryType) throw new r("oriented-imagery-layer:invalid-geometry-type", "OrientedImageryLayer only supports point geometry type");
+  }
+};
+__decorate([a2({ type: d, json: { write: false, read: false } })], b.prototype, "attributeTableTemplate", void 0), __decorate([a2({ type: Number, json: x("cameraHeading") })], b.prototype, "cameraHeading", void 0), __decorate([a2({ type: Number, json: x("cameraHeight") })], b.prototype, "cameraHeight", void 0), __decorate([a2({ type: Number, json: x("cameraPitch") })], b.prototype, "cameraPitch", void 0), __decorate([a2({ type: Number, json: x("cameraRoll") })], b.prototype, "cameraRoll", void 0), __decorate([a2({ type: Number, json: x("coveragePercent") })], b.prototype, "coveragePercent", void 0), __decorate([a2({ type: String, json: x("demPathPrefix") })], b.prototype, "demPathPrefix", void 0), __decorate([a2({ type: String, json: x("demPathSuffix") })], b.prototype, "demPathSuffix", void 0), __decorate([a2({ type: String, json: x("depthImagePathPrefix") })], b.prototype, "depthImagePathPrefix", void 0), __decorate([a2({ type: String, json: x("depthImagePathSuffix") })], b.prototype, "depthImagePathSuffix", void 0), __decorate([a2({ type: Object, json: x("elevationSource") })], b.prototype, "elevationSource", void 0), __decorate([a2({ readOnly: true })], b.prototype, "effectiveElevationSource", null), __decorate([a2({ readOnly: true })], b.prototype, "effectiveSequenceOrderField", null), __decorate([a2({ type: Number, json: x("farDistance") })], b.prototype, "farDistance", void 0), __decorate([a2({ json: { write: false } })], b.prototype, "fieldConfigurations", null), __decorate([a2({ type: [m] })], b.prototype, "fields", void 0), __decorate([a2()], b.prototype, "geometryType", void 0), __decorate([a2({ readOnly: true, clonable: false })], b.prototype, "graphicOrigin", void 0), __decorate([a2({ type: Number, json: x("horizontalFieldOfView") })], b.prototype, "horizontalFieldOfView", void 0), __decorate([a2({ type: String, json: x("horizontalMeasurementUnit") })], b.prototype, "horizontalMeasurementUnit", void 0), __decorate([a2({ type: String, json: __spreadProps(__spreadValues({}, x("imageGeometryField")), { default: "ImageGeometry" }) })], b.prototype, "imageGeometryField", void 0), __decorate([a2({ type: String, json: x("imagePathPrefix") })], b.prototype, "imagePathPrefix", void 0), __decorate([a2({ type: String, json: x("imagePathSuffix") })], b.prototype, "imagePathSuffix", void 0), __decorate([a2({ type: String, json: __spreadProps(__spreadValues({}, x("imageReferenceField")), { default: "OIObjectID" }) })], b.prototype, "imageReferenceField", void 0), __decorate([a2({ type: Number, json: x("imageRotation") })], b.prototype, "imageRotation", void 0), __decorate([a2({ type: Number, json: x("maximumDistance") })], b.prototype, "maximumDistance", void 0), __decorate([a2({ type: Number, json: x("nearDistance") })], b.prototype, "nearDistance", void 0), __decorate([a2({ type: ["OrientedImageryLayer"], json: { origins: { "portal-item": { name: "layerType", write: { enabled: true, ignoreOrigin: true } } } } })], b.prototype, "operationalLayerType", void 0), __decorate([a2({ json: __spreadValues({}, x("orientationAccuracy", (e2, t, r3) => {
+  e(r3, e2.join(";"), t);
+}, (e2) => {
+  const t = e2?.split(";")?.map(Number);
+  return z(t) ? I(t) : [0, 0, 0, 0, 0, 0, 0, 0];
+}, String)) })], b.prototype, "orientationAccuracy", void 0), __decorate([a2({ json: __spreadValues({}, x("orientedImageryType", p.write, p.read, p.jsonValues.slice(1))) })], b.prototype, "orientedImageryType", void 0), __decorate([r2("popupTemplate")], b.prototype, "writePopupTemplate", null), __decorate([a2({ type: String, json: __spreadProps(__spreadValues({}, x("referenceIDField")), { default: "OBJECTID" }) })], b.prototype, "referenceIDField", void 0), __decorate([a2({ type: String, json: __spreadProps(__spreadValues({}, x("sequenceOrderField")), { default: "SequenceOrder" }) })], b.prototype, "sequenceOrderField", void 0), __decorate([a2({ type: S })], b.prototype, "spatialReference", void 0), __decorate([a2({ json: { read: false }, value: "oriented-imagery", readOnly: true })], b.prototype, "type", void 0), __decorate([a2({ type: u.apiValues, json: __spreadValues({}, x("timeIntervalUnit", u.write, u.read, u.jsonValues)) })], b.prototype, "timeIntervalUnit", void 0), __decorate([a2(O(a(a3)))], b.prototype, "useViewTime", void 0), __decorate([a2({ type: Number, json: x("verticalFieldOfView") })], b.prototype, "verticalFieldOfView", void 0), __decorate([a2({ type: f.apiValues, json: __spreadValues({}, x("verticalMeasurementUnit", f.write, f.read, f.jsonValues)) })], b.prototype, "verticalMeasurementUnit", void 0), __decorate([a2({ type: Number, json: x("verticalSearchRange") })], b.prototype, "verticalSearchRange", void 0), __decorate([a2({ type: String, json: x("videoPathPrefix") })], b.prototype, "videoPathPrefix", void 0), __decorate([a2({ type: String, json: x("videoPathSuffix") })], b.prototype, "videoPathSuffix", void 0), __decorate([a2({ type: String, json: { read: false, write: false, origins: { service: { name: "orientedImageryInfo.orientedImageryProperties.virtualCacheDirectory", read: true } } } })], b.prototype, "virtualCacheDirectory", void 0), __decorate([a2({ type: String, json: { read: false, write: false, origins: { service: { name: "orientedImageryInfo.dsid", read: true } } } })], b.prototype, "dataStoreID", void 0), __decorate([a2({ type: m2, json: { origins: { "web-scene": { write: false, read: false } } } })], b.prototype, "visibilityTimeExtent", void 0), b = __decorate([c("esri.layers.OrientedImageryLayer")], b);
+var T = b;
+export {
+  T as default
+};
+//# sourceMappingURL=OrientedImageryLayer-P5IRE7OF.js.map

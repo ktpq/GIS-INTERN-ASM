@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/networks/unitIdentifiers/resize.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.15/LICENSE.txt */\nimport t from\"../../../request.js\";import{parseUrl as o,encode as r,asValidOptions as e}from\"../../utils.js\";import i from\"./support/EditUnitIdentifiersResult.js\";async function s(s,n,p){const m=o(s),u={...n.toJSON(),f:\"json\"},f=r({...m.query,...u}),a=e(f,{...p,method:\"post\",authMode:\"no-prompt\"}),d=`${m.path}/unitIdentifiers/resize`,{data:j}=await t(d,a);return i.fromJSON(j)}export{s as resize};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACmK,eAAeA,GAAEA,IAAE,GAAEC,IAAE;AAAC,QAAM,IAAEC,GAAEF,EAAC,GAAEG,KAAE,iCAAI,EAAE,OAAO,IAAb,EAAe,GAAE,OAAM,IAAED,KAAE,EAAE,kCAAI,EAAE,QAASC,GAAE,GAAE,IAAE,EAAED,IAAE,iCAAID,KAAJ,EAAM,QAAO,QAAO,UAAS,YAAW,EAAC,GAAE,IAAE,GAAG,EAAE,IAAI,2BAA0B,EAAC,MAAK,EAAC,IAAE,MAAM,EAAE,GAAE,CAAC;AAAE,SAAO,EAAE,SAAS,CAAC;AAAC;",
+  "names": ["s", "p", "f", "u"]
+}

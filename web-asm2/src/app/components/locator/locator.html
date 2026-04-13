@@ -1,0 +1,20 @@
+<section class="bg-white w-[15%] min-w-[300px] p-6 rounded-xl shadow-lg border border-gray-100 absolute right-0 bottom-0 m-6">
+    <h2 class="font-bold text-2xl text-center text-gray-800 mb-6">Locator Component</h2>
+    <!-- <p>Lng: {{ currentPoint()?.longitude }}</p>
+    <p>Lat: {{ currentPoint()?.latitude }}</p> -->
+    <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-1">
+            <label for="longitude" class="text-sm font-medium text-gray-700">Longitude</label>
+            <input type="number" id="longitude" class="border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your longitude..." [(ngModel)]="longInput">
+        </div>
+        
+        <div class="flex flex-col gap-1">
+            <label for="latitude" class="text-sm font-medium text-gray-700">Latitude</label>
+            <input type="number" id="latitude" class="border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your latitude..." [(ngModel)]="laInput">
+        </div>
+        
+        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-lg mt-2 transition duration-200 cursor-pointer" (click)="sendLocation()">
+            Locate
+        </button>
+    </div>
+</section>
