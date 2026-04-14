@@ -65,6 +65,7 @@ export class Home {
   addPointGraphic(currentPoint: Point){
 
     // Remove existing graphics
+    // this comment is from new-asm branch
     if (this.mapComponent.view.graphics.length > 0) {
       this.mapComponent.view.graphics.removeAll();
     }
