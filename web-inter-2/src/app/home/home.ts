@@ -83,7 +83,7 @@ export class Home {
       symbol: pointStyle
     })
 
-    console.log('currentPoint', currentPoint)
+    console.log('currentPoint :', currentPoint)
     this.mapComponent.view.graphics.add(pointGraphic);
     
   }
