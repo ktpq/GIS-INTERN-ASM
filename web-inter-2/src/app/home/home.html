@@ -1,9 +1,8 @@
 <main class="grid grid-cols-[7fr_3fr] h-screen w-screen p-6 gap-6 bg-[#f4f6f8]">
-  
   <div class="w-full h-full rounded-lg overflow-hidden shadow-md border-8 border-white bg-white">
     <arcgis-map
       basemap="topo-vector"
-      center="-117.15, 32.71" 
+      center="-117.15, 32.71"
       zoom="10"
       (arcgisViewReadyChange)="arcgisViewReadyChange($event)"
       class="w-full h-full"
@@ -11,17 +10,15 @@
   </div>
 
   <div class="flex flex-col gap-3 h-full overflow-y-auto pr-2">
-    
-    <div class="bg-[#f09c74] text-gray-800 px-4 py-3 rounded-md shadow-sm font-medium">San Diego</div>
-    <div class="bg-[#f09c74] text-gray-800 px-4 py-3 rounded-md shadow-sm font-medium">National City</div>
-    <div class="bg-[#f09c74] text-gray-800 px-4 py-3 rounded-md shadow-sm font-medium">Coronado</div>
-    <div class="bg-[#f09c74] text-gray-800 px-4 py-3 rounded-md shadow-sm font-medium">Lemon Grove</div>
-    <div class="bg-[#f09c74] text-gray-800 px-4 py-3 rounded-md shadow-sm font-medium">La Mesa</div>
-    <div class="bg-[#f09c74] text-gray-800 px-4 py-3 rounded-md shadow-sm font-medium">Chula Vista</div>
-    <div class="bg-[#f09c74] text-gray-800 px-4 py-3 rounded-md shadow-sm font-medium">Bonita</div>
-    <div class="bg-[#f09c74] text-gray-800 px-4 py-3 rounded-md shadow-sm font-medium">La Presa</div>
-    <div class="bg-[#f09c74] text-gray-800 px-4 py-3 rounded-md shadow-sm font-medium">Imperial Beach</div>
-
+    @for (feature of tenPlace(); track $index) {
+        <div class="bg-[#f09c74] text-gray-800 px-4 py-3 rounded-md shadow-sm font-medium" [ngClass]="feature.attributes['Name'] === currentName() ? 'bg-green-500' : ''" (click)="setCurrentName(feature.attributes['Name'])">
+            {{ feature.attributes['Name'] }}
+        </div>
+    }
+    @empty {
+        <div class="text-center text-gray-400 py-10 font-medium">
+             ไม่มีสถานที่ให้บริการในรัศมี
+        </div>
+    }
   </div>
-
 </main>

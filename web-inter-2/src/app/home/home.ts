@@ -1,4 +1,4 @@
-  import { Component, signal, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+  import { Component, signal, CUSTOM_ELEMENTS_SCHEMA, Signal } from '@angular/core';
   import '@arcgis/map-components/components/arcgis-map';
   import type { ArcgisMap } from '@arcgis/map-components/components/arcgis-map';
   import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
@@ -7,12 +7,16 @@
   import Graphic from '@arcgis/core/Graphic';
   import * as bufferOperator from "@arcgis/core/geometry/operators/bufferOperator.js";
   import SimpleFillSymbol from '@arcgis/core/symbols/SimpleFillSymbol';
-import Polygon from '@arcgis/core/geometry/Polygon';
-import { buffer } from 'rxjs';
+  import Polygon from '@arcgis/core/geometry/Polygon';
+  import FeatureSet from '@arcgis/core/rest/support/FeatureSet';
+  import * as closestFacility from '@arcgis/core/rest/closestFacility';
+  import ClosestFacilityParameters from '@arcgis/core/rest/support/ClosestFacilityParameters';
+  import SimpleLineSymbol from '@arcgis/core/symbols/SimpleLineSymbol';
+  import {NgClass} from '@angular/common';
 
   @Component({
     selector: 'app-home',
-    imports: [],
+    imports: [NgClass],
     templateUrl: './home.html',
     styleUrl: './home.css',
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -20,6 +24,9 @@ import { buffer } from 'rxjs';
   export class Home {
     mapComponent!: ArcgisMap;
     currentBufferGeometry!: Polygon;
+    currentPoint!: Point;
+    tenPlace = signal<Graphic[]>([]);
+    currentName = signal<String>("");
     arcgisViewReadyChange(event: CustomEvent) {
       // console.log('Map is ready', event);
       this.mapComponent = event.target as ArcgisMap;
@@ -35,10 +42,10 @@ import { buffer } from 'rxjs';
       
 
       this.mapComponent.view.on("click", (event) => {
-        const currentPoint = event.mapPoint as Point;
+        this.currentPoint = event.mapPoint as Point;
 
-        this.addPointGraphic(currentPoint);
-        this.addBufferArea(currentPoint);
+        this.addPointGraphic(this.currentPoint);
+        this.addBufferArea(this.currentPoint);
 
         if (this.currentBufferGeometry) {
           this.spatialQuery(featureLayer, this.currentBufferGeometry);
@@ -47,6 +54,81 @@ import { buffer } from 'rxjs';
 
     }
 
+    setCurrentName(name: string) {
+    this.currentName.set(name);
+
+    this.mapComponent.view.graphics.forEach((graphic: any) => {
+      
+      if (graphic.geometry.type === "polyline" && graphic.attributes['Name']) {
+        const isSelected = graphic.attributes['Name'] === name;
+        graphic.symbol = new SimpleLineSymbol({
+          color: isSelected ? [34, 197, 94, 1] : [0, 0, 0, 1], 
+          width: isSelected ? 2 : 2,
+          style: "solid"
+        });
+
+        if (isSelected) {
+          this.mapComponent.view.graphics.remove(graphic);
+          this.mapComponent.view.graphics.add(graphic);
+        }
+      }
+    });
+  }
+
+    closetFacilityQuery(spatialResult: Graphic[]) {
+      const url = "https://sampleserver6.arcgisonline.com/arcgis/rest/services/NetworkAnalysis/SanDiego/NAServer/ClosestFacility";
+  
+      closestFacility.solve(url,
+        new ClosestFacilityParameters({
+          incidents: new FeatureSet({
+            features: [new Graphic({
+              geometry: this.currentPoint,
+              attributes: { Name: 'Current Location' }
+            })],
+          }),
+          facilities: new FeatureSet({
+            features: [...spatialResult],
+          }),
+          returnRoutes: true,
+          defaultTargetFacilityCount: 10,
+        }), null
+      ).then((response: any) => { 
+        
+        if (response.routes && response.routes.features.length > 0) {
+          
+          const routeSymbol = new SimpleLineSymbol({
+            color: 'black', 
+            width: 3
+          });
+  
+          const routeGraphics = response.routes.features.map((feature: Graphic) => {
+            feature.symbol = routeSymbol;
+            const routeName = feature.attributes['Name'];
+            if (routeName && routeName.includes(' - ')) {
+              feature.attributes['Name'] = routeName.split(' - ')[1].trim();
+            }
+
+            return feature;
+          });
+  
+          this.mapComponent.view.graphics.addMany(routeGraphics);
+          
+          this.tenPlace.set(routeGraphics);
+  
+        } else {
+          console.warn("ไม่พบเส้นทางถนน อาจจะอยู่นอกพื้นที่ให้บริการของ San Diego Network");
+          this.tenPlace.set([]); 
+        }
+        
+      }).catch((error) => {
+        console.error("เกิดข้อผิดพลาดในการคำนวณเส้นทาง: ", error);
+        this.tenPlace.set([]); 
+      });
+    }
+
+
+    
+    // query and draw graphics in buffer on the map
     spatialQuery(featureLayer: FeatureLayer, currentBufferGeometry: Polygon){
       const query = featureLayer.createQuery();
           query.geometry = currentBufferGeometry;
@@ -58,7 +140,7 @@ import { buffer } from 'rxjs';
             const pointStyle = new SimpleMarkerSymbol({
               color: 'blue',
               style: 'diamond',
-              size: 25,
+              size: 17,
               outline: {
                 color: 'white',
                 width: 2
@@ -68,15 +150,19 @@ import { buffer } from 'rxjs';
             const allFeature = response.features;
             allFeature.map(feature => {
               feature.symbol = pointStyle;
+              const cityName = feature.attributes['areaname'] || "unknown";
+              feature.attributes['Name'] = cityName;
             })
-
+            
+            console.log("allFeature :", allFeature)
+            this.closetFacilityQuery(allFeature)
             this.mapComponent.view.graphics.addMany(allFeature)
           })
     }
 
     
     
-    async addBufferArea(currentPoint: Point){
+    addBufferArea(currentPoint: Point){
       const bufferMeters = 20000; // 20 kilometers
       const bufferUnit = "kilometers";
       const bufferGeometry = bufferOperator.execute(currentPoint, bufferMeters);
@@ -102,8 +188,6 @@ import { buffer } from 'rxjs';
       
     }
 
-    
-
     addPointGraphic(currentPoint: Point){
 
       // Remove existing graphics
@@ -114,7 +198,7 @@ import { buffer } from 'rxjs';
 
       const pointStyle = new SimpleMarkerSymbol({
         color: 'orange',
-        size: 40,
+        size: 25,
         outline: {
           color: 'white',
           width: 1

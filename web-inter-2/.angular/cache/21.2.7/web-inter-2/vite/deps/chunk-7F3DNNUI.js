@@ -1,0 +1,25 @@
+import {
+  l2 as l
+} from "./chunk-XCGM4D6U.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+
+// node_modules/@arcgis/core/core/Identifiable.js
+var r = 0;
+var o = (o2) => {
+  const s2 = o2;
+  let c = class extends s2 {
+    constructor(...t) {
+      super(...t), Object.defineProperty(this, "uid", { writable: false, configurable: false, value: Date.now().toString(16) + "-object-" + r++ });
+    }
+  };
+  return c = __decorate([l("esri.core.Identifiable")], c), c;
+};
+var s = o(class {
+});
+
+export {
+  o
+};
+//# sourceMappingURL=chunk-7F3DNNUI.js.map

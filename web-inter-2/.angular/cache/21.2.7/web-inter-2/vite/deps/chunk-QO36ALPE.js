@@ -1,0 +1,58 @@
+import {
+  S,
+  l,
+  o,
+  r,
+  s,
+  t,
+  y
+} from "./chunk-IILQWSIB.js";
+import {
+  u as u2
+} from "./chunk-WDHJMFLW.js";
+import {
+  m
+} from "./chunk-GW4HD2NW.js";
+import {
+  u
+} from "./chunk-Y2SQYXOZ.js";
+import {
+  d
+} from "./chunk-CJBFJRGB.js";
+
+// node_modules/@arcgis/core/symbols/support/defaults.js
+var p = u.fromJSON(l);
+var u3 = d.fromJSON(o);
+var c = m.fromJSON(S);
+var a = u2.fromJSON(t);
+function J(r2) {
+  if (null == r2) return null;
+  switch (r2.type) {
+    case "mesh":
+      return null;
+    case "point":
+    case "multipoint":
+      return p;
+    case "polyline":
+      return u3;
+    case "polygon":
+    case "extent":
+      return c;
+  }
+  return null;
+}
+var N = u.fromJSON(r);
+var O = d.fromJSON(s);
+var y2 = m.fromJSON(y);
+
+export {
+  p,
+  u3 as u,
+  c,
+  a,
+  J,
+  N,
+  O,
+  y2 as y
+};
+//# sourceMappingURL=chunk-QO36ALPE.js.map

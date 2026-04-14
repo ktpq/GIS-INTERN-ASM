@@ -1,0 +1,325 @@
+import {
+  a as a3
+} from "./chunk-6MXJH5GI.js";
+import {
+  a as a4
+} from "./chunk-DVZUPJLC.js";
+import {
+  C as C2,
+  o as o3
+} from "./chunk-OCN6JBSQ.js";
+import {
+  n as n2
+} from "./chunk-KEY3YQEB.js";
+import {
+  s as s2
+} from "./chunk-ZWC72SJH.js";
+import {
+  m
+} from "./chunk-7V6QSUHG.js";
+import {
+  j
+} from "./chunk-76B4KLE5.js";
+import {
+  y3 as y
+} from "./chunk-N7K4YSHO.js";
+import {
+  z2 as z
+} from "./chunk-T5K7SRI5.js";
+import {
+  _,
+  o,
+  r as r2,
+  s as s3
+} from "./chunk-X2SNEXCL.js";
+import {
+  e,
+  i as i2,
+  n,
+  o as o2,
+  t
+} from "./chunk-GM5PCDS3.js";
+import {
+  a as a2,
+  c,
+  i,
+  v
+} from "./chunk-URLT4X25.js";
+import {
+  S
+} from "./chunk-RU6HGVJG.js";
+import {
+  A,
+  O as O3
+} from "./chunk-JC2AZ2NN.js";
+import {
+  C,
+  O as O2,
+  P,
+  T,
+  U
+} from "./chunk-ZTEDLWCB.js";
+import {
+  a
+} from "./chunk-MRTJYRK3.js";
+import {
+  O,
+  s
+} from "./chunk-PQFEWUZC.js";
+import {
+  r3 as r
+} from "./chunk-TX75HZKJ.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/geometry/projection/projectXYZToVector.js
+function t2(r3, t3, f, c2, i3, m2) {
+  return e2[0] = r3, e2[1] = t3, e2[2] = f, o3(e2, c2, 0, i3, m2, 0);
+}
+var e2 = n2();
+
+// node_modules/@arcgis/core/geometry/projectionUtils.js
+var C3 = null;
+var D = null;
+var W = null;
+var I = null;
+var L = {};
+var B = new s2();
+function V() {
+  return !!(D?.isLoaded() && W?.isLoaded() && I?.isLoaded());
+}
+function X() {
+  return !!V() || (a(B), F(), false);
+}
+function Y(n3, e3) {
+  return !n3 || !e3 || (tn(n3, e3) || X());
+}
+function q(n3, e3) {
+  return !tn(n3, e3) && !V();
+}
+async function F(n3) {
+  null == C3 && (C3 = Promise.all([import("./projectOperator-EGPJXUCH.js").then((n4) => (D = n4, D.load())), import("./projectOperator-UPYHPJIZ.js").then((n4) => (W = n4, W.load())), import("./geographicTransformationUtils-4QWBVM77.js").then((n4) => (I = n4, I.load()))])), await C3, s(n3), B.notify();
+}
+function H(n3, e3, r3) {
+  return Array.isArray(n3) ? 0 === n3.length ? [] : (r2(n3), J(n3, n3[0].spatialReference, e3, r3)) : (o(n3), J([n3], n3.spatialReference, e3, r3)[0]);
+}
+function J(n3, e3, r3, t3) {
+  if (null == e3 || null == r3) return n3;
+  if (tn(e3, r3, t3)) return n3.map((n4) => an(n4, e3, r3));
+  if (null == t3?.geographicTransformation && A(e3)) {
+    return J(n3.map((n4) => an(n4, e3, S.WGS84)), S.WGS84, r3, { zConversionDisabled: t3?.zConversionDisabled });
+  }
+  if (null == t3?.geographicTransformation && A(r3)) {
+    return J(n3, e3, S.WGS84).map((n4) => an(n4, S.WGS84, r3));
+  }
+  if (!V()) throw new _2();
+  if (!t3?.geographicTransformation) {
+    if (t3?.extendedParams) t3 = __spreadProps(__spreadValues({}, t3), { geographicTransformation: I.getTransformation(e3, r3, t3.areaOfInterestExtent) || new a4() });
+    else if (!t3?.areaOfInterestExtent) {
+      const n4 = K(e3, r3);
+      let o4 = L[n4];
+      o4 || (o4 = I.getTransformation(e3, r3) || new a4(), L[n4] = o4), t3 = { geographicTransformation: o4, zConversionDisabled: t3?.zConversionDisabled };
+    }
+  }
+  return n3[0].spatialReference || (n3[0].spatialReference = e3), n3[0] instanceof s3 ? D.executeMany(n3, r3, t3) : W.executeMany(n3, r3, t3);
+}
+function K(n3, e3) {
+  return [n3.wkid?.toString() ?? "-1", n3.wkt?.toString() ?? "", n3.wkt2?.toString() ?? "", e3.wkid?.toString() ?? "-1", e3.wkt?.toString() ?? "", e3.wkt2?.toString() ?? ""].join();
+}
+function N(n3, e3, r3) {
+  try {
+    return H(n3, e3, r3);
+  } catch (t3) {
+    return null;
+  }
+}
+function Q(n3, e3) {
+  const r3 = $([n3], e3);
+  return null != r3.pending ? { pending: r3.pending, geometry: null } : null != r3.geometries ? { pending: null, geometry: r3.geometries[0] } : { pending: null, geometry: null };
+}
+function $(n3, e3, r3) {
+  if (!V()) {
+    for (const o4 of n3) if (null != o4 && !T(o4.spatialReference, e3) && U(o4.spatialReference) && U(e3) && !tn(o4.spatialReference, e3)) return a(B), { pending: F(), geometries: null };
+  }
+  return { pending: null, geometries: n3.map((n4) => null == n4 ? null : T(n4.spatialReference, e3) ? n4 : U(n4.spatialReference) && U(e3) ? H(n4, e3, r3) : null) };
+}
+var _2 = class extends r {
+  constructor() {
+    super("projection:not-loaded", "projection engine not fully loaded yet, please call load()");
+  }
+};
+function nn() {
+  C3 = null, D = null, W = null, I = null, L = {};
+}
+var en = { get loadPromise() {
+  return C3;
+} };
+async function rn(n3, r3, t3) {
+  if (s(t3), !n3) return n3;
+  const o4 = $(Array.isArray(n3) ? n3 : [n3], r3, t3);
+  if (o4.pending) return await o4.pending, s(t3), rn(n3, r3, t3);
+  const i3 = o4.geometries ?? [];
+  return Array.isArray(n3) ? i3 : i3[0];
+}
+function tn(n3, e3, r3) {
+  return !(r3?.areaOfInterestExtent || r3?.extendedParams || r3?.geographicTransformation) && (!!T(n3, e3) || U(n3) && U(e3) && !!C2(n3, e3));
+}
+function on(n3, e3) {
+  if (T(n3, e3)) return true;
+  if (!U(n3) || !U(e3)) return false;
+  const r3 = P(n3) || O2(n3) || C(n3), t3 = P(e3) || O2(e3) || C(e3);
+  return r3 && t3;
+}
+async function sn(n3, e3, t3, o4) {
+  if (V()) return O(o4);
+  if (Array.isArray(n3)) {
+    for (const { source: r3, dest: i3, options: s4 } of n3) if (r3 && i3 && !tn(r3, i3, s4)) return F(o4);
+  } else if (n3 && e3 && !tn(n3, e3, t3)) return F(o4);
+  return O(o4);
+}
+function an(n3, e3, r3) {
+  return n3 ? t(n3) ? un(n3, e3, new _(), r3, 0) : n(n3) ? jn(n3, e3, new z(), r3, 0) : o2(n3) ? gn(n3, e3, new j(), r3, 0) : e(n3) ? mn(n3, e3, new y(), r3, 0) : i2(n3) ? fn(n3, e3, new m(), r3, 0) : null : null;
+}
+function ln(n3, e3, r3 = e3.spatialReference, t3 = 0) {
+  return null != r3 && null != n3.spatialReference && null != un(n3, n3.spatialReference, e3, r3, t3);
+}
+function un(n3, e3, r3, t3, o4) {
+  wn[0] = n3.x, wn[1] = n3.y;
+  const i3 = n3.z;
+  return wn[2] = void 0 !== i3 ? i3 : o4, o3(wn, e3, 0, wn, t3, 0) ? (r3.x = wn[0], r3.y = wn[1], r3.spatialReference = t3, void 0 !== i3 || O3(t3) ? (r3.z = wn[2], r3.hasZ = true) : (r3.z = void 0, r3.hasZ = false), void 0 === n3.m ? (r3.m = void 0, r3.hasM = false) : (r3.m = n3.m, r3.hasM = true), r3) : null;
+}
+function cn(n3, e3, r3 = e3.spatialReference, t3 = 0) {
+  return null != n3.spatialReference && null != r3 && null != fn(n3, n3.spatialReference, e3, r3, t3);
+}
+function fn(n3, e3, r3, t3, o4) {
+  const { points: i3, hasZ: s4, hasM: a5 } = n3, l = [], u = i3.length, c2 = [];
+  for (const p of i3) c2.push(p[0], p[1], s4 ? p[2] : o4);
+  if (!o3(c2, e3, 0, c2, t3, 0, u)) return null;
+  const f = xn(s4, t3);
+  for (let p = 0; p < u; ++p) {
+    const n4 = 3 * p, e4 = c2[n4], r4 = c2[n4 + 1];
+    f && a5 ? l.push([e4, r4, c2[n4 + 2], i3[p][3]]) : f ? l.push([e4, r4, c2[n4 + 2]]) : a5 ? l.push([e4, r4, i3[p][2]]) : l.push([e4, r4]);
+  }
+  return r3.points = l, r3.spatialReference = t3, r3.hasZ = s4, r3.hasM = a5, r3;
+}
+function pn(n3, e3, r3 = e3.spatialReference, t3 = 0) {
+  return null != n3.spatialReference && null != r3 && null != mn(n3, n3.spatialReference, e3, r3, t3);
+}
+function mn(n3, e3, r3, t3, o4) {
+  const { curvePaths: i3, paths: s4, hasZ: a5, hasM: l } = n3;
+  if (!(i3 ? Rn(i3, a5 ?? false, l ?? false, e3, r3.curvePaths = [], t3, o4) : yn(s4, a5 ?? false, l ?? false, e3, r3.paths, t3, o4))) return null;
+  const u = xn(a5, t3);
+  return r3.spatialReference = t3, r3.hasZ = u, r3.hasM = l, r3;
+}
+function hn(n3, e3, r3 = e3.spatialReference, t3 = 0) {
+  return null != n3.spatialReference && null != r3 && null != gn(n3, n3.spatialReference, e3, r3, t3);
+}
+function gn(n3, e3, r3, t3, o4) {
+  const { curveRings: i3, rings: s4, hasZ: a5, hasM: l } = n3;
+  return (i3 ? Rn(i3, a5 ?? false, l ?? false, e3, r3.curveRings = [], t3, o4) : yn(s4, a5 ?? false, l ?? false, e3, r3.rings, t3, o4)) ? (r3.spatialReference = t3, r3.hasZ = xn(a5, t3), r3.hasM = l, r3) : null;
+}
+function dn(n3, e3, r3 = e3.spatialReference, t3 = 0) {
+  return null != n3.spatialReference && null != r3 && null != jn(n3, n3.spatialReference, e3, r3, t3);
+}
+function jn(n3, e3, r3, t3, o4) {
+  const { xmin: i3, ymin: s4, xmax: a5, ymax: l, hasZ: u, hasM: c2 } = n3, f = u ? n3.zmin : o4;
+  if (!t2(i3, s4, f, e3, wn, t3)) return null;
+  const p = xn(u, t3);
+  r3.xmin = wn[0], r3.ymin = wn[1], p && (r3.zmin = wn[2]);
+  const m2 = u ? n3.zmax : o4;
+  return t2(a5, l, m2, e3, wn, t3) ? (r3.xmax = wn[0], r3.ymax = wn[1], p && (r3.zmax = wn[2]), c2 && (r3.mmin = n3.mmin, r3.mmax = n3.mmax), r3.spatialReference = t3, r3) : null;
+}
+function yn(n3, e3, r3, t3, o4, i3, s4 = 0) {
+  const a5 = new Array();
+  for (const f of n3) for (const n4 of f) a5.push(n4[0], n4[1], e3 ? n4[2] : s4);
+  if (!o3(a5, t3, 0, a5, i3, 0)) return false;
+  let l = 0;
+  o4.length = 0;
+  const u = e3 ? 3 : 2, c2 = xn(e3, i3);
+  for (const f of n3) {
+    const n4 = new Array();
+    for (const e4 of f) {
+      const t4 = a5.slice(l, l += 3);
+      c2 || t4.pop(), r3 && t4.push(e4[u]), n4.push(t4);
+    }
+    o4.push(n4);
+  }
+  return true;
+}
+function Rn(n3, e3, r3, t3, o4, i3, s4 = 0) {
+  const a5 = new Array();
+  for (const f of n3) for (const n4 of f) {
+    if (a2(n4)) return false;
+    if (c(n4)) {
+      const [r5, t4] = n4.c;
+      a5.push(r5[0], r5[1], e3 ? r5[2] : s4, t4[0], t4[1], s4);
+      continue;
+    }
+    if (i(n4)) {
+      const [r5, t4, o5] = n4.b;
+      a5.push(r5[0], r5[1], e3 ? r5[2] : s4, t4[0], t4[1], s4, o5[0], o5[1], s4);
+      continue;
+    }
+    const r4 = n4;
+    a5.push(r4[0], r4[1], e3 ? r4[2] : s4);
+  }
+  if (!o3(a5, t3, 0, a5, i3, 0)) return false;
+  let l = 0;
+  o4.length = 0;
+  const u = e3 ? 3 : 2, c2 = xn(e3, i3);
+  for (const f of n3) {
+    const n4 = new Array();
+    for (const e4 of f) {
+      const t4 = a5.slice(l, l += 3);
+      if (c2 || t4.pop(), r3 && t4.push(v(e4)[u]), a2(e4)) return false;
+      if (c(e4)) {
+        const e5 = a5[l++], r4 = a5[l++];
+        ++l, n4.push({ c: [t4, [e5, r4]] });
+        continue;
+      }
+      if (i(e4)) {
+        const e5 = a5[l++], r4 = a5[l++];
+        ++l;
+        const o5 = a5[l++], i4 = a5[l++];
+        ++l, n4.push({ b: [t4, [e5, r4], [o5, i4]] });
+        continue;
+      }
+      n4.push(t4);
+    }
+    o4.push(n4);
+  }
+  return true;
+}
+function xn(n3, e3) {
+  return n3 || O3(e3) || T(e3, a3);
+}
+var wn = n2();
+
+export {
+  t2 as t,
+  V,
+  X,
+  Y,
+  q,
+  F,
+  H,
+  J,
+  N,
+  Q,
+  $,
+  nn,
+  en,
+  rn,
+  tn,
+  on,
+  sn,
+  an,
+  ln,
+  cn,
+  pn,
+  hn,
+  dn
+};
+//# sourceMappingURL=chunk-HHAFAO43.js.map
