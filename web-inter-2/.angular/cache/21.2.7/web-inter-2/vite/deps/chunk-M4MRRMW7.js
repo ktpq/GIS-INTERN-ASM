@@ -1,0 +1,38 @@
+import {
+  s as s2
+} from "./chunk-MK2NUIE5.js";
+import {
+  e
+} from "./chunk-CUCS7PIR.js";
+import {
+  l
+} from "./chunk-SFRKVYJX.js";
+import {
+  o
+} from "./chunk-OSUSFJ34.js";
+import {
+  s
+} from "./chunk-WBF67J46.js";
+import {
+  t
+} from "./chunk-BBPD3RSJ.js";
+
+// node_modules/@arcgis/core/chunks/HighlightToSingle.glsl.js
+function s3() {
+  const s4 = new s();
+  s4.include(s2), s4.include(l);
+  const { fragment: h2 } = s4;
+  return s4.outputs.add("fragSingleHighlight", "vec2", 0), h2.uniforms.add(new e("highlightTexture", (e2) => e2.highlightTexture), new o("highlightLevel", (e2) => e2.highlightLevel)), h2.main.add(t`ivec2 iuv = ivec2(gl_FragCoord.xy);
+uvec2 inputTexel = texelFetch(highlightTexture, iuv, 0).rg;
+uint bits = readLevelBits(inputTexel, highlightLevel);
+bool hasHighlight = (bits & 1u) == 1u;
+bool hasOccluded  = (bits & 2u) == 2u;
+fragSingleHighlight = vec2(hasHighlight ? 1.0 : 0.0, hasOccluded ? 1.0 : 0.0);`), s4;
+}
+var h = Object.freeze(Object.defineProperty({ __proto__: null, build: s3 }, Symbol.toStringTag, { value: "Module" }));
+
+export {
+  s3 as s,
+  h
+};
+//# sourceMappingURL=chunk-M4MRRMW7.js.map

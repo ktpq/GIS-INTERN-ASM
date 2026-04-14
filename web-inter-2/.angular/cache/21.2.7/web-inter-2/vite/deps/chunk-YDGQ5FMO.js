@@ -1,0 +1,26 @@
+import {
+  P
+} from "./chunk-UCM6ART3.js";
+import {
+  t
+} from "./chunk-TPDTUQ5K.js";
+
+// node_modules/@arcgis/core/geometry/operators/gx/operatorGeneralize.js
+var n = new P();
+function t2(r, e, t3) {
+  return n.execute(r, e, t3, null);
+}
+function o(e, t3, o2) {
+  const u2 = n.executeMany(new t(e), t3, o2, null);
+  return Array.from(u2);
+}
+function u() {
+  return n.supportsCurves();
+}
+
+export {
+  t2 as t,
+  o,
+  u
+};
+//# sourceMappingURL=chunk-YDGQ5FMO.js.map

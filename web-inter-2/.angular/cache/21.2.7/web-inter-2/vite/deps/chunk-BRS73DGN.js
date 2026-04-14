@@ -1,0 +1,66 @@
+import {
+  T
+} from "./chunk-YK5DPRSK.js";
+import {
+  t3 as t2,
+  y
+} from "./chunk-JM4CKTH2.js";
+import {
+  a,
+  t
+} from "./chunk-6I475YAP.js";
+
+// node_modules/@arcgis/core/webdoc/support/writeUtils.js
+var o = /* @__PURE__ */ new Set(["bing-maps", "imagery", "imagery-tile", "map-image", "open-street-map", "tile", "unknown", "unsupported", "vector-tile", "web-tile", "wcs", "wms", "wmts"]);
+var l = /* @__PURE__ */ new Set(["integrated-mesh-3dtiles"]);
+var a2 = /* @__PURE__ */ new Set(["catalog", "csv", "feature", "geo-rss", "geojson", "group", "imagery", "imagery-tile", "kml", "knowledge-graph", "map-image", "map-notes", "media", "ogc-feature", "oriented-imagery", "parquet", "route", "stream", "subtype-group", "tile", "unknown", "unsupported", "vector-tile", "video", "web-tile", "wcs", "wfs", "wms", "wmts"]);
+var s = /* @__PURE__ */ new Set([...a2, "link-chart"]);
+function d(e) {
+  switch (e.layerContainerType) {
+    case "basemap-base-layers":
+      return o;
+    case "basemap-ground-layers":
+      return l;
+    case "operational-layers":
+      return "link-chart" === e.origin ? s : a2;
+    default:
+      return null;
+  }
+}
+function m(e, t3) {
+  if (t3.restrictedWebMapWriting) {
+    const n = d(t3);
+    return null == n || n.has(e.type) && !T(e);
+  }
+  return true;
+}
+function p(e, n) {
+  if (n) if (T(e)) {
+    const r = t("featureCollection.layers", n), i = r?.[0]?.layerDefinition;
+    i && f(e, i);
+  } else "group" !== e.type && f(e, n);
+}
+function f(e, t3) {
+  "maxScale" in e && (t3.maxScale = y(e.maxScale) ?? void 0), "minScale" in e && (t3.minScale = y(e.minScale) ?? void 0);
+}
+function g(e, t3) {
+  if (p(e, t3), t3 && (t3.id = e.id, "blendMode" in e && (t3.blendMode = e.blendMode, "normal" === t3.blendMode && delete t3.blendMode), t3.opacity = y(e.opacity) ?? void 0, t3.title = e.title || "Layer", t3.visibility = e.visible, "legendEnabled" in e && "wmts" !== e.type)) if (T(e)) {
+    const n = t3.featureCollection;
+    n && (n.showLegend = e.legendEnabled);
+  } else t3.showLegend = e.legendEnabled;
+}
+function w(t3, n, o2) {
+  if (!t3.persistenceEnabled) return null;
+  if (!("write" in t3) || !t3.write) return t2(o2, t3), null;
+  if (T(t3) && !t3.isTable) n = t3.resourceInfo;
+  else if (m(t3, o2)) {
+    const e = {};
+    return t3.write(e, o2) ? e : null;
+  }
+  return null != n && g(t3, n = a(n)), n;
+}
+
+export {
+  w
+};
+//# sourceMappingURL=chunk-BRS73DGN.js.map
