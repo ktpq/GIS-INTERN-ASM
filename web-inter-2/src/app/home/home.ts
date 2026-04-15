@@ -77,7 +77,7 @@
 
     closetFacilityQuery(spatialResult: Graphic[]) {
       const url = "https://sampleserver6.arcgisonline.com/arcgis/rest/services/NetworkAnalysis/SanDiego/NAServer/ClosestFacility";
-  
+      console.log("spatialResult :", spatialResult)
       closestFacility.solve(url,
         new ClosestFacilityParameters({
           incidents: new FeatureSet({
