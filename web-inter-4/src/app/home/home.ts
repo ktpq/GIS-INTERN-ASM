@@ -7,6 +7,7 @@ import Point from '@arcgis/core/geometry/Point';
 import * as route from "@arcgis/core/rest/route";
 import RouteParameters from "@arcgis/core/rest/support/RouteParameters.js";
 import FeatureSet from '@arcgis/core/rest/support/FeatureSet';
+import SimpleLineSymbol from '@arcgis/core/symbols/SimpleLineSymbol';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,7 @@ import FeatureSet from '@arcgis/core/rest/support/FeatureSet';
 export class Home {
   mapComponent!: ArcgisMap;
   allPoint = signal<Graphic[]>([]);
+  allFeatures = signal<Graphic[]>([]);
   arcgisViewReadyChange(event: CustomEvent) {
     // The view is ready, add additional functionality below
     console.log('Map is ready', event);
@@ -38,7 +40,24 @@ export class Home {
       }),
       returnDirections: true,
     })
-    route.solve(url, routeParams).then((response) => { console.log("route data : ",response) })
+    route.solve(url, routeParams).then((response) => { 
+      console.log("route data : ",response)
+      if (response.routeResults[0].directions){
+        this.allFeatures.set(response.routeResults[0].directions.features);
+        this.allFeatures().forEach((feature) => {
+          const lineStyle = new SimpleLineSymbol({
+            color: 'green', 
+            width: 2,
+          })
+
+          const lineGraphic = new Graphic({
+            geometry: feature.geometry,
+            symbol: lineStyle,
+          })
+          this.mapComponent.view.graphics.add(lineGraphic);
+        })
+      }
+    })
   }
   addPointGraphic(mapPoint: Point){
     let pointStyle = null;
@@ -74,6 +93,7 @@ export class Home {
 
   clearAllPoints(){
     this.allPoint.set([]);
+    this.allFeatures.set([])
     this.mapComponent.view.graphics.removeAll();
   }
 }

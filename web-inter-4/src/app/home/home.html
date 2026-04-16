@@ -18,7 +18,9 @@
             Start Route
         </button>
       } @else {
-        <h1> please add more points first !</h1>
+        <button class="bg-[#3b82f6] hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-md shadow-sm transition-colors">
+            Cannot find route
+        </button>
       }
 
       
@@ -28,19 +30,11 @@
     </div>
 
     <div class="flex flex-col gap-4 p-6 overflow-y-auto text-gray-700 text-[15px]">
-      <p>1. Start at Location 1</p>
-      <p>2. Go south on KETTNER BLVD toward W BROADWAY</p>
-      <p>3. Turn left on W BROADWAY</p>
-      <p>4. Turn left on FRONT ST, then turn right on W BROADWAY</p>
-      <p>5. Arrive at Location 2, on the left</p>
-      <p>6. Depart Location 2</p>
-      <p>7. Continue east on W BROADWAY</p>
-      <p>8. Turn right on 1ST AVE, then turn left on BROADWAY</p>
-      <p>9. Turn left on 10TH AVE</p>
-      <p>10. Turn right on B ST</p>
-      <p>11. Turn left on PARK BLVD</p>
-      <p>12. Turn right on A ST, then turn left on PARK BLVD</p>
-      <p>13. Finish at Location 3, on the right</p>
+      @for (feature of allFeatures(); track $index) {
+        <p> {{$index+1}}. {{ feature.attributes.text }}</p>
+      } @empty {
+        <p class="w-full text-red-500"> ยังไม่มีข้อมูลเส้นทาง </p>
+      }
     </div>
 
   </div>
