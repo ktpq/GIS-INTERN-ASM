@@ -1,6 +1,42 @@
-<arcgis-map
-basemap="topo-vector"
-center="-117.15, 32.71"
-zoom="10"
-(arcgisViewReadyChange)="arcgisViewReadyChange($event)"
-class="h-screen"></arcgis-map>
+<main class="grid grid-cols-[7fr_4fr] h-screen w-screen p-6 gap-6 bg-[#f4f6f8]">
+  
+  <div class="w-full h-full rounded-lg overflow-hidden shadow-md border-8 border-white bg-white">
+    <arcgis-map
+      basemap="topo-vector"
+      center="-117.15, 32.71"
+      zoom="13" 
+      (arcgisViewReadyChange)="arcgisViewReadyChange($event)"
+      class="w-full h-full"
+    ></arcgis-map>
+  </div>
+
+  <div class="flex flex-col h-full bg-white rounded-lg shadow-md border-8 border-white overflow-hidden">
+    
+    <div class="flex gap-4 p-4 border-b border-gray-100">
+      <button class="bg-[#3b82f6] hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-md shadow-sm transition-colors">
+        Start Route
+      </button>
+      <button class="bg-[#ef4444] hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md shadow-sm transition-colors">
+        Clear All
+      </button>
+    </div>
+
+    <div class="flex flex-col gap-4 p-6 overflow-y-auto text-gray-700 text-[15px]">
+      <p>1. Start at Location 1</p>
+      <p>2. Go south on KETTNER BLVD toward W BROADWAY</p>
+      <p>3. Turn left on W BROADWAY</p>
+      <p>4. Turn left on FRONT ST, then turn right on W BROADWAY</p>
+      <p>5. Arrive at Location 2, on the left</p>
+      <p>6. Depart Location 2</p>
+      <p>7. Continue east on W BROADWAY</p>
+      <p>8. Turn right on 1ST AVE, then turn left on BROADWAY</p>
+      <p>9. Turn left on 10TH AVE</p>
+      <p>10. Turn right on B ST</p>
+      <p>11. Turn left on PARK BLVD</p>
+      <p>12. Turn right on A ST, then turn left on PARK BLVD</p>
+      <p>13. Finish at Location 3, on the right</p>
+    </div>
+
+  </div>
+
+</main>
