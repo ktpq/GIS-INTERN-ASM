@@ -5,6 +5,7 @@ import GraphicsLayer from '@arcgis/core/layers/GraphicsLayer';
 
 import '@arcgis/map-components/components/arcgis-sketch';
 import type { ArcgisSketch } from '@arcgis/map-components/components/arcgis-sketch';
+import { on } from '@arcgis/core/core/reactiveUtils';
 @Component({
   selector: 'app-home',
   imports: [],
@@ -27,10 +28,15 @@ export class Home {
 
     
     const sketchElement = document.querySelector(".sketch") as ArcgisSketch;
+    // เช็คว่า sketchElement มีอยู่จริงก่อนที่จะตั้งค่า
     if (sketchElement) {
         sketchElement.layer = graphicLayer;
         sketchElement.availableCreateTools = ["polygon"];
+        sketchElement.create("polygon");
+        
     }
+
+    
 
 
   }
