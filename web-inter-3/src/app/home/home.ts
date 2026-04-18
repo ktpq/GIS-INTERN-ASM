@@ -23,7 +23,7 @@ export class Home {
   featureLayer = new FeatureLayer({
     url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Wildfire/FeatureServer/2"
   })
-  currentUpdateId = -1;
+  currentSelectId = -1;
   arcgisViewReadyChange(event: CustomEvent) {
     console.log('Map is ready', event);
     this.mapComponent = event.target as ArcgisMap;
@@ -92,7 +92,7 @@ export class Home {
         geometry: geometry,
         symbol: featureStyle,
         attributes: {
-          objectid: this.currentUpdateId,
+          objectid: this.currentSelectId,
           description: "update feature"
         }
       })
@@ -100,6 +100,15 @@ export class Home {
         updateFeatures: [updateFeature]
       })
     }
+  }
+
+  onSketchDelete(event: CustomEvent){
+    // console.log("Delete Event: ", event)
+    this.featureLayer.applyEdits({
+      deleteFeatures: [{objectId: this.currentSelectId}]
+    }).then((response) => {
+      console.log("Delete object response", response)
+    })
   }
 
 
@@ -110,7 +119,9 @@ export class Home {
     
     this.featureLayer.queryFeatures(query).then((response) => {
       console.log("Query Response : ", response.features[0].attributes.objectid)
-      this.currentUpdateId = response.features[0].attributes.objectid
+      this.currentSelectId = response.features[0].attributes.objectid
     })
   }
+
+
 }

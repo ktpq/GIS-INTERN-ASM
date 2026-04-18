@@ -6,6 +6,6 @@
   class="h-screen"
 >
   
-  <arcgis-sketch position="top-right" class="sketch" creation-mode="single" [availableCreateTools]="['polygon']" (arcgisCreate)="onSketchCreate($event)" (arcgisUpdate)="onSketchUpdate($event)"></arcgis-sketch>
+  <arcgis-sketch position="top-right" class="sketch" creation-mode="single" [availableCreateTools]="['polygon']" (arcgisCreate)="onSketchCreate($event)" (arcgisUpdate)="onSketchUpdate($event)" (arcgisDelete)="onSketchDelete($event)"></arcgis-sketch>
 
 </arcgis-map>
