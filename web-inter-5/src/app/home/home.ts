@@ -5,6 +5,9 @@ import { ArcgisMap } from '@arcgis/map-components/components/arcgis-map';
 import "@arcgis/map-components/components/arcgis-layer-list";
 import TileLayer from '@arcgis/core/layers/TileLayer';
 import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
+import MapImageLayer from '@arcgis/core/layers/MapImageLayer';
+import "@arcgis/map-components/components/arcgis-swipe";
+
 
 @Component({
   selector: 'app-home',
@@ -15,23 +18,38 @@ import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
 })
 export class Home {
   mapComponent!: ArcgisMap;
+  oceanMap = new TileLayer({
+      url: "https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer"
+  })
+
+  cencusMap = new FeatureLayer({
+        url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer",
+        outFields: ["*"],
+    })
+
+  streetMap = new TileLayer({
+      url: "https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer"
+  })
   arcgisViewReadyChange(event: CustomEvent) {
     // The view is ready, add additional functionality below
     console.log('Map is ready', event);
     this.mapComponent = event.target as ArcgisMap;
 
-    if (this.mapComponent){
-      const oceanMap = new TileLayer({
-        url: "https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer"
-      })
+    if (this.mapComponent && this.mapComponent.view.map) {
 
-      const cencusMap = new FeatureLayer({
-        url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer",
-        outFields: ["*"],
-      })
+      // web-inter-5
+      // const cencusMap = new FeatureLayer({
+      //   url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer",
+      //   outFields: ["*"],
+      // })
 
-      this.mapComponent.view.map.add(oceanMap);
-      this.mapComponent.view.map.add(cencusMap);
+
+      this.mapComponent.view.map.add(this.oceanMap);
+      // web-inter-5
+      // this.mapComponent.view.map.add(this.cencusMap);
+
+      // web-inter-6
+      this.mapComponent.view.map.add(this.streetMap);
 
     }
   }

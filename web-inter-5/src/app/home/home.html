@@ -4,5 +4,6 @@ center="-117.15, 32.71"
 zoom="13" 
 (arcgisViewReadyChange)="arcgisViewReadyChange($event)"
 class="h-screen">
-<arcgis-layer-list slot="top-right"></arcgis-layer-list>
+<!-- <arcgis-layer-list slot="top-right"></arcgis-layer-list> -->
+  <arcgis-swipe direction="horizontal" position="25" [startLayers]="oceanMap" [endLayers]="streetMap"></arcgis-swipe>
 </arcgis-map>

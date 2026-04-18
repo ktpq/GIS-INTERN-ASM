@@ -26,7 +26,6 @@ export class Home {
     // The view is ready, add additional functionality below
     console.log('Map is ready', event);
     this.mapComponent = event.target as ArcgisMap;
-
     this.mapComponent.view.on('click', (event) => {
       console.log('Map clicked at: ', event.mapPoint);
       this.addPointGraphic(event.mapPoint);
