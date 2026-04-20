@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "aYXGfXI+bpo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kiww\\Desktop\\cdg\\test-dotnet\\VideoGameCharacterApi\\VideoGameCharacterApi\\VideoGameCharacterApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kiww\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.6\\microsoft.aspnetcore.openapi.10.0.6.nupkg.sha512",
+    "C:\\Users\\kiww\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\kiww\\.nuget\\packages\\scalar.aspnetcore\\2.14.1\\scalar.aspnetcore.2.14.1.nupkg.sha512"
+  ],
+  "logs": []
+}
