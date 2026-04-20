@@ -7,6 +7,7 @@ import TileLayer from '@arcgis/core/layers/TileLayer';
 import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
 import MapImageLayer from '@arcgis/core/layers/MapImageLayer';
 import "@arcgis/map-components/components/arcgis-swipe";
+import MapImage from '@arcgis/core/layers/support/MapImage';
 
 
 @Component({
@@ -22,10 +23,9 @@ export class Home {
       url: "https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer"
   })
 
-  cencusMap = new FeatureLayer({
+  cencusMap = new MapImageLayer({
         url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer",
-        outFields: ["*"],
-    })
+  })
 
   streetMap = new TileLayer({
       url: "https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer"
@@ -37,19 +37,15 @@ export class Home {
 
     if (this.mapComponent && this.mapComponent.view.map) {
 
-      // web-inter-5
-      // const cencusMap = new FeatureLayer({
-      //   url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer",
-      //   outFields: ["*"],
-      // })
+      
 
 
       this.mapComponent.view.map.add(this.oceanMap);
       // web-inter-5
-      // this.mapComponent.view.map.add(this.cencusMap);
+      this.mapComponent.view.map.add(this.cencusMap);
 
       // web-inter-6
-      this.mapComponent.view.map.add(this.streetMap);
+      // this.mapComponent.view.map.add(this.streetMap);
 
     }
   }

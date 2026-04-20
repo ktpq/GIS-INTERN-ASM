@@ -28,6 +28,9 @@ export class Home {
     console.log('Map is ready', event);
     this.mapComponent = event.target as ArcgisMap;
 
+    // if (this.mapComponent.view.map){
+    //   this.mapComponent.view.map.add(this.featureLayer);
+    // }
     // let graphicLayer = new GraphicsLayer();
 
     // if (this.mapComponent.view.map) {
