@@ -1,9 +1,0 @@
-// node_modules/@esri/calcite-components/dist/chunks/dynamicClasses.js
-function getDimensionClass(type, size, scale) {
-  return size ? `${type}-${size}` : scale ? `${type}-${scale}` : `${type}-m`;
-}
-
-export {
-  getDimensionClass
-};
-//# sourceMappingURL=chunk-OEYYJZEN.js.map

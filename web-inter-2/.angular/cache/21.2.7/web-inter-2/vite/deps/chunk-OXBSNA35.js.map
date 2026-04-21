@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/symbols/support/webStyleAcceptedFormats.js"],
-  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nconst e=[\"web-gltf\",\"web\",\"cim\"];export{e as defaultAcceptedFormats};\n"],
-  "mappings": ";AACA,IAAM,IAAE,CAAC,YAAW,OAAM,KAAK;",
-  "names": []
-}

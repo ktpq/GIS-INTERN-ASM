@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/libs/parquet/loadParquetModule.js"],
-  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nimport{getAssetUrl as t}from\"../../assets.js\";let n=null;async function s(){return n||(n=a()),n}async function a(){const n=await import(\"../../chunks/bundle.js\");return await n.default({module_or_path:t(\"esri/libs/parquet/pkg/bundle_bg.wasm\")}),n}export{s as loadParquetModule};\n"],
-  "mappings": ";;;;;AAC8C,IAAIA,KAAE;AAAK,eAAe,IAAG;AAAC,SAAOA,OAAIA,KAAE,EAAE,IAAGA;AAAC;AAAC,eAAe,IAAG;AAAC,QAAMA,KAAE,MAAM,OAAO,sBAAwB;AAAE,SAAO,MAAMA,GAAE,QAAQ,EAAC,gBAAe,EAAE,sCAAsC,EAAC,CAAC,GAAEA;AAAC;",
-  "names": ["n"]
-}

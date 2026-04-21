@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../node_modules/@arcgis/core/layers/graphics/data/optimizedFeatureQueryEngineAdapter.js"],
-  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nimport{OptimizedFeature as t}from\"../OptimizedFeature.js\";const e={getObjectId:t=>t.objectId,getAttributes:t=>t.attributes,getAttribute:(t,e)=>t.attributes[e],cloneWithGeometry:(e,r,o)=>new t(r,e.attributes,null,e.objectId),getGeometry:t=>t.geometry,getCentroid:(t,e)=>t.ensureCentroid(e)};export{e as optimizedFeatureQueryEngineAdapter};\n"],
-  "mappings": ";;;;;AAC0D,IAAM,IAAE,EAAC,aAAY,OAAG,EAAE,UAAS,eAAc,OAAG,EAAE,YAAW,cAAa,CAAC,GAAEA,OAAI,EAAE,WAAWA,EAAC,GAAE,mBAAkB,CAACA,IAAE,GAAEC,OAAI,IAAI,EAAE,GAAED,GAAE,YAAW,MAAKA,GAAE,QAAQ,GAAE,aAAY,OAAG,EAAE,UAAS,aAAY,CAAC,GAAEA,OAAI,EAAE,eAAeA,EAAC,EAAC;",
-  "names": ["e", "o"]
-}

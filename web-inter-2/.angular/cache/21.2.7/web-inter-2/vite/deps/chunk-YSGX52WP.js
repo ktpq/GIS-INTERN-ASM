@@ -1,9 +1,0 @@
-// node_modules/@arcgis/core/views/2d/layers/features/support/arcadeUtils.js
-function e(e2, { timeZone: t, timeExtent: r }) {
-  return { $view: { scale: e2, timeZone: t, timeProperties: { currentStart: r?.start, currentEnd: r?.end } } };
-}
-
-export {
-  e
-};
-//# sourceMappingURL=chunk-YSGX52WP.js.map
