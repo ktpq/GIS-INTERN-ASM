@@ -1,0 +1,364 @@
+import {
+  b,
+  c as c2,
+  c2 as c3,
+  h,
+  m as m4
+} from "./chunk-GWTUGJL3.js";
+import {
+  n as n3
+} from "./chunk-MRXFF6FU.js";
+import {
+  a as a4,
+  n as n2
+} from "./chunk-WTBH6WXQ.js";
+import {
+  w
+} from "./chunk-SQFVFI4F.js";
+import {
+  $
+} from "./chunk-DPTRJWGG.js";
+import {
+  m as m3
+} from "./chunk-EZOPIZCP.js";
+import {
+  s as s2
+} from "./chunk-7PBHIAQH.js";
+import {
+  u as u2
+} from "./chunk-K5YEU7YE.js";
+import {
+  m as m2
+} from "./chunk-FH7ZMRUF.js";
+import {
+  j
+} from "./chunk-2YANO3UR.js";
+import {
+  u
+} from "./chunk-GM5PCDS3.js";
+import {
+  z2 as z
+} from "./chunk-ORVZAZPX.js";
+import {
+  _,
+  s
+} from "./chunk-YVKQ6DO2.js";
+import {
+  n
+} from "./chunk-CV6NMUZC.js";
+import {
+  D,
+  a2,
+  a3,
+  c,
+  m3 as m,
+  o4 as o2,
+  r3 as r,
+  r4 as r2
+} from "./chunk-7ELXYOAW.js";
+import {
+  i,
+  o
+} from "./chunk-BVHAZAH7.js";
+import {
+  a
+} from "./chunk-XE7VYYSA.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/layers/support/RasterFunctionInfo.js
+var s3 = class extends n {
+  constructor() {
+    super(...arguments), this.pixelType = "unknown";
+  }
+};
+__decorate([a3({ type: String, json: { write: { isRequired: true } } })], s3.prototype, "name", void 0), __decorate([a3({ type: String, json: { write: true } })], s3.prototype, "description", void 0), __decorate([a3({ type: D, json: { type: D, write: true, name: "_object_id" } })], s3.prototype, "id", void 0), __decorate([a3({ type: String, json: { type: n2.jsonValues, read: n2.read, write: { writer: n2.write, isRequired: true } } })], s3.prototype, "pixelType", void 0), __decorate([a3({ type: String, json: { write: { isRequired: true } } })], s3.prototype, "type", void 0), s3 = __decorate([c("esri.layers.support.RasterFunctionInfo")], s3);
+var n4 = s3;
+
+// node_modules/@arcgis/core/layers/support/RasterFunctionVariable.js
+var i2 = class extends n {
+  constructor() {
+    super(...arguments), this.isDataset = false, this.isPublic = false, this.type = "RasterFunctionVariable";
+  }
+};
+__decorate([a3({ type: String, json: { write: true } })], i2.prototype, "name", void 0), __decorate([a3({ type: Number, json: { type: D, write: true, name: "_object_id" } })], i2.prototype, "id", void 0), __decorate([a3({ type: Boolean, json: { write: true } })], i2.prototype, "isDataset", void 0), __decorate([a3({ type: Boolean, json: { write: true } })], i2.prototype, "isPublic", void 0), __decorate([a3({ json: { write: true } })], i2.prototype, "value", void 0), __decorate([a3({ type: String, json: { write: true } })], i2.prototype, "type", void 0), i2 = __decorate([c("esri.layers.support.RasterFunctionVariable")], i2);
+var p = i2;
+
+// node_modules/@arcgis/core/layers/support/RasterFunctionProperties.js
+var i3 = { key: "type", base: null, typeMap: { RasterFunctionVariable: p } };
+var n5 = class extends n {
+};
+__decorate([a3({ types: i3, json: { types: i3, name: "MatchVariable" } })], n5.prototype, "matchVariable", void 0), __decorate([a3({ types: i3, json: { types: i3, name: "UnionDimension" } })], n5.prototype, "unionDimension", void 0), __decorate([a3({ type: Number, json: { type: D, write: true, name: "_object_id" } })], n5.prototype, "id", void 0), __decorate([a3({ type: String, json: { write: true } })], n5.prototype, "type", void 0), n5 = __decorate([c("esri.layers.support.RasterFunctionProperties")], n5);
+var a5 = n5;
+
+// node_modules/@arcgis/core/layers/support/RasterFunctionTemplate.js
+var y = new o({ 0: "mosaic", 1: "item", 2: "item-group" }, { useNumericKeys: true });
+var a6 = class extends n {
+  constructor() {
+    super(...arguments), this.description = "", this.functionType = "mosaic", this.type = "RasterFunctionTemplate";
+  }
+};
+__decorate([a3({ type: [String], json: { write: true } })], a6.prototype, "aliases", void 0), __decorate([a3({ type: Object, json: { write: { isRequired: true } } })], a6.prototype, "arguments", void 0), __decorate([a3({ type: String, json: { write: { isRequired: true } } })], a6.prototype, "description", void 0), __decorate([a3({ type: n4, json: { write: { isRequired: true }, name: "function" } })], a6.prototype, "functionInfo", void 0), __decorate([a3({ type: y.apiValues, json: { type: [0, 1, 2], read: y.read, write: { writer: y.write, isRequired: true } } })], a6.prototype, "functionType", void 0), __decorate([a3({ type: String, json: { write: true } })], a6.prototype, "group", void 0), __decorate([a3({ type: String, json: { write: true } })], a6.prototype, "help", void 0), __decorate([a3({ type: Number, json: { type: D, write: true, name: "_object_id" } })], a6.prototype, "id", void 0), __decorate([a3({ type: String, json: { write: { isRequired: true } } })], a6.prototype, "name", void 0), __decorate([a3({ type: String, json: { write: true, name: "definition" } })], a6.prototype, "queryDefinition", void 0), __decorate([a3({ type: String, json: { write: true } })], a6.prototype, "tag", void 0), __decorate([a3({ type: a5, json: { write: true } })], a6.prototype, "properties", void 0), __decorate([a3({ type: String, json: { write: true } })], a6.prototype, "thumbnail", void 0), __decorate([a3({ type: String, json: { write: true } })], a6.prototype, "thumbnailEx", void 0), __decorate([a3({ json: { type: ["RasterFunctionTemplate"], write: true } })], a6.prototype, "type", void 0), a6 = __decorate([c("esri.layers.support.RasterFunctionTemplate")], a6);
+
+// node_modules/@arcgis/core/layers/support/RasterFunction.js
+var c4;
+var p2 = /* @__PURE__ */ new Set(["raster", "raster2", "dem", "fillraster"]);
+var f = /* @__PURE__ */ new Set(["rasters"]);
+var m5 = (t) => t?.rasterFunction ? g.fromJSON(t) : t;
+var l = (t) => t && t instanceof g ? t.toJSON() : t;
+var y2 = (t) => t?.functionName && !t.declaredClass;
+var F = (t) => y2(t) ? new g(t) : t;
+var h2 = (t) => {
+  if (null == t) return null;
+  t = a(t);
+  const n6 = {};
+  for (const e of Object.keys(t)) p2.has(e.toLowerCase()) ? n6[e] = m5(t[e]) : f.has(e.toLowerCase()) && Array.isArray(t[e]) ? n6[e] = t[e].map(m5) : n6[e] = t[e];
+  return n6;
+};
+var d = (t) => t ? a6.fromJSON(__spreadValues({ type: "RasterFunctionTemplate" }, t)) : void 0;
+var N = { types: { key: "type", base: null, typeMap: { RasterFunctionTemplate: a6 } }, json: { write: true, name: "rasterFunctionDefinition", read: d } };
+var g = c4 = class extends n {
+  constructor(t) {
+    super(t), this.functionName = null, this.outputPixelType = "unknown", this.variableName = null, this.functionDefinition = null;
+  }
+  set functionArguments(t) {
+    if (t) {
+      const n6 = Object.keys(t);
+      if (n6.some((n7) => p2.has(n7.toLowerCase()) && y2(t[n7])) || n6.some((n7) => f.has(n7.toLowerCase()) && Array.isArray(t[n7]) && t[n7].some((t2) => y2(t2)))) {
+        t = a(t);
+        for (const e of n6) p2.has(e.toLowerCase()) ? t[e] = F(t[e]) : f.has(e.toLowerCase()) && Array.isArray(t[e]) && (t[e] = t[e].map((t2) => F(t2)));
+      }
+    }
+    this._set("functionArguments", t);
+  }
+  readFunctionArguments(t) {
+    return h2(t);
+  }
+  writeFunctionArguments(t, n6, e) {
+    const r3 = {};
+    for (const o3 of Object.keys(t)) p2.has(o3.toLowerCase()) ? r3[o3] = l(t[o3]) : f.has(o3.toLowerCase()) && Array.isArray(t[o3]) ? r3[o3] = t[o3].map(l) : r3[o3] = l(t[o3]);
+    n6[e] = r3;
+  }
+  readFunctionName(t, n6) {
+    const e = n6.rasterFunctionInfos, r3 = n6.name;
+    return r3 || (e?.length && "None" !== e[0].name ? e[0].name : n6.rasterFunction || n6.rasterFunctionDefinition?.name);
+  }
+  get rasterFunctionDefinition() {
+    return this.functionDefinition?.toJSON();
+  }
+  set rasterFunctionDefinition(t) {
+    this.functionDefinition = d(t);
+  }
+  get hasClipFunction() {
+    return this.rasterFunctionDefinition ? JSON.stringify(this.rasterFunctionDefinition).includes('"type":"ClipFunction"') : JSON.stringify(this).includes('"rasterFunction":"Clip"');
+  }
+  clone() {
+    return new c4({ functionName: this.functionName, functionArguments: a(this.functionArguments), outputPixelType: this.outputPixelType, variableName: this.variableName, rasterFunctionDefinition: a(this.rasterFunctionDefinition) });
+  }
+};
+__decorate([a3({ json: { type: Object, name: "rasterFunctionArguments" } })], g.prototype, "functionArguments", null), __decorate([o2("functionArguments")], g.prototype, "readFunctionArguments", null), __decorate([r2("functionArguments")], g.prototype, "writeFunctionArguments", null), __decorate([a3({ json: { type: String, write: { target: "rasterFunction" } } })], g.prototype, "functionName", void 0), __decorate([o2("functionName", ["rasterFunction", "rasterFunctionInfos", "rasterFunctionDefinition"])], g.prototype, "readFunctionName", null), __decorate([r({ C128: "c128", C64: "c64", F32: "f32", F64: "f64", S16: "s16", S32: "s32", S8: "s8", U1: "u1", U16: "u16", U2: "u2", U32: "u32", U4: "u4", U8: "u8", UNKNOWN: "unknown" }, { ignoreUnknown: false, default: "unknown" })], g.prototype, "outputPixelType", void 0), __decorate([a3({ type: String, json: { read: true, write: true } })], g.prototype, "variableName", void 0), __decorate([a3()], g.prototype, "rasterFunctionDefinition", null), __decorate([a3(N)], g.prototype, "functionDefinition", void 0), __decorate([a3()], g.prototype, "hasClipFunction", null), g = c4 = __decorate([c("esri.layers.support.RasterFunction")], g);
+
+// node_modules/@arcgis/core/layers/support/MosaicRule.js
+var m6;
+var h3 = i()({ MT_FIRST: "first", MT_LAST: "last", MT_MIN: "min", MT_MAX: "max", MT_MEAN: "mean", MT_BLEND: "blend", MT_SUM: "sum" });
+var w2 = i()({ esriMosaicNone: "none", esriMosaicCenter: "center", esriMosaicNadir: "nadir", esriMosaicViewpoint: "viewpoint", esriMosaicAttribute: "attribute", esriMosaicLockRaster: "lock-raster", esriMosaicNorthwest: "northwest", esriMosaicSeamline: "seamline" });
+function M(e) {
+  let t;
+  switch (e ? e.toLowerCase().replace("esrimosaic", "") : "") {
+    case "byattribute":
+    case "attribute":
+      t = "esriMosaicAttribute";
+      break;
+    case "lockraster":
+      t = "esriMosaicLockRaster";
+      break;
+    case "center":
+      t = "esriMosaicCenter";
+      break;
+    case "northwest":
+      t = "esriMosaicNorthwest";
+      break;
+    case "nadir":
+      t = "esriMosaicNadir";
+      break;
+    case "viewpoint":
+      t = "esriMosaicViewpoint";
+      break;
+    case "seamline":
+      t = "esriMosaicSeamline";
+      break;
+    default:
+      t = "esriMosaicNone";
+  }
+  return w2.fromJSON(t);
+}
+var y3 = m6 = class extends n {
+  constructor(e) {
+    super(e), this.ascending = true, this.itemRasterFunction = null, this.lockRasterIds = null, this.method = "none", this.multidimensionalDefinition = null, this.objectIds = null, this.operation = "first", this.sortField = null, this.sortValue = null, this.viewpoint = null, this.where = null;
+  }
+  readAscending(e, t) {
+    return null != t.ascending ? t.ascending : null == t.sortAscending || t.sortAscending;
+  }
+  readMethod(e, t) {
+    return M(t.mosaicMethod || t.defaultMosaicMethod);
+  }
+  writeMultidimensionalDefinition(e, t, o3) {
+    null != e && (e = e.filter(({ variableName: e2, dimensionName: t2 }) => e2 && "*" !== e2 || t2)).length && (t[o3] = e.map((e2) => e2.toJSON()));
+  }
+  readOperation(e, t) {
+    const o3 = t.mosaicOperation, i4 = t.mosaicOperator?.toLowerCase(), r3 = o3 || (i4 ? h3.toJSON(i4) : null);
+    return h3.fromJSON(r3) || "first";
+  }
+  castSortValue(e) {
+    return null == e || "string" == typeof e || "number" == typeof e ? e : `${e}`;
+  }
+  clone() {
+    return new m6({ ascending: this.ascending, itemRasterFunction: a(this.itemRasterFunction), lockRasterIds: a(this.lockRasterIds), method: this.method, multidimensionalDefinition: a(this.multidimensionalDefinition), objectIds: a(this.objectIds), operation: this.operation, sortField: this.sortField, sortValue: this.sortValue, viewpoint: a(this.viewpoint), where: this.where });
+  }
+};
+__decorate([a3({ type: Boolean, json: { write: true } })], y3.prototype, "ascending", void 0), __decorate([o2("ascending", ["ascending", "sortAscending"])], y3.prototype, "readAscending", null), __decorate([a3({ type: g, json: { name: "itemRenderingRule", write: true } })], y3.prototype, "itemRasterFunction", void 0), __decorate([a3({ type: [D], json: { write: { overridePolicy() {
+  return { enabled: "lock-raster" === this.method };
+} } } })], y3.prototype, "lockRasterIds", void 0), __decorate([a3({ type: w2.apiValues, json: { type: w2.jsonValues, write: { target: "mosaicMethod", writer: w2.write, isRequired: true } } })], y3.prototype, "method", void 0), __decorate([o2("method", ["mosaicMethod", "defaultMosaicMethod"])], y3.prototype, "readMethod", null), __decorate([a3({ type: [n3], json: { write: true } })], y3.prototype, "multidimensionalDefinition", void 0), __decorate([r2("multidimensionalDefinition")], y3.prototype, "writeMultidimensionalDefinition", null), __decorate([a3({ type: [D], json: { name: "fids", write: true } })], y3.prototype, "objectIds", void 0), __decorate([a3({ type: h3.apiValues, json: { type: h3.jsonValues, read: { reader: h3.read }, write: { target: "mosaicOperation", writer: h3.write } } })], y3.prototype, "operation", void 0), __decorate([o2("operation", ["mosaicOperation", "mosaicOperator"])], y3.prototype, "readOperation", null), __decorate([a3({ type: String, json: { write: { overridePolicy() {
+  return { enabled: "attribute" === this.method };
+} } } })], y3.prototype, "sortField", void 0), __decorate([a3({ type: [String, Number], json: { write: { allowNull: true, overridePolicy() {
+  return { enabled: "attribute" === this.method, allowNull: true };
+} } } })], y3.prototype, "sortValue", void 0), __decorate([m("sortValue")], y3.prototype, "castSortValue", null), __decorate([a3({ type: _, json: { write: true } })], y3.prototype, "viewpoint", void 0), __decorate([a3({ type: String, json: { write: true } })], y3.prototype, "where", void 0), y3 = m6 = __decorate([c("esri.layers.support.MosaicRule")], y3);
+
+// node_modules/@arcgis/core/layers/support/MultidimensionalSubset.js
+var m7;
+var p3 = { base: s, key: "type", typeMap: { extent: z, polygon: j } };
+var u3 = m7 = class extends n {
+  constructor(e) {
+    super(e), this.areaOfInterest = null, this.subsetDefinitions = null;
+  }
+  get dimensions() {
+    const { subsetDefinitions: e } = this;
+    if (null == e || 0 === e.length) return [];
+    const t = /* @__PURE__ */ new Map();
+    e.forEach((e2) => {
+      if (!e2.dimensionName) return;
+      let s6, n6;
+      if (Array.isArray(e2.values[0])) {
+        const t2 = e2.values;
+        s6 = t2[0][0], n6 = t2[e2.values.length - 1][1];
+      } else {
+        const t2 = e2.values;
+        s6 = t2[0], n6 = t2[e2.values.length - 1];
+      }
+      if (t.has(e2.dimensionName)) {
+        const o3 = t.get(e2.dimensionName);
+        o3[0] = Math.min(s6, o3[0]), o3[1] = Math.max(n6, o3[1]);
+      } else t.set(e2.dimensionName, [s6, n6]);
+    });
+    const s5 = [];
+    for (const n6 of t) s5.push({ name: n6[0], extent: n6[1] });
+    return s5;
+  }
+  get variables() {
+    const { subsetDefinitions: e } = this;
+    if (null == e || 0 === e.length) return [];
+    const t = /* @__PURE__ */ new Set();
+    return e.forEach((e2) => {
+      e2.variableName && t.add(e2.variableName);
+    }), [...t];
+  }
+  clone() {
+    const e = this.subsetDefinitions?.map((e2) => e2.clone()), t = this.areaOfInterest ? this.areaOfInterest.clone() : this.areaOfInterest;
+    return new m7({ areaOfInterest: t, subsetDefinitions: e });
+  }
+};
+__decorate([a3({ types: p3, json: { read: u2, write: true } })], u3.prototype, "areaOfInterest", void 0), __decorate([a3({ readOnly: true })], u3.prototype, "dimensions", null), __decorate([a3({ readOnly: true })], u3.prototype, "variables", null), __decorate([a3({ type: [n3], json: { write: true } })], u3.prototype, "subsetDefinitions", void 0), u3 = m7 = __decorate([c("esri.layers.support.MultidimensionalSubset")], u3);
+
+// node_modules/@arcgis/core/renderers/support/rasterTypeUtils.js
+var l2 = { key: "type", base: null, typeMap: { "class-breaks": w, flow: c2, "raster-colormap": m4, "raster-shaded-relief": c3, "raster-stretch": h, "unique-value": $, "vector-field": b } };
+var p4 = __spreadProps(__spreadValues({}, l2), { typeMap: __spreadValues({}, l2.typeMap) });
+delete p4.typeMap["vector-field"];
+var d2 = { classBreaks: w, flowRenderer: c2, rasterColormap: m4, rasterShadedRelief: c3, rasterStretch: h, uniqueValue: $, vectorField: b };
+function u4(e) {
+  return e && d2[e.type] || null;
+}
+function c5(e, r3) {
+  if (!e) return null;
+  if ("classBreaks" === e.type && e.classificationMethod) {
+    const r4 = e.authoringInfo || { classificationMethod: "" };
+    r4.classificationMethod = e.classificationMethod, e.authoringInfo = r4;
+  }
+  "vectorField" === e.type && e.visualVariables && !Array.isArray(e.visualVariables) && (e.visualVariables = [e.visualVariables]);
+  const t = u4(e);
+  if (t) {
+    const s5 = new t();
+    return s5.read(e, r3), s5;
+  }
+  return r3?.messages && e && a2(r3, "warning", "renderer", `Renderers of type '${e.type ?? "unknown"} are not supported`, { definition: e }), null;
+}
+
+// node_modules/@arcgis/core/rest/support/ImageHistogramParameters.js
+var c6;
+var j2 = c6 = class extends n {
+  constructor(t) {
+    super(t), this.geometry = null, this.mosaicRule = null, this.rasterFunction = null, this.pixelSize = null, this.raster = void 0, this.timeExtent = null;
+  }
+  writeGeometry(t, e, r3) {
+    null != t && (e.geometryType = u(t), e[r3] = t.toJSON());
+  }
+  clone() {
+    return new c6(a({ geometry: this.geometry, mosaicRule: this.mosaicRule, rasterFunction: this.rasterFunction, pixelSize: this.pixelSize, raster: this.raster, timeExtent: this.timeExtent }));
+  }
+};
+__decorate([a3({ types: s2, json: { read: u2 } })], j2.prototype, "geometry", void 0), __decorate([r2("geometry")], j2.prototype, "writeGeometry", null), __decorate([a3({ type: y3, json: { write: true } })], j2.prototype, "mosaicRule", void 0), __decorate([a3({ type: g, json: { write: true, name: "renderingRule" } })], j2.prototype, "rasterFunction", void 0), __decorate([a3({ type: _, json: { write: true } })], j2.prototype, "pixelSize", void 0), __decorate([a3({ json: { write: true } })], j2.prototype, "raster", void 0), __decorate([a3({ type: m3, json: { read: { source: "time" }, write: { target: "time" } } })], j2.prototype, "timeExtent", void 0), j2 = c6 = __decorate([c("esri.rest.support.ImageHistogramParameters")], j2);
+
+// node_modules/@arcgis/core/rest/support/ImageSampleParameters.js
+var d3;
+var h4 = d3 = class extends n {
+  constructor(t) {
+    super(t), this.geometry = null, this.interpolation = "nearest", this.mosaicRule = null, this.outFields = null, this.pixelSize = null, this.raster = void 0, this.returnFirstValueOnly = true, this.sampleDistance = null, this.sampleCount = null, this.sliceId = null, this.timeExtent = null;
+  }
+  writeGeometry(t, e, o3) {
+    null != t && (e.geometryType = u(t), e[o3] = t.toJSON());
+  }
+  set locations(t) {
+    if (t?.length) {
+      const e = new m2({ spatialReference: t[0].spatialReference, points: t.map(({ x: t2, y: e2 }) => [t2, e2]) });
+      this._set("locations", t), this.geometry = e;
+    }
+  }
+  clone() {
+    return new d3(a({ geometry: this.geometry, locations: this.locations, interpolation: this.interpolation, mosaicRule: this.mosaicRule, outFields: this.outFields, raster: this.raster, returnFirstValueOnly: this.returnFirstValueOnly, sampleDistance: this.sampleDistance, sampleCount: this.sampleCount, sliceId: this.sliceId, pixelSize: this.pixelSize, timeExtent: this.timeExtent }));
+  }
+};
+__decorate([a3({ types: s2, json: { read: u2 } })], h4.prototype, "geometry", void 0), __decorate([r2("geometry")], h4.prototype, "writeGeometry", null), __decorate([a3({ type: [_] })], h4.prototype, "locations", null), __decorate([a3({ type: String, json: { type: a4.jsonValues, read: a4.read, write: a4.write } })], h4.prototype, "interpolation", void 0), __decorate([a3({ type: y3, json: { write: true } })], h4.prototype, "mosaicRule", void 0), __decorate([a3({ type: [String], json: { write: true } })], h4.prototype, "outFields", void 0), __decorate([a3({ type: _, json: { write: true } })], h4.prototype, "pixelSize", void 0), __decorate([a3({ type: String, json: { write: true } })], h4.prototype, "raster", void 0), __decorate([a3({ type: Boolean, json: { write: true } })], h4.prototype, "returnFirstValueOnly", void 0), __decorate([a3({ type: Number, json: { write: true } })], h4.prototype, "sampleDistance", void 0), __decorate([a3({ type: Number, json: { write: true } })], h4.prototype, "sampleCount", void 0), __decorate([a3({ type: Number, json: { write: true } })], h4.prototype, "sliceId", void 0), __decorate([a3({ type: m3, json: { read: { source: "time" }, write: { target: "time" } } })], h4.prototype, "timeExtent", void 0), h4 = d3 = __decorate([c("esri.rest.support.ImageSampleParameters")], h4);
+
+// node_modules/@arcgis/core/rest/support/ImageSample.js
+var s4 = class extends n {
+  constructor(o3) {
+    super(o3), this.attributes = null, this.location = null, this.locationId = null, this.rasterId = null, this.resolution = null, this.pixelValue = null;
+  }
+};
+__decorate([a3({ json: { write: true } })], s4.prototype, "attributes", void 0), __decorate([a3({ type: _, json: { write: true } })], s4.prototype, "location", void 0), __decorate([a3({ json: { write: true } })], s4.prototype, "locationId", void 0), __decorate([a3({ json: { write: true } })], s4.prototype, "rasterId", void 0), __decorate([a3({ json: { write: true } })], s4.prototype, "resolution", void 0), __decorate([a3({ json: { write: true } })], s4.prototype, "pixelValue", void 0), s4 = __decorate([c("esri.rest.support.ImageSample")], s4);
+
+// node_modules/@arcgis/core/rest/support/ImageSampleResult.js
+var p5 = class extends n {
+  constructor(r3) {
+    super(r3), this.samples = [];
+  }
+};
+__decorate([a3({ type: [s4], json: { write: true } })], p5.prototype, "samples", void 0), p5 = __decorate([c("esri.rest.support.ImageSampleResult")], p5);
+
+export {
+  g,
+  y3 as y,
+  u3 as u,
+  l2 as l,
+  p4 as p,
+  c5 as c,
+  j2 as j,
+  h4 as h,
+  s4 as s,
+  p5 as p2
+};
+//# sourceMappingURL=chunk-OR6DWBTA.js.map

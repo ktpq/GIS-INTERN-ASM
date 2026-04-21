@@ -1,0 +1,11 @@
+<arcgis-map
+  basemap="topo-vector"
+  center="-154.88, 19.46"
+  zoom="15"
+  (arcgisViewReadyChange)="arcgisViewReadyChange($event)"
+  class="h-screen"
+>
+  
+  <arcgis-sketch #sketchRef position="top-right" class="sketch" creation-mode="single" [availableCreateTools]="['polygon']" (arcgisCreate)="onSketchCreate($event)" (arcgisUpdate)="onSketchUpdate($event)" (arcgisDelete)="onSketchDelete($event)" (arcgisReady)="onSketchReady($event)"></arcgis-sketch>
+
+</arcgis-map>

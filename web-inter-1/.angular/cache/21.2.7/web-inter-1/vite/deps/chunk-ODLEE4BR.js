@@ -1,0 +1,408 @@
+import {
+  n as n4,
+  s as s4
+} from "./chunk-3K5KLKJL.js";
+import {
+  a as a2,
+  g
+} from "./chunk-ADPYU6GX.js";
+import {
+  f
+} from "./chunk-XPFTEEP5.js";
+import {
+  A,
+  S,
+  nt
+} from "./chunk-XKXL36MC.js";
+import {
+  n as n5
+} from "./chunk-V2SUAMGW.js";
+import {
+  h2 as h,
+  u as u2
+} from "./chunk-MZZNMZJG.js";
+import {
+  R,
+  _
+} from "./chunk-IODIHRP7.js";
+import {
+  c as c2
+} from "./chunk-KRGMLSA4.js";
+import {
+  r as r2
+} from "./chunk-KY6VK7AR.js";
+import {
+  n as n3
+} from "./chunk-47CFN4JI.js";
+import {
+  e as e3
+} from "./chunk-GAFIIT3P.js";
+import {
+  e as e2
+} from "./chunk-SUVDIL6O.js";
+import {
+  H
+} from "./chunk-QBEV3F3C.js";
+import {
+  s as s3,
+  t
+} from "./chunk-3QRB5MAM.js";
+import {
+  n as n2
+} from "./chunk-3Y2ZRVZS.js";
+import {
+  u
+} from "./chunk-K5YEU7YE.js";
+import {
+  j
+} from "./chunk-2YANO3UR.js";
+import {
+  z2 as z
+} from "./chunk-ORVZAZPX.js";
+import {
+  s as s2
+} from "./chunk-YVKQ6DO2.js";
+import {
+  re
+} from "./chunk-DMD5CGVA.js";
+import {
+  l,
+  w
+} from "./chunk-6CYBR6FP.js";
+import {
+  q
+} from "./chunk-AE7PFPPS.js";
+import {
+  b
+} from "./chunk-2HP4RAZC.js";
+import {
+  a3 as a,
+  c
+} from "./chunk-7ELXYOAW.js";
+import {
+  e
+} from "./chunk-RTVKY37F.js";
+import {
+  n2 as n,
+  r3 as r,
+  s2 as s
+} from "./chunk-XE7VYYSA.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+
+// node_modules/@arcgis/core/views/2d/engine/webgl/ClipMesh.js
+var f2 = class _f {
+  static async create(t2, e4) {
+    const r3 = await g2(t2, e4);
+    return r3 ? new _f(r3) : null;
+  }
+  constructor(t2) {
+    this._target = t2;
+  }
+  destroy() {
+    this._mesh?.destroy();
+  }
+  getMesh(t2, e4) {
+    const r3 = this._target;
+    if (!r3) return null;
+    if (null !== this._mesh && this._lastStateVersion === e4.id) return this._mesh;
+    const { vertices: s6, indices: i2 } = r3.getTriangulation(e4), n8 = i2 ? new Uint32Array(i2) : void 0, o = new Int32Array(s6);
+    return this._lastStateVersion = e4.id, this._mesh?.destroy(), this._mesh = s4.createForShader(t2, { primitive: _.TRIANGLES, index: n8, vertex: o, layout: { pos: { type: R.INT, count: 2 } } }), this._mesh;
+  }
+};
+async function g2(r3, s6) {
+  switch (r3.type) {
+    case "rect":
+      return new w2(r3);
+    case "path":
+      return d.fromPath(r3);
+    case "geometry":
+      return _2.fromGeometry(r3, s6);
+    default:
+      return n.getLogger("esri.views.2d.engine.webgl.ClippingInfo").error(new r("mapview-bad-type", "Unable to create ClippingInfo mesh from clip of type: ${clip.type}")), null;
+  }
+}
+var _2 = class __ {
+  static async fromGeometry({ geometry: t2 }, e4) {
+    if (!t2) return null;
+    switch (t2.type) {
+      case "polygon":
+        return this._fromPolygon(t2, e4);
+      case "extent":
+        return this._fromMapExtent(t2);
+    }
+  }
+  static async _fromPolygon(t2, e4) {
+    const s6 = t2.spatialReference ?? e4;
+    await f(s6, e4);
+    const c3 = H(t2, e4), l3 = re(e4), p = A(c3, false, false), h2 = nt(p, "esriGeometryPolygon", 100 * l3, false, false);
+    if (!h2) return null;
+    const u3 = await a2(h2);
+    return u3 ? new __(u3.vertices, u3.indices) : null;
+  }
+  static _fromMapExtent(t2) {
+    const { xmin: e4, ymin: r3, xmax: s6, ymax: i2 } = t2, n8 = new Float32Array([e4, r3, s6, r3, e4, i2, e4, i2, s6, r3, s6, i2]), o = new Uint32Array([0, 1, 2, 3, 4, 5]);
+    return new __(n8, o);
+  }
+  constructor(t2, e4) {
+    this._vertices = t2, this._indices = e4;
+  }
+  getTriangulation(t2) {
+    const e4 = [], r3 = n3();
+    for (let s6 = 0; s6 < this._vertices.length / 2; s6++) {
+      const [i2, n8] = t2.toScreen(r3, [this._vertices[2 * s6], this._vertices[2 * s6 + 1]]);
+      e4.push(i2, n8);
+    }
+    return { vertices: e4, indices: this._indices };
+  }
+};
+var d = class _d {
+  static fromPath({ path: t2 }) {
+    const e4 = S({ paths: t2 }, false, false), r3 = g(e4);
+    return r3 ? new _d(r3.vertices, r3.indices) : null;
+  }
+  constructor(t2, e4) {
+    this._vertices = t2, this._indices = e4;
+  }
+  getTriangulation(t2) {
+    return { vertices: this._vertices, indices: this._indices };
+  }
+};
+var w2 = class {
+  constructor(t2) {
+    this._rect = t2;
+  }
+  getTriangulation(t2) {
+    const { xmin: e4, xmax: r3, ymin: s6, ymax: i2 } = n5(this._rect, t2.size[0], t2.size[1]);
+    return { vertices: [e4, s6, r3, s6, e4, i2, e4, i2, r3, s6, r3, i2], indices: new Uint32Array([0, 1, 2, 3, 4, 5]) };
+  }
+};
+
+// node_modules/@arcgis/core/views/2d/layers/support/HighlightCounter.js
+var i = class extends b {
+  constructor() {
+    super(...arguments), this._idToCounters = new e2();
+  }
+  get size() {
+    return this._idToCounters.size;
+  }
+  get objectIds() {
+    return this._idToCounters.keys();
+  }
+  get highlightNamesByObjectId() {
+    return n6(this._idToCounters);
+  }
+  add(e4, t2) {
+    let s6 = false;
+    for (const r3 of e4) {
+      const e5 = e(this._idToCounters, r3, () => (s6 = true, /* @__PURE__ */ new Map())), i2 = e5.get(t2) ?? 0;
+      i2 || (s6 = true), e5.set(t2, i2 + 1);
+    }
+    return s6;
+  }
+  delete(e4, t2) {
+    let o = false;
+    for (const s6 of e4) {
+      const e5 = this._idToCounters.get(s6);
+      if (!e5) continue;
+      let r3 = e5.get(t2);
+      null != r3 && (r3--, r3 > 0 ? e5.set(t2, r3) : (e5.delete(t2), o = true), 0 === e5.size && (this._idToCounters.delete(s6), o = true));
+    }
+    return o;
+  }
+};
+function* n6(e4) {
+  for (const [t2, o] of e4) yield [t2, o.keys()];
+}
+i = __decorate([c("esri.views.2d.layers.support.HighlightCounter")], i);
+
+// node_modules/@arcgis/core/views/layers/support/GeometryClipArea.js
+var y;
+var l2 = { base: s2, key: "type", typeMap: { extent: z, polygon: j } };
+var n7 = y = class extends t {
+  constructor(e4) {
+    super(e4), this.type = "geometry", this.geometry = null;
+  }
+  clone() {
+    return new y({ geometry: this.geometry?.clone() ?? null });
+  }
+  commitVersionProperties() {
+    this.commitProperty("geometry");
+  }
+};
+__decorate([a({ types: l2, json: { read: u, write: true } })], n7.prototype, "geometry", void 0), n7 = y = __decorate([c("esri.views.layers.support.GeometryClipArea")], n7);
+
+// node_modules/@arcgis/core/views/layers/support/Path.js
+var s5 = class extends t {
+  constructor(t2) {
+    super(t2), this.type = "path", this.path = [];
+  }
+  commitVersionProperties() {
+    this.commitProperty("path");
+  }
+};
+__decorate([a({ type: [[[Number]]], json: { write: true } })], s5.prototype, "path", void 0), s5 = __decorate([c("esri.views.layers.support.Path")], s5);
+
+// node_modules/@arcgis/core/views/2d/layers/LayerView2D.js
+var _3 = q.ofType({ key: "type", base: null, typeMap: { rect: s3, path: s5, geometry: n7 } });
+var H2 = new (q.ofType(u2))();
+var S2 = (m) => {
+  const f3 = m;
+  let y2 = class extends f3 {
+    constructor() {
+      super(...arguments), this._highlightCounter = new i(), this.attached = false, this.clips = new _3(), this.highlights = null, this.lastUpdateId = -1, this.moving = false, this.updateRequested = false, this._visibleAtCurrentScale = true;
+    }
+    initialize() {
+      const t2 = this.view?.spatialReferenceLocked ?? true, e4 = this.view?.spatialReference;
+      e4 && t2 && !this.spatialReferenceSupported ? this.addResolvingPromise(Promise.reject(new r("layerview:spatial-reference-incompatible", "The spatial reference of this layer does not meet the requirements of the view", { layer: this.layer }))) : (this.container || (this.container = new n4()), this.container.fadeTransitionEnabled = true, this.container.visible = false, this.container.endTransitions(), this.addHandles([l(() => this.suspended, (t3) => {
+        this.container && (this.container.visible = !t3);
+      }, w), l(() => this.updateSuspended, (t3) => {
+        this.view && !t3 && this.updateRequested && this.view.requestUpdate();
+      }, w), l(() => this.layer?.opacity ?? 1, (t3) => {
+        this.container && (this.container.opacity = t3);
+      }, w), l(() => this.layer && "blendMode" in this.layer ? this.layer.blendMode : "normal", (t3) => {
+        this.container && (this.container.blendMode = t3);
+      }, w), l(() => this.layer && "effect" in this.layer ? this.layer.effect : null, (t3) => {
+        this.container && (this.container.effect = t3);
+      }, w), l(() => this._mergedHighlights.items.map((t3) => ({ name: t3.name, options: { fillColor: t3.color, haloColor: t3.haloColor, fillOpacity: t3.fillOpacity, haloOpacity: t3.haloOpacity, haloWidth: t3.haloWidth, haloBlur: t3.haloBlur } })), () => {
+        this.container.highlightGradient = h(this.container.highlightGradient, this._mergedHighlights.items);
+      }, w), l(() => this._mergedHighlights.items.map((t3) => t3.name), () => {
+        this._processHighlight();
+      }), l(() => this.clips.map((t3) => t3.version), async () => {
+        if (this.container) {
+          const t3 = this.view.spatialReference, e5 = await this._updatingHandles.addPromise(Promise.all(this.clips.items.map((e6) => f2.create(e6, t3))));
+          for (const i2 of this.container.clips) i2.destroy();
+          this.container.clips = e5.filter((t4) => !!t4);
+        }
+      }, w), l(() => ({ scale: this.view?.scale, scaleRange: this.layer && "effectiveScaleRange" in this.layer ? this.layer.effectiveScaleRange : null }), ({ scale: t3, scaleRange: e5 }) => {
+        const i2 = r2(e5, t3);
+        i2 !== this._visibleAtCurrentScale && (this._visibleAtCurrentScale = i2);
+      }, w)], "constructor"), this.view?.whenLayerView ? this.view.whenLayerView(this.layer).then((t3) => {
+        t3 === this && this.processAttach();
+      }, () => {
+      }) : this.when().then(() => {
+        this.processAttach();
+      }, () => {
+      }));
+    }
+    destroy() {
+      this.processDetach(), this.updateRequested = false;
+      for (const t2 of this.container?.clips ?? []) t2.destroy();
+    }
+    get highlightOptions() {
+      return this._logHighlightOptionsDeprecation(), this.highlights?.find(({ name: t2 }) => t2 === c2);
+    }
+    set highlightOptions(t2) {
+      if (this._logHighlightOptionsDeprecation(), !this.highlights) {
+        if (!t2) return;
+        this.highlights = new q([new u2()]);
+      }
+      const i2 = this.highlights.find(({ name: t3 }) => t3 === c2);
+      t2 ? i2?.assignFrom(t2) : (this.highlights.remove(i2), 0 === this.highlights.length && (this.highlights = null));
+    }
+    _logHighlightOptionsDeprecation() {
+      s(n.getLogger(this), "`LayerView.highlightOptions` is deprecated in favor of View.highlights", { replacement: "View.highlights", version: "4.34", see: "https://arcg.is/inbTa1#highlights", warnOnce: true });
+    }
+    get hasHighlight() {
+      return this._highlightCounter.size > 0;
+    }
+    get _mergedHighlights() {
+      if (!this.view) return H2;
+      if (!this.highlights) return this.view.highlights;
+      const t2 = this.view.highlights.clone();
+      for (const e4 of this.highlights) {
+        const i2 = t2.find((t3) => t3.name === e4.name);
+        i2 && i2.assignFrom(e4);
+      }
+      return t2;
+    }
+    get highlightIds() {
+      return Array.from(this._highlightCounter.objectIds);
+    }
+    get scheduler() {
+      return this.view.scheduler;
+    }
+    get spatialReferenceSupported() {
+      const t2 = this.view?.spatialReference;
+      return null == t2 || this.supportsSpatialReference(t2);
+    }
+    get updating() {
+      return this.spatialReferenceSupported && (!this.attached || !this.suspended && (this.updateRequested || this.isUpdating()) || !!this._updatingHandles?.updating || this.container.transitioning);
+    }
+    get visibleAtCurrentScale() {
+      return this._visibleAtCurrentScale;
+    }
+    processAttach() {
+      this.isResolved() && !this.attached && !this.destroyed && this.spatialReferenceSupported && (this.attach(), this.attached = true, this.requestUpdate());
+    }
+    processDetach() {
+      this.attached && (this.attached = false, this.removeHandles("attach"), this.detach(), this.updateRequested = false);
+    }
+    requestUpdate() {
+      this.destroyed || this.updateRequested || (this.updateRequested = true, this.updateSuspended || this.view.requestUpdate());
+    }
+    processUpdate(t2) {
+      !this.isFulfilled() || this.isResolved() ? (this._set("updateParameters", t2), this.updateRequested && !this.updateSuspended && (this.updateRequested = false, this.update(t2))) : this.updateRequested = false;
+    }
+    hitTest(t2, e4) {
+      return Promise.resolve(null);
+    }
+    supportsSpatialReference(t2) {
+      return true;
+    }
+    canResume() {
+      if (!this.spatialReferenceSupported) return false;
+      switch (this.layer?.type) {
+        case "link-chart":
+        case "knowledge-graph-sublayer":
+        case "graphics":
+          break;
+        default:
+          if (e3(this.view) && !this.view.inGeographicLayout) return false;
+      }
+      return !!super.canResume() && this.visibleAtCurrentScale;
+    }
+    getSuspendInfo() {
+      const t2 = super.getSuspendInfo(), e4 = !this.spatialReferenceSupported;
+      return e4 && (t2.spatialReferenceNotSupported = e4), t2;
+    }
+    addAttachHandles(t2) {
+      this.addHandles(t2, "attach");
+    }
+    _addHighlights(t2, e4) {
+      this._highlightCounter.add(t2, e4) && this._processHighlight();
+    }
+    _removeHighlights(t2, e4) {
+      this._highlightCounter.delete(t2, e4) && this._processHighlight();
+    }
+    _processHighlight() {
+    }
+    _getHighlights() {
+      const t2 = [];
+      for (const [e4, i2] of this._highlightCounter.highlightNamesByObjectId) {
+        const s6 = this._getHighlightBits(i2);
+        t2.push({ objectId: e4, highlightFlags: s6 });
+      }
+      return t2;
+    }
+    _getHighlightBits(t2) {
+      const e4 = new Set(t2);
+      let i2 = 1, s6 = 0;
+      if (!this.view) return 0;
+      const h2 = this._mergedHighlights;
+      for (const { name: r3 } of h2) e4.delete(r3) && (s6 = i2), i2 <<= 1;
+      return s6;
+    }
+  };
+  return __decorate([a()], y2.prototype, "attached", void 0), __decorate([a({ type: _3, set(t2) {
+    const e4 = n2(t2, this._get("clips"), _3);
+    this._set("clips", e4);
+  } })], y2.prototype, "clips", void 0), __decorate([a()], y2.prototype, "container", void 0), __decorate([a({ type: u2 })], y2.prototype, "highlightOptions", null), __decorate([a({ type: q.ofType(u2) })], y2.prototype, "highlights", void 0), __decorate([a()], y2.prototype, "_mergedHighlights", null), __decorate([a()], y2.prototype, "moving", void 0), __decorate([a({ readOnly: true })], y2.prototype, "spatialReferenceSupported", null), __decorate([a({ readOnly: true })], y2.prototype, "updateParameters", void 0), __decorate([a()], y2.prototype, "updateRequested", void 0), __decorate([a()], y2.prototype, "updating", null), __decorate([a()], y2.prototype, "view", void 0), __decorate([a()], y2.prototype, "_visibleAtCurrentScale", void 0), __decorate([a({ readOnly: true })], y2.prototype, "visibleAtCurrentScale", null), y2 = __decorate([c("esri.views.2d.layers.LayerView2D")], y2), y2;
+};
+
+export {
+  n7 as n,
+  S2 as S
+};
+//# sourceMappingURL=chunk-ODLEE4BR.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/core/support/jsonUtils.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nfunction t(t){return t&&\"object\"==typeof t&&\"toJSON\"in t&&\"function\"==typeof t.toJSON}export{t as isSerializable};\n"],
+  "mappings": ";AACA,SAAS,EAAEA,IAAE;AAAC,SAAOA,MAAG,YAAU,OAAOA,MAAG,YAAWA,MAAG,cAAY,OAAOA,GAAE;AAAM;",
+  "names": ["t"]
+}

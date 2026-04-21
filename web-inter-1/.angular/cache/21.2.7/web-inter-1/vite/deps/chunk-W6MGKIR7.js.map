@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/interactive/tooltip/components/directionModeIcons.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nconst e={absolute:\"absolute-direction\",relative:\"relative-direction\"};export{e as directionModeIcons};\n"],
+  "mappings": ";AACA,IAAM,IAAE,EAAC,UAAS,sBAAqB,UAAS,qBAAoB;",
+  "names": []
+}

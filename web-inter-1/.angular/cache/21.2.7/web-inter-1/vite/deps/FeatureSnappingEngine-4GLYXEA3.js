@@ -1,0 +1,435 @@
+import {
+  u
+} from "./chunk-XT64ZKX7.js";
+import {
+  r,
+  s as s3
+} from "./chunk-BNW2PSKP.js";
+import "./chunk-Z2U7CFYH.js";
+import {
+  e as e3
+} from "./chunk-2X5HWIJG.js";
+import {
+  a as a2,
+  e as e2
+} from "./chunk-MNFWQFAC.js";
+import "./chunk-X4R43FDP.js";
+import {
+  Pe,
+  _e,
+  bt
+} from "./chunk-NFUHF2IU.js";
+import "./chunk-MC4L6QKA.js";
+import {
+  f,
+  v as v2,
+  y
+} from "./chunk-GFDC56CO.js";
+import "./chunk-WWLONSVS.js";
+import "./chunk-4DVAYK5J.js";
+import "./chunk-ESFGILEN.js";
+import {
+  m,
+  p,
+  s as s2
+} from "./chunk-MY4KRETZ.js";
+import "./chunk-HAPSASFY.js";
+import {
+  k
+} from "./chunk-YP7OFZOK.js";
+import "./chunk-LDDM3CX4.js";
+import "./chunk-WQBN2KKE.js";
+import "./chunk-K3TG4ANK.js";
+import "./chunk-AGQQQ6D2.js";
+import "./chunk-TZSKNWRI.js";
+import "./chunk-T6SJ457A.js";
+import "./chunk-MXHLIIX3.js";
+import "./chunk-ACXV2BJH.js";
+import "./chunk-UFNIHRKY.js";
+import "./chunk-DPFYRE7L.js";
+import "./chunk-IBCQZ6GX.js";
+import "./chunk-IXCAA3KK.js";
+import "./chunk-6AURJHXX.js";
+import "./chunk-7DIM55SH.js";
+import "./chunk-RUNHW2N4.js";
+import {
+  i
+} from "./chunk-KY6VK7AR.js";
+import {
+  h
+} from "./chunk-TXF5FFQH.js";
+import "./chunk-47CFN4JI.js";
+import {
+  o as o3,
+  v
+} from "./chunk-SGNC5H35.js";
+import {
+  d
+} from "./chunk-DMM6UPJC.js";
+import "./chunk-G2AJQACY.js";
+import {
+  o as o4
+} from "./chunk-D64TRQJR.js";
+import "./chunk-UG7GC5ST.js";
+import "./chunk-37CL2A4G.js";
+import "./chunk-TSYJHA7W.js";
+import "./chunk-2CBDH3OZ.js";
+import "./chunk-UU3FW4SQ.js";
+import "./chunk-X4YO53U7.js";
+import "./chunk-YTCOBTMP.js";
+import {
+  g,
+  o
+} from "./chunk-5MDFQFDX.js";
+import "./chunk-AP2NAWWU.js";
+import "./chunk-IRS5H2YE.js";
+import "./chunk-TVLXQ42J.js";
+import "./chunk-OR24MDO6.js";
+import "./chunk-IANKUBS7.js";
+import "./chunk-EK6IDC6N.js";
+import "./chunk-ZBPHFQZH.js";
+import "./chunk-56NUZKCZ.js";
+import "./chunk-FWUMTZJM.js";
+import "./chunk-EZOPIZCP.js";
+import "./chunk-MUE6QDRN.js";
+import "./chunk-6TJKPIZ2.js";
+import "./chunk-7PBHIAQH.js";
+import {
+  n as n2
+} from "./chunk-KEY3YQEB.js";
+import "./chunk-K5YEU7YE.js";
+import {
+  o as o2
+} from "./chunk-E3TCHN5O.js";
+import "./chunk-UDRKO2UK.js";
+import "./chunk-FH7ZMRUF.js";
+import "./chunk-2YANO3UR.js";
+import "./chunk-GTWJPBIK.js";
+import "./chunk-XYIHFHUH.js";
+import "./chunk-XNNZ2U24.js";
+import "./chunk-MC2OVSQ5.js";
+import "./chunk-6U5MFJUS.js";
+import "./chunk-EQVY5WGD.js";
+import "./chunk-P7NLTDL7.js";
+import {
+  b as b2
+} from "./chunk-5GPMO33J.js";
+import {
+  e
+} from "./chunk-CHITL6T5.js";
+import "./chunk-WSE2ZKFY.js";
+import "./chunk-GM5PCDS3.js";
+import "./chunk-UXWT3ISO.js";
+import "./chunk-253Z6EVN.js";
+import "./chunk-7ZFYLJ6O.js";
+import "./chunk-HIVGPE4F.js";
+import "./chunk-XETCTTJV.js";
+import "./chunk-CPNUUDDA.js";
+import "./chunk-VEYY6VCN.js";
+import "./chunk-473S3KQM.js";
+import "./chunk-HTVDNBEG.js";
+import "./chunk-UJPIJ3ZF.js";
+import "./chunk-ORVZAZPX.js";
+import "./chunk-YVKQ6DO2.js";
+import "./chunk-VYBVCH3T.js";
+import {
+  re,
+  te
+} from "./chunk-DMD5CGVA.js";
+import "./chunk-FZD4GVUW.js";
+import "./chunk-VHQJAPCR.js";
+import "./chunk-SJGGAAKL.js";
+import "./chunk-YPBIWRR5.js";
+import "./chunk-TPFIN626.js";
+import {
+  U,
+  l,
+  w
+} from "./chunk-6CYBR6FP.js";
+import "./chunk-AE7PFPPS.js";
+import "./chunk-LD7VLL5E.js";
+import "./chunk-TUJXLUEV.js";
+import "./chunk-MCBUVFBI.js";
+import "./chunk-CV6NMUZC.js";
+import {
+  b
+} from "./chunk-2HP4RAZC.js";
+import {
+  a3 as a,
+  c as c2
+} from "./chunk-7ELXYOAW.js";
+import "./chunk-BVHAZAH7.js";
+import "./chunk-Y3Z2324M.js";
+import "./chunk-GIWRB4OC.js";
+import "./chunk-43YEPY4V.js";
+import "./chunk-BCADJITZ.js";
+import "./chunk-SY7OJLZ7.js";
+import "./chunk-6NO4CQAR.js";
+import "./chunk-RTVKY37F.js";
+import {
+  A,
+  c,
+  s
+} from "./chunk-2KP24SU5.js";
+import {
+  has,
+  n2 as n
+} from "./chunk-XE7VYYSA.js";
+import {
+  N
+} from "./chunk-XCN5EJK7.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/views/interactive/snapping/FeatureSnappingSourceInfo.js
+var f2 = class extends b {
+  set attributeRulesEnabled(e4) {
+    this._set("attributeRulesEnabled", e4), e4 && this.loadRules();
+  }
+  get layerView() {
+    return this.view?.allLayerViews?.find((e4) => e4.layer === this.layer);
+  }
+  get valid() {
+    const { _valid: e4, snappingSource: t, layer: r2 } = this;
+    return !(!t || !r2) && e4;
+  }
+  get subtypeFilter() {
+    const { layer: e4, snappingSource: t } = this;
+    if (!g(e4) || !e4.subtypes?.length || !t) return { mode: "not-in-use", filter: null };
+    const r2 = t.layerSource.sublayerSources.filter((e5) => e5.enabled && e5.layer.visible && i(this.view?.scale, e5.layer.effectiveScaleRange.minScale, e5.layer.effectiveScaleRange.maxScale)).map((e5) => e5.layer.subtypeCode);
+    if (!r2.length) return { mode: "none-visible", filter: null };
+    if (r2.length === e4.subtypes.length) return { mode: "all-visible", filter: null };
+    const i2 = e4.fieldsIndex.get(e4.subtypeField)?.name ?? e4.subtypeField;
+    return 1 === r2.length ? { mode: "in-use", filter: `${i2} = ${r2.getItemAt(0)}` } : { mode: "in-use", filter: `${i2} IN (${r2.join(", ")})` };
+  }
+  get floorFilter() {
+    const { view: e4, layer: t } = this;
+    return e4 && t ? o4({ view: e4, layer: t }) : null;
+  }
+  constructor(e4) {
+    super(e4), this.layer = null, this.snappingSource = null, this.rulesTable = null, this._valid = null;
+  }
+  initialize() {
+    if (!this.snappingSource || !this.layer) return void (this._valid = false);
+    const { layer: e4, snappingSource: t } = this;
+    if ("refresh" in e4) {
+      const r2 = e4;
+      this.addHandles(r2.on("refresh", () => t.refresh()));
+    }
+    this.loadRules(), this.addHandles([l(() => t.updating, (e5) => t.layerSource.updating = e5, w), l(() => t.availability, (e5) => t.layerSource.availability = e5, w)]);
+  }
+  getFetchCandidatesParameters(e4, t, r2) {
+    if (!this.valid) return [];
+    const { layer: i2, layerView: l2, floorFilter: o5, rulesTable: a3, subtypeFilter: u2 } = this, c3 = __spreadProps(__spreadValues({ distance: r2, mode: this.view?.type ?? "2d", point: e4, coordinateHelper: t.coordinateHelper }, h2()), { filter: l2 && "filter" in l2 ? l2.filter : null });
+    if (o5 && (c3.filter = m2(c3.filter, o5)), "not-in-use" !== u2.mode && "all-visible" !== u2.mode) {
+      if ("none-visible" === u2.mode) return [];
+      c3.filter ? c3.filter.where = o2(c3.filter.where, u2.mode) : c3.filter = new d({ where: u2.filter });
+    }
+    if (!this.attributeRulesEnabled) return [c3];
+    const f3 = t.feature, v3 = "subtype-sublayer" === f3?.sourceLayer?.type ? f3.sourceLayer.parent : f3?.sourceLayer;
+    if (a3 && f3 && v2(this.view?.map) && (o(i2) || g(i2)) && (o(v3) || g(v3)) && this.view.map.utilityNetworks?.find((e5) => e5.isUtilityLayer(v3))) {
+      if ("loaded" !== a3.loadStatus) return [];
+      const e5 = [], t2 = i2.layerId, r3 = a3.getFeatureSQL(v3, f3)?.[t2];
+      if (!r3) return [];
+      const l3 = r3.anyVertex;
+      let s4 = r3.endVertex;
+      return s4 && l3 && s4 === l3 && (s4 = ""), s4 && e5.push(__spreadProps(__spreadValues({}, c3), { returnEdge: false, vertexMode: "ends", filter: m2(c3.filter, s4) })), l3 && e5.push(__spreadProps(__spreadValues({}, c3), { returnEdge: has("snapping-include-edges-when-applying-any-vertex-rule") ?? false, vertexMode: "all", filter: m2(c3.filter, l3) })), e5;
+    }
+    return [c3];
+  }
+  async loadRules() {
+    this._valid = null;
+    const { layer: e4, view: t, attributeRulesEnabled: i2 } = this;
+    if (i2 && e4 && t && v2(t?.map) && (o(e4) || g(e4))) try {
+      await Promise.allSettled(t.map.utilityNetworks?.map((e5) => e5.load()) ?? []);
+      const r2 = t.map.utilityNetworks?.find((t2) => t2.isUtilityLayer(e4));
+      r2 && (this.rulesTable = await r2.getRulesTable(), await this.rulesTable?.load());
+    } catch (l2) {
+      return this._valid = false, void n.getLogger("esri.views.interactive.snapping.FeatureSnappingSourceInfo").error("Failed to load rules table for snapping source", e4.title);
+    }
+    this._valid = true;
+  }
+  remove() {
+    this.destroy();
+  }
+  destroy() {
+    this.snappingSource?.destroy();
+  }
+};
+function h2() {
+  return { returnEdge: true, vertexMode: "all" };
+}
+function m2(e4, t) {
+  return null == e4 ? new d({ where: t }) : e4.where ? new d({ where: o2(e4.where, t) }) : new d({ where: t });
+}
+__decorate([a({ constructOnly: true })], f2.prototype, "layer", void 0), __decorate([a({ constructOnly: true })], f2.prototype, "snappingSource", void 0), __decorate([a({ constructOnly: true })], f2.prototype, "view", void 0), __decorate([a({ value: false })], f2.prototype, "attributeRulesEnabled", null), __decorate([a()], f2.prototype, "layerView", null), __decorate([a()], f2.prototype, "rulesTable", void 0), __decorate([a()], f2.prototype, "valid", null), __decorate([a()], f2.prototype, "subtypeFilter", null), __decorate([a()], f2.prototype, "floorFilter", null), __decorate([a()], f2.prototype, "_valid", void 0), f2 = __decorate([c2("esri.views.interactive.snapping.FeatureSnappingSourceInfo")], f2);
+
+// node_modules/@arcgis/core/views/interactive/snapping/FeatureSnappingEngine.js
+var z = class extends b {
+  get updating() {
+    return this._snappingSources.some((e4) => null == e4?.valid || true === e4.valid && true === e4.snappingSource?.updating) || this._updatingHandles.updating;
+  }
+  constructor(e4) {
+    super(e4), this.options = null, this._domain = 1, this._updatingHandles = new h(), this._sourceModules = { featureService: { module: null, loader: null }, featureCollection: { module: null, loader: null }, graphics: { module: null, loader: null }, notes: { module: null, loader: null }, scene: { module: null, loader: null } };
+  }
+  initialize() {
+    const e4 = u(() => this.options?._effectiveFeatureSources, (e5, t) => this._createSourceInfo(e5, t));
+    this._snappingSources = e4, this.addHandles([c(e4), l(() => ({ rulesEnabled: !!this.options?.attributeRulesEnabled, sources: this._snappingSources.filter(N) }), ({ rulesEnabled: e5, sources: t }) => {
+      for (const r2 of t) r2.attributeRulesEnabled = e5;
+    }, U)]);
+  }
+  destroy() {
+    this._set("options", null), this._updatingHandles.destroy();
+  }
+  async fetchCandidates(e4, t, r2, a3) {
+    if (!(t & this._domain && null != this.options && this.options.effectiveFeatureEnabled)) return [];
+    const n3 = new Array(), o5 = this._computeScreenSizeDistanceParameters(e4, r2);
+    for (const s4 of this._snappingSources) {
+      if (!s4?.valid || !s4.snappingSource?.layerSource?.enabled || s4.layerView?.suspended) continue;
+      const t2 = s4.getFetchCandidatesParameters(e4, r2, o5);
+      for (const e5 of t2) n3.push(s4.snappingSource.fetchCandidates(e5, a3).then((e6) => this._processCandidatesFromSource(s4, e6, r2)));
+    }
+    const c3 = (await A(n3)).flat();
+    return this._addRightAngleCandidates(c3, e4, o5, r2), s(a3), y(e4, c3), c3;
+  }
+  _addRightAngleCandidates(e4, t, r2, a3) {
+    const n3 = null != a3.vertexHandle ? a3.vertexHandle.rightSegment?.rightVertex?.pos : null != a3.editGeometryOperations && "polygon" === a3.editGeometryOperations.data.type ? a3.editGeometryOperations.data.parts[0]?.getFirstVertex()?.pos : null, s4 = null != a3.vertexHandle ? a3.vertexHandle.leftSegment?.leftVertex?.pos : null != a3.editGeometryOperations ? a3.editGeometryOperations.data.parts[0]?.getLastVertex()?.pos : null, { view: i2 } = this, o5 = m(n3, i2, a3), c3 = m(s4, i2, a3), u2 = e4.length;
+    for (let l2 = 0; l2 < u2; l2++) this._addRightAngleCandidate(e4[l2], c3, t, r2, e4), this._addRightAngleCandidate(e4[l2], o5, t, r2, e4);
+  }
+  _addRightAngleCandidate(e4, t, r2, a3, n3) {
+    if (null == t || !A2(e4)) return;
+    const s4 = e4.constraint.closestTo(t), i2 = (s4[0] - r2[0]) / a3.x, o5 = (s4[1] - r2[1]) / a3.y, { start: c3, end: u2 } = e4.constraint;
+    if (i2 * i2 + o5 * o5 <= 1) {
+      const r3 = b2(s2(s4), s2(c3)) > b2(s2(s4), s2(u2)) ? c3 : u2, a4 = new r({ targetPoint: p(s4), otherVertex: t, otherVertexType: 0, previousVertex: r3, constraint: new bt(t, s4), objectId: e4.objectId, isDraped: e4.isDraped, domain: 1 });
+      n3.push(a4);
+    }
+  }
+  _computeScreenSizeDistanceParameters(e4, t) {
+    let r2 = null != this.options ? this.options.distance * ("touch" === t.pointer ? this.options.touchSensitivityMultiplier : 1) : 0;
+    return null == this.view ? { x: r2, y: r2, z: r2, distance: r2 } : "2d" === this.view.type ? (r2 *= this.view.resolution, { x: r2, y: r2, z: r2, distance: r2 }) : this._computeScreenSizeDistanceParameters3D(e4, r2, this.view, t);
+  }
+  _computeScreenSizeDistanceParameters3D(e4, t, r2, a3) {
+    const { spatialReference: n3 } = a3;
+    r2.renderCoordsHelper.toRenderCoords(e4, n3, O);
+    const s4 = r2.state.camera.computeScreenPixelSizeAt(O), i2 = s4 * r2.renderCoordsHelper.unitInMeters, o5 = i2 / re(n3), c3 = i2 / te(n3), p2 = t * o5, d2 = t * c3, m3 = s3(e4, n3, k, r2), S = m3 ? E(m3, e4, o5, 0, 0, r2, a3) : 0, h3 = m3 ? E(m3, e4, 0, o5, 0, r2, a3) : 0, g2 = m3 ? E(m3, e4, 0, 0, c3, r2, a3) : 0;
+    return { x: 0 === S ? 0 : p2 / S, y: 0 === h3 ? 0 : p2 / h3, z: 0 === g2 ? 0 : d2 / g2, distance: s4 * t };
+  }
+  _processCandidatesFromSource(e4, t, r2) {
+    const a3 = [];
+    for (const n3 of t) e4.snappingSource && !this._candidateIsExcluded(e4.snappingSource, n3, r2.excludeFeature) && (n3 instanceof e2 && (n3.layer = e4.layer), a3.push(n3));
+    return a3;
+  }
+  _candidateIsExcluded(e4, t, r2) {
+    if (null == r2) return false;
+    const a3 = this._getCandidateObjectId(t);
+    if (null == a3) return false;
+    const n3 = e4.layerSource.layer;
+    return "graphics" === n3.type ? r2.uid === a3 : r2.sourceLayer === n3 && (!(!r2.attributes || !("objectIdField" in n3)) && r2.attributes[n3.objectIdField] === a3);
+  }
+  _getCandidateObjectId(e4) {
+    return e4 instanceof e2 ? e4.objectId : null;
+  }
+  async _createSourceInfo(e4, t) {
+    const r2 = e4.layer;
+    r2.loaded || (await r2.load(), s(t));
+    const { view: a3 } = this, n3 = await this._createFeatureSnappingSourceType(e4);
+    return s(t), new f2(null == n3 ? {} : { snappingSource: n3, view: a3, layer: r2 });
+  }
+  async _createFeatureSnappingSourceType(e4) {
+    switch (e4.layer.type) {
+      case "feature":
+      case "geojson":
+      case "csv":
+      case "oriented-imagery":
+      case "subtype-group":
+      case "wfs":
+        return this._createFeatureSnappingSourceFeatureLayer(e4);
+      case "graphics":
+        return this._createFeatureSnappingSourceGraphicsLayer(e4);
+      case "map-notes":
+        return this._createFeatureSnappingSourceMapNotesLayer(e4);
+      case "scene":
+      case "building-scene":
+        return this._createFeatureSnappingSourceSceneLayer(e4);
+    }
+    return null;
+  }
+  async _createFeatureSnappingSourceSceneLayer(e4) {
+    const { view: t } = this;
+    if (null == t || "3d" !== t.type) return null;
+    return new (await this._getSourceModule("scene")).SceneLayerSnappingSource({ layerSource: e4, view: t });
+  }
+  async _createFeatureSnappingSourceFeatureLayer(e4) {
+    switch (e4.layer.source?.type) {
+      case "feature-layer":
+      case "oriented-imagery":
+        return new (await this._getSourceModule("featureService")).FeatureServiceSnappingSource({ spatialReference: this.spatialReference, view: this.view, layerSource: e4 });
+      case "memory":
+      case "csv":
+      case "geojson":
+      case "wfs":
+        if ("mesh" === e4.layer.geometryType) return null;
+        return new (await this._getSourceModule("featureCollection")).FeatureCollectionSnappingSource({ layerSource: e4, view: this.view });
+    }
+    return null;
+  }
+  async _createFeatureSnappingSourceGraphicsLayer(e4) {
+    return new (await this._getSourceModule("graphics")).GraphicsSnappingSource({ getGraphicsLayers: () => [e4.layer], spatialReference: this.spatialReference, view: this.view, layerSource: e4 });
+  }
+  async _createFeatureSnappingSourceMapNotesLayer(e4) {
+    return new (await this._getSourceModule("notes")).GraphicsSnappingSource({ getGraphicsLayers: () => e4.layer.sublayers?.toArray() ?? [], spatialReference: this.spatialReference, view: this.view, layerSource: e4 });
+  }
+  async _getSourceModule(e4) {
+    const t = this._sourceModules[e4];
+    if (null == t.loader) {
+      const t2 = this._loadSourceModule(e4), r2 = { module: null, loader: t2 };
+      this._sourceModules[e4] = r2;
+      const a3 = await t2, n3 = { module: a3, loader: t2 };
+      return this._sourceModules[e4] = n3, a3;
+    }
+    return null == t.module ? t.loader : t.module;
+  }
+  _loadSourceModule(e4) {
+    const t = this._updatingHandles;
+    switch (e4) {
+      case "featureService":
+        return t.addPromise(import("./FeatureServiceSnappingSource-JZ34HCY5.js"));
+      case "featureCollection":
+        return t.addPromise(import("./FeatureCollectionSnappingSource-FPBY6JDH.js"));
+      case "graphics":
+      case "notes":
+        return t.addPromise(import("./GraphicsSnappingSource-3S5HGXDZ.js"));
+      case "scene":
+        return t.addPromise(import("./SceneLayerSnappingSource-4YWSWR7H.js"));
+    }
+  }
+  get test() {
+  }
+};
+function A2(e4) {
+  const t = e4 instanceof a2 || e4 instanceof e3, r2 = _e(e4.constraint) || Pe(e4.constraint);
+  return t && r2 && !D(e4.constraint);
+}
+function D({ start: e4, end: t }) {
+  const r2 = v(e4, t), a3 = b2(s2(e4), s2(t));
+  return r2 < e() || a3 / r2 < V;
+}
+function E(e4, t, r2, a3, n3, s4, { spatialReference: i2 }) {
+  const o5 = o3(U2, t);
+  o5[0] += r2, o5[1] += a3, o5[2] += n3;
+  const c3 = s3(o5, i2, k, s4);
+  return c3 ? f(c3, e4) : 1 / 0;
+}
+__decorate([a({ constructOnly: true })], z.prototype, "spatialReference", void 0), __decorate([a({ constructOnly: true })], z.prototype, "view", void 0), __decorate([a()], z.prototype, "options", void 0), __decorate([a({ readOnly: true })], z.prototype, "updating", null), __decorate([a()], z.prototype, "_snappingSources", void 0), z = __decorate([c2("esri.views.interactive.snapping.FeatureSnappingEngine")], z);
+var O = n2();
+var U2 = n2();
+var V = 1e-4;
+export {
+  z as FeatureSnappingEngine
+};
+//# sourceMappingURL=FeatureSnappingEngine-4GLYXEA3.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/widgets/support/Heading.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nimport{clamp as r}from\"../../core/mathUtils.js\";import{globalCss as t}from\"./globalCss.js\";import{tsx as e,classes as o}from\"./widget.js\";function i({level:r,class:i,...l},s){const a=n(r);return e(`h${a}`,{...l,\"aria-level\":String(a),class:o(t.heading,i),role:\"heading\"},s)}function n(t){return r(Math.ceil(t),1,6)}function l(r,t=1){return n(r+t)}export{i as Heading,l as incrementHeadingLevel};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAC0I,SAAS,EAAE,IAAuB,GAAE;AAAzB,eAAC,SAAMA,IAAE,OAAMC,GADpK,IACqJ,IAAoBC,KAAA,UAApB,IAAoB,CAAnB,SAAQ;AAAiB,QAAM,IAAE,EAAEF,EAAC;AAAE,SAAO,EAAE,IAAI,CAAC,IAAG,iCAAIE,KAAJ,EAAM,cAAa,OAAO,CAAC,GAAE,OAAM,EAAE,EAAE,SAAQD,EAAC,GAAE,MAAK,UAAS,IAAE,CAAC;AAAC;AAAC,SAAS,EAAE,GAAE;AAAC,SAAO,EAAE,KAAK,KAAK,CAAC,GAAE,GAAE,CAAC;AAAC;AAAC,SAAS,EAAED,IAAE,IAAE,GAAE;AAAC,SAAO,EAAEA,KAAE,CAAC;AAAC;",
+  "names": ["r", "i", "l"]
+}
