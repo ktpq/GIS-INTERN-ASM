@@ -1,0 +1,192 @@
+import {
+  e,
+  i,
+  o as o2,
+  r as r2,
+  s
+} from "./chunk-4BJ3M6CP.js";
+import {
+  A,
+  N,
+  T,
+  g,
+  p,
+  v
+} from "./chunk-TPY5PFTU.js";
+import {
+  j as j2
+} from "./chunk-JXLQUNSA.js";
+import {
+  q
+} from "./chunk-XWU2ZKWF.js";
+import {
+  x
+} from "./chunk-FAG2TZ7O.js";
+import {
+  j
+} from "./chunk-2YANO3UR.js";
+import {
+  y3 as y
+} from "./chunk-GTWJPBIK.js";
+import {
+  l
+} from "./chunk-7ZFYLJ6O.js";
+import {
+  _
+} from "./chunk-YVKQ6DO2.js";
+import {
+  n
+} from "./chunk-CV6NMUZC.js";
+import {
+  a3 as a,
+  c,
+  o4 as o,
+  r4 as r
+} from "./chunk-7ELXYOAW.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+
+// node_modules/@arcgis/core/rest/support/PointBarrier.js
+var O;
+var T2 = class extends l(n) {
+  static {
+    O = this;
+  }
+  constructor(t) {
+    super(t), this.addedCost = null, this.barrierType = null, this.costs = null, this.curbApproach = null, this.fullEdge = null, this.name = null, this.objectId = null, this.popupTemplate = null, this.positionAlong = null, this.sideOfEdge = null, this.sourceId = null, this.sourceOid = null, this.status = null, this.symbol = null, this.type = "point-barrier";
+  }
+  readCosts(t, e2) {
+    return e(e2.attributes, "Attr_");
+  }
+  writeCosts(t, e2) {
+    r2(t, e2, "Attr_");
+  }
+  set geometry(t) {
+    this._get("geometry") && (this._set("positionAlong", null), this._set("sideOfEdge", null), this._set("sourceId", null), this._set("sourceOid", null), this._set("status", null)), this._set("geometry", t);
+  }
+  static {
+    this.fields = [{ name: "ObjectID", alias: "ObjectID", type: "esriFieldTypeOID", editable: false, nullable: false }, { name: "AddedCost", alias: "Added Cost", type: "esriFieldTypeDouble", editable: true, nullable: true }, { name: "BarrierType", alias: "Barrier Type", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "Costs", alias: "Costs", type: "esriFieldTypeString", editable: true, nullable: true, length: 1048576 }, { name: "CurbApproach", alias: "Curb Approach", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "FullEdge", alias: "Full Edge", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "Name", alias: "Name", type: "esriFieldTypeString", editable: true, nullable: true, length: 255 }, { name: "Status", alias: "Status", type: "esriFieldTypeInteger", editable: true, nullable: true }];
+  }
+  static fromGraphic(t) {
+    return new O({ addedCost: t.attributes.AddedCost ?? null, barrierType: null != t.attributes.BarrierType ? N.fromJSON(t.attributes.BarrierType) : null, costs: null != t.attributes.Costs ? i(JSON.parse(t.attributes.Costs)) : null, curbApproach: null != t.attributes.CurbApproach ? p.fromJSON(t.attributes.CurbApproach) : null, fullEdge: null != t.attributes.FullEdge ? g.fromJSON(t.attributes.FullEdge) : null, geometry: t.geometry, name: t.attributes.Name ?? null, objectId: t.attributes.ObjectID ?? t.attributes.__OBJECTID, popupTemplate: t.popupTemplate, status: null != t.attributes.Status ? A.fromJSON(t.attributes.Status) : null, symbol: t.symbol });
+  }
+  toGraphic() {
+    const t = { ObjectID: this.objectId, AddedCost: this.addedCost, BarrierType: this.barrierType ? N.toJSON(this.barrierType) : null, Costs: this.costs ? JSON.stringify(s(this.costs)) : null, CurbApproach: this.curbApproach ? p.toJSON(this.curbApproach) : null, FullEdge: this.fullEdge ? g.toJSON(this.fullEdge) : null, Name: this.name, Status: this.status ? A.toJSON(this.status) : null };
+    return new j2({ geometry: this.geometry, attributes: t, symbol: this.symbol, popupTemplate: this.popupTemplate });
+  }
+};
+__decorate([a()], T2.prototype, "addedCost", void 0), __decorate([a({ type: N.apiValues, json: { name: "attributes.BarrierType", read: { reader: N.read }, write: { writer: N.write } } })], T2.prototype, "barrierType", void 0), __decorate([a()], T2.prototype, "costs", void 0), __decorate([o("costs", ["attributes"])], T2.prototype, "readCosts", null), __decorate([r("costs")], T2.prototype, "writeCosts", null), __decorate([a({ type: p.apiValues, json: { read: { source: "attributes.CurbApproach", reader: p.read } } })], T2.prototype, "curbApproach", void 0), __decorate([a({ type: g.apiValues, json: { name: "attributes.FullEdge", read: { reader: g.read }, write: { writer: g.write } } })], T2.prototype, "fullEdge", void 0), __decorate([a({ type: _, json: { write: true }, value: null })], T2.prototype, "geometry", null), __decorate([a({ json: { name: "attributes.Name" } })], T2.prototype, "name", void 0), __decorate([a({ json: { name: "attributes.ObjectID" } })], T2.prototype, "objectId", void 0), __decorate([a({ type: q })], T2.prototype, "popupTemplate", void 0), __decorate([a({ json: { name: "attributes.PosAlong" } })], T2.prototype, "positionAlong", void 0), __decorate([a({ type: T.apiValues, json: { name: "attributes.SideOfEdge", read: { reader: T.read }, write: { writer: T.write } } })], T2.prototype, "sideOfEdge", void 0), __decorate([a({ json: { name: "attributes.SourceID" } })], T2.prototype, "sourceId", void 0), __decorate([a({ json: { name: "attributes.SourceOID" } })], T2.prototype, "sourceOid", void 0), __decorate([a({ type: A.apiValues, json: { read: { source: "attributes.Status", reader: A.read } } })], T2.prototype, "status", void 0), __decorate([a({ types: x })], T2.prototype, "symbol", void 0), __decorate([a({ readOnly: true, json: { read: false } })], T2.prototype, "type", void 0), T2 = O = __decorate([c("esri.rest.support.PointBarrier")], T2);
+
+// node_modules/@arcgis/core/rest/support/PolygonBarrier.js
+var h;
+var j3 = class extends l(n) {
+  static {
+    h = this;
+  }
+  constructor(t) {
+    super(t), this.barrierType = null, this.costs = null, this.geometry = null, this.name = null, this.objectId = null, this.popupTemplate = null, this.scaleFactor = null, this.symbol = null, this.type = "polygon-barrier";
+  }
+  readCosts(t, e2) {
+    return e(e2.attributes, "Attr_");
+  }
+  writeCosts(t, e2) {
+    r2(t, e2, "Attr_");
+  }
+  static {
+    this.fields = [{ name: "ObjectID", alias: "ObjectID", type: "esriFieldTypeOID", editable: false, nullable: false }, { name: "BarrierType", alias: "Barrier Type", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "Costs", alias: "Costs", type: "esriFieldTypeString", editable: true, nullable: true, length: 1048576 }, { name: "Name", alias: "Name", type: "esriFieldTypeString", editable: true, nullable: true, length: 255 }, { name: "ScaleFactor", alias: "Scale Factor", type: "esriFieldTypeDouble", editable: true, nullable: true }];
+  }
+  static fromGraphic(t) {
+    return new h({ barrierType: null != t.attributes.BarrierType ? N.fromJSON(t.attributes.BarrierType) : null, costs: null != t.attributes.Costs ? i(JSON.parse(t.attributes.Costs)) : null, geometry: t.geometry, name: t.attributes.Name ?? null, objectId: t.attributes.ObjectID ?? t.attributes.__OBJECTID, popupTemplate: t.popupTemplate, scaleFactor: t.attributes.ScaleFactor ?? null, symbol: t.symbol });
+  }
+  toGraphic() {
+    const t = { ObjectID: this.objectId, BarrierType: this.barrierType ? N.toJSON(this.barrierType) : null, Costs: this.costs ? JSON.stringify(s(this.costs)) : null, Name: this.name ?? null, ScaleFactor: this.scaleFactor ?? null };
+    return new j2({ geometry: this.geometry, attributes: t, symbol: this.symbol, popupTemplate: this.popupTemplate });
+  }
+};
+__decorate([a({ type: N.apiValues, json: { name: "attributes.BarrierType", read: { reader: N.read }, write: { writer: N.write } } })], j3.prototype, "barrierType", void 0), __decorate([a()], j3.prototype, "costs", void 0), __decorate([o("costs", ["attributes"])], j3.prototype, "readCosts", null), __decorate([r("costs")], j3.prototype, "writeCosts", null), __decorate([a({ type: j, json: { write: true } })], j3.prototype, "geometry", void 0), __decorate([a({ json: { name: "attributes.Name" } })], j3.prototype, "name", void 0), __decorate([a({ json: { name: "attributes.ObjectID" } })], j3.prototype, "objectId", void 0), __decorate([a({ type: q })], j3.prototype, "popupTemplate", void 0), __decorate([a()], j3.prototype, "scaleFactor", void 0), __decorate([a({ types: x })], j3.prototype, "symbol", void 0), __decorate([a({ readOnly: true, json: { read: false } })], j3.prototype, "type", void 0), j3 = h = __decorate([c("esri.rest.support.PolygonBarrier")], j3);
+
+// node_modules/@arcgis/core/rest/support/PolylineBarrier.js
+var b;
+var d = class extends l(n) {
+  static {
+    b = this;
+  }
+  constructor(e2) {
+    super(e2), this.barrierType = null, this.costs = null, this.geometry = null, this.name = null, this.objectId = null, this.popupTemplate = null, this.scaleFactor = null, this.symbol = null, this.type = "polyline-barrier";
+  }
+  readCosts(e2, t) {
+    return e(t.attributes, "Attr_");
+  }
+  static {
+    this.fields = [{ name: "ObjectID", alias: "ObjectID", type: "esriFieldTypeOID", editable: false, nullable: false }, { name: "BarrierType", alias: "Barrier Type", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "Costs", alias: "Costs", type: "esriFieldTypeString", editable: true, nullable: true, length: 1048576 }, { name: "Name", alias: "Name", type: "esriFieldTypeString", editable: true, nullable: true, length: 255 }, { name: "ScaleFactor", alias: "Scale Factor", type: "esriFieldTypeDouble", editable: true, nullable: true }];
+  }
+  static fromGraphic(e2) {
+    return new b({ barrierType: null != e2.attributes.BarrierType ? N.fromJSON(e2.attributes.BarrierType) : null, costs: null != e2.attributes.Costs ? i(JSON.parse(e2.attributes.Costs)) : null, geometry: e2.geometry, name: e2.attributes.Name ?? null, objectId: e2.attributes.ObjectID ?? e2.attributes.__OBJECTID, popupTemplate: e2.popupTemplate, scaleFactor: e2.attributes.ScaleFactor ?? null, symbol: e2.symbol });
+  }
+  toGraphic() {
+    const e2 = { ObjectID: this.objectId, BarrierType: this.barrierType ? N.toJSON(this.barrierType) : null, Costs: this.costs ? JSON.stringify(s(this.costs)) : null, Name: this.name, ScaleFactor: this.scaleFactor };
+    return new j2({ geometry: this.geometry, attributes: e2, symbol: this.symbol, popupTemplate: this.popupTemplate });
+  }
+};
+__decorate([a({ type: N.apiValues, json: { read: { source: "attributes.BarrierType", reader: N.read } } })], d.prototype, "barrierType", void 0), __decorate([a()], d.prototype, "costs", void 0), __decorate([o("costs", ["attributes"])], d.prototype, "readCosts", null), __decorate([a({ type: y, json: { write: true } })], d.prototype, "geometry", void 0), __decorate([a({ json: { name: "attributes.Name" } })], d.prototype, "name", void 0), __decorate([a({ json: { name: "attributes.ObjectID" } })], d.prototype, "objectId", void 0), __decorate([a({ type: q })], d.prototype, "popupTemplate", void 0), __decorate([a()], d.prototype, "scaleFactor", void 0), __decorate([a({ types: x })], d.prototype, "symbol", void 0), __decorate([a({ readOnly: true, json: { read: false } })], d.prototype, "type", void 0), d = b = __decorate([c("esri.rest.support.PolylineBarrier")], d);
+
+// node_modules/@arcgis/core/rest/support/Stop.js
+var C;
+var w = class extends l(n) {
+  static {
+    C = this;
+  }
+  constructor(e2) {
+    super(e2), this.arriveCurbApproach = null, this.arriveTime = null, this.arriveTimeOffset = null, this.bearing = null, this.bearingTol = null, this.cumulativeCosts = null, this.cumulativeDistance = null, this.cumulativeDuration = null, this.curbApproach = null, this.departCurbApproach = null, this.departTime = null, this.departTimeOffset = null, this.distanceToNetworkInMeters = null, this.lateDuration = null, this.locationType = null, this.name = null, this.navLatency = null, this.objectId = null, this.popupTemplate = null, this.positionAlong = null, this.routeName = null, this.serviceCosts = null, this.serviceDistance = null, this.serviceDuration = null, this.sequence = null, this.sideOfEdge = null, this.snapX = null, this.snapY = null, this.snapZ = null, this.sourceId = null, this.sourceOid = null, this.status = null, this.symbol = null, this.timeWindowEnd = null, this.timeWindowEndOffset = null, this.timeWindowStart = null, this.timeWindowStartOffset = null, this.type = "stop", this.violations = null, this.waitDuration = null, this.wait = null;
+  }
+  readArriveTimeOffset(e2, t) {
+    return o2(t.attributes.ArriveTime, t.attributes.ArriveTimeUTC);
+  }
+  readCumulativeCosts(e2, t) {
+    return e(t.attributes, "Cumul_");
+  }
+  readDepartTimeOffset(e2, t) {
+    return o2(t.attributes.DepartTime, t.attributes.DepartTimeUTC);
+  }
+  set geometry(e2) {
+    this._get("geometry") && (this._set("positionAlong", null), this._set("sideOfEdge", null), this._set("sourceId", null), this._set("sourceOid", null), this._set("status", null)), this._set("geometry", e2);
+  }
+  readServiceCosts(e2, t) {
+    return e(t.attributes, "Attr_");
+  }
+  writeServiceCosts(e2, t) {
+    r2(e2, t, "Attr_");
+  }
+  writeTimeWindowEnd(e2, t) {
+    null != e2 && (t.attributes || (t.attributes = {}), t.attributes.TimeWindowEnd = e2.getTime());
+  }
+  writeTimeWindowStart(e2, t) {
+    null != e2 && (t.attributes || (t.attributes = {}), t.attributes.TimeWindowStart = e2.getTime());
+  }
+  readViolations(e2, t) {
+    return e(t.attributes, "Violation_");
+  }
+  readWait(e2, t) {
+    return e(t.attributes, "Wait_");
+  }
+  static {
+    this.fields = [{ name: "ObjectID", alias: "ObjectID", type: "esriFieldTypeOID", editable: false, nullable: false }, { name: "ArrivalCurbApproach", alias: "Arrival Curb Approach", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "ArrivalTime", alias: "Arrival Time", type: "esriFieldTypeDate", editable: true, nullable: true, length: 36 }, { name: "ArrivalUTCOffset", alias: "Arrival Time Offset", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "CumulativeCosts", alias: "Cumulative Costs", type: "esriFieldTypeString", editable: true, nullable: true, length: 1048576 }, { name: "CumulativeMeters", alias: "Cumulative Meters", type: "esriFieldTypeDouble", editable: true, nullable: true }, { name: "CumulativeMinutes", alias: "Cumulative Minutes", type: "esriFieldTypeDouble", editable: true, nullable: true }, { name: "CurbApproach", alias: "Curb Approach", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "DepartureCurbApproach", alias: "Departure Curb Approach", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "DepartureTime", alias: "Departure Time", type: "esriFieldTypeDate", editable: true, nullable: true, length: 36 }, { name: "DepartureUTCOffset", alias: "Departure Time Offset", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "LateMinutes", alias: "Minutes Late", type: "esriFieldTypeDouble", editable: true, nullable: true }, { name: "LocationType", alias: "Location Type", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "Name", alias: "Name", type: "esriFieldTypeString", editable: true, nullable: true, length: 255 }, { name: "RouteName", alias: "Route Name", type: "esriFieldTypeString", editable: true, nullable: true, length: 255 }, { name: "Sequence", alias: "Sequence", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "ServiceCosts", alias: "Service Costs", type: "esriFieldTypeString", editable: true, nullable: true, length: 1048576 }, { name: "ServiceMeters", alias: "Service Meters", type: "esriFieldTypeDouble", editable: true, nullable: true }, { name: "ServiceMinutes", alias: "Service Minutes", type: "esriFieldTypeDouble", editable: true, nullable: true }, { name: "Status", alias: "Status", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "TimeWindowEnd", alias: "Time Window End", type: "esriFieldTypeDate", editable: true, nullable: true, length: 36 }, { name: "TimeWindowEndUTCOffset", alias: "Time Window End Offset", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "TimeWindowStart", alias: "Time Window Start", type: "esriFieldTypeDate", editable: true, nullable: true, length: 36 }, { name: "TimeWindowStartUTCOffset", alias: "Time Window Start Offset", type: "esriFieldTypeInteger", editable: true, nullable: true }, { name: "WaitMinutes", alias: "Minutes Wait", type: "esriFieldTypeDouble", editable: true, nullable: true }];
+  }
+  static fromGraphic(e2) {
+    return new C({ arriveCurbApproach: null != e2.attributes.ArrivalCurbApproach ? p.fromJSON(e2.attributes.ArrivalCurbApproach) : null, arriveTime: null != e2.attributes.ArrivalTime ? new Date(e2.attributes.ArrivalTime) : null, arriveTimeOffset: e2.attributes.ArrivalUTCOffset, cumulativeCosts: null != e2.attributes.CumulativeCosts ? i(JSON.parse(e2.attributes.CumulativeCosts)) : null, cumulativeDistance: e2.attributes.CumulativeMeters ?? null, cumulativeDuration: e2.attributes.CumulativeMinutes ?? null, curbApproach: null != e2.attributes.CurbApproach ? p.fromJSON(e2.attributes.CurbApproach) : null, departCurbApproach: null != e2.attributes.DepartureCurbApproach ? p.fromJSON(e2.attributes.DepartureCurbApproach) : null, departTime: null != e2.attributes.DepartureTime ? new Date(e2.attributes.DepartureTime) : null, departTimeOffset: e2.attributes.DepartureUTCOffset ?? null, geometry: e2.geometry, lateDuration: e2.attributes.LateMinutes ?? null, locationType: null != e2.attributes.LocationType ? v.fromJSON(e2.attributes.LocationType) : null, name: e2.attributes.Name, objectId: e2.attributes.ObjectID ?? e2.attributes.__OBJECTID, popupTemplate: e2.popupTemplate, routeName: e2.attributes.RouteName, sequence: e2.attributes.Sequence ?? null, serviceCosts: null != e2.attributes.ServiceCosts ? i(JSON.parse(e2.attributes.ServiceCosts)) : null, serviceDistance: e2.attributes.ServiceMeters ?? null, serviceDuration: e2.attributes.ServiceMinutes ?? null, status: null != e2.attributes.Status ? A.fromJSON(e2.attributes.Status) : null, symbol: e2.symbol, timeWindowEnd: null != e2.attributes.TimeWindowEnd ? new Date(e2.attributes.TimeWindowEnd) : null, timeWindowEndOffset: e2.attributes.TimeWindowEndUTCOffset ?? null, timeWindowStart: null != e2.attributes.TimeWindowStart ? new Date(e2.attributes.TimeWindowStart) : null, timeWindowStartOffset: e2.attributes.TimeWindowStartUTCOffset ?? null, waitDuration: e2.attributes.WaitMinutes ?? null });
+  }
+  toGraphic() {
+    const e2 = { ObjectID: this.objectId, ArrivalCurbApproach: this.arriveCurbApproach ? p.toJSON(this.arriveCurbApproach) : null, ArrivalTime: this.arriveTime?.getTime() ?? null, ArrivalUTCOffset: this.arriveTimeOffset, CumulativeCosts: this.cumulativeCosts ? JSON.stringify(s(this.cumulativeCosts)) : null, CumulativeMeters: this.cumulativeDistance, CumulativeMinutes: this.cumulativeDuration, CurbApproach: this.curbApproach ? p.toJSON(this.curbApproach) : null, DepartureCurbApproach: this.departCurbApproach ? p.toJSON(this.departCurbApproach) : null, DepartureTime: this.departTime?.getTime() ?? null, DepartureUTCOffset: this.departTimeOffset, LateMinutes: this.lateDuration, LocationType: this.locationType ? v.toJSON(this.locationType) : null, Name: this.name, RouteName: this.routeName, Sequence: this.sequence, ServiceCosts: this.serviceCosts ? JSON.stringify(s(this.serviceCosts)) : null, ServiceMeters: this.serviceDistance, ServiceMinutes: this.serviceDuration, Status: this.status ? A.toJSON(this.status) : null, TimeWindowEnd: this.timeWindowEnd?.getTime() ?? null, TimeWindowEndUTCOffset: this.timeWindowEndOffset ?? this.arriveTimeOffset, TimeWindowStart: this.timeWindowStart?.getTime() ?? null, TimeWindowStartUTCOffset: this.timeWindowStartOffset ?? this.arriveTimeOffset, WaitMinutes: this.waitDuration };
+    return new j2({ geometry: this.geometry, attributes: e2, symbol: this.symbol, popupTemplate: this.popupTemplate });
+  }
+};
+__decorate([a({ type: p.apiValues, json: { read: { source: "attributes.ArrivalCurbApproach", reader: p.read } } })], w.prototype, "arriveCurbApproach", void 0), __decorate([a({ type: Date, json: { read: { source: "attributes.ArriveTimeUTC" } } })], w.prototype, "arriveTime", void 0), __decorate([a()], w.prototype, "arriveTimeOffset", void 0), __decorate([o("arriveTimeOffset", ["attributes.ArriveTime", "attributes.ArriveTimeUTC"])], w.prototype, "readArriveTimeOffset", null), __decorate([a({ json: { name: "attributes.Bearing", read: false, write: true } })], w.prototype, "bearing", void 0), __decorate([a({ json: { name: "attributes.BearingTol", read: false, write: true } })], w.prototype, "bearingTol", void 0), __decorate([a()], w.prototype, "cumulativeCosts", void 0), __decorate([o("cumulativeCosts", ["attributes"])], w.prototype, "readCumulativeCosts", null), __decorate([a()], w.prototype, "cumulativeDistance", void 0), __decorate([a()], w.prototype, "cumulativeDuration", void 0), __decorate([a({ type: p.apiValues, json: { name: "attributes.CurbApproach", read: { reader: p.read }, write: { writer: p.write } } })], w.prototype, "curbApproach", void 0), __decorate([a({ type: p.apiValues, json: { read: { source: "attributes.DepartCurbApproach", reader: p.read } } })], w.prototype, "departCurbApproach", void 0), __decorate([a({ type: Date, json: { read: { source: "attributes.DepartTimeUTC" } } })], w.prototype, "departTime", void 0), __decorate([a()], w.prototype, "departTimeOffset", void 0), __decorate([o("departTimeOffset", ["attributes.DepartTime", "attributes.DepartTimeUTC"])], w.prototype, "readDepartTimeOffset", null), __decorate([a({ json: { read: { source: "attributes.DistanceToNetworkInMeters" } } })], w.prototype, "distanceToNetworkInMeters", void 0), __decorate([a({ type: _, json: { write: true }, value: null })], w.prototype, "geometry", null), __decorate([a()], w.prototype, "lateDuration", void 0), __decorate([a({ type: v.apiValues, json: { name: "attributes.LocationType", read: { reader: v.read }, write: { writer: v.write } } })], w.prototype, "locationType", void 0), __decorate([a({ json: { name: "attributes.Name" } })], w.prototype, "name", void 0), __decorate([a({ json: { name: "attributes.NavLatency", read: false, write: true } })], w.prototype, "navLatency", void 0), __decorate([a({ json: { name: "attributes.ObjectID" } })], w.prototype, "objectId", void 0), __decorate([a({ type: q })], w.prototype, "popupTemplate", void 0), __decorate([a({ json: { name: "attributes.PosAlong" } })], w.prototype, "positionAlong", void 0), __decorate([a({ json: { name: "attributes.RouteName" } })], w.prototype, "routeName", void 0), __decorate([a()], w.prototype, "serviceCosts", void 0), __decorate([o("serviceCosts", ["attributes"])], w.prototype, "readServiceCosts", null), __decorate([r("serviceCosts")], w.prototype, "writeServiceCosts", null), __decorate([a()], w.prototype, "serviceDistance", void 0), __decorate([a()], w.prototype, "serviceDuration", void 0), __decorate([a({ json: { name: "attributes.Sequence" } })], w.prototype, "sequence", void 0), __decorate([a({ type: T.apiValues, json: { name: "attributes.SideOfEdge", read: { reader: T.read }, write: { writer: T.write } } })], w.prototype, "sideOfEdge", void 0), __decorate([a({ json: { read: { source: "attributes.SnapX" } } })], w.prototype, "snapX", void 0), __decorate([a({ json: { read: { source: "attributes.SnapY" } } })], w.prototype, "snapY", void 0), __decorate([a({ json: { read: { source: "attributes.SnapZ" } } })], w.prototype, "snapZ", void 0), __decorate([a({ json: { name: "attributes.SourceID" } })], w.prototype, "sourceId", void 0), __decorate([a({ json: { name: "attributes.SourceOID" } })], w.prototype, "sourceOid", void 0), __decorate([a({ type: A.apiValues, json: { name: "attributes.Status", read: { reader: A.read }, write: { writer: A.write } } })], w.prototype, "status", void 0), __decorate([a({ types: x })], w.prototype, "symbol", void 0), __decorate([a({ type: Date, json: { name: "attributes.TimeWindowEnd" } })], w.prototype, "timeWindowEnd", void 0), __decorate([r("timeWindowEnd")], w.prototype, "writeTimeWindowEnd", null), __decorate([a()], w.prototype, "timeWindowEndOffset", void 0), __decorate([a({ type: Date, json: { name: "attributes.TimeWindowStart" } })], w.prototype, "timeWindowStart", void 0), __decorate([r("timeWindowStart")], w.prototype, "writeTimeWindowStart", null), __decorate([a()], w.prototype, "timeWindowStartOffset", void 0), __decorate([a({ readOnly: true, json: { read: false } })], w.prototype, "type", void 0), __decorate([a()], w.prototype, "violations", void 0), __decorate([o("violations", ["attributes"])], w.prototype, "readViolations", null), __decorate([a()], w.prototype, "waitDuration", void 0), __decorate([a()], w.prototype, "wait", void 0), __decorate([o("wait", ["attributes"])], w.prototype, "readWait", null), w = C = __decorate([c("esri.rest.support.Stop")], w);
+
+export {
+  T2 as T,
+  j3 as j,
+  d,
+  w
+};
+//# sourceMappingURL=chunk-MYQ45T6W.js.map

@@ -1,0 +1,534 @@
+import {
+  p
+} from "./chunk-H6GJSVD3.js";
+import {
+  u as u3
+} from "./chunk-GFHLL5RO.js";
+import {
+  x as x2
+} from "./chunk-SQCKII37.js";
+import {
+  A
+} from "./chunk-W7BUCBFN.js";
+import {
+  m as m3
+} from "./chunk-GFBTEKTS.js";
+import {
+  s
+} from "./chunk-UKQ72ZFJ.js";
+import {
+  l as l5,
+  p as p2
+} from "./chunk-UBZI7BAL.js";
+import {
+  re
+} from "./chunk-6QRF2LHR.js";
+import {
+  n as n4
+} from "./chunk-M7SICFO2.js";
+import {
+  V,
+  b,
+  l as l4
+} from "./chunk-MC3F3FDB.js";
+import {
+  a as a5
+} from "./chunk-IJHRPSGC.js";
+import {
+  O
+} from "./chunk-5MDFQFDX.js";
+import {
+  n4 as n3,
+  q,
+  u as u2
+} from "./chunk-XWU2ZKWF.js";
+import {
+  N,
+  c as c2,
+  d,
+  m as m2,
+  x
+} from "./chunk-QKDZ43GD.js";
+import {
+  g
+} from "./chunk-FAG2TZ7O.js";
+import {
+  Ge,
+  He,
+  Je,
+  K,
+  We
+} from "./chunk-DWF2MCID.js";
+import {
+  u
+} from "./chunk-ZC4RH2DW.js";
+import {
+  o as o2
+} from "./chunk-UXWT3ISO.js";
+import {
+  f,
+  l as l3
+} from "./chunk-7ZFYLJ6O.js";
+import {
+  U,
+  l
+} from "./chunk-6CYBR6FP.js";
+import {
+  a as a4,
+  n as n2
+} from "./chunk-CV6NMUZC.js";
+import {
+  a as a2,
+  a3,
+  c,
+  l2,
+  m2 as m,
+  o4 as o,
+  r3 as r2,
+  r4 as r3
+} from "./chunk-7ELXYOAW.js";
+import {
+  a,
+  e,
+  has,
+  n2 as n,
+  r3 as r
+} from "./chunk-XE7VYYSA.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-653SOEEV.js";
+
+// node_modules/@arcgis/core/layers/support/FieldConfiguration.js
+var p3 = class extends l3(n2) {
+  constructor(o4) {
+    super(o4), this.alias = null, this.name = void 0, this.fieldFormat = null;
+  }
+};
+__decorate([m({ type: String, json: { write: true } })], p3.prototype, "alias", void 0), __decorate([m({ type: String, nonNullable: true, json: { write: { isRequired: true } } })], p3.prototype, "name", void 0), __decorate([m({ types: c2, json: { write: true } })], p3.prototype, "fieldFormat", void 0), p3 = __decorate([l2("esri.layers.support.FieldConfiguration")], p3);
+
+// node_modules/@arcgis/core/layers/support/fieldConfigUtils.js
+function r4(n5) {
+  const { popupTemplate: t2, fieldsIndex: s2 } = n5, f3 = t2?.fieldInfos;
+  if (!f3?.length || !s2) return;
+  const i = [];
+  for (const l7 of f3) {
+    const { fieldName: n6, label: t3 } = l7, f4 = s2.get(n6);
+    if (!f4) continue;
+    const r7 = t3 && t3 !== f4.alias ? t3 : null, a8 = m2(l7, f4);
+    (r7 || a8) && i.push(new p3({ name: f4.name, alias: r7, fieldFormat: a8 }));
+  }
+  return i.length ? i : null;
+}
+function a6(n5) {
+  const { fields: o4 } = n5;
+  if (!o4?.length) return;
+  const f3 = [];
+  for (const i of o4) {
+    const n6 = d(i) ? N(i) : null;
+    n6 && f3.push(new p3({ name: i.name, fieldFormat: n6 }));
+  }
+  return f3.length ? f3 : null;
+}
+function u4(n5, e2) {
+  const { popupTemplate: o4, fieldsIndex: t2 } = n5;
+  if (!o4 || !t2) return;
+  const s2 = c3(n5, e2, o4.fieldInfos);
+  if (!s2) return;
+  const f3 = o4.clone();
+  return f3.fieldInfos = s2, f3;
+}
+function c3(e2, o4, s2) {
+  o4 ??= [], s2 = a(s2) ?? [];
+  let i = false;
+  const l7 = /* @__PURE__ */ new Map();
+  for (const n5 of o4) {
+    const o5 = e2.fieldsIndex.get(n5.name);
+    o5 && l7.set(o5.name, n5);
+  }
+  for (const n5 of s2) {
+    const o5 = e2.fieldsIndex.get(n5.fieldName);
+    if (!o5) continue;
+    const s3 = l7.get(o5.name);
+    n5.label = s3?.alias || o5.alias, n5.format = d(o5) && s3?.fieldFormat ? x(s3.fieldFormat, o5) : null, i = true, l7.delete(o5.name);
+  }
+  for (const n5 of l7.values()) {
+    const o5 = m4(e2, n5);
+    o5 && (s2.push(o5), i = true);
+  }
+  return i ? s2 : null;
+}
+function m4(n5, e2) {
+  const { name: o4, alias: s2, fieldFormat: r7 } = e2, a8 = n5.fieldsIndex.get(o4);
+  if (!a8 || !s2 && !r7) return;
+  const u6 = s2 || a8.alias, c6 = d(a8) && r7 ? x(r7, a8) : null;
+  return new u2({ fieldName: a8.name, label: u6, format: c6, visible: false, isEditable: K(a8, n5) });
+}
+
+// node_modules/@arcgis/core/graphic/AggregateGraphicOrigin.js
+var r5 = class extends s {
+  constructor(e2) {
+    super(), this.type = "aggregate", this.featureReductionProvider = e2;
+  }
+  get id() {
+    return this.featureReductionProvider.id;
+  }
+  get [n3]() {
+    const e2 = this.featureReductionProvider.featureReduction;
+    return e2 && "popupTemplate" in e2 ? e2 : null;
+  }
+};
+
+// node_modules/@arcgis/core/layers/support/ExpressionInfo.js
+var p4 = class extends l3(n2) {
+  constructor(r7) {
+    super(r7), this.expression = null, this.title = null, this.returnType = null;
+  }
+};
+__decorate([a3({ type: String, json: { write: true } })], p4.prototype, "expression", void 0), __decorate([a3({ type: String, json: { write: true } })], p4.prototype, "title", void 0), __decorate([a3({ type: String, json: { write: true } })], p4.prototype, "returnType", void 0), p4 = __decorate([c("esri.layers.support.ExpressionInfo")], p4);
+
+// node_modules/@arcgis/core/layers/support/AggregateField.js
+var p5;
+var a7 = class extends n2 {
+  static {
+    p5 = this;
+  }
+  constructor(t2) {
+    super(t2), this.isAutoGenerated = false, this.name = null, this.alias = null, this.onStatisticField = null, this.onStatisticExpression = null, this.statisticType = null;
+  }
+  get type() {
+    return this.layer ? Ge(this, this.layer.fieldsIndex) : null;
+  }
+  clone() {
+    return new p5({ name: this.name, alias: this.alias, isAutoGenerated: this.isAutoGenerated, onStatisticExpression: a(this.onStatisticExpression), onStatisticField: this.onStatisticField, statisticType: this.statisticType });
+  }
+};
+__decorate([a3({ type: Boolean, json: { write: true } })], a7.prototype, "isAutoGenerated", void 0), __decorate([a3({ clonable: false })], a7.prototype, "layer", void 0), __decorate([a3({ type: String, json: { write: true } })], a7.prototype, "name", void 0), __decorate([a3({ type: String, json: { write: true } })], a7.prototype, "alias", void 0), __decorate([a3({ type: String, json: { write: true } })], a7.prototype, "onStatisticField", void 0), __decorate([a3({ type: p4, json: { write: true } })], a7.prototype, "onStatisticExpression", void 0), __decorate([a3({ type: String, json: { write: true } })], a7.prototype, "statisticType", void 0), __decorate([a3({ readOnly: true, clonable: false, json: { read: false } })], a7.prototype, "type", null), a7 = p5 = __decorate([c("esri.layers.support.AggregateField")], a7);
+
+// node_modules/@arcgis/core/layers/support/AggregateFieldsIndex.js
+var t = class {
+  constructor(e2) {
+    this._fieldsMap = /* @__PURE__ */ new Map(), this._normalizedFieldsMap = /* @__PURE__ */ new Map(), this.fields = e2;
+    const t2 = [];
+    for (const a8 of this.fields) {
+      const e3 = a8?.name, d4 = He(e3);
+      if (e3 && d4) {
+        const s2 = We(e3);
+        this._fieldsMap.set(e3, a8), this._fieldsMap.set(s2, a8), this._normalizedFieldsMap.set(d4, a8), t2.push(`${s2}:${a8.type || ""}`);
+      }
+    }
+    t2.sort(), this.uid = t2.join();
+  }
+  equals(s2) {
+    return this.uid === s2?.uid;
+  }
+  get(s2) {
+    return Je({ fieldName: s2, fieldsMap: this._fieldsMap, normalizedFieldsMap: this._normalizedFieldsMap });
+  }
+};
+
+// node_modules/@arcgis/core/layers/support/featureReductionProperties.js
+function m5() {
+  return { type: [p3], clonable: false, json: { name: "fieldConfigurations", write: { overridePolicy(e2) {
+    return { enabled: O(this.layer), ignoreOrigin: true };
+  } } }, set: function(e2) {
+    if (this._override("fieldConfigurations", e2), !this.layer?.loaded) return;
+    const r7 = u4(this, e2);
+    r7 && this._set("popupTemplate", r7);
+  }, get: function() {
+    return this._isOverridden("fieldConfigurations") ? this._get("fieldConfigurations") : this.layer?.loaded ? r4(this) || null : void 0;
+  } };
+}
+function d2() {
+  return { type: [a7], value: [], json: { write: { ignoreOrigin: true, writer(e2, r7, t2) {
+    const n5 = e2.filter((e3) => "avg_angle" !== e3.statisticType).map((e3) => e3.toJSON());
+    e(t2, n5, r7);
+  } } }, set: function(e2) {
+    _(this._get("fields"), null), _(e2, this.layer), this._set("fields", e2);
+  } };
+}
+function c4() {
+  return { readOnly: true, get: function() {
+    return new t(this.fields);
+  } };
+}
+function j() {
+  return { type: [A], json: { read: { source: "drawingInfo.labelingInfo" }, write: { target: "drawingInfo.labelingInfo", ignoreOrigin: true } } };
+}
+function y() {
+  return v(a(p2));
+}
+function h() {
+  return { clonable: false, set: function(e2) {
+    _(this.fields, e2), this._set("layer", e2);
+  } };
+}
+function w() {
+  return { type: Number, json: { default: 0, name: "visibilityInfo.maxScale", write: { ignoreOrigin: true } } };
+}
+function O2() {
+  return v(a(l5));
+}
+function b2() {
+  return { type: q, json: { name: "popupInfo", write: { ignoreOrigin: true, writer(e2, r7, i, t2) {
+    e2 && (r7[i] = e2.toJSON(__spreadProps(__spreadValues({}, t2), { writeFieldFormat: O(this.layer) })));
+  } } } };
+}
+function I() {
+  return { types: m3, json: { write: { target: "drawingInfo.renderer", ignoreOrigin: true } } };
+}
+function _(e2, r7) {
+  e2?.forEach((e3) => {
+    e3.layer = r7;
+  });
+}
+function v(e2) {
+  let r7 = e2.json;
+  r7 || (r7 = e2.json = {});
+  let i = r7.write;
+  return null != i && "object" == typeof i || (i = r7.write = {}), i.ignoreOrigin = true, e2;
+}
+
+// node_modules/@arcgis/core/layers/support/FeatureReductionBinning.js
+var x3 = class extends a4(f) {
+  constructor(e2) {
+    super(e2), this.type = "binning", this.binType = "geohash", this.fixedBinLevel = null, this.labelingInfo = null, this.labelsVisible = true, this.maxScale = 0, this.popupEnabled = true, this.popupTemplate = null, this.size = o2("12px"), this.fields = [], this.renderer = null;
+  }
+  readRenderer(e2, o4, r7) {
+    const i = o4.drawingInfo?.renderer;
+    return i ? u3(i, o4, r7) ?? void 0 : re(o4, r7);
+  }
+  clone() {
+    const e2 = super.clone();
+    return this._isOverridden("fieldConfigurations") && (e2.fieldConfigurations = a(this.fieldConfigurations)), e2;
+  }
+  getField(e2) {
+    return this.fieldsIndex.get(e2);
+  }
+  getFieldAlias(e2) {
+    const o4 = this.getField(e2);
+    if (o4) return this.getFieldConfiguration(o4.name)?.alias || o4.alias;
+  }
+  getFieldConfiguration(e2) {
+    return e2 = e2.toLowerCase(), this.fieldConfigurations?.find((o4) => o4.name.toLowerCase() === e2);
+  }
+};
+__decorate([a3({ type: ["binning"], readOnly: true, json: { read: false, write: { ignoreOrigin: true } } })], x3.prototype, "type", void 0), __decorate([r2({ geohash: "geohash", square: "square" }), a3({ type: ["geohash", "square"], json: { write: { ignoreOrigin: true } } })], x3.prototype, "binType", void 0), __decorate([a3({ type: Number, json: { write: { ignoreOrigin: true } } })], x3.prototype, "fixedBinLevel", void 0), __decorate([a3(j())], x3.prototype, "labelingInfo", void 0), __decorate([a3(y())], x3.prototype, "labelsVisible", void 0), __decorate([a3(h())], x3.prototype, "layer", void 0), __decorate([a3(w())], x3.prototype, "maxScale", void 0), __decorate([a3(O2())], x3.prototype, "popupEnabled", void 0), __decorate([a3(b2())], x3.prototype, "popupTemplate", void 0), __decorate([a3({ cast: (e2) => "auto" === e2 ? e2 : a2(o2(e2)) })], x3.prototype, "size", void 0), __decorate([a3(m5())], x3.prototype, "fieldConfigurations", void 0), __decorate([a3(d2())], x3.prototype, "fields", void 0), __decorate([a3(c4())], x3.prototype, "fieldsIndex", void 0), __decorate([a3(I())], x3.prototype, "renderer", void 0), __decorate([o("renderer", ["drawingInfo.renderer"])], x3.prototype, "readRenderer", null), x3 = __decorate([c("esri.layers.support.FeatureReductionBinning")], x3);
+
+// node_modules/@arcgis/core/layers/support/FeatureReductionCluster.js
+function C(e2) {
+  return "simple" === e2.type && !e2.visualVariables?.length;
+}
+var z = class extends a4(f) {
+  constructor(e2) {
+    super(e2), this.type = "cluster", this.maxScale = 0, this.popupEnabled = true, this.popupTemplate = null, this.renderer = null, this.symbol = null, this.labelingInfo = null, this.labelsVisible = true, this.fields = [];
+  }
+  get clusterRadius() {
+    return this._get("clusterRadius") ?? o2("80px");
+  }
+  set clusterRadius(e2) {
+    this._set("clusterRadius", e2);
+  }
+  get clusterMinSize() {
+    return this._get("clusterMinSize") ?? o2("12px");
+  }
+  set clusterMinSize(e2) {
+    this._set("clusterMinSize", e2);
+  }
+  get clusterMaxSize() {
+    return this._get("clusterMaxSize") ?? o2("50px");
+  }
+  set clusterMaxSize(e2) {
+    this._set("clusterMaxSize", e2);
+  }
+  readRenderer(e2, r7, t2) {
+    const o4 = r7.drawingInfo?.renderer;
+    return o4?.authoringInfo?.isAutoGenerated ? null : o4 ? C(o4) ? null : u3(o4, r7, t2) ?? void 0 : re(r7, t2);
+  }
+  readSymbol(e2, r7, t2) {
+    const o4 = r7.drawingInfo?.renderer;
+    if (o4?.authoringInfo?.isAutoGenerated) return null;
+    if (o4 && C(o4)) {
+      const e3 = u3(o4, r7, t2);
+      return e3?.symbol;
+    }
+    return null;
+  }
+  writeSymbol(e2, r7, t2, o4) {
+    const i = this.renderer?.authoringInfo?.isAutoGenerated;
+    if (!this.renderer || i) {
+      const t3 = new n4({ symbol: e2 });
+      r7.drawingInfo = { renderer: t3.write({}, o4) };
+    }
+  }
+  readFields(e2, r7, t2) {
+    return e2.filter((e3) => !e3.isAutoGenerated).map((e3) => a7.fromJSON(e3));
+  }
+  clone() {
+    const e2 = super.clone();
+    return this._isOverridden("fieldConfigurations") && (e2.fieldConfigurations = a(this.fieldConfigurations)), e2;
+  }
+  getField(e2) {
+    return this.fieldsIndex.get(e2);
+  }
+  getFieldAlias(e2) {
+    const r7 = this.getField(e2);
+    if (r7) return this.getFieldConfiguration(r7.name)?.alias || r7.alias;
+  }
+  getFieldConfiguration(e2) {
+    return e2 = e2.toLowerCase(), this.fieldConfigurations?.find((r7) => r7.name.toLowerCase() === e2);
+  }
+};
+__decorate([a3({ type: ["cluster"], readOnly: true, json: { read: false, write: { ignoreOrigin: true } } })], z.prototype, "type", void 0), __decorate([a3({ cast: (e2) => "auto" === e2 ? e2 : a2(o2(e2)), json: { write: { ignoreOrigin: true } } })], z.prototype, "clusterRadius", null), __decorate([a3({ type: Number, cast: o2, json: { write: { ignoreOrigin: true } } })], z.prototype, "clusterMinSize", null), __decorate([a3({ type: Number, cast: o2, json: { write: { ignoreOrigin: true } } })], z.prototype, "clusterMaxSize", null), __decorate([a3(w())], z.prototype, "maxScale", void 0), __decorate([a3(O2())], z.prototype, "popupEnabled", void 0), __decorate([a3(b2())], z.prototype, "popupTemplate", void 0), __decorate([a3(I())], z.prototype, "renderer", void 0), __decorate([o("renderer", ["drawingInfo.renderer"])], z.prototype, "readRenderer", null), __decorate([a3({ types: g, json: { write: { ignoreOrigin: true } } })], z.prototype, "symbol", void 0), __decorate([o("symbol", ["drawingInfo.renderer"])], z.prototype, "readSymbol", null), __decorate([r3("symbol")], z.prototype, "writeSymbol", null), __decorate([a3(j())], z.prototype, "labelingInfo", void 0), __decorate([a3(y())], z.prototype, "labelsVisible", void 0), __decorate([a3(h())], z.prototype, "layer", void 0), __decorate([a3(m5())], z.prototype, "fieldConfigurations", void 0), __decorate([a3(d2())], z.prototype, "fields", void 0), __decorate([o("fields")], z.prototype, "readFields", null), __decorate([a3(c4())], z.prototype, "fieldsIndex", void 0), z = __decorate([c("esri.layers.support.FeatureReductionCluster")], z);
+
+// node_modules/@arcgis/core/layers/support/featureReductionUtils.js
+var o3 = { key: "type", base: null, typeMap: { cluster: z, binning: x3 } };
+var r6 = { types: { key: "type", base: null, typeMap: { selection: p, cluster: z, binning: x3 } }, json: { name: "layerDefinition.featureReduction", write: { allowNull: true }, origins: { "web-map": { types: o3 }, "portal-item": { types: o3 }, "web-scene": { types: { key: "type", base: null, typeMap: { selection: p } }, name: "layerDefinition.featureReduction", write: { allowNull: true, layerContainerTypes: a5 } } } } };
+
+// node_modules/@arcgis/core/views/2d/layers/support/clusterUtils.js
+var l6 = () => n.getLogger("esri.views.2d.layers.support.clusterUtils");
+has.add("esri-cluster-arcade-enabled", true);
+var u5 = has("esri-cluster-arcade-enabled");
+var p6 = /* @__PURE__ */ new Set(["simple-line", "simple-fill", "picture-fill"]);
+function d3(e2, r7) {
+  let s2 = r7.clone();
+  if (!m6(s2)) return s2;
+  if (r7.symbols.some((e3) => p6.has(e3.type)) && (s2 = new n4({ symbol: new u() })), s2.authoringInfo || (s2.authoringInfo = new b()), s2.authoringInfo.isAutoGenerated = true, "visualVariables" in s2) {
+    const r8 = (s2.visualVariables || []).filter((e3) => "$view.scale" !== e3.valueExpression);
+    r8.forEach((r9) => {
+      "rotation" === r9.type ? r9.field ? r9.field = v2(e2, r9.field, "avg_angle", "number") : r9.valueExpression && (r9.field = c5(e2, r9.valueExpression, "avg_angle", "number"), r9.valueExpression = null) : r9.normalizationField ? (r9.field = v2(e2, r9.field, "avg_norm", "number", r9.normalizationField), r9.normalizationField = null) : r9.field ? r9.field = v2(e2, r9.field, "avg", "number") : r9.valueExpression && (r9.field = c5(e2, r9.valueExpression, "avg", "number"), r9.valueExpression = null);
+    }), s2.visualVariables = r8;
+  }
+  switch (s2.type) {
+    case "simple":
+      break;
+    case "pie-chart":
+      for (const r8 of s2.attributes) r8.field ? r8.field = v2(e2, r8.field, "sum", "number") : r8.valueExpression && (r8.field = c5(e2, r8.valueExpression, "sum", "number"), r8.valueExpression = null);
+      break;
+    case "unique-value":
+      s2.field ? s2.field = v2(e2, s2.field, "mode", "string") : s2.valueExpression && (s2.field = c5(e2, s2.valueExpression, "mode", "string"), s2.valueExpression = null);
+      break;
+    case "class-breaks":
+      s2.normalizationField ? (s2.field = v2(e2, s2.field, "avg_norm", "number", s2.normalizationField), s2.normalizationField = null) : s2.field ? s2.field = v2(e2, s2.field, "avg", "number") : s2.valueExpression && (s2.field = c5(e2, s2.valueExpression, "avg", "number"), s2.valueExpression = null);
+  }
+  return s2;
+}
+var m6 = (r7) => {
+  const s2 = (s3) => l6().error(new r("Unsupported-renderer", s3, { renderer: r7 }));
+  if (!r7) return false;
+  switch (r7.type) {
+    case "unique-value":
+      if (r7.field2 || r7.field3) return s2("FeatureReductionCluster does not support multi-field UniqueValueRenderers"), false;
+      break;
+    case "class-breaks":
+      if (r7.normalizationField) {
+        const e2 = r7.normalizationType;
+        if ("field" !== e2) return s2(`FeatureReductionCluster does not support a normalizationType of ${e2}`), false;
+      }
+      break;
+    case "simple":
+    case "pie-chart":
+      break;
+    default:
+      return s2(`FeatureReductionCluster does not support renderers of type ${r7.type}`), false;
+  }
+  if (!u5) {
+    if ("valueExpression" in r7 && r7.valueExpression) return s2("FeatureReductionCluster does not currently support renderer.valueExpression. Support will be added in a future release"), false;
+    if (("visualVariables" in r7 && r7.visualVariables || []).some((e2) => !(!("valueExpression" in e2) || !e2.valueExpression))) return s2("FeatureReductionCluster does not currently support visualVariables with a valueExpression. Support will be added in a future release"), false;
+  }
+  return true;
+};
+function f2(e2, r7, i) {
+  switch (e2) {
+    case "sum":
+      return `cluster_sum_${r7}`;
+    case "avg":
+    case "avg_angle":
+      return `cluster_avg_${r7}`;
+    case "mode":
+      return `cluster_type_${r7}`;
+    case "avg_norm": {
+      const e3 = i, n5 = "field", t2 = r7.toLowerCase() + ",norm:" + n5 + "," + e3.toLowerCase();
+      return "cluster_avg_" + x2(t2);
+    }
+  }
+}
+function c5(e2, r7, t2, a8) {
+  const o4 = x2(r7), l7 = "mode" === t2 ? `cluster_type_${o4}` : "sum" === t2 ? `cluster_sum_${o4}` : `cluster_avg_${o4}`;
+  return e2.some((e3) => e3.name === l7) || e2.push(new a7({ name: l7, isAutoGenerated: true, onStatisticExpression: new p4({ expression: r7, returnType: a8 }), statisticType: t2 })), l7;
+}
+function v2(e2, r7, s2, t2, a8) {
+  if ("cluster_count" === r7 || e2.some((e3) => e3.name === r7)) return r7;
+  const o4 = f2(s2, r7, a8);
+  return e2.some((e3) => e3.name === o4) || ("avg_norm" === s2 ? e2.push(new a7({ name: o4, isAutoGenerated: true, onStatisticExpression: new p4({ expression: `$feature.${r7} / $feature.${a8}`, returnType: t2 }), statisticType: "avg" })) : e2.push(new a7({ name: o4, isAutoGenerated: true, onStatisticField: r7, statisticType: s2 }))), o4;
+}
+
+// node_modules/@arcgis/core/layers/mixins/FeatureReductionLayer.js
+var p7 = (p8) => {
+  const h2 = p8;
+  let m7 = class extends h2 {
+    constructor(...e2) {
+      super(...e2), this.aggregateGraphicOrigin = new r5(this), this.addHandles([l(() => this.renderer, () => {
+        this.featureReduction && this._setFeatureReduction(this.featureReduction);
+      }, U), l(() => [this.loaded], () => {
+        this.loaded && this._setLayerReference(this.featureReduction, this);
+      })]);
+    }
+    set featureReduction(e2) {
+      this._setFeatureReduction(e2);
+    }
+    set renderer(e2) {
+    }
+    _withClusterVariable(e2, r7, t2) {
+      const i = e2.clone();
+      if ("visualVariables" in i) {
+        i.visualVariables || (i.visualVariables = []);
+        i.visualVariables.some((e3) => "size" === e3.type) || i.visualVariables.push(new V({ field: "cluster_count", stops: [new l4({ value: 1 }), new l4({ useMinValue: true, size: r7 }), new l4({ useMaxValue: true, size: t2 })] }));
+      }
+      return i;
+    }
+    _normalizeFeatureReduction(e2) {
+      if ("cluster" !== e2?.type) return e2;
+      const r7 = e2.clone(), t2 = [new a7({ name: "cluster_count", alias: "cluster_count", isAutoGenerated: true, statisticType: "count" })], i = (r7.fields ?? []).filter((e3) => !e3.isAutoGenerated), s2 = e2.renderer && !e2.renderer.authoringInfo?.isAutoGenerated, { clusterMinSize: a8, clusterMaxSize: u6 } = r7;
+      if (s2) {
+        r7.fields = [...t2, ...i];
+        const e3 = this._withClusterVariable(r7.renderer, a8, u6);
+        return r7.effectiveFeatureRenderer = e3, r7.effectiveClusterRenderer = e3, r7;
+      }
+      if (e2.symbol) {
+        if (r7.fields = [...t2, ...i], r7.renderer = null, !this.renderer) return r7.effectiveFeatureRenderer = null, r7.effectiveClusterRenderer = null, r7;
+        const s3 = d3(t2, this.renderer), n5 = this._withClusterVariable(s3, a8, u6), l8 = "visualVariables" in n5 && n5.visualVariables ? n5.visualVariables : [], c7 = new n4({ symbol: e2.symbol, visualVariables: l8 });
+        return r7.fields = [...t2, ...i], r7.effectiveFeatureRenderer = n5, r7.effectiveClusterRenderer = c7, r7;
+      }
+      if (!this.renderer) return e2;
+      const l7 = d3(t2, this.renderer);
+      r7.fields = [...t2, ...i], r7.renderer = l7;
+      const c6 = this._withClusterVariable(l7, a8, u6);
+      return r7.effectiveFeatureRenderer = c6, r7.effectiveClusterRenderer = c6, r7;
+    }
+    _setFeatureReduction(e2) {
+      const r7 = this._get("featureReduction");
+      this._setLayerReference(r7, null);
+      const t2 = this._normalizeFeatureReduction(e2);
+      this._setLayerReference(t2, this), this._set("featureReduction", t2);
+    }
+    _setLayerReference(e2, r7) {
+      e2 && "layer" in e2 && (e2.layer = O(r7) ? r7 : null);
+    }
+  };
+  return __decorate([a3({ readOnly: true, clonable: false })], m7.prototype, "aggregateGraphicOrigin", void 0), __decorate([a3(r6)], m7.prototype, "featureReduction", null), m7 = __decorate([c("esri.layers.mixins.FeatureReductionLayer")], m7), m7;
+};
+
+export {
+  a7 as a,
+  p3 as p,
+  r4 as r,
+  a6 as a2,
+  u4 as u,
+  r6 as r2,
+  p7 as p2
+};
+//# sourceMappingURL=chunk-CXC3RHSL.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/networks/circuits/alterCircuit.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nimport t from\"../../../request.js\";import{parseUrl as o,encode as r,asValidOptions as s}from\"../../utils.js\";import i from\"./support/EditCircuitsResult.js\";async function p(p,u,e){const m=o(p),a={...u.toJSON(),f:\"json\"},n=r({...m.query,...a}),c=s(n,{...e,method:\"post\",authMode:\"no-prompt\"}),f=`${m.path}/circuits/alter`,{data:d}=await t(f,c);return i.fromJSON(d)}export{p as alterCircuit};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAC4J,eAAeA,GAAEA,IAAEC,IAAE,GAAE;AAAC,QAAM,IAAEC,GAAEF,EAAC,GAAE,IAAE,iCAAIC,GAAE,OAAO,IAAb,EAAe,GAAE,OAAM,IAAE,IAAE,EAAE,kCAAI,EAAE,QAAS,EAAE,GAAE,IAAE,EAAE,GAAE,iCAAI,IAAJ,EAAM,QAAO,QAAO,UAAS,YAAW,EAAC,GAAEC,KAAE,GAAG,EAAE,IAAI,mBAAkB,EAAC,MAAK,EAAC,IAAE,MAAM,EAAEA,IAAE,CAAC;AAAE,SAAO,EAAE,SAAS,CAAC;AAAC;",
+  "names": ["p", "u", "f"]
+}

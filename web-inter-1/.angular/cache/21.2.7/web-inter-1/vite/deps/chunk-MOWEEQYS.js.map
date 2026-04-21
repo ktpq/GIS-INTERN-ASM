@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/views/2d/layers/features/layerAdapters/featureReductionUtils.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nfunction e(e,a){const c=e.featureReduction;return c&&\"selection\"!==c.type&&(!(\"maxScale\"in c)||!c.maxScale||c.maxScale<a.scale)?c:null}export{e as getEffectiveFeatureReduction};\n"],
+  "mappings": ";AACA,SAAS,EAAEA,IAAE,GAAE;AAAC,QAAM,IAAEA,GAAE;AAAiB,SAAO,KAAG,gBAAc,EAAE,SAAO,EAAE,cAAa,MAAI,CAAC,EAAE,YAAU,EAAE,WAAS,EAAE,SAAO,IAAE;AAAI;",
+  "names": ["e"]
+}

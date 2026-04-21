@@ -1,0 +1,51 @@
+import {
+  s as s2
+} from "./chunk-ULJPSYWK.js";
+import {
+  c
+} from "./chunk-TGURFMYB.js";
+import {
+  e
+} from "./chunk-R2BJ6EDL.js";
+import {
+  e as e2
+} from "./chunk-CRZWOWJQ.js";
+import {
+  s
+} from "./chunk-KQFKIJCG.js";
+import {
+  t
+} from "./chunk-BBPD3RSJ.js";
+import {
+  n
+} from "./chunk-47CFN4JI.js";
+
+// node_modules/@arcgis/core/chunks/HighlightBlur.glsl.js
+var o = class extends c {
+  constructor() {
+    super(...arguments), this.blurSize = n();
+  }
+};
+function n2() {
+  const e3 = new s();
+  return e3.include(s2), e3.outputs.add("fragHighlight", "vec2", 0), e3.fragment.uniforms.add(new e("blurSize", (e4) => e4.blurSize), new e2("blurInput", (e4) => e4.blurInput)).main.add(t`vec2 highlightTextureSize = vec2(textureSize(blurInput,0));
+vec2 center = texture(blurInput, sUV).rg;
+if (vOutlinePossible == 0.0) {
+fragHighlight = center;
+} else {
+vec2 sum = center * 0.204164;
+sum += texture(blurInput, sUV + blurSize * 1.407333).rg * 0.304005;
+sum += texture(blurInput, sUV - blurSize * 1.407333).rg * 0.304005;
+sum += texture(blurInput, sUV + blurSize * 3.294215).rg * 0.093913;
+sum += texture(blurInput, sUV - blurSize * 3.294215).rg * 0.093913;
+fragHighlight = sum;
+}`), e3;
+}
+var g = Object.freeze(Object.defineProperty({ __proto__: null, HighlightBlurDrawParameters: o, build: n2 }, Symbol.toStringTag, { value: "Module" }));
+
+export {
+  o,
+  n2 as n,
+  g
+};
+//# sourceMappingURL=chunk-XQ4CQREE.js.map

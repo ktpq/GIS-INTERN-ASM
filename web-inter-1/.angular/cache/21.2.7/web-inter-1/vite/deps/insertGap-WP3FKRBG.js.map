@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@arcgis/core/rest/networks/unitIdentifiers/insertGap.js"],
+  "sourcesContent": ["/* COPYRIGHT Esri - https://js.arcgis.com/5.0.16/LICENSE.txt */\nimport t from\"../../../request.js\";import{parseUrl as o,encode as r,asValidOptions as i}from\"../../utils.js\";import s from\"./support/EditUnitIdentifiersResult.js\";async function e(e,n,p){const m=o(e),u={...n.toJSON(),f:\"json\"},a=r({...m.query,...u}),f=i(a,{...p,method:\"post\",authMode:\"no-prompt\"}),d=`${m.path}/unitIdentifiers/insertGap`,{data:j}=await t(d,f);return s.fromJSON(j)}export{e as insertGap};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACmK,eAAe,EAAEA,IAAE,GAAEC,IAAE;AAAC,QAAM,IAAEC,GAAEF,EAAC,GAAEG,KAAE,iCAAI,EAAE,OAAO,IAAb,EAAe,GAAE,OAAM,IAAE,IAAE,EAAE,kCAAI,EAAE,QAASA,GAAE,GAAED,KAAE,EAAE,GAAE,iCAAID,KAAJ,EAAM,QAAO,QAAO,UAAS,YAAW,EAAC,GAAE,IAAE,GAAG,EAAE,IAAI,8BAA6B,EAAC,MAAK,EAAC,IAAE,MAAM,EAAE,GAAEC,EAAC;AAAE,SAAO,EAAE,SAAS,CAAC;AAAC;",
+  "names": ["e", "p", "f", "u"]
+}

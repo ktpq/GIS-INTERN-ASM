@@ -1,0 +1,407 @@
+import {
+  p as p2
+} from "./chunk-F7D7NEYB.js";
+import {
+  qe
+} from "./chunk-C46VYQUR.js";
+import {
+  e as e2
+} from "./chunk-SUVDIL6O.js";
+import {
+  r
+} from "./chunk-6GTDHYAD.js";
+import {
+  R
+} from "./chunk-37CL2A4G.js";
+import {
+  b as b2,
+  g
+} from "./chunk-5MDFQFDX.js";
+import {
+  g as g2
+} from "./chunk-KNE7SVYH.js";
+import {
+  j
+} from "./chunk-JXLQUNSA.js";
+import {
+  p
+} from "./chunk-E3TCHN5O.js";
+import {
+  l as l2
+} from "./chunk-7ZFYLJ6O.js";
+import {
+  o
+} from "./chunk-HIVGPE4F.js";
+import {
+  h,
+  l
+} from "./chunk-6CYBR6FP.js";
+import {
+  q
+} from "./chunk-AE7PFPPS.js";
+import {
+  b
+} from "./chunk-2HP4RAZC.js";
+import {
+  a3 as a,
+  c
+} from "./chunk-7ELXYOAW.js";
+import {
+  e
+} from "./chunk-RTVKY37F.js";
+import {
+  L,
+  y
+} from "./chunk-2KP24SU5.js";
+import {
+  __decorate
+} from "./chunk-HRD6PGVX.js";
+
+// node_modules/@arcgis/core/widgets/Feature/FeatureUtilityNetworkAssociations/resources.js
+var o2 = { fromGlobalId: "fromglobalid", fromNetworkSourceId: "fromnetworksourceid", fromTerminalId: "fromterminalid", toGlobalId: "toglobalid", toNetworkSourceId: "tonetworksourceid", toTerminalId: "toterminalid", associationType: "associationtype", globalId: "globalid", status: "status", isContentVisible: "iscontentvisible", percentAlong: "percentalong", assetGroup: "assetgroup", assetType: "assettype" };
+
+// node_modules/@arcgis/core/widgets/support/UtilityNetworkAssociations/utils/getFeatureTitle.js
+function t(t2) {
+  const { attributes: l3, sourceLayer: n } = t2;
+  if (!l3 || !n) return "";
+  const e3 = "displayField" in n ? n.displayField : null, i = null != e3 ? l3[e3] : null, r2 = null != i ? i.toString() : null, u = t2.getObjectId()?.toString();
+  return r2 || u || "";
+}
+
+// node_modules/@arcgis/core/widgets/support/UtilityNetworkAssociations/FeatureUtilityNetworkAssociationsViewModel.js
+var I = 100;
+var v = class extends l2(o(b)) {
+  constructor(t2) {
+    super(t2), this._loaded = false, this._queryAbortController = null, this._queryPageAbortController = null, this._queryFeatureCountAbortController = null, this.networkSourceIdsInUse = /* @__PURE__ */ new Set(), this.source = "popup", this.description = null, this.graphic = null, this.layer = null, this.map = null, this.featureCount = 0, this.associationTypes = null, this.showAllEnabled = false, this.title = null, this.attachmentsFeatureCount = 0, this.structureFeatureCount = 0, this.contentFeatureCount = 0, this.containerFeatureCount = 0, this.connectivityFeatureCount = 0, this._queryOpenAssociationType = async () => {
+      this.activeAssociationType && await this._queryDebounced(this.activeAssociationType);
+    }, this._cancelQuery = () => {
+      const { _queryAbortController: t3 } = this;
+      t3 && t3.abort(), this._queryAbortController = null;
+    }, this._cancelQueryFeatureCount = () => {
+      const { _queryFeatureCountAbortController: t3 } = this;
+      t3 && t3.abort(), this._queryFeatureCountAbortController = null;
+    }, this._queryController = async (t3) => {
+      this._cancelQuery();
+      const e3 = new AbortController();
+      this._queryAbortController = e3, await y(this._query(t3)), this._queryAbortController === e3 && (this._queryAbortController = null);
+    }, this._queryFeatureCountController = async () => {
+      this._loaded = false, this._cancelQueryFeatureCount();
+      const t3 = new AbortController();
+      this._queryFeatureCountAbortController = t3, await y(this._queryFeatureCount()), this._queryFeatureCountAbortController === t3 && (this._queryFeatureCountAbortController = null), this._loaded = true;
+    }, this._queryDebounced = L(this._queryController, I), this._queryFeatureCountDebounced = L(this._queryFeatureCountController, I);
+  }
+  initialize() {
+    this.addHandles([l(() => [this.graphic, this.layer, this.map, this.associationTypes, this.objectId, this.globalId, this.canQuery], () => {
+      this.refresh();
+    }, h), l(() => this.activeAssociationType, (t2) => {
+      this._queryDebounced(t2);
+    }, h)]);
+  }
+  destroy() {
+    this._cancelQuery(), this._cancelQueryFeatureCount(), this._destroyAssociatedFeatureViewModels();
+  }
+  get supportsCacheHint() {
+    return !!this.layer?.capabilities?.query?.supportsCacheHint;
+  }
+  get canLoad() {
+    return !!this.map && !!this.associationTypes && "string" == typeof this.globalId;
+  }
+  get canQuery() {
+    const t2 = this.layer?.capabilities?.query;
+    return !!this.associationTypes && "string" == typeof this.globalId && !!t2?.supportsPagination;
+  }
+  set displayCount(t2) {
+    const e3 = 0, o3 = 3;
+    this._set("displayCount", Math.max(t2 ?? o3, e3));
+  }
+  get displayCount() {
+    return this._get("displayCount");
+  }
+  get objectId() {
+    return (this.objectIdField && this.graphic?.attributes?.[this.objectIdField]) ?? null;
+  }
+  get objectIdField() {
+    return this.layer?.objectIdField || null;
+  }
+  get globalId() {
+    return (this.globalIdField && this.graphic?.attributes?.[this.globalIdField]) ?? null;
+  }
+  get globalIdField() {
+    const { layer: t2 } = this;
+    return t2?.globalIdField;
+  }
+  get activeAssociationType() {
+    return this._get("activeAssociationType");
+  }
+  set activeAssociationType(t2) {
+    t2 && !this.associationTypes.includes(t2) || this._set("activeAssociationType", t2);
+  }
+  get state() {
+    const { _queryAbortController: t2, _queryFeatureCountAbortController: e3, _queryPageAbortController: o3, canQuery: r2, _loaded: s, canLoad: i, source: a2 } = this;
+    return e3 || i && !s ? "loading" : t2 || o3 ? "querying" : !r2 || "popup" === a2 && 0 === this.featureCount ? "disabled" : "ready";
+  }
+  get utilityNetwork() {
+    const { layer: t2, map: e3 } = this;
+    if (!t2?.loaded || !e3) return null;
+    const o3 = b2(t2) ? t2.parent : t2;
+    return qe(e3, o3);
+  }
+  get attachmentsAssociations() {
+    return this._get("attachmentsAssociations") || new q();
+  }
+  get structureAssociations() {
+    return this._get("structureAssociations") || new q();
+  }
+  get contentAssociations() {
+    return this._get("contentAssociations") || new q();
+  }
+  get containerAssociations() {
+    return this._get("containerAssociations") || new q();
+  }
+  get connectivityAssociations() {
+    return this._get("connectivityAssociations") || new q();
+  }
+  get associationFeatures() {
+    return this._get("associationFeatures") || new e2();
+  }
+  get associationViewModels() {
+    return this._get("associationViewModels") || /* @__PURE__ */ new Map();
+  }
+  async refresh() {
+    await this._queryFeatureCountDebounced(), await this._queryOpenAssociationType();
+  }
+  getFeatureCountForAssociationType(t2) {
+    switch (t2) {
+      case "attachment":
+        return this.attachmentsFeatureCount;
+      case "structure":
+        return this.structureFeatureCount;
+      case "content":
+        return this.contentFeatureCount;
+      case "container":
+        return this.containerFeatureCount;
+      case "connectivity":
+        return this.connectivityFeatureCount;
+    }
+  }
+  _destroyAssociatedFeatureViewModels() {
+    this.associationViewModels.forEach((t2) => t2.destroyAll());
+  }
+  async _loadUtiltyNetworks() {
+    const t2 = this.map;
+    if (!t2) return;
+    await Promise.allSettled(t2.utilityNetworks?.map(async (t3) => {
+      await t3.load();
+    }) ?? []);
+    const e3 = this.utilityNetwork;
+    if (e3) {
+      const o3 = (t3) => {
+        if ("layerId" in t3 && e3.isUtilityLayer(t3)) {
+          const o4 = null != t3.layerId ? e3.getSourceIdByLayerId(t3.layerId) : null;
+          null != o4 && this.networkSourceIdsInUse.add(o4);
+        }
+      };
+      this._set("networkSourceIdsInUse", /* @__PURE__ */ new Set()), t2.allLayers.forEach(o3), t2.allTables.forEach(o3);
+    }
+  }
+  async _findLayersBySourceId(t2) {
+    const { utilityNetwork: e3, map: o3 } = this, r2 = (t3) => {
+      const o4 = t3;
+      if (!t3.url) return false;
+      if (o4.layerId === s) {
+        return t3.url.replace(/\/\d+$/, "") === e3?.featureServiceUrl;
+      }
+      return false;
+    };
+    await e3?.load();
+    const s = e3.getLayerIdBySourceId(t2), i = o3.allLayers.filter(r2), a2 = o3.allTables.filter(r2), n = i.concat(a2).toArray();
+    return await Promise.allSettled(n.map((t3) => t3.load())), n;
+  }
+  _clearAssociations() {
+    this.attachmentsAssociations.removeAll(), this.structureAssociations.removeAll(), this.contentAssociations.removeAll(), this.containerAssociations.removeAll(), this.connectivityAssociations.removeAll();
+  }
+  _clearFeatures() {
+    this.associationFeatures.forEach((t2) => t2.removeAll()), this.associationFeatures.clear();
+  }
+  _getAssociationsByType(t2) {
+    switch (t2) {
+      case "attachment":
+        return this.attachmentsAssociations;
+      case "structure":
+        return this.structureAssociations;
+      case "connectivity":
+        return this.connectivityAssociations;
+      case "container":
+        return this.containerAssociations;
+      case "content":
+        return this.contentAssociations;
+    }
+  }
+  async _queryLayer(t2, e3, o3, r2, s) {
+    const i = this._getFeatureQueryWhereClause(t2, e3, o3, r2), a2 = new R({ where: i, outFields: ["*"], cacheHint: this.supportsCacheHint }), n = g2.fromJSON(await r(t2, a2, s));
+    return n.features.forEach((e4) => {
+      e4.layer = e4.sourceLayer = g(t2) ? t2.findSublayerForFeature(e4) : t2;
+    }), n.features;
+  }
+  async _createAssociationFeatureObjects(t2, e3, o3, r2, s, i) {
+    if (0 === t2.length) return [];
+    const a2 = /* @__PURE__ */ new Map();
+    for (const [c2, l3] of e3) {
+      const t3 = await this._findLayersBySourceId(c2);
+      for (const e4 of t3) {
+        (await this._queryLayer(e4, l3, r2, s, i)).forEach((t4) => {
+          if ("popup" === this.source ? t4.sourceLayer && t4.getEffectivePopupTemplate() : !!t4.sourceLayer) {
+            const o4 = a2.get(t4.attributes[e4.globalIdField]) ?? [];
+            o4.push(t4), a2.set(t4.attributes[e4.globalIdField], o4);
+          }
+        });
+      }
+    }
+    const n = [];
+    return await Promise.all(t2.toArray().map(async (t3) => {
+      const { fromNetworkElement: e4, toNetworkElement: r3 } = t3, s2 = e4.globalId === o3 ? r3 : e4, i2 = a2.get(s2.globalId) ?? [];
+      await Promise.all(i2.map(async (e5) => {
+        const o4 = null != s2?.terminalId ? this.utilityNetwork?.getTerminalById(s2.terminalId)?.name : void 0, r4 = e5.sourceLayer && "getFeatureTitle" in e5.sourceLayer && await e5.sourceLayer.getFeatureTitle(e5) || t(e5);
+        n.push({ title: r4, feature: e5, association: t3, terminalName: o4 });
+      }));
+    })), n;
+  }
+  _parseFeatureObjects(t2, e3) {
+    const o3 = /* @__PURE__ */ new Map();
+    t2.forEach((t3) => {
+      const e4 = t3?.feature, r2 = e4.sourceLayer;
+      e(o3, r2, () => new q()).add(t3);
+    });
+    for (const [r2, s] of o3) this._sortFeatureObjectsByTitle(s), e3.set(r2, s);
+  }
+  _sortFeatureObjectsByTitle(t2) {
+    t2.sort(this._compareByFeatureTitle);
+  }
+  _compareByFeatureTitle(t2, e3) {
+    return t2.title.localeCompare(e3.title, void 0, { numeric: true });
+  }
+  async _queryAssociations(t2) {
+    const { layer: e3, globalId: o3, associationTypes: r2, utilityNetwork: s, canQuery: i } = this;
+    if (await Promise.allSettled([e3?.load(), s?.load()]), this._clearAssociations(), !(i && e3 && r2 && s && o3)) return;
+    const a2 = b2(e3) ? e3.parent : e3, n = new p2({ globalId: o3, networkSourceId: s.getSourceIdByLayerId(a2.layerId) }), c2 = /* @__PURE__ */ new Set();
+    r2.forEach((t3) => {
+      switch (t3.type) {
+        case "attachment":
+        case "structure":
+          c2.add("attachment");
+          break;
+        case "container":
+        case "content":
+          c2.add("containment");
+          break;
+        case "connectivity":
+          c2.add("connectivity"), c2.add("junction-junction-connectivity"), c2.add("junction-edge-from-connectivity"), c2.add("junction-edge-midspan-connectivity"), c2.add("junction-edge-to-connectivity");
+      }
+    });
+    const l3 = await s?.queryAssociations({ elements: [n], types: Array.from(c2) }, { signal: t2?.signal }), u = /* @__PURE__ */ new Map(), y2 = /* @__PURE__ */ new Map();
+    r2.forEach((t3) => {
+      y2.set(t3.type, t3), u.set(t3.type, []);
+    }), l3.forEach((t3) => {
+      const { toNetworkElement: e4, fromNetworkElement: r3 } = t3;
+      switch (t3.associationType) {
+        case "connectivity":
+        case "junction-junction-connectivity":
+        case "junction-edge-from-connectivity":
+        case "junction-edge-midspan-connectivity":
+        case "junction-edge-to-connectivity":
+          if (r3?.globalId === o3) {
+            if (this._shouldDiscardNetworkElement(e4, "connectivity", y2)) break;
+            u.get("connectivity")?.push(e4.globalId);
+          } else {
+            if (this._shouldDiscardNetworkElement(r3, "connectivity", y2)) break;
+            u.get("connectivity")?.push(r3.globalId);
+          }
+          this.connectivityAssociations.add(t3);
+          break;
+        case "containment":
+          if (r3?.globalId === o3) {
+            if (this._shouldDiscardNetworkElement(e4, "content", y2)) break;
+            u.get("content")?.push(e4.globalId), this.contentAssociations.add(t3);
+          } else {
+            if (this._shouldDiscardNetworkElement(r3, "container", y2)) break;
+            u.get("container")?.push(r3.globalId), this.containerAssociations.add(t3);
+          }
+          break;
+        case "attachment":
+          if (r3?.globalId === o3) {
+            if (this._shouldDiscardNetworkElement(e4, "attachment", y2)) break;
+            u.get("attachment")?.push(e4.globalId), this.attachmentsAssociations.add(t3);
+          } else {
+            if (this._shouldDiscardNetworkElement(r3, "structure", y2)) break;
+            u.get("structure")?.push(r3.globalId), this.structureAssociations.add(t3);
+          }
+      }
+    });
+    const d = r2.map(async (e4) => {
+      const { associatedNetworkSourceId: o4, associatedAssetGroup: r3, associatedAssetType: s2 } = e4, i2 = u.get(e4.type), a3 = null != r3 ? await this._countAssociatedFeatures(o4, i2, r3, s2, t2) : i2.length;
+      switch (e4.type) {
+        case "attachment":
+          this._set("attachmentsFeatureCount", a3);
+          break;
+        case "structure":
+          this._set("structureFeatureCount", a3);
+          break;
+        case "content":
+          this._set("contentFeatureCount", a3);
+          break;
+        case "container":
+          this._set("containerFeatureCount", a3);
+          break;
+        case "connectivity":
+          this._set("connectivityFeatureCount", a3);
+      }
+    });
+    await Promise.allSettled(d);
+  }
+  async _countAssociatedFeatureCount(t2, e3, o3, r2, s) {
+    const i = this._getFeatureQueryWhereClause(t2, e3, o3, r2);
+    return t2.queryFeatureCount({ where: i, outFields: ["*"], returnGeometry: false }, { signal: s?.signal });
+  }
+  async _countAssociatedFeatures(t2, e3, o3, r2, s) {
+    if (0 === e3.length) return 0;
+    const i = (await this._findLayersBySourceId(t2)).map(async (t3) => this._countAssociatedFeatureCount(t3, e3, o3, r2, s));
+    return (await Promise.all(i)).reduce((t3, e4) => t3 + e4, 0);
+  }
+  async _queryAssociatedFeatures(t2, e3) {
+    const { layer: o3, globalId: r2, associationTypes: s, utilityNetwork: i, canQuery: a2, associationFeatures: n } = this;
+    if (await Promise.allSettled([o3?.load(), i?.load()]), !(a2 && o3 && s && i)) return;
+    const c2 = this._getAssociationsByType(t2.type), { associatedAssetGroup: l3, associatedAssetType: u } = t2, y2 = /* @__PURE__ */ new Map();
+    c2.forEach((t3) => {
+      const { fromNetworkElement: e4, toNetworkElement: o4 } = t3, { networkSourceId: s2, elementGlobalId: i2 } = e4.globalId === r2 ? { networkSourceId: o4.networkSourceId, elementGlobalId: o4.globalId } : { networkSourceId: e4.networkSourceId, elementGlobalId: e4.globalId }, a3 = y2.get(s2) || [];
+      a3.push(i2), y2.set(s2, a3);
+    });
+    const d = await this._createAssociationFeatureObjects(c2, y2, r2, l3, u, e3);
+    this._parseFeatureObjects(d, n);
+  }
+  async _queryFeatureCount() {
+    await this._loadUtiltyNetworks();
+    const { _queryFeatureCountAbortController: t2, canQuery: e3 } = this;
+    e3 ? (await this._queryAssociations(t2), this._set("featureCount", this.attachmentsFeatureCount + this.structureFeatureCount + this.contentFeatureCount + this.containerFeatureCount + this.connectivityFeatureCount)) : this._set("featureCount", 0);
+  }
+  async _query(t2) {
+    if (!t2) return;
+    await this._loadUtiltyNetworks();
+    const { _queryAbortController: e3 } = this;
+    this._destroyAssociatedFeatureViewModels(), this._clearFeatures(), 0 !== this.featureCount && (this.destroyed || await this._queryAssociatedFeatures(t2, { signal: e3?.signal }));
+  }
+  _shouldDiscardNetworkElement(t2, e3, o3) {
+    if (!t2) return false;
+    const { networkSourceIdsInUse: r2 } = this, { networkSourceId: s } = t2, i = o3.get(e3)?.associatedNetworkSourceId, a2 = r2.has(s);
+    return null != i && i !== s || !a2;
+  }
+  _getFeatureQueryWhereClause(t2, e3, o3, r2) {
+    const s = t2.globalIdField, i = t2.fieldsIndex.get(o2.assetGroup), a2 = t2.fieldsIndex.get(o2.assetType), n = null != o3, c2 = null != r2;
+    return [s ? p(s, e3) : null, n ? `(${i?.name} = ${o3})` : null, n && c2 ? `(${a2?.name} = ${r2})` : null].filter(Boolean).join(" AND ");
+  }
+};
+__decorate([a()], v.prototype, "_loaded", void 0), __decorate([a()], v.prototype, "_queryAbortController", void 0), __decorate([a()], v.prototype, "_queryPageAbortController", void 0), __decorate([a()], v.prototype, "_queryFeatureCountAbortController", void 0), __decorate([a({ readOnly: true })], v.prototype, "supportsCacheHint", null), __decorate([a({ readOnly: true })], v.prototype, "canLoad", null), __decorate([a({ readOnly: true })], v.prototype, "canQuery", null), __decorate([a()], v.prototype, "networkSourceIdsInUse", void 0), __decorate([a({ constructOnly: true })], v.prototype, "source", void 0), __decorate([a()], v.prototype, "description", void 0), __decorate([a({ value: 3 })], v.prototype, "displayCount", null), __decorate([a({ type: j })], v.prototype, "graphic", void 0), __decorate([a()], v.prototype, "layer", void 0), __decorate([a()], v.prototype, "map", void 0), __decorate([a({ readOnly: true })], v.prototype, "objectId", null), __decorate([a({ readOnly: true })], v.prototype, "objectIdField", null), __decorate([a({ readOnly: true })], v.prototype, "globalId", null), __decorate([a({ readOnly: true })], v.prototype, "globalIdField", null), __decorate([a()], v.prototype, "featureCount", void 0), __decorate([a()], v.prototype, "associationTypes", void 0), __decorate([a()], v.prototype, "activeAssociationType", null), __decorate([a()], v.prototype, "showAllEnabled", void 0), __decorate([a()], v.prototype, "state", null), __decorate([a()], v.prototype, "title", void 0), __decorate([a({ readOnly: true })], v.prototype, "utilityNetwork", null), __decorate([a({ readOnly: true })], v.prototype, "attachmentsFeatureCount", void 0), __decorate([a({ readOnly: true })], v.prototype, "structureFeatureCount", void 0), __decorate([a({ readOnly: true })], v.prototype, "attachmentsAssociations", null), __decorate([a({ readOnly: true })], v.prototype, "structureAssociations", null), __decorate([a({ readOnly: true })], v.prototype, "contentFeatureCount", void 0), __decorate([a({ readOnly: true })], v.prototype, "containerFeatureCount", void 0), __decorate([a({ readOnly: true })], v.prototype, "contentAssociations", null), __decorate([a({ readOnly: true })], v.prototype, "containerAssociations", null), __decorate([a({ readOnly: true })], v.prototype, "connectivityFeatureCount", void 0), __decorate([a({ readOnly: true })], v.prototype, "connectivityAssociations", null), __decorate([a({ readOnly: true })], v.prototype, "associationFeatures", null), __decorate([a({ readOnly: true })], v.prototype, "associationViewModels", null), v = __decorate([c("esri.widgets.support.UtilityNetworkAssociations.FeatureUtilityNetworkAssociationsViewModel")], v);
+
+export {
+  v
+};
+//# sourceMappingURL=chunk-2LFJNASM.js.map

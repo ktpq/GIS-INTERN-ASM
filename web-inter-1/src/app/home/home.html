@@ -1,47 +1,128 @@
-<main class="grid grid-cols-[8fr_4fr] h-screen w-screen p-4 gap-4 bg-gray-100">
-  
-  <arcgis-map
-    basemap="topo-vector"
-    center="-100, 40"
-    zoom="6"
-    (arcgisViewReadyChange)="arcgisViewReadyChange($event)"
-    class="w-full h-full border border-gray-300 bg-white"
-  ></arcgis-map>
+<style>
+  /* ล้างค่าเริ่มต้นของเบราว์เซอร์ */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:
+      'Inter',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      sans-serif;
+  }
 
-  <div class="overflow-y-auto bg-white border border-gray-300 h-full">
-    
-    <table class="min-w-full text-left text-sm text-gray-800 border-collapse">
-        
-        <thead class="bg-[#F07A5F] text-white sticky top-0 z-10">
-            <tr>
-                <th scope="col" class="px-4 py-3 border border-gray-300 font-semibold">Subregion</th>
-                <th scope="col" class="px-4 py-3 border border-gray-300 font-semibold">State Name (Full)</th>
-                <th scope="col" class="px-4 py-3 border border-gray-300 font-semibold">State Name (Abbr.)</th>
-            </tr>
-        </thead>
+  /* จัดพื้นหลังให้เต็มจอและไล่สีสวยๆ */
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #ffffff;
+  }
 
-        <tbody class="bg-white">
-            @for (feature of allData(); track feature.attributes.objectid) {
-                <tr class="cursor-pointer" (click)="changeLocationTo(feature)" [ngClass] = "selectedObjectId() === feature.attributes.objectid ? 'bg-[#e7a292]' : ''">
-                    <td class="px-4 py-2 border border-gray-300">
-                        {{feature.attributes.sub_region}}
-                    </td>
-                    <td class="px-4 py-2 border border-gray-300">
-                        {{feature.attributes.state_name}}
-                    </td>
-                    <td class="px-4 py-2 border border-gray-300">
-                        {{feature.attributes.state_abbr}}
-                    </td>
-                </tr>
-            } 
-            @empty {
-                <tr>
-                    <td colspan="3" class="px-4 py-12 text-center text-gray-400 border border-gray-300">
-                        กำลังดึงข้อมูลจากแผนที่...
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+  /* กล่องใสๆ ตรงกลาง (Glassmorphism) */
+  .nav-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 50px 40px;
+    border-radius: 24px;
+    backdrop-filter: blur(12px); /* ทำให้พื้นหลังเบลอ */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .nav-container h1 {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #e2e8f0;
+  }
+
+  /* จัดปุ่มด้วย CSS Grid ให้เรียงกันสวยๆ */
+  nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  /* ตกแต่งปุ่ม (แท็ก a) */
+  nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  /* เพิ่มไอคอนให้ปุ่ม */
+  nav a::before {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  nav a[href='/one']::before {
+    content: '🚀';
+  }
+  nav a[href='/two']::before {
+    content: '🔥';
+  }
+  nav a[href='/three']::before {
+    content: '💡';
+  }
+  nav a[href='/four']::before {
+    content: '🎯';
+  }
+  nav a[href='/fivesix']::before {
+    content: '✨';
+  }
+
+  /* เอฟเฟกต์ตอนเอาเมาส์ไปชี้ */
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-8px); /* เด้งขึ้นนิดนึง */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  nav a:hover::before {
+    transform: scale(1.2); /* ไอคอนขยายใหญ่ขึ้น */
+  }
+
+  /* ปรับให้ดูดีบนมือถือ */
+  @media (max-width: 500px) {
+    nav {
+      grid-template-columns: 1fr; /* บนมือถือให้เรียงแถวละ 1 ปุ่ม */
+    }
+    .nav-container h1 {
+      font-size: 1.8rem;
+    }
+  }
+</style>
+<body>
+  <div class="nav-container">
+    <h1>MAIN MENU</h1>
+    <nav>
+      <a href="/one">web-inter-1</a>
+      <a href="/two">web-inter-2</a>
+      <a href="/three">web-inter-3</a>
+      <a href="/four">web-inter-4</a>
+      <a href="/fivesix">web-inter-5-6</a>
+    </nav>
   </div>
-</main>
+</body>

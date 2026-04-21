@@ -1,0 +1,34 @@
+import {
+  whenTransitionDone
+} from "./chunk-JB7BCUZ4.js";
+
+// node_modules/@esri/calcite-components/dist/chunks/openCloseComponent.js
+function isOpen(component) {
+  return component[component.openProp || "open"];
+}
+async function toggleOpenClose(component) {
+  await component.updateComplete;
+  if (isOpen(component)) {
+    component.onBeforeOpen();
+  } else {
+    component.onBeforeClose();
+  }
+  await component.updateComplete;
+  const transitionNode = hasRef(component) ? component.transitionRef.value : component.transitionEl;
+  if (transitionNode) {
+    await whenTransitionDone(transitionNode, component.transitionProp);
+  }
+  if (isOpen(component)) {
+    component.onOpen();
+  } else {
+    component.onClose();
+  }
+}
+function hasRef(component) {
+  return !!component.transitionRef;
+}
+
+export {
+  toggleOpenClose
+};
+//# sourceMappingURL=chunk-YG2YTQDF.js.map
